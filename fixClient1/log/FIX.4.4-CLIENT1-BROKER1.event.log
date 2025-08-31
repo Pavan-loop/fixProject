@@ -1,0 +1,21 @@
+20250831-06:22:06: Session FIX.4.4:CLIENT1->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250831-06:22:06: Created session: FIX.4.4:CLIENT1->BROKER1
+20250831-06:22:06: Configured socket addresses for session: [/127.0.0.1:9877]
+20250831-06:22:06: java.net.ConnectException during connection to /127.0.0.1:9877: java.net.ConnectException: Connection refused (Next retry in 5000 milliseconds)
+20250831-06:22:11: java.net.ConnectException during connection to /127.0.0.1:9877: java.net.ConnectException: Connection refused (Next retry in 5000 milliseconds)
+20250831-06:22:16: java.net.ConnectException during connection to /127.0.0.1:9877: java.net.ConnectException: Connection refused (Next retry in 5000 milliseconds)
+20250831-06:22:21: java.net.ConnectException during connection to /127.0.0.1:9877: java.net.ConnectException: Connection refused (Next retry in 5000 milliseconds)
+20250831-06:22:26: java.net.ConnectException during connection to /127.0.0.1:9877: java.net.ConnectException: Connection refused (Next retry in 5000 milliseconds)
+20250831-06:22:31: java.net.ConnectException during connection to /127.0.0.1:9877: java.net.ConnectException: Connection refused (Next retry in 5000 milliseconds)
+20250831-06:22:37: Session FIX.4.4:CLIENT1->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250831-06:22:37: Created session: FIX.4.4:CLIENT1->BROKER1
+20250831-06:22:37: Configured socket addresses for session: [/127.0.0.1:9877]
+20250831-06:22:37: java.net.ConnectException during connection to /127.0.0.1:9877: java.net.ConnectException: Connection refused (Next retry in 5000 milliseconds)
+20250831-06:22:42: java.net.ConnectException during connection to /127.0.0.1:9877: java.net.ConnectException: Connection refused (Next retry in 5000 milliseconds)
+20250831-06:22:47: java.net.ConnectException during connection to /127.0.0.1:9877: java.net.ConnectException: Connection refused (Next retry in 5000 milliseconds)
+20250831-06:22:52: java.net.ConnectException during connection to /127.0.0.1:9877: java.net.ConnectException: Connection refused (Next retry in 5000 milliseconds)
+20250831-06:22:57: java.net.ConnectException during connection to /127.0.0.1:9877: java.net.ConnectException: Connection refused (Next retry in 5000 milliseconds)
+20250831-06:23:02: java.net.ConnectException during connection to /127.0.0.1:9877: java.net.ConnectException: Connection refused (Next retry in 5000 milliseconds)
+20250831-06:23:07: java.net.ConnectException during connection to /127.0.0.1:9877: java.net.ConnectException: Connection refused (Next retry in 5000 milliseconds)
+20250831-06:23:12: java.net.ConnectException during connection to /127.0.0.1:9877: java.net.ConnectException: Connection refused (Next retry in 5000 milliseconds)
+20250831-06:23:17: java.net.ConnectException during connection to /127.0.0.1:9877: java.net.ConnectException: Connection refused (Next retry in 5000 milliseconds)
