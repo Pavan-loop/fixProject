@@ -82,8 +82,8 @@ public class ClientApp extends MessageCracker implements Application {
         ReceivedData data = new ReceivedData(
                 executionReport.getSymbol().getValue(),
                 conStatus.get(status),
-                executionReport.getCumQty().getValue(),
-                (int) executionReport.getAvgPx().getValue()
+                executionReport.getAvgPx().getValue(),
+                (int) executionReport.getCumQty().getValue()
         );
 
         controller.addValue(data);

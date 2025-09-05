@@ -1,5 +1,6 @@
 package com.example.fixclient1.utils;
 
+import com.example.fixclient1.database.Curd;
 import com.example.fixclient1.model.TableOrder;
 import javafx.application.Platform;
 import javafx.collections.FXCollections;
@@ -14,7 +15,10 @@ import javafx.scene.input.KeyEvent;
 import javafx.util.converter.DoubleStringConverter;
 import javafx.util.converter.IntegerStringConverter;
 
+import java.util.List;
+
 public class TableUtils {
+
     public static void addRow(
             TableColumn<TableOrder, String> symbol,
             TableColumn<TableOrder, String> side,
@@ -22,7 +26,10 @@ public class TableUtils {
             TableColumn<TableOrder, Double> orderPrice,
             TableColumn<TableOrder, Integer> orderQuantity
             ) {
-        ObservableList<String> symbols = FXCollections.observableArrayList("AAPL", "BEL", "GOOG", "MSFC");
+        Curd data = new Curd();
+        List<String> dSymbol = data.getSymbol();
+
+        ObservableList<String> symbols = FXCollections.observableArrayList(dSymbol);
         symbol.setCellValueFactory(cellData -> cellData.getValue().symbolProperty());
         symbol.setCellFactory(ComboBoxTableCell.forTableColumn(symbols));
 

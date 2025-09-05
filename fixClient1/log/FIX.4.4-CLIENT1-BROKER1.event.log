@@ -22427,3 +22427,100 @@
 20250905-09:25:07: MINA session created: local=/192.168.0.39:51078, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
 20250905-09:25:08: Initiated logon request
 20250905-09:25:08: Received logon
+20250905-10:04:48: Session FIX.4.4:CLIENT1->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250905-10:04:48: Created session: FIX.4.4:CLIENT1->BROKER1
+20250905-10:04:49: Configured socket addresses for session: [/192.168.0.37:9877]
+20250905-10:04:49: MINA session created: local=/192.168.0.39:52669, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250905-10:04:50: Initiated logon request
+20250905-10:04:50: Received logon
+20250905-10:09:40: Session FIX.4.4:CLIENT1->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250905-10:09:40: Created session: FIX.4.4:CLIENT1->BROKER1
+20250905-10:09:41: Configured socket addresses for session: [/192.168.0.37:9877]
+20250905-10:09:41: MINA session created: local=/192.168.0.39:52758, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250905-10:09:42: Initiated logon request
+20250905-10:09:42: Received logon
+20250905-10:10:26: Session FIX.4.4:CLIENT1->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250905-10:10:26: Created session: FIX.4.4:CLIENT1->BROKER1
+20250905-10:10:27: Configured socket addresses for session: [/192.168.0.37:9877]
+20250905-10:10:27: MINA session created: local=/192.168.0.39:52769, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250905-10:10:28: Initiated logon request
+20250905-10:10:28: Received logon
+20250905-10:11:14: Session FIX.4.4:CLIENT1->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250905-10:11:14: Created session: FIX.4.4:CLIENT1->BROKER1
+20250905-10:11:14: Configured socket addresses for session: [/192.168.0.37:9877]
+20250905-10:11:14: MINA session created: local=/192.168.0.39:52781, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250905-10:11:16: Initiated logon request
+20250905-10:11:16: Received logon
+20250905-10:11:53: Session FIX.4.4:CLIENT1->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250905-10:11:53: Created session: FIX.4.4:CLIENT1->BROKER1
+20250905-10:11:53: Configured socket addresses for session: [/192.168.0.37:9877]
+20250905-10:11:54: MINA session created: local=/192.168.0.39:52794, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250905-10:11:55: Initiated logon request
+20250905-10:11:55: Received logon
+20250905-10:16:04: Session FIX.4.4:CLIENT1->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250905-10:16:04: Created session: FIX.4.4:CLIENT1->BROKER1
+20250905-10:16:04: Configured socket addresses for session: [/192.168.0.37:9877]
+20250905-10:16:04: MINA session created: local=/192.168.0.39:52831, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250905-10:16:05: Initiated logon request
+20250905-10:16:05: Received logon
+20250905-10:17:35: Disconnecting: Socket exception (/192.168.0.37:9877): java.net.SocketException: Connection reset
+20250905-10:17:46: Session FIX.4.4:CLIENT1->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250905-10:17:46: Created session: FIX.4.4:CLIENT1->BROKER1
+20250905-10:17:46: Configured socket addresses for session: [/192.168.0.37:9877]
+20250905-10:17:46: MINA session created: local=/192.168.0.39:52855, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250905-10:17:47: Initiated logon request
+20250905-10:17:48: Received logon
+20250905-10:46:08: Session FIX.4.4:CLIENT1->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250905-10:46:08: Created session: FIX.4.4:CLIENT1->BROKER1
+20250905-10:46:08: Configured socket addresses for session: [/192.168.0.37:9877]
+20250905-10:46:08: MINA session created: local=/192.168.0.39:53130, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250905-10:46:09: Initiated logon request
+20250905-10:46:09: Received logon
+20250905-10:46:09: MsgSeqNum too high, expecting 786 but received 795: 8=FIX.4.49=7135=A34=79549=BROKER152=20250905-10:46:10.84756=CLIENT198=0108=3010=094
+20250905-10:46:09: Enqueued at pos 795: 8=FIX.4.49=7135=A34=79549=BROKER152=20250905-10:46:10.84756=CLIENT198=0108=3010=094
+20250905-10:46:09: Sent ResendRequest FROM: 786 TO: infinity
+20250905-10:46:09: Received SequenceReset FROM: 786 TO: 796
+20250905-10:57:19: Session FIX.4.4:CLIENT1->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250905-10:57:19: Created session: FIX.4.4:CLIENT1->BROKER1
+20250905-10:57:19: Configured socket addresses for session: [/192.168.0.37:9877]
+20250905-10:57:19: MINA session created: local=/192.168.0.39:53281, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250905-10:57:20: Initiated logon request
+20250905-10:57:21: Received logon
+20250905-11:01:20: Session FIX.4.4:CLIENT1->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250905-11:01:20: Created session: FIX.4.4:CLIENT1->BROKER1
+20250905-11:01:20: Configured socket addresses for session: [/192.168.0.37:9877]
+20250905-11:01:20: MINA session created: local=/192.168.0.39:53364, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250905-11:01:21: Initiated logon request
+20250905-11:01:21: Received logon
+20250905-11:01:21: MsgSeqNum too high, expecting 805 but received 806: 8=FIX.4.49=7135=A34=80649=BROKER152=20250905-11:01:22.52756=CLIENT198=0108=3010=077
+20250905-11:01:21: Enqueued at pos 806: 8=FIX.4.49=7135=A34=80649=BROKER152=20250905-11:01:22.52756=CLIENT198=0108=3010=077
+20250905-11:01:21: Sent ResendRequest FROM: 805 TO: infinity
+20250905-11:01:21: ResendRequest for messages FROM 805 TO 805 has been satisfied.
+20250905-11:01:21: Received SequenceReset FROM: 805 TO: 807
+20250905-11:01:47: Session FIX.4.4:CLIENT1->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250905-11:01:47: Created session: FIX.4.4:CLIENT1->BROKER1
+20250905-11:01:48: Configured socket addresses for session: [/192.168.0.37:9877]
+20250905-11:01:48: MINA session created: local=/192.168.0.39:53378, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250905-11:01:49: Initiated logon request
+20250905-11:02:00: Disconnecting: Timed out waiting for logon response
+20250905-11:02:26: Session FIX.4.4:CLIENT1->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250905-11:02:26: Created session: FIX.4.4:CLIENT1->BROKER1
+20250905-11:02:26: Configured socket addresses for session: [/192.168.0.37:9877]
+20250905-11:02:30: Pending connection not established after 4007 ms.
+20250905-11:02:35: Pending connection not established after 9010 ms.
+20250905-11:02:38: Pending connection not established after 12012 ms.
+20250905-11:02:43: Pending connection not established after 17016 ms.
+20250905-11:02:46: Pending connection not established after 20019 ms.
+20250905-11:02:47: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20250905-11:02:52: Pending connection not established after 4002 ms.
+20250905-11:03:01: Session FIX.4.4:CLIENT1->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250905-11:03:01: Created session: FIX.4.4:CLIENT1->BROKER1
+20250905-11:03:01: Configured socket addresses for session: [/192.168.0.37:9877]
+20250905-11:03:03: Pending connection not established after 2006 ms.
+20250905-11:03:06: Pending connection not established after 5012 ms.
+20250905-11:03:11: Pending connection not established after 10013 ms.
+20250905-11:03:16: Pending connection not established after 15016 ms.
+20250905-11:03:19: Pending connection not established after 18019 ms.
+20250905-11:03:22: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20250905-11:03:27: Pending connection not established after 4000 ms.
+20250905-11:03:32: Pending connection not established after 9002 ms.
