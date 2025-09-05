@@ -1,15 +1,22 @@
 package com.example.fixclient1.fix;
 
+import com.example.fixclient1.HelloController;
+import com.example.fixclient1.model.ReceivedData;
 import quickfix.*;
 import quickfix.fix44.ExecutionReport;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class ClientApp extends MessageCracker implements Application {
 
+    private final HelloController controller;
     private SessionSettings settings;
     private final Initiator initiator;
 
 
-    public ClientApp(String configFile) throws ConfigError {
+    public ClientApp(String configFile, HelloController controller) throws ConfigError {
+        this.controller = controller;
         settings = new SessionSettings(configFile);
 
         MessageStoreFactory storeFactory = new FileStoreFactory(settings);
@@ -56,19 +63,41 @@ public class ClientApp extends MessageCracker implements Application {
 
     public void onMessage(ExecutionReport executionReport, SessionID sessionID) throws FieldNotFound {
         System.out.println("Client receives execution report " +
-                    "OrderId=" + executionReport.getOrderID().getValue() +
-                    ", Status=" + executionReport.getOrdStatus().getValue() +
-                    ", FilledQty=" + executionReport.getCumQty().getValue() +
-                    ", AvgPx=" + executionReport.getAvgPx().getValue());
+                "Symbol=" + executionReport.getSymbol().getValue() +
+                "OrderId=" + executionReport.getOrderID().getValue() +
+                ", Status=" + executionReport.getOrdStatus().getValue() +
+                ", FilledQty=" + executionReport.getCumQty().getValue() +
+                ", AvgPx=" + executionReport.getAvgPx().getValue());
+
+        String status = String.valueOf(executionReport.getOrdStatus().getValue());
+        Map<String, String> conStatus = new HashMap<>();
+        conStatus.put("0", "New");
+        conStatus.put("1", "Partial Fill");
+        conStatus.put("2", "Fill");
+        conStatus.put("3", "Canceled");
+        conStatus.put("8", "Rejected");
+        conStatus.put("F", "Trade Cancel");
+        conStatus.put("H", "Trade Bust");
+
+        ReceivedData data = new ReceivedData(
+                executionReport.getSymbol().getValue(),
+                conStatus.get(status),
+                executionReport.getCumQty().getValue(),
+                (int) executionReport.getAvgPx().getValue()
+        );
+
+        controller.addValue(data);
     }
 
-    public void start() {
+    public Initiator start() {
         try {
             initiator.start();
             System.out.println("Client started...");
+            return initiator;
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
+        return initiator;
     }
 
     public void stop() {

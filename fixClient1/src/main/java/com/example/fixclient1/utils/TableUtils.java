@@ -30,9 +30,9 @@ public class TableUtils {
         side.setCellValueFactory(cellData -> cellData.getValue().sideProperty());
         side.setCellFactory(ComboBoxTableCell.forTableColumn(sides));
 
+        ObservableList<String> order = FXCollections.observableArrayList("LIMIT", "MARKET");
         orderType.setCellValueFactory(cellData -> cellData.getValue().orderTypeProperty());
-        orderType.setCellFactory(TextFieldTableCell.forTableColumn());
-        orderType.setOnEditCommit(event -> event.getRowValue().setOrderType(event.getNewValue()));
+        orderType.setCellFactory(ComboBoxTableCell.forTableColumn(order));
 
         orderPrice.setCellValueFactory(cellData -> cellData.getValue().orderPriceProperty().asObject());
         orderPrice.setCellFactory(TextFieldTableCell.forTableColumn(new DoubleStringConverter()));
