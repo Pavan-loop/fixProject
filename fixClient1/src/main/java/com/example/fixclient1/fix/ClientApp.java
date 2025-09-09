@@ -65,6 +65,7 @@ public class ClientApp extends MessageCracker implements Application {
         System.out.println("Client receives execution report " +
                 "Symbol=" + executionReport.getSymbol().getValue() +
                 "OrderId=" + executionReport.getOrderID().getValue() +
+                ", Side=" + executionReport.getSide().getValue() +
                 ", Status=" + executionReport.getOrdStatus().getValue() +
                 ", FilledQty=" + executionReport.getCumQty().getValue() +
                 ", AvgPx=" + executionReport.getAvgPx().getValue());
@@ -80,7 +81,9 @@ public class ClientApp extends MessageCracker implements Application {
         conStatus.put("H", "Trade Bust");
 
         ReceivedData data = new ReceivedData(
+                executionReport.getClOrdID().getValue(),
                 executionReport.getSymbol().getValue(),
+                String.valueOf(executionReport.getSide().getValue()).equalsIgnoreCase("1") ? "BUY" : "SELL",
                 conStatus.get(status),
                 executionReport.getAvgPx().getValue(),
                 (int) executionReport.getCumQty().getValue()

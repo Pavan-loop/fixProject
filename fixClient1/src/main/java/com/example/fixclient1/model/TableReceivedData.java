@@ -5,13 +5,17 @@ import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
 
 public class TableReceivedData {
+    private SimpleStringProperty clientOrdId;
     private SimpleStringProperty symbol;
+    private SimpleStringProperty side;
     private SimpleStringProperty execType;
     private SimpleDoubleProperty price;
     private SimpleIntegerProperty quantity;
 
-    public TableReceivedData(String symbol, String execType, Double price, Integer quantity) {
+    public TableReceivedData(String clientOrdId, String symbol, String side, String execType, Double price, Integer quantity) {
+        this.clientOrdId = new SimpleStringProperty(clientOrdId);
         this.symbol = new SimpleStringProperty(symbol);
+        this.side = new SimpleStringProperty(side);
         this.execType = new SimpleStringProperty(execType);
         this.price = new SimpleDoubleProperty(price);
         this.quantity = new SimpleIntegerProperty(quantity);
@@ -65,10 +69,36 @@ public class TableReceivedData {
         this.quantity.set(quantity);
     }
 
+    public String getSide() {
+        return side.get();
+    }
+
+    public SimpleStringProperty sideProperty() {
+        return side;
+    }
+
+    public void setSide(String side) {
+        this.side.set(side);
+    }
+
+    public String getClientOrdId() {
+        return clientOrdId.get();
+    }
+
+    public SimpleStringProperty clientOrdIdProperty() {
+        return clientOrdId;
+    }
+
+    public void setClientOrdId(String clientOrdId) {
+        this.clientOrdId.set(clientOrdId);
+    }
+
     @Override
     public String toString() {
         return "TableReceivedData{" +
-                "symbol=" + symbol +
+                "client Id=" + clientOrdId +
+                ", symbol=" + symbol +
+                ", side=" + side +
                 ", execType=" + execType +
                 ", price=" + price +
                 ", quantity=" + quantity +

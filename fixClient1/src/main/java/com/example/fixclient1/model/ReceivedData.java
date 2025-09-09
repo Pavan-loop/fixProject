@@ -1,16 +1,32 @@
 package com.example.fixclient1.model;
 
 public class ReceivedData {
+    private String clOrdId;
     private String symbol;
+    private String side;
     private String execType;
     private Double price;
     private Integer quantity;
 
-    public ReceivedData(String symbol, String execType, Double price, Integer quantity) {
+    public ReceivedData(String clOrdId, String symbol, String side, String execType, Double price, Integer quantity) {
+        this.clOrdId = clOrdId;
         this.symbol = symbol;
+        this.side = side;
         this.execType = execType;
         this.price = price;
         this.quantity = quantity;
+    }
+
+    public ReceivedData() {
+
+    }
+
+    public String getClOrdId() {
+        return clOrdId;
+    }
+
+    public void setClOrdId(String clOrdId) {
+        this.clOrdId = clOrdId;
     }
 
     public String getSymbol() {
@@ -45,11 +61,21 @@ public class ReceivedData {
         this.quantity = quantity;
     }
 
+    public String getSide() {
+        return side;
+    }
+
+    public void setSide(String side) {
+        this.side = side;
+    }
+
     @Override
     public String toString() {
         return "ReceivedData{" +
-                "symbol='" + symbol + '\'' +
-                ", execType=" + execType +
+                ", client id='" + clOrdId + '\'' +
+                ", symbol='" + symbol + '\'' +
+                ", side='" + side + '\'' +
+                ", execType='" + execType + '\'' +
                 ", price=" + price +
                 ", quantity=" + quantity +
                 '}';
