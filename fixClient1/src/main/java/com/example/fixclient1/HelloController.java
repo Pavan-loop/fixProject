@@ -66,7 +66,7 @@ public class HelloController {
     public void initialize() throws ConfigError, InterruptedException {
 
         try {
-            ClientApp clientApp = new ClientApp("C:\\Users\\nichiuser\\Desktop\\fixProject\\fixClient1\\src\\main\\java\\com\\example\\fixclient1\\fix\\initiator.cfg", this);
+            ClientApp clientApp = new ClientApp("C:\\Users\\nichiuser\\Downloads\\fixProject\\fixClient1\\src\\main\\java\\com\\example\\fixclient1\\fix\\initiator.cfg", this);
             initiator = clientApp.start();
         }catch (ConfigError e) {
             e.printStackTrace();
@@ -108,10 +108,20 @@ public class HelloController {
     }
 
     public void onCancel() throws SessionNotFound {
-        String value = cancelOrder.getValue();
-        Optional<ReceivedData> find = uData.stream().filter(f -> f.getClOrdId().equals(value)).findFirst();
-        if (find.isPresent()) {
-            SendFixMessage.cancelOrder(initiator, find.get());
-        }
+        String clOrdId = cancelOrder.getValue();
+        if (clOrdId == null || clOrdId.isEmpty()) return;
+
+        Optional<ReceivedData> find = uData.stream()
+                .filter(f -> f.getClOrdId().equals(clOrdId))
+                .findFirst();
+
+        find.ifPresent(data -> {
+            System.out.println("Cancelling Order => ClOrdId: " + data.getClOrdId() + ", Symbol: " + data.getSymbol());
+            try {
+                SendFixMessage.cancelOrder(initiator, data);
+            } catch (SessionNotFound e) {
+                throw new RuntimeException(e);
+            }
+        });
     }
 }

@@ -1,0 +1,78 @@
+20250909-10:26:20: Session FIX.4.4:CLIENT13->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250909-10:26:20: Created session: FIX.4.4:CLIENT13->BROKER1
+20250909-10:26:20: Configured socket addresses for session: [/192.168.0.37:9877]
+20250909-10:26:20: MINA session created: local=/192.168.0.42:52636, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250909-10:26:21: Initiated logon request
+20250909-10:26:21: Disconnecting: Encountered END_OF_STREAM
+20250909-10:26:25: MINA session created: local=/192.168.0.42:52638, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250909-10:26:26: Initiated logon request
+20250909-10:26:26: Disconnecting: Encountered END_OF_STREAM
+20250909-10:26:30: MINA session created: local=/192.168.0.42:52649, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250909-10:26:31: Initiated logon request
+20250909-10:26:31: Disconnecting: Encountered END_OF_STREAM
+20250909-10:26:35: MINA session created: local=/192.168.0.42:52650, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250909-10:26:36: Initiated logon request
+20250909-10:26:36: Disconnecting: Encountered END_OF_STREAM
+20250909-10:26:40: MINA session created: local=/192.168.0.42:52651, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250909-10:26:41: Initiated logon request
+20250909-10:26:41: Disconnecting: Encountered END_OF_STREAM
+20250909-10:26:45: MINA session created: local=/192.168.0.42:52652, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250909-10:26:46: Initiated logon request
+20250909-10:26:46: Disconnecting: Encountered END_OF_STREAM
+20250909-10:26:50: MINA session created: local=/192.168.0.42:52655, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250909-10:26:51: Initiated logon request
+20250909-10:26:51: Disconnecting: Encountered END_OF_STREAM
+20250909-11:26:41: Session FIX.4.4:CLIENT13->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250909-11:26:41: Created session: FIX.4.4:CLIENT13->BROKER1
+20250909-11:26:41: Configured socket addresses for session: [/192.168.0.37:9877]
+20250909-11:26:43: MINA session created: local=/192.168.0.42:53358, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250909-11:26:43: Initiated logon request
+20250909-11:26:43: Received logon
+20250909-11:26:43: Received ResendRequest FROM: 1 TO: infinity
+20250909-11:26:43: Sent SequenceReset TO: 9
+20250909-11:27:19: java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because the return value of "com.example.fixclient1.model.ReceivedData.getExecType()" is null
+quickfix.RuntimeError: java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because the return value of "com.example.fixclient1.model.ReceivedData.getExecType()" is null
+	at quickfix.Session.next(Session.java:1181)
+	at quickfix.Session.next(Session.java:1228)
+	at quickfix.mina.SingleThreadedEventHandlingStrategy$SessionMessageEvent.processMessage(SingleThreadedEventHandlingStrategy.java:163)
+	at quickfix.mina.SingleThreadedEventHandlingStrategy.block(SingleThreadedEventHandlingStrategy.java:113)
+	at quickfix.mina.SingleThreadedEventHandlingStrategy.lambda$blockInThread$1(SingleThreadedEventHandlingStrategy.java:145)
+	at quickfix.mina.SingleThreadedEventHandlingStrategy$ThreadAdapter$RunnableWrapper.run(SingleThreadedEventHandlingStrategy.java:267)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because the return value of "com.example.fixclient1.model.ReceivedData.getExecType()" is null
+	at com.example.fixclient1.HelloController.addValue(HelloController.java:106)
+	at com.example.fixclient1.fix.ClientApp.onMessage(ClientApp.java:92)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at quickfix.MessageCracker$Invoker.Invoke(MessageCracker.java:115)
+	at quickfix.MessageCracker.crack(MessageCracker.java:127)
+	at com.example.fixclient1.fix.ClientApp.fromApp(ClientApp.java:61)
+	at quickfix.Session.fromCallback(Session.java:1869)
+	at quickfix.Session.verify(Session.java:1813)
+	at quickfix.Session.verify(Session.java:1884)
+	at quickfix.Session.next(Session.java:1071)
+	... 6 more
+Cause: Cannot invoke "String.equals(Object)" because the return value of "com.example.fixclient1.model.ReceivedData.getExecType()" is null
+java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because the return value of "com.example.fixclient1.model.ReceivedData.getExecType()" is null
+	at com.example.fixclient1.HelloController.addValue(HelloController.java:106)
+	at com.example.fixclient1.fix.ClientApp.onMessage(ClientApp.java:92)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at quickfix.MessageCracker$Invoker.Invoke(MessageCracker.java:115)
+	at quickfix.MessageCracker.crack(MessageCracker.java:127)
+	at com.example.fixclient1.fix.ClientApp.fromApp(ClientApp.java:61)
+	at quickfix.Session.fromCallback(Session.java:1869)
+	at quickfix.Session.verify(Session.java:1813)
+	at quickfix.Session.verify(Session.java:1884)
+	at quickfix.Session.next(Session.java:1071)
+	at quickfix.Session.next(Session.java:1228)
+	at quickfix.mina.SingleThreadedEventHandlingStrategy$SessionMessageEvent.processMessage(SingleThreadedEventHandlingStrategy.java:163)
+	at quickfix.mina.SingleThreadedEventHandlingStrategy.block(SingleThreadedEventHandlingStrategy.java:113)
+	at quickfix.mina.SingleThreadedEventHandlingStrategy.lambda$blockInThread$1(SingleThreadedEventHandlingStrategy.java:145)
+	at quickfix.mina.SingleThreadedEventHandlingStrategy$ThreadAdapter$RunnableWrapper.run(SingleThreadedEventHandlingStrategy.java:267)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+

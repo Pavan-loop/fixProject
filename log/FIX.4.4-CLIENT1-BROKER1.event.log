@@ -1,0 +1,48 @@
+20250905-10:35:13: Session FIX.4.4:CLIENT1->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250905-10:35:13: Created session: FIX.4.4:CLIENT1->BROKER1
+20250905-10:35:14: Configured socket addresses for session: [/192.168.0.37:9877]
+20250905-10:35:14: MINA session created: local=/192.168.0.42:52785, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250905-10:35:15: Initiated logon request
+20250905-10:35:15: Received logout request: MsgSeqNum too low, expecting 82 but received 1
+20250905-10:35:15: Sent logout response
+20250905-10:35:15: Disconnecting: Received logout request: MsgSeqNum too low, expecting 82 but received 1
+20250905-10:35:20: MINA session created: local=/192.168.0.42:52786, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250905-10:35:20: Initiated logon request
+20250905-10:35:20: Received logout request: MsgSeqNum too low, expecting 82 but received 3
+20250905-10:35:20: Sent logout response
+20250905-10:35:20: Disconnecting: Received logout request: MsgSeqNum too low, expecting 82 but received 3
+20250905-10:35:25: MINA session created: local=/192.168.0.42:52787, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250905-10:35:26: Initiated logon request
+20250905-10:35:26: Received logout request: MsgSeqNum too low, expecting 82 but received 5
+20250905-10:35:26: Sent logout response
+20250905-10:35:26: Disconnecting: Received logout request: MsgSeqNum too low, expecting 82 but received 5
+20250905-10:35:30: MINA session created: local=/192.168.0.42:52788, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250905-10:35:31: Initiated logon request
+20250905-10:35:31: Received logout request: MsgSeqNum too low, expecting 82 but received 7
+20250905-10:35:31: Sent logout response
+20250905-10:35:31: Disconnecting: Received logout request: MsgSeqNum too low, expecting 82 but received 7
+20250905-10:35:35: MINA session created: local=/192.168.0.42:52789, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250905-10:35:36: Initiated logon request
+20250905-10:35:36: Received logout request: MsgSeqNum too low, expecting 82 but received 9
+20250905-10:35:36: Sent logout response
+20250905-10:35:36: Disconnecting: Received logout request: MsgSeqNum too low, expecting 82 but received 9
+20250905-10:35:40: MINA session created: local=/192.168.0.42:52790, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250905-10:35:41: Initiated logon request
+20250905-10:35:41: Received logout request: MsgSeqNum too low, expecting 82 but received 11
+20250905-10:35:41: Sent logout response
+20250905-10:35:41: Disconnecting: Received logout request: MsgSeqNum too low, expecting 82 but received 11
+20250905-10:35:45: MINA session created: local=/192.168.0.42:52791, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250905-10:35:46: Initiated logon request
+20250905-10:35:46: Received logout request: MsgSeqNum too low, expecting 82 but received 13
+20250905-10:35:46: Sent logout response
+20250905-10:35:46: Disconnecting: Received logout request: MsgSeqNum too low, expecting 82 but received 13
+20250905-10:35:50: MINA session created: local=/192.168.0.42:52793, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250905-10:35:51: Initiated logon request
+20250905-10:35:51: Received logout request: MsgSeqNum too low, expecting 82 but received 15
+20250905-10:35:51: Sent logout response
+20250905-10:35:51: Disconnecting: Received logout request: MsgSeqNum too low, expecting 82 but received 15
+20250905-10:35:55: MINA session created: local=/192.168.0.42:52794, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250905-10:35:56: Initiated logon request
+20250905-10:35:56: Received logout request: MsgSeqNum too low, expecting 82 but received 17
+20250905-10:35:56: Sent logout response
+20250905-10:35:56: Disconnecting: Received logout request: MsgSeqNum too low, expecting 82 but received 17

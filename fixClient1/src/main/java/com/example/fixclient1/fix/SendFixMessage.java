@@ -41,6 +41,7 @@ public class SendFixMessage {
                 new Side(receivedData.getSide().equals("BUY") ? Side.BUY : Side.SELL),
                 new TransactTime(LocalDateTime.now())
         );
+        cancelRequest.set(new Symbol(receivedData.getSymbol()));
         Session.sendToTarget(cancelRequest, initiator.getSessions().get(0));
 
     }
