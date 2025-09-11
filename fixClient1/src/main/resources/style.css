@@ -27,3 +27,11 @@
     -fx-focus-color: transparent;
     -fx-faint-focus-color: transparent;
 }
+
+.table-cell {
+    -fx-alignment: CENTER_LEFT;
+}
+
+.table-cell.price, .table-cell.quantity {
+    -fx-alignment: CENTER-RIGHT;
+}

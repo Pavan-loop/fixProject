@@ -11,6 +11,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
 import quickfix.ConfigError;
 import quickfix.Initiator;
 import quickfix.SessionNotFound;
@@ -19,56 +20,41 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-
 public class HelloController {
 
-    @FXML
-    private TableView<TableOrder> tableOrder;
+    @FXML private TableView<TableOrder> tableOrder;
+    @FXML private TableColumn<TableOrder, String> symbol;
+    @FXML private TableColumn<TableOrder, String> side;
+    @FXML private TableColumn<TableOrder, String> orderType;
+    @FXML private TableColumn<TableOrder, Double> orderPrice;
+    @FXML private TableColumn<TableOrder, Integer> orderQuantity;
+    @FXML private TableColumn<TableOrder, Void> sendCol;
 
-    @FXML
-    private TableColumn<TableOrder, String> symbol;
-    @FXML
-    private TableColumn<TableOrder, String> side;
-    @FXML
-    private TableColumn<TableOrder, String> orderType;
-    @FXML
-    private TableColumn<TableOrder, Double> orderPrice;
-    @FXML
-    private TableColumn<TableOrder, Integer> orderQuantity;
+    @FXML private TableView<TableReceivedData> tableReceivedData;
+    @FXML private TableColumn<TableReceivedData, String> reClient;
+    @FXML private TableColumn<TableReceivedData, String> reSymbol;
+    @FXML private TableColumn<TableReceivedData, String> reSide;
+    @FXML private TableColumn<TableReceivedData, String> reStatus;
+    @FXML private TableColumn<TableReceivedData, Double> rePrice;
+    @FXML private TableColumn<TableReceivedData, Integer> reQuantity;
 
-    @FXML
-    private TableView<TableReceivedData> tableReceivedData;
+    @FXML private ComboBox<String> cancelOrder;
 
-    @FXML
-    private TableColumn<TableReceivedData, String> reClient;
-    @FXML
-    private TableColumn<TableReceivedData, String> reSymbol;
-    @FXML
-    private TableColumn<TableReceivedData, String> reSide;
-    @FXML
-    private TableColumn<TableReceivedData, String> reStatus;
-    @FXML
-    private TableColumn<TableReceivedData, Double> rePrice;
-    @FXML
-    private TableColumn<TableReceivedData, Integer> reQuantity;
-
-    @FXML
-    private ComboBox<String> cancelOrder;
-
-    List<ReceivedData> uData = new ArrayList<>();
-
-
+    private final List<ReceivedData> uData = new ArrayList<>();
     private final ObservableList<TableOrder> orderData = FXCollections.observableArrayList();
     private final ObservableList<TableReceivedData> receivedOrderData = FXCollections.observableArrayList();
 
-    Initiator initiator;
-    @FXML
-    public void initialize() throws ConfigError, InterruptedException {
+    private Initiator initiator;
 
+    @FXML
+    public void initialize() {
         try {
-            ClientApp clientApp = new ClientApp("C:\\Users\\nichiuser\\Downloads\\fixProject\\fixClient1\\src\\main\\java\\com\\example\\fixclient1\\fix\\initiator.cfg", this);
+            ClientApp clientApp = new ClientApp(
+                    "C:\\Users\\nichiuser\\Downloads\\fixProject\\fixClient1\\src\\main\\java\\com\\example\\fixclient1\\fix\\initiator.cfg",
+                    this
+            );
             initiator = clientApp.start();
-        }catch (ConfigError e) {
+        } catch (ConfigError e) {
             e.printStackTrace();
         }
 
@@ -77,34 +63,83 @@ public class HelloController {
         tableReceivedData.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY);
         tableOrder.setEditable(true);
 
-        TableUtils.addRow(symbol,side,orderType,orderPrice,orderQuantity);
+        // Editable columns setup
+        TableUtils.addRow(symbol, side, orderType, orderPrice, orderQuantity);
         ReceiveDataUtils.addRow(reClient, reSymbol, reSide, reStatus, rePrice, reQuantity);
-        orderData.add(new TableOrder("","","", 0.0, 0));
+
+        // Start with one empty row
+        orderData.add(new TableOrder("", "", "", 0.0, 0));
+
+        // Add "Send" button per row
+        addSendButtonToTable();
 
         TableUtils.tableMovement(tableOrder);
-
     }
 
-    @FXML
-    public void onSave() throws SessionNotFound {
-        System.out.println(orderData);
-        TableOrder s = orderData.get(0);
-        TableOrder order = new TableOrder(
-                s.getSymbol(),
-                s.getSide(),
-                s.getOrderType(),
-                s.getOrderPrice(),
-                s.getOrderQuantity()
-        );
+    private void addSendButtonToTable() {
+        sendCol.setCellFactory(col -> new TableCell<>() {
+            private final Button sendButton = new Button("Send");
+
+            {
+                sendButton.setOnAction(e -> {
+                    TableOrder order = getTableView().getItems().get(getIndex());
+                    try {
+                        handleSendOrder(order);
+                    } catch (SessionNotFound ex) {
+                        ex.printStackTrace();
+                    }
+                });
+            }
+
+            @Override
+            protected void updateItem(Void item, boolean empty) {
+                super.updateItem(item, empty);
+                if (empty) {
+                    setGraphic(null);
+                } else {
+                    setGraphic(sendButton);
+                }
+            }
+        });
+    }
+
+    private void handleSendOrder(TableOrder order) throws SessionNotFound {
+        if (order == null) return;
+
+        // Validation
+        if (order.getSymbol() == null || order.getSymbol().isBlank()
+                || order.getSide() == null || order.getSide().isBlank()
+                || order.getOrderType() == null || order.getOrderType().isBlank()
+                || order.getOrderPrice() <= 0
+                || order.getOrderQuantity() <= 0) {
+            showAlert("Invalid Order", "Please fill all fields before sending.");
+            return;
+        }
+
+        System.out.println("📤 Sending order: " + order);
         SendFixMessage.send(initiator, order);
+
+        // Add new empty row if this was the last one
+        if (orderData.indexOf(order) == orderData.size() - 1) {
+            orderData.add(new TableOrder("", "", "", 0.0, 0));
+        }
     }
 
     public void addValue(ReceivedData data) {
         tableReceivedData.setItems(receivedOrderData);
         uData.add(data);
-        receivedOrderData.add(new TableReceivedData(data.getClOrdId(), data.getSymbol(), data.getSide(), String.valueOf(data.getExecType()), data.getPrice(), data.getQuantity()));
-        cancelOrder.getItems().add(data.getExecType().equals("Partial Fill") ? data.getClOrdId() : "");
-        System.out.println(receivedOrderData);
+        receivedOrderData.add(new TableReceivedData(
+                data.getClOrdId(),
+                data.getSymbol(),
+                data.getSide(),
+                String.valueOf(data.getExecType()),
+                data.getPrice(),
+                data.getQuantity()
+        ));
+
+        if ("Partial Fill".equals(data.getExecType())) {
+            cancelOrder.getItems().add(data.getClOrdId());
+        }
     }
 
     public void onCancel() throws SessionNotFound {
@@ -123,5 +158,13 @@ public class HelloController {
                 throw new RuntimeException(e);
             }
         });
+    }
+
+    private void showAlert(String title, String content) {
+        Alert alert = new Alert(Alert.AlertType.WARNING);
+        alert.setTitle(title);
+        alert.setHeaderText(null);
+        alert.setContentText(content);
+        alert.showAndWait();
     }
 }

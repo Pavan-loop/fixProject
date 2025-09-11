@@ -75,3 +75,9 @@
 20250910-09:14:18: Received SequenceReset FROM: 3 TO: 7
 20250910-09:14:18: ResendRequest for messages FROM 1 TO 4 has been satisfied.
 20250910-09:14:58: Disconnecting: Socket exception (/192.168.0.37:9877): java.net.SocketException: Connection reset
+20250910-09:15:46: Session FIX.4.4:CLIENT14->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250910-09:15:46: Created session: FIX.4.4:CLIENT14->BROKER1
+20250910-09:15:46: Configured socket addresses for session: [/192.168.0.37:9877]
+20250910-09:15:47: MINA session created: local=/192.168.0.42:50650, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250910-09:15:48: Initiated logon request
+20250910-09:15:48: Received logon

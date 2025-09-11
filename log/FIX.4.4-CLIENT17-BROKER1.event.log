@@ -1,0 +1,147 @@
+20250910-09:56:26: Session FIX.4.4:CLIENT17->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250910-09:56:26: Created session: FIX.4.4:CLIENT17->BROKER1
+20250910-09:56:26: Configured socket addresses for session: [/192.168.0.37:9877]
+20250910-09:56:26: MINA session created: local=/192.168.0.42:51879, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250910-09:56:27: Initiated logon request
+20250910-09:56:28: Received logon
+20250910-10:00:49: Session FIX.4.4:CLIENT17->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250910-10:00:49: Created session: FIX.4.4:CLIENT17->BROKER1
+20250910-10:00:50: Configured socket addresses for session: [/192.168.0.37:9877]
+20250910-10:00:50: MINA session created: local=/192.168.0.42:51962, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250910-10:00:51: Initiated logon request
+20250910-10:00:51: Received logout request: MsgSeqNum too low, expecting 22 but received 5
+20250910-10:00:51: Sent logout response
+20250910-10:00:51: Disconnecting: Received logout request: MsgSeqNum too low, expecting 22 but received 5
+20250910-10:00:55: MINA session created: local=/192.168.0.42:51968, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250910-10:00:56: Initiated logon request
+20250910-10:00:56: Received logout request: MsgSeqNum too low, expecting 22 but received 7
+20250910-10:00:56: Sent logout response
+20250910-10:00:56: Disconnecting: Received logout request: MsgSeqNum too low, expecting 22 but received 7
+20250910-10:01:00: MINA session created: local=/192.168.0.42:51970, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250910-10:01:01: Initiated logon request
+20250910-10:01:01: Received logout request: MsgSeqNum too low, expecting 22 but received 9
+20250910-10:01:01: Sent logout response
+20250910-10:01:01: Disconnecting: Received logout request: MsgSeqNum too low, expecting 22 but received 9
+20250910-10:01:05: MINA session created: local=/192.168.0.42:51973, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250910-10:01:06: Initiated logon request
+20250910-10:01:06: Received logout request: MsgSeqNum too low, expecting 22 but received 11
+20250910-10:01:06: Sent logout response
+20250910-10:01:06: Disconnecting: Received logout request: MsgSeqNum too low, expecting 22 but received 11
+20250910-10:01:10: MINA session created: local=/192.168.0.42:51974, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250910-10:01:11: Initiated logon request
+20250910-10:01:11: Received logout request: MsgSeqNum too low, expecting 22 but received 13
+20250910-10:01:11: Sent logout response
+20250910-10:01:11: Disconnecting: Received logout request: MsgSeqNum too low, expecting 22 but received 13
+20250910-10:01:15: MINA session created: local=/192.168.0.42:51975, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250910-10:01:16: Initiated logon request
+20250910-10:01:16: Received logout request: MsgSeqNum too low, expecting 22 but received 15
+20250910-10:01:16: Sent logout response
+20250910-10:01:16: Disconnecting: Received logout request: MsgSeqNum too low, expecting 22 but received 15
+20250910-10:01:20: MINA session created: local=/192.168.0.42:51976, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250910-10:01:21: Initiated logon request
+20250910-10:01:21: Received logout request: MsgSeqNum too low, expecting 22 but received 17
+20250910-10:01:21: Sent logout response
+20250910-10:01:21: Disconnecting: Received logout request: MsgSeqNum too low, expecting 22 but received 17
+20250910-10:01:26: MINA session created: local=/192.168.0.42:51977, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250910-10:01:26: Initiated logon request
+20250910-10:01:26: Received logout request: MsgSeqNum too low, expecting 22 but received 19
+20250910-10:01:26: Sent logout response
+20250910-10:01:26: Disconnecting: Received logout request: MsgSeqNum too low, expecting 22 but received 19
+20250910-10:01:31: MINA session created: local=/192.168.0.42:51979, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250910-10:01:32: Initiated logon request
+20250910-10:01:32: Received logout request: MsgSeqNum too low, expecting 22 but received 21
+20250910-10:01:32: Sent logout response
+20250910-10:01:32: Disconnecting: Received logout request: MsgSeqNum too low, expecting 22 but received 21
+20250910-10:01:36: MINA session created: local=/192.168.0.42:51980, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250910-10:01:37: Initiated logon request
+20250910-10:01:37: Received logon
+20250910-10:01:37: MsgSeqNum too high, expecting 5 but received 17: 8=FIX.4.49=7135=A34=1749=BROKER152=20250910-10:01:36.70756=CLIENT1798=0108=3010=078
+20250910-10:01:37: Enqueued at pos 17: 8=FIX.4.49=7135=A34=1749=BROKER152=20250910-10:01:36.70756=CLIENT1798=0108=3010=078
+20250910-10:01:37: Sent ResendRequest FROM: 5 TO: infinity
+20250910-10:01:37: Enqueued at pos 18: 8=FIX.4.49=6935=234=1849=BROKER152=20250910-10:01:36.72256=CLIENT177=2216=010=217
+20250910-10:01:37: Received ResendRequest FROM: 22 TO: infinity
+20250910-10:01:37: Sent SequenceReset TO: 25
+20250910-10:01:37: Received SequenceReset FROM: 5 TO: 7
+20250910-10:01:37: Received SequenceReset FROM: 8 TO: 19
+20250910-10:02:08: ResendRequest for messages FROM 5 TO 16 has been satisfied.
+20250910-10:15:46: Session FIX.4.4:CLIENT17->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250910-10:15:46: Created session: FIX.4.4:CLIENT17->BROKER1
+20250910-10:15:46: Configured socket addresses for session: [/192.168.0.37:9877]
+20250910-10:15:46: MINA session created: local=/192.168.0.42:52178, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250910-10:15:47: Initiated logon request
+20250910-10:15:47: Received logon
+20250910-10:41:20: Session FIX.4.4:CLIENT17->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250910-10:41:20: Created session: FIX.4.4:CLIENT17->BROKER1
+20250910-10:41:21: Configured socket addresses for session: [/192.168.0.37:9877]
+20250910-10:41:21: MINA session created: local=/192.168.0.42:52387, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250910-10:41:22: Initiated logon request
+20250910-10:41:22: Received logon
+20250910-10:41:49: Session FIX.4.4:CLIENT17->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250910-10:41:49: Created session: FIX.4.4:CLIENT17->BROKER1
+20250910-10:41:50: Configured socket addresses for session: [/192.168.0.37:9877]
+20250910-10:41:50: MINA session created: local=/192.168.0.42:52397, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250910-10:41:51: Initiated logon request
+20250910-10:41:51: Disconnecting: Encountered END_OF_STREAM
+20250910-10:41:55: MINA session created: local=/192.168.0.42:52399, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250910-10:41:56: Initiated logon request
+20250910-10:41:56: Disconnecting: Encountered END_OF_STREAM
+20250910-10:42:00: MINA session created: local=/192.168.0.42:52402, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250910-10:42:01: Initiated logon request
+20250910-10:42:01: Disconnecting: Encountered END_OF_STREAM
+20250910-10:53:50: Session FIX.4.4:CLIENT17->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250910-10:53:50: Created session: FIX.4.4:CLIENT17->BROKER1
+20250910-10:53:51: Configured socket addresses for session: [/192.168.0.37:9877]
+20250910-10:53:51: MINA session created: local=/192.168.0.42:52482, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250910-10:53:52: Initiated logon request
+20250910-10:53:52: Received logon
+20250910-10:53:52: Received ResendRequest FROM: 32 TO: infinity
+20250910-10:53:52: Sent SequenceReset TO: 35
+20250910-10:59:22: Session FIX.4.4:CLIENT17->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250910-10:59:22: Created session: FIX.4.4:CLIENT17->BROKER1
+20250910-10:59:23: Configured socket addresses for session: [/192.168.0.37:9877]
+20250910-10:59:23: MINA session created: local=/192.168.0.42:52576, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250910-10:59:24: Initiated logon request
+20250910-10:59:24: Disconnecting: Encountered END_OF_STREAM
+20250910-10:59:28: MINA session created: local=/192.168.0.42:52584, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250910-10:59:29: Initiated logon request
+20250910-10:59:29: Disconnecting: Encountered END_OF_STREAM
+20250910-10:59:33: MINA session created: local=/192.168.0.42:52585, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250910-10:59:34: Initiated logon request
+20250910-10:59:34: Disconnecting: Encountered END_OF_STREAM
+20250910-11:01:25: Session FIX.4.4:CLIENT17->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250910-11:01:25: Created session: FIX.4.4:CLIENT17->BROKER1
+20250910-11:01:26: Configured socket addresses for session: [/192.168.0.37:9877]
+20250910-11:01:26: MINA session created: local=/192.168.0.42:52600, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250910-11:01:27: Initiated logon request
+20250910-11:01:27: Received logon
+20250910-11:01:27: Received ResendRequest FROM: 46 TO: infinity
+20250910-11:01:27: Sent SequenceReset TO: 49
+20250910-11:04:24: Session FIX.4.4:CLIENT17->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250910-11:04:24: Created session: FIX.4.4:CLIENT17->BROKER1
+20250910-11:04:25: Configured socket addresses for session: [/192.168.0.37:9877]
+20250910-11:04:25: MINA session created: local=/192.168.0.42:52629, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250910-11:04:26: Initiated logon request
+20250910-11:04:26: Received logon
+20250910-11:04:36: Session FIX.4.4:CLIENT17->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250910-11:04:36: Created session: FIX.4.4:CLIENT17->BROKER1
+20250910-11:04:36: Configured socket addresses for session: [/192.168.0.37:9877]
+20250910-11:04:36: MINA session created: local=/192.168.0.42:52638, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250910-11:04:37: Initiated logon request
+20250910-11:04:37: Received logon
+20250910-11:05:27: Session FIX.4.4:CLIENT17->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250910-11:05:27: Created session: FIX.4.4:CLIENT17->BROKER1
+20250910-11:05:27: Configured socket addresses for session: [/192.168.0.37:9877]
+20250910-11:05:27: MINA session created: local=/192.168.0.42:52661, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250910-11:05:28: Initiated logon request
+20250910-11:05:28: Received logon
+20250910-11:13:58: Session FIX.4.4:CLIENT17->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250910-11:13:58: Created session: FIX.4.4:CLIENT17->BROKER1
+20250910-11:13:58: Configured socket addresses for session: [/192.168.0.37:9877]
+20250910-11:13:58: MINA session created: local=/192.168.0.42:52739, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250910-11:13:59: Initiated logon request
+20250910-11:13:59: Received logon
+20250910-11:13:59: MsgSeqNum too high, expecting 65 but received 67: 8=FIX.4.49=7135=A34=6749=BROKER152=20250910-11:13:59.23856=CLIENT1798=0108=3010=091
+20250910-11:13:59: Enqueued at pos 67: 8=FIX.4.49=7135=A34=6749=BROKER152=20250910-11:13:59.23856=CLIENT1798=0108=3010=091
+20250910-11:13:59: Sent ResendRequest FROM: 65 TO: infinity
+20250910-11:14:00: ResendRequest for messages FROM 65 TO 66 has been satisfied.
+20250910-11:14:00: Processing queued message: 67

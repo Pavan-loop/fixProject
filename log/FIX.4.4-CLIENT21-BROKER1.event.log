@@ -1,0 +1,148 @@
+20250910-11:16:38: Session FIX.4.4:CLIENT21->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250910-11:16:38: Created session: FIX.4.4:CLIENT21->BROKER1
+20250910-11:16:38: Configured socket addresses for session: [/192.168.0.37:9877]
+20250910-11:16:38: MINA session created: local=/192.168.0.42:52790, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250910-11:16:39: Initiated logon request
+20250910-11:16:39: Received logon
+20250910-11:18:42: Session FIX.4.4:CLIENT21->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250910-11:18:42: Created session: FIX.4.4:CLIENT21->BROKER1
+20250910-11:18:42: Configured socket addresses for session: [/192.168.0.37:9877]
+20250910-11:18:42: MINA session created: local=/192.168.0.42:52812, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250910-11:18:44: Initiated logon request
+20250910-11:18:44: Received logon
+20250910-11:19:52: Disconnecting: Socket exception (/192.168.0.37:9877): java.net.SocketException: Connection reset
+20250910-11:19:55: Pending connection not established after 2002 ms.
+20250910-11:19:56: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250910-11:20:00: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250910-11:20:05: Pending connection not established after 2002 ms.
+20250910-11:20:06: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250910-11:20:10: Pending connection not established after 2001 ms.
+20250910-11:20:11: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250910-11:20:15: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250910-11:20:20: Pending connection not established after 2002 ms.
+20250910-11:20:21: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250910-11:20:24: MINA session created: local=/192.168.0.42:52825, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250910-11:20:24: Initiated logon request
+20250910-11:20:24: Received logon
+20250910-11:21:32: java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because the return value of "com.example.fixclient1.model.ReceivedData.getExecType()" is null
+quickfix.RuntimeError: java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because the return value of "com.example.fixclient1.model.ReceivedData.getExecType()" is null
+	at quickfix.Session.next(Session.java:1181)
+	at quickfix.Session.next(Session.java:1228)
+	at quickfix.mina.SingleThreadedEventHandlingStrategy$SessionMessageEvent.processMessage(SingleThreadedEventHandlingStrategy.java:163)
+	at quickfix.mina.SingleThreadedEventHandlingStrategy.block(SingleThreadedEventHandlingStrategy.java:113)
+	at quickfix.mina.SingleThreadedEventHandlingStrategy.lambda$blockInThread$1(SingleThreadedEventHandlingStrategy.java:145)
+	at quickfix.mina.SingleThreadedEventHandlingStrategy$ThreadAdapter$RunnableWrapper.run(SingleThreadedEventHandlingStrategy.java:267)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because the return value of "com.example.fixclient1.model.ReceivedData.getExecType()" is null
+	at com.example.fixclient1.HelloController.addValue(HelloController.java:106)
+	at com.example.fixclient1.fix.ClientApp.onMessage(ClientApp.java:92)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at quickfix.MessageCracker$Invoker.Invoke(MessageCracker.java:115)
+	at quickfix.MessageCracker.crack(MessageCracker.java:127)
+	at com.example.fixclient1.fix.ClientApp.fromApp(ClientApp.java:61)
+	at quickfix.Session.fromCallback(Session.java:1869)
+	at quickfix.Session.verify(Session.java:1813)
+	at quickfix.Session.verify(Session.java:1884)
+	at quickfix.Session.next(Session.java:1071)
+	... 6 more
+Cause: Cannot invoke "String.equals(Object)" because the return value of "com.example.fixclient1.model.ReceivedData.getExecType()" is null
+java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because the return value of "com.example.fixclient1.model.ReceivedData.getExecType()" is null
+	at com.example.fixclient1.HelloController.addValue(HelloController.java:106)
+	at com.example.fixclient1.fix.ClientApp.onMessage(ClientApp.java:92)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at quickfix.MessageCracker$Invoker.Invoke(MessageCracker.java:115)
+	at quickfix.MessageCracker.crack(MessageCracker.java:127)
+	at com.example.fixclient1.fix.ClientApp.fromApp(ClientApp.java:61)
+	at quickfix.Session.fromCallback(Session.java:1869)
+	at quickfix.Session.verify(Session.java:1813)
+	at quickfix.Session.verify(Session.java:1884)
+	at quickfix.Session.next(Session.java:1071)
+	at quickfix.Session.next(Session.java:1228)
+	at quickfix.mina.SingleThreadedEventHandlingStrategy$SessionMessageEvent.processMessage(SingleThreadedEventHandlingStrategy.java:163)
+	at quickfix.mina.SingleThreadedEventHandlingStrategy.block(SingleThreadedEventHandlingStrategy.java:113)
+	at quickfix.mina.SingleThreadedEventHandlingStrategy.lambda$blockInThread$1(SingleThreadedEventHandlingStrategy.java:145)
+	at quickfix.mina.SingleThreadedEventHandlingStrategy$ThreadAdapter$RunnableWrapper.run(SingleThreadedEventHandlingStrategy.java:267)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+
+20250910-11:23:45: Session FIX.4.4:CLIENT21->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250910-11:23:45: Created session: FIX.4.4:CLIENT21->BROKER1
+20250910-11:23:45: Configured socket addresses for session: [/192.168.0.37:9877]
+20250910-11:23:45: MINA session created: local=/192.168.0.42:52841, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250910-11:23:46: Initiated logon request
+20250910-11:23:46: Received logon
+20250910-11:23:46: MsgSeqNum too high, expecting 12 but received 14: 8=FIX.4.49=7135=A34=1449=BROKER152=20250910-11:23:46.19456=CLIENT2198=0108=3010=076
+20250910-11:23:46: Enqueued at pos 14: 8=FIX.4.49=7135=A34=1449=BROKER152=20250910-11:23:46.19456=CLIENT2198=0108=3010=076
+20250910-11:23:46: Sent ResendRequest FROM: 12 TO: infinity
+20250910-11:23:46: java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because the return value of "com.example.fixclient1.model.ReceivedData.getExecType()" is null
+quickfix.RuntimeError: java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because the return value of "com.example.fixclient1.model.ReceivedData.getExecType()" is null
+	at quickfix.Session.next(Session.java:1181)
+	at quickfix.Session.next(Session.java:1228)
+	at quickfix.mina.SingleThreadedEventHandlingStrategy$SessionMessageEvent.processMessage(SingleThreadedEventHandlingStrategy.java:163)
+	at quickfix.mina.SingleThreadedEventHandlingStrategy.block(SingleThreadedEventHandlingStrategy.java:113)
+	at quickfix.mina.SingleThreadedEventHandlingStrategy.lambda$blockInThread$1(SingleThreadedEventHandlingStrategy.java:145)
+	at quickfix.mina.SingleThreadedEventHandlingStrategy$ThreadAdapter$RunnableWrapper.run(SingleThreadedEventHandlingStrategy.java:267)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because the return value of "com.example.fixclient1.model.ReceivedData.getExecType()" is null
+	at com.example.fixclient1.HelloController.addValue(HelloController.java:106)
+	at com.example.fixclient1.fix.ClientApp.onMessage(ClientApp.java:92)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at quickfix.MessageCracker$Invoker.Invoke(MessageCracker.java:115)
+	at quickfix.MessageCracker.crack(MessageCracker.java:127)
+	at com.example.fixclient1.fix.ClientApp.fromApp(ClientApp.java:61)
+	at quickfix.Session.fromCallback(Session.java:1869)
+	at quickfix.Session.verify(Session.java:1813)
+	at quickfix.Session.verify(Session.java:1884)
+	at quickfix.Session.next(Session.java:1071)
+	... 6 more
+Cause: Cannot invoke "String.equals(Object)" because the return value of "com.example.fixclient1.model.ReceivedData.getExecType()" is null
+java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because the return value of "com.example.fixclient1.model.ReceivedData.getExecType()" is null
+	at com.example.fixclient1.HelloController.addValue(HelloController.java:106)
+	at com.example.fixclient1.fix.ClientApp.onMessage(ClientApp.java:92)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at quickfix.MessageCracker$Invoker.Invoke(MessageCracker.java:115)
+	at quickfix.MessageCracker.crack(MessageCracker.java:127)
+	at com.example.fixclient1.fix.ClientApp.fromApp(ClientApp.java:61)
+	at quickfix.Session.fromCallback(Session.java:1869)
+	at quickfix.Session.verify(Session.java:1813)
+	at quickfix.Session.verify(Session.java:1884)
+	at quickfix.Session.next(Session.java:1071)
+	at quickfix.Session.next(Session.java:1228)
+	at quickfix.mina.SingleThreadedEventHandlingStrategy$SessionMessageEvent.processMessage(SingleThreadedEventHandlingStrategy.java:163)
+	at quickfix.mina.SingleThreadedEventHandlingStrategy.block(SingleThreadedEventHandlingStrategy.java:113)
+	at quickfix.mina.SingleThreadedEventHandlingStrategy.lambda$blockInThread$1(SingleThreadedEventHandlingStrategy.java:145)
+	at quickfix.mina.SingleThreadedEventHandlingStrategy$ThreadAdapter$RunnableWrapper.run(SingleThreadedEventHandlingStrategy.java:267)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+
+20250910-11:23:46: MsgSeqNum too high, expecting 12 but received 13: 8=FIX.4.49=22535=834=1343=Y49=BROKER152=20250910-11:23:46.22256=CLIENT21122=20250910-11:21:58.6366=011=123175750329260614=017=exec69746462749430037=ORD175750331863639=854=155=TITAN58=Rejected: Executor Stopped150=8151=40010=014
+20250910-11:23:46: Enqueued at pos 13: 8=FIX.4.49=22535=834=1343=Y49=BROKER152=20250910-11:23:46.22256=CLIENT21122=20250910-11:21:58.6366=011=123175750329260614=017=exec69746462749430037=ORD175750331863639=854=155=TITAN58=Rejected: Executor Stopped150=8151=40010=014
+20250910-11:23:46: Already sent ResendRequest FROM: 12 TO: 13.  Not sending another.
+20250910-11:23:46: MsgSeqNum too high, expecting 12 but received 14: 8=FIX.4.49=10235=434=1443=Y49=BROKER152=20250910-11:23:46.22356=CLIENT21122=20250910-11:23:46.22336=15123=Y10=127
+20250910-11:23:46: Enqueued at pos 14: 8=FIX.4.49=10235=434=1443=Y49=BROKER152=20250910-11:23:46.22356=CLIENT21122=20250910-11:23:46.22336=15123=Y10=127
+20250910-11:23:46: Already sent ResendRequest FROM: 12 TO: 13.  Not sending another.
+20250910-11:24:17: MsgSeqNum too high, expecting 12 but received 15: 8=FIX.4.49=5935=034=1549=BROKER152=20250910-11:24:16.68956=CLIENT2110=048
+20250910-11:24:17: Enqueued at pos 15: 8=FIX.4.49=5935=034=1549=BROKER152=20250910-11:24:16.68956=CLIENT2110=048
+20250910-11:24:17: Already sent ResendRequest FROM: 12 TO: 13.  Not sending another.
+20250910-11:24:21: MsgSeqNum too high, expecting 12 but received 16: 8=FIX.4.49=19335=834=1649=BROKER152=20250910-11:24:21.28556=CLIENT216=20011=123175750346170714=20017=exec69760727683110037=ORD175750346128539=254=155=TATAMOTORS58=Order fully filled150=2151=010=247
+20250910-11:24:21: Enqueued at pos 16: 8=FIX.4.49=19335=834=1649=BROKER152=20250910-11:24:21.28556=CLIENT216=20011=123175750346170714=20017=exec69760727683110037=ORD175750346128539=254=155=TATAMOTORS58=Order fully filled150=2151=010=247
+20250910-11:24:21: Already sent ResendRequest FROM: 12 TO: 13.  Not sending another.
+20250910-11:24:30: MsgSeqNum too high, expecting 12 but received 17: 8=FIX.4.49=21735=834=1749=BROKER152=20250910-11:24:29.74356=CLIENT216=20011=123175750347018414=10017=exec69761573382840037=ORD175750346974239=154=155=TATAMOTORS58=Partial fill, remaining added to pending150=1151=10010=065
+20250910-11:24:30: Enqueued at pos 17: 8=FIX.4.49=21735=834=1749=BROKER152=20250910-11:24:29.74356=CLIENT216=20011=123175750347018414=10017=exec69761573382840037=ORD175750346974239=154=155=TATAMOTORS58=Partial fill, remaining added to pending150=1151=10010=065
+20250910-11:24:30: Already sent ResendRequest FROM: 12 TO: 13.  Not sending another.
+20250910-11:25:00: MsgSeqNum too high, expecting 12 but received 18: 8=FIX.4.49=5935=034=1849=BROKER152=20250910-11:25:00.12056=CLIENT2110=025
+20250910-11:25:00: Enqueued at pos 18: 8=FIX.4.49=5935=034=1849=BROKER152=20250910-11:25:00.12056=CLIENT2110=025
+20250910-11:25:00: Already sent ResendRequest FROM: 12 TO: 13.  Not sending another.
+20250910-11:25:30: MsgSeqNum too high, expecting 12 but received 19: 8=FIX.4.49=5935=034=1949=BROKER152=20250910-11:25:30.12656=CLIENT2110=035
+20250910-11:25:30: Enqueued at pos 19: 8=FIX.4.49=5935=034=1949=BROKER152=20250910-11:25:30.12656=CLIENT2110=035
+20250910-11:25:30: Already sent ResendRequest FROM: 12 TO: 13.  Not sending another.
