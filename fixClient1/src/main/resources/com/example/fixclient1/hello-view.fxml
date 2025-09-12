@@ -29,7 +29,7 @@
                 <TableColumn fx:id="orderType" text="OrderType" />
                 <TableColumn fx:id="orderPrice" text="OrderPrice" styleClass="price" />
                 <TableColumn fx:id="orderQuantity" text="OrderQuantity" styleClass="quantity" />
-                <TableColumn fx:id="sendCol" text="Action" />
+                <TableColumn fx:id="sendCol" text="Action" styleClass="action"/>
             </columns>
         </TableView>
         <AnchorPane layoutY="137.0" prefHeight="263.0" prefWidth="600.0"
@@ -43,8 +43,8 @@
                         <TableColumn fx:id="reSymbol" text="Symbol" />
                         <TableColumn fx:id="reSide" text="Side" />
                         <TableColumn fx:id="reStatus" text="Status" />
-                        <TableColumn fx:id="rePrice" text="Price" />
-                        <TableColumn fx:id="reQuantity" text="Quantity" />
+                        <TableColumn fx:id="rePrice" text="Price" styleClass="price" />
+                        <TableColumn fx:id="reQuantity" text="Quantity" styleClass="quantity" />
                     </columns>
                 </TableView>
                 <Label layoutX="14.0" layoutY="6.0" text="Cancel Request" />

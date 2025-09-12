@@ -11,7 +11,6 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
-import javafx.scene.control.cell.PropertyValueFactory;
 import quickfix.ConfigError;
 import quickfix.Initiator;
 import quickfix.SessionNotFound;
@@ -63,14 +62,13 @@ public class HelloController {
         tableReceivedData.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY);
         tableOrder.setEditable(true);
 
-        // Editable columns setup
+
         TableUtils.addRow(symbol, side, orderType, orderPrice, orderQuantity);
         ReceiveDataUtils.addRow(reClient, reSymbol, reSide, reStatus, rePrice, reQuantity);
 
-        // Start with one empty row
+
         orderData.add(new TableOrder("", "", "", 0.0, 0));
 
-        // Add "Send" button per row
         addSendButtonToTable();
 
         TableUtils.tableMovement(tableOrder);
@@ -106,20 +104,37 @@ public class HelloController {
     private void handleSendOrder(TableOrder order) throws SessionNotFound {
         if (order == null) return;
 
-        // Validation
-        if (order.getSymbol() == null || order.getSymbol().isBlank()
-                || order.getSide() == null || order.getSide().isBlank()
-                || order.getOrderType() == null || order.getOrderType().isBlank()
-                || order.getOrderPrice() <= 0
-                || order.getOrderQuantity() <= 0) {
-            showAlert("Invalid Order", "Please fill all fields before sending.");
+        boolean valid = true;
+
+        if (order.getSymbol() == null || order.getSymbol().isBlank()) {
+            TableUtils.highlightCell(order, symbol, tableOrder);
+            valid = false;
+        }
+        if (order.getSide() == null || order.getSide().isBlank()) {
+            TableUtils.highlightCell(order, side, tableOrder);
+            valid = false;
+        }
+        if (order.getOrderType() == null || order.getOrderType().isBlank()) {
+            TableUtils.highlightCell(order, orderType, tableOrder);
+            valid = false;
+        }
+        if (order.getOrderPrice() <= 0) {
+            TableUtils.highlightCell(order, orderPrice, tableOrder);
+            valid = false;
+        }
+        if (order.getOrderQuantity() <= 0) {
+            TableUtils.highlightCell(order, orderQuantity, tableOrder);
+            valid = false;
+        }
+
+        if (!valid) {
+            showAlert("Invalid Order", "Please fill all required fields.");
             return;
         }
 
-        System.out.println("📤 Sending order: " + order);
+        System.out.println("Sending order: " + order);
         SendFixMessage.send(initiator, order);
 
-        // Add new empty row if this was the last one
         if (orderData.indexOf(order) == orderData.size() - 1) {
             orderData.add(new TableOrder("", "", "", 0.0, 0));
         }

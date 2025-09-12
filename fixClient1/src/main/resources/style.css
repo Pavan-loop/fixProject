@@ -35,3 +35,12 @@
 .table-cell.price, .table-cell.quantity {
     -fx-alignment: CENTER-RIGHT;
 }
+
+.table-cell.action {
+    -fx-alignment: CENTER;
+}
+
+.table-cell.error-cell {
+    -fx-background-color: lightcoral;
+    -fx-text-fill: white;
+}
