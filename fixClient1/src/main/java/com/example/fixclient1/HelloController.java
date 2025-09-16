@@ -52,7 +52,7 @@ public class HelloController {
     public void initialize() {
         try {
             ClientApp clientApp = new ClientApp(
-                    "C:\\Users\\nichiuser\\Desktop\\fixProject\\fixClient1\\src\\main\\java\\com\\example\\fixclient1\\fix\\initiator.cfg",
+                    "C:\\Users\\nichiuser\\Downloads\\fixProject\\fixClient1\\src\\main\\java\\com\\example\\fixclient1\\fix\\initiator.cfg",
                     this
             );
             initiator = clientApp.start();
@@ -88,7 +88,10 @@ public class HelloController {
                             setStyle("-fx-background-color: lightcoral; -fx-text-fill: white;");
                             break;
                         case "Partial Fill":
-                            setStyle("-fx-background-color: khaki; -fx-text-fill: black;");
+                            setStyle("-fx-background-color: orange; -fx-text-fill: black;");
+                            break;
+                        case "Cancelled":
+                            setStyle("-fx-background-color: gray; -fx-text-fill: white;");
                             break;
                         case "New":
                             setStyle("-fx-background-color: lightblue; -fx-text-fill: black;");
@@ -230,11 +233,6 @@ public class HelloController {
         });
     }
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> c5ea980da0409a1eb7e37df85fa10b46fb68abeb
     public void onCancel() {
         String clOrdId = cancelOrder.getValue();
         if (clOrdId == null || clOrdId.isEmpty()) {
