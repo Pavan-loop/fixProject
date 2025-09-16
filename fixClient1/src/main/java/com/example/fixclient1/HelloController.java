@@ -88,10 +88,7 @@ public class HelloController {
                             setStyle("-fx-background-color: lightcoral; -fx-text-fill: white;");
                             break;
                         case "Partial Fill":
-                            setStyle("-fx-background-color: orange; -fx-text-fill: black;");
-                            break;
-                        case "Cancelled":
-                            setStyle("-fx-background-color: gray; -fx-text-fill: white;");
+                            setStyle("-fx-background-color: khaki; -fx-text-fill: black;");
                             break;
                         case "New":
                             setStyle("-fx-background-color: lightblue; -fx-text-fill: black;");
@@ -232,6 +229,7 @@ public class HelloController {
             }
         });
     }
+
 
     public void onCancel() {
         String clOrdId = cancelOrder.getValue();
