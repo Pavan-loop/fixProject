@@ -1,46 +1,118 @@
-.header{
-    -fx-border-color: transparent transparent black transparent;
+/* -------------------- Root & Base -------------------- */
+.root {
+    -fx-font-family: "Segoe UI", "Roboto", "Arial";
+    -fx-font-size: 13px;
+    -fx-background-color: #f8f9fb;
+    -fx-focus-color: #3a7afe;
+    -fx-faint-focus-color: rgba(58, 122, 254, 0.2);
+}
+
+/* -------------------- Table Header -------------------- */
+.table-view .column-header-background {
+    -fx-background-color: linear-gradient(to bottom, #f1f3f6, #e2e6ec);
+    -fx-border-color: #d0d4da transparent #c0c4ca transparent;
     -fx-border-width: 0 0 1 0;
 }
 
-.root {
-    -fx-focus-color: transparent;
-    -fx-faint-focus-color: transparent;
+.table-view .column-header .label {
+    -fx-text-fill: #000000;   /* Black header text */
+    -fx-font-weight: 600;
+    -fx-padding: 6 8;
 }
 
-.table-cell:focused{
-    -fx-background-color: transparent;
-    -fx-border-color: transparent;
-    -fx-border-width: 0;
-}
-
-.text-field{
-    -fx-background-color: transparent;
-    -fx-border-color: transparent;
-    -fx-focus-color: transparent;
-    -fx-faint-focus-color: transparent;
-}
-
-.combo-box, .combo-box:focused{
-    -fx-background-color: transparent;
-    -fx-border-color: transparent;
-    -fx-focus-color: transparent;
-    -fx-faint-focus-color: transparent;
-}
-
+/* -------------------- Table Cells -------------------- */
 .table-cell {
     -fx-alignment: CENTER_LEFT;
+    -fx-padding: 6 8;
+    -fx-border-color: transparent transparent #e5e8ed transparent;
+    -fx-border-width: 0 0 1 0;
+    -fx-text-fill: #000000;   /* Black normal text */
 }
 
-.table-cell.price, .table-cell.quantity, .table-cell.remaining {
+.table-row-cell {
+    -fx-background-color: #ffffff;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #fafbfc;
+}
+
+.table-row-cell:hover {
+    -fx-background-color: #eaf2ff;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #d6e4ff;
+}
+
+.table-row-cell:selected .table-cell {
+    -fx-text-fill: #000000;   /* Keep black text when selected */
+}
+
+/* Align specific numeric columns */
+.table-cell.price, .table-cell.quantity {
     -fx-alignment: CENTER-RIGHT;
 }
 
-.table-cell.action {
-    -fx-alignment: CENTER;
+/* -------------------- TextField -------------------- */
+.text-field {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #cbd2d9;
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+    -fx-padding: 4 6;
+    -fx-text-fill: #000000;   /* Black input text */
 }
 
-.table-cell.error-cell {
-    -fx-background-color: lightcoral;
-    -fx-text-fill: white;
+.text-field:focused {
+    -fx-border-color: #3a7afe;
+    -fx-background-color: #ffffff;
+}
+
+/* -------------------- ComboBox -------------------- */
+.combo-box {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #cbd2d9;
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+    -fx-padding: 2 6;
+    -fx-text-fill: #000000;   /* Black text */
+}
+
+.combo-box:focused {
+    -fx-border-color: #3a7afe;
+    -fx-background-color: #ffffff;
+}
+
+/* -------------------- Buttons -------------------- */
+.button {
+    -fx-background-color: linear-gradient(to bottom, #f9f9f9, #e6e6e6);
+    -fx-border-color: #c1c7d0;
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+    -fx-padding: 4 10;
+    -fx-text-fill: #000000;   /* Black button text */
+}
+
+.button:hover {
+    -fx-background-color: #f0f0f0;
+}
+
+.button:pressed {
+    -fx-background-color: #d6d6d6;
+}
+
+/* -------------------- Scrollbars (Optional) -------------------- */
+.scroll-bar:vertical,
+.scroll-bar:horizontal {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: #c1c7d0;
+    -fx-background-radius: 4;
+}
+
+.scroll-bar .thumb:hover {
+    -fx-background-color: #a5acb5;
 }
