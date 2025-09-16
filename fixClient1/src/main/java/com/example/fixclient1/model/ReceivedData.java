@@ -1,5 +1,7 @@
 package com.example.fixclient1.model;
 
+import javafx.beans.property.SimpleIntegerProperty;
+
 public class ReceivedData {
     private String clOrdId;
     private String symbol;
@@ -7,19 +9,20 @@ public class ReceivedData {
     private String execType;
     private Double price;
     private Integer quantity;
+    private Integer remainingQuantity;
 
-    public ReceivedData(String clOrdId, String symbol, String side, String execType, Double price, Integer quantity) {
+    public ReceivedData(String clOrdId, String symbol, String side, String execType,
+                        Double price, Integer quantity, Integer remainingQuantity) {
         this.clOrdId = clOrdId;
         this.symbol = symbol;
         this.side = side;
         this.execType = execType;
         this.price = price;
         this.quantity = quantity;
+        this.remainingQuantity = remainingQuantity;
     }
 
-    public ReceivedData() {
-
-    }
+    public ReceivedData() {}
 
     public String getClOrdId() {
         return clOrdId;
@@ -69,15 +72,24 @@ public class ReceivedData {
         this.side = side;
     }
 
+    public Integer getRemainingQuantity() {
+        return remainingQuantity;
+    }
+
+    public void setRemainingQuantity(Integer remainingQuantity) {
+        this.remainingQuantity = remainingQuantity;
+    }
+
     @Override
     public String toString() {
         return "ReceivedData{" +
-                ", client id='" + clOrdId + '\'' +
+                "clientId='" + clOrdId + '\'' +
                 ", symbol='" + symbol + '\'' +
                 ", side='" + side + '\'' +
                 ", execType='" + execType + '\'' +
                 ", price=" + price +
                 ", quantity=" + quantity +
+                ", remainingQuantity=" + remainingQuantity +
                 '}';
     }
 }

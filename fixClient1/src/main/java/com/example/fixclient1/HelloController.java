@@ -7,6 +7,7 @@ import com.example.fixclient1.model.TableOrder;
 import com.example.fixclient1.model.TableReceivedData;
 import com.example.fixclient1.utils.ReceiveDataUtils;
 import com.example.fixclient1.utils.TableUtils;
+import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -36,6 +37,7 @@ public class HelloController {
     @FXML private TableColumn<TableReceivedData, String> reStatus;
     @FXML private TableColumn<TableReceivedData, Double> rePrice;
     @FXML private TableColumn<TableReceivedData, Integer> reQuantity;
+    @FXML private TableColumn<TableReceivedData, Integer> reRemainingQuantity;
 
     @FXML private ComboBox<String> cancelOrder;
 
@@ -62,15 +64,11 @@ public class HelloController {
         tableReceivedData.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY);
         tableOrder.setEditable(true);
 
-
         TableUtils.addRow(symbol, side, orderType, orderPrice, orderQuantity);
-        ReceiveDataUtils.addRow(reClient, reSymbol, reSide, reStatus, rePrice, reQuantity);
-
+        ReceiveDataUtils.addRow(reClient, reSymbol, reSide, reStatus, rePrice, reQuantity, reRemainingQuantity);
 
         orderData.add(new TableOrder("", "", "", 0.0, 0));
-
         addSendButtonToTable();
-
         TableUtils.tableMovement(tableOrder);
     }
 
@@ -140,39 +138,74 @@ public class HelloController {
         }
     }
 
+    /**
+     * Add or update received execution report in the table
+     */
     public void addValue(ReceivedData data) {
-        tableReceivedData.setItems(receivedOrderData);
-        uData.add(data);
-        receivedOrderData.add(new TableReceivedData(
-                data.getClOrdId(),
-                data.getSymbol(),
-                data.getSide(),
-                String.valueOf(data.getExecType()),
-                data.getPrice(),
-                data.getQuantity()
-        ));
+        Platform.runLater(() -> {
+            tableReceivedData.setItems(receivedOrderData);
+            uData.add(data);
 
-        if ("Partial Fill".equals(data.getExecType())) {
-            cancelOrder.getItems().add(data.getClOrdId());
-        }
+            Optional<TableReceivedData> existing = receivedOrderData.stream()
+                    .filter(row -> row.getClientOrdId().equals(data.getClOrdId()))
+                    .findFirst();
+
+            if (existing.isPresent()) {
+                TableReceivedData row = existing.get();
+                row.setExecType(data.getExecType());
+                row.setPrice(data.getPrice());
+                row.setQuantity(data.getQuantity());
+                row.setRemainingQuantity(data.getRemainingQuantity());
+                receivedOrderData.remove(row);
+                receivedOrderData.add(row);
+            } else {
+                receivedOrderData.add(new TableReceivedData(
+                        data.getClOrdId(),
+                        data.getSymbol(),
+                        data.getSide(),
+                        data.getExecType(),
+                        data.getPrice(),
+                        data.getQuantity(),
+                        data.getRemainingQuantity()
+                ));
+            }
+
+            System.out.println("Updated TableReceivedData: ClOrdId=" + data.getClOrdId()
+                    + ", FilledQty=" + data.getQuantity()
+                    + ", LeavesQty=" + data.getRemainingQuantity());
+
+            if ("Partial Fill".equals(data.getExecType())) {
+                if (!cancelOrder.getItems().contains(data.getClOrdId())) {
+                    cancelOrder.getItems().add(data.getClOrdId());
+                }
+            }
+        });
     }
 
-    public void onCancel() throws SessionNotFound {
+
+    public void onCancel() {
         String clOrdId = cancelOrder.getValue();
-        if (clOrdId == null || clOrdId.isEmpty()) return;
+        if (clOrdId == null || clOrdId.isEmpty()) {
+            showAlert("Cancel Error", "Please select a valid order to cancel.");
+            return;
+        }
 
         Optional<ReceivedData> find = uData.stream()
                 .filter(f -> f.getClOrdId().equals(clOrdId))
                 .findFirst();
 
-        find.ifPresent(data -> {
-            System.out.println("Cancelling Order => ClOrdId: " + data.getClOrdId() + ", Symbol: " + data.getSymbol());
-            try {
-                SendFixMessage.cancelOrder(initiator, data);
-            } catch (SessionNotFound e) {
-                throw new RuntimeException(e);
-            }
-        });
+        if (find.isEmpty()) {
+            showAlert("Cancel Error", "Order with ClOrdId not found.");
+            return;
+        }
+
+        ReceivedData data = find.get();
+        System.out.println("Cancelling Order => ClOrdId: " + data.getClOrdId() + ", Symbol: " + data.getSymbol());
+        try {
+            SendFixMessage.cancelOrder(initiator, data);
+        } catch (SessionNotFound e) {
+            showAlert("FIX Session Error", "Could not cancel order due to session error.");
+        }
     }
 
     private void showAlert(String title, String content) {

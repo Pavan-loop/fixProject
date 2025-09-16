@@ -32,7 +32,7 @@
     -fx-alignment: CENTER_LEFT;
 }
 
-.table-cell.price, .table-cell.quantity {
+.table-cell.price, .table-cell.quantity, .table-cell.remaining {
     -fx-alignment: CENTER-RIGHT;
 }
 

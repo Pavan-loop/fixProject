@@ -45,6 +45,7 @@
                         <TableColumn fx:id="reStatus" text="Status" />
                         <TableColumn fx:id="rePrice" text="Price" styleClass="price" />
                         <TableColumn fx:id="reQuantity" text="Quantity" styleClass="quantity" />
+                        <TableColumn fx:id="reRemainingQuantity" text="Remaining Quantity" styleClass="remaining"/>
                     </columns>
                 </TableView>
                 <Label layoutX="14.0" layoutY="6.0" text="Cancel Request" />

@@ -1,6 +1,5 @@
 package com.example.fixclient1.utils;
 
-import com.example.fixclient1.model.TableOrder;
 import com.example.fixclient1.model.TableReceivedData;
 import javafx.beans.property.SimpleDoubleProperty;
 import javafx.beans.property.SimpleIntegerProperty;
@@ -14,7 +13,8 @@ public class ReceiveDataUtils {
             TableColumn<TableReceivedData, String> side,
             TableColumn<TableReceivedData, String> orderType,
             TableColumn<TableReceivedData, Double> price,
-            TableColumn<TableReceivedData, Integer> quantity
+            TableColumn<TableReceivedData, Integer> quantity,
+            TableColumn<TableReceivedData, Integer> remainingQuantity
     ) {
         client.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().getClientOrdId()));
         symbol.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().getSymbol()));
@@ -22,5 +22,6 @@ public class ReceiveDataUtils {
         orderType.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().getExecType()));
         price.setCellValueFactory(cellData -> new SimpleDoubleProperty(cellData.getValue().getPrice()).asObject());
         quantity.setCellValueFactory(cellData -> new SimpleIntegerProperty(cellData.getValue().getQuantity()).asObject());
+        remainingQuantity.setCellValueFactory(cellData -> new SimpleIntegerProperty(cellData.getValue().getRemainingQuantity()).asObject());
     }
 }

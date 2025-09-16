@@ -2,6 +2,7 @@ package com.example.fixclient1.fix;
 
 import com.example.fixclient1.HelloController;
 import com.example.fixclient1.model.ReceivedData;
+import javafx.application.Platform;
 import quickfix.*;
 import quickfix.fix44.ExecutionReport;
 
@@ -80,17 +81,38 @@ public class ClientApp extends MessageCracker implements Application {
         conStatus.put("F", "Trade Cancel");
         conStatus.put("H", "Trade Bust");
 
+        int cumQty = (int) executionReport.getCumQty().getValue();
+        int leavesQty;
+        try {
+            leavesQty = (int) executionReport.getLeavesQty().getValue();
+        } catch (FieldNotFound e) {
+            leavesQty = (int) (executionReport.getOrderQty().getValue() - executionReport.getCumQty().getValue());
+        }
+
+
+        char sideChar = executionReport.getSide().getValue();
+        String side;
+        switch (sideChar) {
+            case '1': side = "BUY"; break;
+            case '2': side = "SELL"; break;
+            case '5': side = "SELL_SHORT"; break;
+            default: side = "UNKNOWN"; break;
+        }
+
         ReceivedData data = new ReceivedData(
                 executionReport.getClOrdID().getValue(),
                 executionReport.getSymbol().getValue(),
-                String.valueOf(executionReport.getSide().getValue()).equalsIgnoreCase("1") ? "BUY" : "SELL",
+                side,
                 conStatus.get(status),
                 executionReport.getAvgPx().getValue(),
-                (int) executionReport.getCumQty().getValue()
+                cumQty,
+                leavesQty
         );
 
-        controller.addValue(data);
+
+        Platform.runLater(() -> controller.addValue(data));
     }
+
 
     public Initiator start() {
         try {

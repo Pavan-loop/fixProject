@@ -11,14 +11,29 @@ public class TableReceivedData {
     private SimpleStringProperty execType;
     private SimpleDoubleProperty price;
     private SimpleIntegerProperty quantity;
+    private SimpleIntegerProperty remainingQuantity;
 
-    public TableReceivedData(String clientOrdId, String symbol, String side, String execType, Double price, Integer quantity) {
+    public TableReceivedData(String clientOrdId, String symbol, String side,
+                             String execType, Double price, Integer quantity, Integer remainingQuantity) {
         this.clientOrdId = new SimpleStringProperty(clientOrdId);
         this.symbol = new SimpleStringProperty(symbol);
         this.side = new SimpleStringProperty(side);
         this.execType = new SimpleStringProperty(execType);
         this.price = new SimpleDoubleProperty(price);
         this.quantity = new SimpleIntegerProperty(quantity);
+        this.remainingQuantity = new SimpleIntegerProperty(remainingQuantity);
+    }
+
+    public String getClientOrdId() {
+        return clientOrdId.get();
+    }
+
+    public SimpleStringProperty clientOrdIdProperty() {
+        return clientOrdId;
+    }
+
+    public void setClientOrdId(String clientOrdId) {
+        this.clientOrdId.set(clientOrdId);
     }
 
     public String getSymbol() {
@@ -31,6 +46,18 @@ public class TableReceivedData {
 
     public void setSymbol(String symbol) {
         this.symbol.set(symbol);
+    }
+
+    public String getSide() {
+        return side.get();
+    }
+
+    public SimpleStringProperty sideProperty() {
+        return side;
+    }
+
+    public void setSide(String side) {
+        this.side.set(side);
     }
 
     public String getExecType() {
@@ -69,39 +96,28 @@ public class TableReceivedData {
         this.quantity.set(quantity);
     }
 
-    public String getSide() {
-        return side.get();
+    public int getRemainingQuantity() {
+        return remainingQuantity.get();
     }
 
-    public SimpleStringProperty sideProperty() {
-        return side;
+    public SimpleIntegerProperty remainingQuantityProperty() {
+        return remainingQuantity;
     }
 
-    public void setSide(String side) {
-        this.side.set(side);
-    }
-
-    public String getClientOrdId() {
-        return clientOrdId.get();
-    }
-
-    public SimpleStringProperty clientOrdIdProperty() {
-        return clientOrdId;
-    }
-
-    public void setClientOrdId(String clientOrdId) {
-        this.clientOrdId.set(clientOrdId);
+    public void setRemainingQuantity(int remainingQuantity) {
+        this.remainingQuantity.set(remainingQuantity);
     }
 
     @Override
     public String toString() {
         return "TableReceivedData{" +
-                "client Id=" + clientOrdId +
+                "clientOrdId=" + clientOrdId +
                 ", symbol=" + symbol +
                 ", side=" + side +
                 ", execType=" + execType +
                 ", price=" + price +
                 ", quantity=" + quantity +
+                ", remainingQuantity=" + remainingQuantity +
                 '}';
     }
 }
