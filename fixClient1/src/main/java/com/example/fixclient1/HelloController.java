@@ -12,6 +12,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
 import quickfix.ConfigError;
 import quickfix.Initiator;
 import quickfix.SessionNotFound;
@@ -51,7 +52,7 @@ public class HelloController {
     public void initialize() {
         try {
             ClientApp clientApp = new ClientApp(
-                    "C:\\Users\\nichiuser\\Downloads\\fixProject\\fixClient1\\src\\main\\java\\com\\example\\fixclient1\\fix\\initiator.cfg",
+                    "C:\\Users\\nichiuser\\Desktop\\fixProject\\fixClient1\\src\\main\\java\\com\\example\\fixclient1\\fix\\initiator.cfg",
                     this
             );
             initiator = clientApp.start();
@@ -66,6 +67,39 @@ public class HelloController {
 
         TableUtils.addRow(symbol, side, orderType, orderPrice, orderQuantity);
         ReceiveDataUtils.addRow(reClient, reSymbol, reSide, reStatus, rePrice, reQuantity, reRemainingQuantity);
+
+        // 🔹 Add background color logic for status column
+        reStatus.setCellFactory(column -> new TableCell<>() {
+            @Override
+            protected void updateItem(String status, boolean empty) {
+                super.updateItem(status, empty);
+
+                if (empty || status == null) {
+                    setText(null);
+                    setStyle(""); // reset
+                } else {
+                    setText(status);
+
+                    switch (status) {
+                        case "Fill":
+                            setStyle("-fx-background-color: lightgreen; -fx-text-fill: black;");
+                            break;
+                        case "Rejected":
+                            setStyle("-fx-background-color: lightcoral; -fx-text-fill: white;");
+                            break;
+                        case "Partial Fill":
+                            setStyle("-fx-background-color: khaki; -fx-text-fill: black;");
+                            break;
+                        case "New":
+                            setStyle("-fx-background-color: lightblue; -fx-text-fill: black;");
+                            break;
+                        default:
+                            setStyle(""); // default
+                            break;
+                    }
+                }
+            }
+        });
 
         orderData.add(new TableOrder("", "", "", 0.0, 0));
         addSendButtonToTable();
@@ -181,7 +215,6 @@ public class HelloController {
             }
         });
     }
-
 
     public void onCancel() {
         String clOrdId = cancelOrder.getValue();
