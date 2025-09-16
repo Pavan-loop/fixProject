@@ -146,9 +146,22 @@ public class HelloController {
             tableReceivedData.setItems(receivedOrderData);
             uData.add(data);
 
+            // Try to match existing row by ClOrdId
             Optional<TableReceivedData> existing = receivedOrderData.stream()
                     .filter(row -> row.getClientOrdId().equals(data.getClOrdId()))
                     .findFirst();
+
+            // If status = Canceled, also try matching by original order ID from uData
+            if (existing.isEmpty() && "Canceled".equals(data.getExecType())) {
+                Optional<ReceivedData> orig = uData.stream()
+                        .filter(o -> o.getClOrdId().equals(data.getClOrdId()))
+                        .findFirst();
+                if (orig.isPresent()) {
+                    existing = receivedOrderData.stream()
+                            .filter(row -> row.getClientOrdId().equals(orig.get().getClOrdId()))
+                            .findFirst();
+                }
+            }
 
             if (existing.isPresent()) {
                 TableReceivedData row = existing.get();
@@ -171,6 +184,7 @@ public class HelloController {
             }
 
             System.out.println("Updated TableReceivedData: ClOrdId=" + data.getClOrdId()
+                    + ", Status=" + data.getExecType()
                     + ", FilledQty=" + data.getQuantity()
                     + ", LeavesQty=" + data.getRemainingQuantity());
 
@@ -181,6 +195,7 @@ public class HelloController {
             }
         });
     }
+
 
 
     public void onCancel() {

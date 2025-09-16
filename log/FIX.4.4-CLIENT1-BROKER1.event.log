@@ -2420,3 +2420,84 @@
 20250915-11:22:25: Sent ResendRequest FROM: 189 TO: infinity
 20250915-11:22:25: ResendRequest for messages FROM 189 TO 190 has been satisfied.
 20250915-11:22:25: Processing queued message: 191
+20250916-09:07:32: Session FIX.4.4:CLIENT1->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250916-09:07:32: Session state is not current; resetting FIX.4.4:CLIENT1->BROKER1
+20250916-09:07:32: Created session: FIX.4.4:CLIENT1->BROKER1
+20250916-09:07:33: Configured socket addresses for session: [/192.168.0.37:9877]
+20250916-09:07:33: MINA session created: local=/192.168.0.42:52583, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250916-09:07:34: Initiated logon request
+20250916-09:07:34: Received logon
+20250916-09:30:55: Session FIX.4.4:CLIENT1->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250916-09:30:55: Created session: FIX.4.4:CLIENT1->BROKER1
+20250916-09:30:55: Configured socket addresses for session: [/192.168.0.37:9877]
+20250916-09:30:55: MINA session created: local=/192.168.0.42:53206, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250916-09:30:57: Initiated logon request
+20250916-09:30:57: Received logon
+20250916-09:51:47: Received logout request
+20250916-09:51:47: Sent logout response
+20250916-09:51:47: Disconnecting: Received logout request
+20250916-09:51:50: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250916-09:51:55: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250916-09:51:58: MINA session created: local=/192.168.0.42:53388, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250916-09:51:58: Initiated logon request
+20250916-09:51:59: Received logon
+20250916-09:52:20: Session FIX.4.4:CLIENT1->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250916-09:52:20: Created session: FIX.4.4:CLIENT1->BROKER1
+20250916-09:52:20: Configured socket addresses for session: [/192.168.0.37:9877]
+20250916-09:52:20: MINA session created: local=/192.168.0.42:53393, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250916-09:52:21: Initiated logon request
+20250916-09:52:21: Received logon
+20250916-10:04:56: Session FIX.4.4:CLIENT1->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250916-10:04:56: Created session: FIX.4.4:CLIENT1->BROKER1
+20250916-10:04:56: Configured socket addresses for session: [/192.168.0.37:9877]
+20250916-10:04:56: MINA session created: local=/192.168.0.42:53476, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250916-10:04:57: Initiated logon request
+20250916-10:04:57: Received logon
+20250916-10:04:57: MsgSeqNum too high, expecting 127 but received 129: 8=FIX.4.49=7135=A34=12949=BROKER152=20250916-10:04:55.82556=CLIENT198=0108=3010=086
+20250916-10:04:57: Enqueued at pos 129: 8=FIX.4.49=7135=A34=12949=BROKER152=20250916-10:04:55.82556=CLIENT198=0108=3010=086
+20250916-10:04:57: Sent ResendRequest FROM: 127 TO: infinity
+20250916-10:04:57: Received SequenceReset FROM: 127 TO: 130
+20250916-10:04:58: Received logout request
+20250916-10:04:58: Sent logout response
+20250916-10:04:58: Disconnecting: Received logout request
+20250916-10:05:03: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250916-10:05:08: MINA session created: local=/192.168.0.42:53481, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250916-10:05:08: Initiated logon request
+20250916-10:05:08: Received logon
+20250916-10:08:12: Received logout request
+20250916-10:08:12: Sent logout response
+20250916-10:08:12: Disconnecting: Received logout request
+20250916-10:08:14: Pending connection not established after 2002 ms.
+20250916-10:08:15: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250916-10:08:19: Pending connection not established after 2002 ms.
+20250916-10:08:20: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250916-10:08:22: MINA session created: local=/192.168.0.42:53527, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250916-10:08:23: Initiated logon request
+20250916-10:08:23: Received logon
+20250916-10:29:39: Received logout request
+20250916-10:29:39: Sent logout response
+20250916-10:29:39: Disconnecting: Received logout request
+20250916-10:29:42: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250916-10:29:47: Pending connection not established after 2002 ms.
+20250916-10:29:48: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250916-10:29:50: MINA session created: local=/192.168.0.42:53709, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250916-10:29:50: Initiated logon request
+20250916-10:29:50: Received logon
+20250916-10:32:50: Session FIX.4.4:CLIENT1->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250916-10:32:50: Created session: FIX.4.4:CLIENT1->BROKER1
+20250916-10:32:51: Configured socket addresses for session: [/192.168.0.37:9877]
+20250916-10:32:51: MINA session created: local=/192.168.0.42:53754, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250916-10:32:52: Initiated logon request
+20250916-10:32:52: Received logon
+20250916-10:38:44: Session FIX.4.4:CLIENT1->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250916-10:38:44: Created session: FIX.4.4:CLIENT1->BROKER1
+20250916-10:38:44: Configured socket addresses for session: [/192.168.0.37:9877]
+20250916-10:38:44: MINA session created: local=/192.168.0.42:53827, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250916-10:38:45: Initiated logon request
+20250916-10:38:45: Received logon
+20250916-10:39:51: Session FIX.4.4:CLIENT1->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250916-10:39:51: Created session: FIX.4.4:CLIENT1->BROKER1
+20250916-10:39:51: Configured socket addresses for session: [/192.168.0.37:9877]
+20250916-10:39:52: MINA session created: local=/192.168.0.42:53849, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250916-10:39:53: Initiated logon request
+20250916-10:39:53: Received logon

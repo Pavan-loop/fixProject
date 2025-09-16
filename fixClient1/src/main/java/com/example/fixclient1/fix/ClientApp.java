@@ -63,20 +63,13 @@ public class ClientApp extends MessageCracker implements Application {
     }
 
     public void onMessage(ExecutionReport executionReport, SessionID sessionID) throws FieldNotFound {
-        System.out.println("Client receives execution report " +
-                "Symbol=" + executionReport.getSymbol().getValue() +
-                "OrderId=" + executionReport.getOrderID().getValue() +
-                ", Side=" + executionReport.getSide().getValue() +
-                ", Status=" + executionReport.getOrdStatus().getValue() +
-                ", FilledQty=" + executionReport.getCumQty().getValue() +
-                ", AvgPx=" + executionReport.getAvgPx().getValue());
-
         String status = String.valueOf(executionReport.getOrdStatus().getValue());
+
         Map<String, String> conStatus = new HashMap<>();
         conStatus.put("0", "New");
         conStatus.put("1", "Partial Fill");
         conStatus.put("2", "Fill");
-        conStatus.put("3", "Canceled");
+        conStatus.put("4", "Canceled");   // ✅ include cancel code
         conStatus.put("8", "Rejected");
         conStatus.put("F", "Trade Cancel");
         conStatus.put("H", "Trade Bust");
@@ -89,7 +82,6 @@ public class ClientApp extends MessageCracker implements Application {
             leavesQty = (int) (executionReport.getOrderQty().getValue() - executionReport.getCumQty().getValue());
         }
 
-
         char sideChar = executionReport.getSide().getValue();
         String side;
         switch (sideChar) {
@@ -99,19 +91,25 @@ public class ClientApp extends MessageCracker implements Application {
             default: side = "UNKNOWN"; break;
         }
 
+        // ✅ Use OrigClOrdID if status = 4 (Canceled)
+        String clOrdId = executionReport.getClOrdID().getValue();
+        if ("4".equals(status) && executionReport.isSetField(41)) { // 41 = OrigClOrdID
+            clOrdId = executionReport.getOrigClOrdID().getValue();
+        }
+
         ReceivedData data = new ReceivedData(
-                executionReport.getClOrdID().getValue(),
+                clOrdId,   // ✅ now maps back to original order row
                 executionReport.getSymbol().getValue(),
                 side,
-                conStatus.get(status),
-                executionReport.getAvgPx().getValue(),
+                conStatus.getOrDefault(status, status),
+                executionReport.isSetAvgPx() ? executionReport.getAvgPx().getValue() : 0.0,
                 cumQty,
                 leavesQty
         );
 
-
         Platform.runLater(() -> controller.addValue(data));
     }
+
 
 
     public Initiator start() {
