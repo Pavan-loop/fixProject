@@ -10,17 +10,21 @@ import quickfix.fix44.NewOrderSingle;
 import quickfix.fix44.OrderCancelRequest;
 
 import java.time.LocalDateTime;
-import java.time.ZoneId;
-import java.util.Date;
 
 public class SendFixMessage {
-    public static void send(Initiator initiator, TableOrder tableOrder) throws SessionNotFound {
 
+    /**
+     * Send a new order to the broker and return a ReceivedData object
+     * initialized with correct quantities.
+     */
+    public static ReceivedData send(Initiator initiator, TableOrder tableOrder) throws SessionNotFound {
         char side = tableOrder.getSide().equalsIgnoreCase("BUY") ? Side.BUY : Side.SELL;
         char orderType = tableOrder.getOrderType().equalsIgnoreCase("LIMIT") ? OrdType.LIMIT : OrdType.MARKET;
 
+        String clOrdId = "123" + System.currentTimeMillis();
+
         NewOrderSingle newOrder = new NewOrderSingle(
-                new ClOrdID("123" + System.currentTimeMillis()),
+                new ClOrdID(clOrdId),
                 new Side(side),
                 new TransactTime(),
                 new OrdType(orderType)
@@ -31,18 +35,38 @@ public class SendFixMessage {
         newOrder.set(new Price(tableOrder.getOrderPrice()));
 
         Session.sendToTarget(newOrder, initiator.getSessions().get(0));
+
+        // Initialize ReceivedData for tracking quantities
+        ReceivedData data = new ReceivedData();
+        data.setClOrdId(clOrdId);
+        data.setSymbol(tableOrder.getSymbol());
+        data.setSide(tableOrder.getSide());
+        data.setExecType("New");
+        data.setPrice(tableOrder.getOrderPrice());
+        data.setOriginalQuantity(tableOrder.getOrderQuantity());
+        data.setFilledQuantity(0);
+        data.setRemainingQuantity(tableOrder.getOrderQuantity());
+        data.setCanceledQuantity(0);
+        data.setSessionID(initiator.getSessions().get(0));
+
+        return data;
     }
 
+    /**
+     * Send a cancel request for an existing order.
+     */
     public static void cancelOrder(Initiator initiator, ReceivedData receivedData) throws SessionNotFound {
         String cancelClOrdId = "CL" + System.currentTimeMillis();
+
         OrderCancelRequest cancelRequest = new OrderCancelRequest(
                 new OrigClOrdID(receivedData.getClOrdId()),
                 new ClOrdID(cancelClOrdId),
-                new Side(receivedData.getSide().equals("BUY") ? Side.BUY : Side.SELL),
+                new Side(receivedData.getSide().equalsIgnoreCase("BUY") ? Side.BUY : Side.SELL),
                 new TransactTime(LocalDateTime.now())
         );
-        cancelRequest.set(new Symbol(receivedData.getSymbol()));
-        Session.sendToTarget(cancelRequest, initiator.getSessions().get(0));
 
+        cancelRequest.set(new Symbol(receivedData.getSymbol()));
+
+        Session.sendToTarget(cancelRequest, receivedData.getSessionID());
     }
 }

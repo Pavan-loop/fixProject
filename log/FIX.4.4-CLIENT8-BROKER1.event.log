@@ -84,3 +84,11 @@
 20250916-10:58:40: Received logout request: MsgSeqNum too low, expecting 35 but received 26
 20250916-10:58:40: Sent logout response
 20250916-10:58:40: Disconnecting: Received logout request: MsgSeqNum too low, expecting 35 but received 26
+20250916-11:23:17: Session FIX.4.4:CLIENT8->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250916-11:23:17: Created session: FIX.4.4:CLIENT8->BROKER1
+20250916-11:23:17: Configured socket addresses for session: [/192.168.0.37:9877]
+20250916-11:23:17: MINA session created: local=/192.168.0.42:50246, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250916-11:23:18: Initiated logon request
+20250916-11:23:18: Received logout request: MsgSeqNum too low, expecting 52 but received 28
+20250916-11:23:18: Sent logout response
+20250916-11:23:18: Disconnecting: Received logout request: MsgSeqNum too low, expecting 52 but received 28

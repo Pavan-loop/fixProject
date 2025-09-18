@@ -86,3 +86,639 @@
 20250916-10:07:53: Received logout request: MsgSeqNum too low, expecting 57 but received 35
 20250916-10:07:53: Sent logout response
 20250916-10:07:53: Disconnecting: Received logout request: MsgSeqNum too low, expecting 57 but received 35
+20250917-09:21:02: Session FIX.4.4:CLIENT4->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250917-09:21:02: Session state is not current; resetting FIX.4.4:CLIENT4->BROKER1
+20250917-09:21:02: Created session: FIX.4.4:CLIENT4->BROKER1
+20250917-09:21:02: Configured socket addresses for session: [/192.168.0.37:9877]
+20250917-09:21:02: MINA session created: local=/192.168.0.42:50201, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250917-09:21:03: Initiated logon request
+20250917-09:21:03: Received logon
+20250917-09:23:23: Session FIX.4.4:CLIENT4->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250917-09:23:23: Created session: FIX.4.4:CLIENT4->BROKER1
+20250917-09:23:24: Configured socket addresses for session: [/192.168.0.37:9877]
+20250917-09:23:24: MINA session created: local=/192.168.0.42:50225, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250917-09:23:25: Initiated logon request
+20250917-09:23:25: Received logon
+20250917-09:24:12: Session FIX.4.4:CLIENT4->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250917-09:24:13: Created session: FIX.4.4:CLIENT4->BROKER1
+20250917-09:24:13: Configured socket addresses for session: [/192.168.0.37:9877]
+20250917-09:24:13: MINA session created: local=/192.168.0.42:50238, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250917-09:24:14: Initiated logon request
+20250917-09:24:14: Received logon
+20250917-09:26:27: Session FIX.4.4:CLIENT4->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250917-09:26:27: Created session: FIX.4.4:CLIENT4->BROKER1
+20250917-09:26:27: Configured socket addresses for session: [/192.168.0.37:9877]
+20250917-09:26:27: MINA session created: local=/192.168.0.42:50250, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250917-09:26:28: Initiated logon request
+20250917-09:26:28: Received logon
+20250917-09:26:28: MsgSeqNum too high, expecting 18 but received 20: 8=FIX.4.49=7035=A34=2049=BROKER152=20250917-09:26:28.30856=CLIENT498=0108=3010=039
+20250917-09:26:28: Enqueued at pos 20: 8=FIX.4.49=7035=A34=2049=BROKER152=20250917-09:26:28.30856=CLIENT498=0108=3010=039
+20250917-09:26:28: Sent ResendRequest FROM: 18 TO: infinity
+20250917-09:26:28: ResendRequest for messages FROM 18 TO 19 has been satisfied.
+20250917-09:26:28: Processing queued message: 20
+20250917-09:26:49: Session FIX.4.4:CLIENT4->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250917-09:26:49: Created session: FIX.4.4:CLIENT4->BROKER1
+20250917-09:26:49: Configured socket addresses for session: [/192.168.0.37:9877]
+20250917-09:26:49: MINA session created: local=/192.168.0.42:50255, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250917-09:26:50: Initiated logon request
+20250917-09:26:50: Received logon
+20250917-09:28:58: Received logout request
+20250917-09:28:58: Sent logout response
+20250917-09:28:58: Disconnecting: Received logout request
+20250917-09:29:01: Pending connection not established after 2008 ms.
+20250917-09:29:02: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250917-09:29:04: MINA session created: local=/192.168.0.42:50546, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250917-09:29:04: Initiated logon request
+20250917-09:29:04: Received logon
+20250917-09:32:51: Received logout request
+20250917-09:32:51: Sent logout response
+20250917-09:32:51: Disconnecting: Received logout request
+20250917-09:32:54: Pending connection not established after 2001 ms.
+20250917-09:32:55: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250917-09:32:57: MINA session created: local=/192.168.0.42:50753, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250917-09:32:58: Initiated logon request
+20250917-09:32:58: Received logon
+20250917-09:44:21: Session FIX.4.4:CLIENT4->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250917-09:44:21: Created session: FIX.4.4:CLIENT4->BROKER1
+20250917-09:44:21: Configured socket addresses for session: [/192.168.0.37:9877]
+20250917-09:44:21: MINA session created: local=/192.168.0.42:50842, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250917-09:44:22: Initiated logon request
+20250917-09:44:22: Received logon
+20250917-09:46:53: Session FIX.4.4:CLIENT4->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250917-09:46:53: Created session: FIX.4.4:CLIENT4->BROKER1
+20250917-09:46:53: Configured socket addresses for session: [/192.168.0.37:9877]
+20250917-09:46:53: MINA session created: local=/192.168.0.42:50860, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250917-09:46:55: Initiated logon request
+20250917-09:46:55: Received logon
+20250917-09:48:12: Session FIX.4.4:CLIENT4->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250917-09:48:12: Created session: FIX.4.4:CLIENT4->BROKER1
+20250917-09:48:13: Configured socket addresses for session: [/192.168.0.37:9877]
+20250917-09:48:13: MINA session created: local=/192.168.0.42:50868, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250917-09:48:14: Initiated logon request
+20250917-09:48:14: Received logon
+20250917-09:58:58: Session FIX.4.4:CLIENT4->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250917-09:58:58: Created session: FIX.4.4:CLIENT4->BROKER1
+20250917-09:58:58: Configured socket addresses for session: [/192.168.0.37:9877]
+20250917-09:58:58: MINA session created: local=/192.168.0.42:50980, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250917-09:58:59: Initiated logon request
+20250917-09:58:59: Received logon
+20250917-10:05:56: Received logout request
+20250917-10:05:56: Sent logout response
+20250917-10:05:56: Disconnecting: Received logout request
+20250917-10:05:59: Pending connection not established after 2002 ms.
+20250917-10:06:00: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250917-10:06:04: Pending connection not established after 2002 ms.
+20250917-10:06:05: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250917-10:06:09: Pending connection not established after 2002 ms.
+20250917-10:06:10: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250917-10:06:14: Pending connection not established after 2001 ms.
+20250917-10:06:15: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250917-10:06:19: Pending connection not established after 2002 ms.
+20250917-10:06:20: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250917-10:06:24: Pending connection not established after 2002 ms.
+20250917-10:06:25: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250917-10:06:29: Pending connection not established after 2002 ms.
+20250917-10:06:30: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250917-10:06:34: Pending connection not established after 2001 ms.
+20250917-10:06:35: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250917-10:06:39: Pending connection not established after 2002 ms.
+20250917-10:06:40: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250917-10:06:44: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250917-10:06:49: Pending connection not established after 2002 ms.
+20250917-10:06:50: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250917-10:06:54: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250917-10:07:00: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250917-10:07:05: Pending connection not established after 2001 ms.
+20250917-10:07:06: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250917-10:07:11: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250917-10:07:18: Pending connection not established after 4002 ms.
+20250917-10:07:19: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250917-10:07:22: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250917-10:07:27: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250917-10:07:32: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250917-10:07:37: Pending connection not established after 2001 ms.
+20250917-10:07:38: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250917-10:07:42: Pending connection not established after 2016 ms.
+20250917-10:07:43: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250917-10:07:49: MINA session created: local=/192.168.0.42:51104, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250917-10:07:49: Initiated logon request
+20250917-10:07:49: Received logon
+20250917-10:08:16: Received logout request
+20250917-10:08:16: Sent logout response
+20250917-10:08:16: Disconnecting: Received logout request
+20250917-10:08:19: Pending connection not established after 2002 ms.
+20250917-10:08:20: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250917-10:08:24: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250917-10:08:29: Pending connection not established after 2001 ms.
+20250917-10:08:30: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250917-10:08:34: Pending connection not established after 2001 ms.
+20250917-10:08:35: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250917-10:08:39: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250917-10:08:44: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250917-10:08:49: Pending connection not established after 2002 ms.
+20250917-10:08:50: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250917-10:08:54: Pending connection not established after 2002 ms.
+20250917-10:08:55: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250917-10:08:59: Pending connection not established after 2001 ms.
+20250917-10:09:00: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250917-10:09:04: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250917-10:09:09: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250917-10:09:14: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250917-10:09:19: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250917-10:09:24: Pending connection not established after 2004 ms.
+20250917-10:09:25: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250917-10:09:29: Pending connection not established after 2005 ms.
+20250917-10:09:30: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250917-10:09:34: Pending connection not established after 2004 ms.
+20250917-10:09:35: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250917-10:09:39: Pending connection not established after 2008 ms.
+20250917-10:09:40: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250917-10:09:45: Pending connection not established after 2004 ms.
+20250917-10:09:46: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250917-10:09:50: Pending connection not established after 2005 ms.
+20250917-10:09:51: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250917-10:09:55: Pending connection not established after 2004 ms.
+20250917-10:09:56: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250917-10:10:04: Session FIX.4.4:CLIENT4->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250917-10:10:04: Created session: FIX.4.4:CLIENT4->BROKER1
+20250917-10:10:04: Configured socket addresses for session: [/192.168.0.37:9877]
+20250917-10:10:06: Pending connection not established after 2011 ms.
+20250917-10:10:07: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250917-10:10:11: Pending connection not established after 2002 ms.
+20250917-10:10:12: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250917-10:10:16: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250917-10:10:22: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250917-10:10:27: Pending connection not established after 2002 ms.
+20250917-10:10:28: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250917-10:10:31: MINA session created: local=/192.168.0.42:51151, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250917-10:10:31: Initiated logon request
+20250917-10:10:31: Received logon
+20250917-10:10:31: Received ResendRequest FROM: 113 TO: infinity
+20250917-10:10:31: Resending message: 113
+20250917-10:10:31: Sent SequenceReset TO: 115
+20250917-10:10:43: Session FIX.4.4:CLIENT4->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250917-10:10:43: Created session: FIX.4.4:CLIENT4->BROKER1
+20250917-10:10:43: Configured socket addresses for session: [/192.168.0.37:9877]
+20250917-10:10:43: MINA session created: local=/192.168.0.42:51155, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250917-10:10:44: Initiated logon request
+20250917-10:10:44: Received logon
+20250917-10:56:10: Session FIX.4.4:CLIENT4->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250917-10:56:10: Created session: FIX.4.4:CLIENT4->BROKER1
+20250917-10:56:10: Configured socket addresses for session: [/192.168.0.37:9877]
+20250917-10:56:10: MINA session created: local=/192.168.0.42:51469, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250917-10:56:11: Initiated logon request
+20250917-10:56:11: Received logon
+20250917-10:56:11: MsgSeqNum too high, expecting 140 but received 141: 8=FIX.4.49=7135=A34=14149=BROKER152=20250917-10:56:11.44656=CLIENT498=0108=3010=082
+20250917-10:56:11: Enqueued at pos 141: 8=FIX.4.49=7135=A34=14149=BROKER152=20250917-10:56:11.44656=CLIENT498=0108=3010=082
+20250917-10:56:11: Sent ResendRequest FROM: 140 TO: infinity
+20250917-10:56:11: ResendRequest for messages FROM 140 TO 140 has been satisfied.
+20250917-10:56:11: Reject sent for message 140: Conditionally Required Field Missing: tag=38
+20250917-10:56:11: Processing queued message: 141
+20250917-10:56:29: Reject sent for message 142: Conditionally Required Field Missing: tag=38
+20250917-10:56:43: Reject sent for message 143: Conditionally Required Field Missing: tag=38
+20250917-10:56:43: Received logout request
+20250917-10:56:43: Sent logout response
+20250917-10:56:43: Disconnecting: Received logout request
+20250917-10:56:43: MINA session created: local=/192.168.0.42:51473, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250917-10:56:43: Disconnecting: Encountered END_OF_STREAM
+20250917-10:56:49: MINA session created: local=/192.168.0.42:51475, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250917-10:56:49: Initiated logon request
+20250917-10:56:49: Received logon
+20250917-10:56:57: Session FIX.4.4:CLIENT4->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250917-10:56:57: Created session: FIX.4.4:CLIENT4->BROKER1
+20250917-10:56:57: Configured socket addresses for session: [/192.168.0.37:9877]
+20250917-10:56:57: MINA session created: local=/192.168.0.42:51479, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250917-10:56:58: Initiated logon request
+20250917-10:56:58: Received logon
+20250917-10:57:16: Reject sent for message 147: Conditionally Required Field Missing: tag=38
+20250917-10:58:19: Session FIX.4.4:CLIENT4->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250917-10:58:19: Created session: FIX.4.4:CLIENT4->BROKER1
+20250917-10:58:20: Configured socket addresses for session: [/192.168.0.37:9877]
+20250917-10:58:20: MINA session created: local=/192.168.0.42:51493, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250917-10:58:21: Initiated logon request
+20250917-10:58:21: Received logon
+20250917-10:58:21: MsgSeqNum too high, expecting 149 but received 150: 8=FIX.4.49=7135=A34=15049=BROKER152=20250917-10:58:21.24756=CLIENT498=0108=3010=084
+20250917-10:58:21: Enqueued at pos 150: 8=FIX.4.49=7135=A34=15049=BROKER152=20250917-10:58:21.24756=CLIENT498=0108=3010=084
+20250917-10:58:21: Sent ResendRequest FROM: 149 TO: infinity
+20250917-10:58:21: ResendRequest for messages FROM 149 TO 149 has been satisfied.
+20250917-10:58:21: Reject sent for message 149: Conditionally Required Field Missing: tag=38
+20250917-10:58:21: Processing queued message: 150
+20250917-11:08:44: Session FIX.4.4:CLIENT4->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250917-11:08:44: Created session: FIX.4.4:CLIENT4->BROKER1
+20250917-11:08:44: Configured socket addresses for session: [/192.168.0.37:9877]
+20250917-11:08:44: MINA session created: local=/192.168.0.42:51618, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250917-11:08:45: Initiated logon request
+20250917-11:08:45: Received logon
+20250917-11:09:06: Reject sent for message 172: Conditionally Required Field Missing: tag=38
+20250917-11:19:29: Reject sent for message 193: Conditionally Required Field Missing: tag=38
+20250917-11:19:29: Received logout request
+20250917-11:19:29: Sent logout response
+20250917-11:19:29: Disconnecting: Received logout request
+20250917-11:19:32: Pending connection not established after 2002 ms.
+20250917-11:19:33: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250917-11:19:37: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250917-11:19:40: MINA session created: local=/192.168.0.42:51705, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250917-11:19:40: Initiated logon request
+20250917-11:19:40: Received logon
+20250917-11:19:51: Session FIX.4.4:CLIENT4->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250917-11:19:51: Created session: FIX.4.4:CLIENT4->BROKER1
+20250917-11:19:51: Configured socket addresses for session: [/192.168.0.37:9877]
+20250917-11:19:51: MINA session created: local=/192.168.0.42:51711, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250917-11:19:53: Initiated logon request
+20250917-11:19:53: Received logon
+20250917-11:20:07: Reject sent for message 197: Conditionally Required Field Missing: tag=38
+20250917-11:20:40: Session FIX.4.4:CLIENT4->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250917-11:20:40: Created session: FIX.4.4:CLIENT4->BROKER1
+20250917-11:20:40: Configured socket addresses for session: [/192.168.0.37:9877]
+20250917-11:20:40: MINA session created: local=/192.168.0.42:51719, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250917-11:20:41: Initiated logon request
+20250917-11:20:41: Received logon
+20250917-11:20:53: Reject sent for message 200: Conditionally Required Field Missing: tag=38
+20250917-11:26:11: Received logout request
+20250917-11:26:11: Sent logout response
+20250917-11:26:11: Disconnecting: Received logout request
+20250917-11:26:14: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250917-11:26:18: MINA session created: local=/192.168.0.42:51764, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250917-11:26:18: Initiated logon request
+20250917-11:26:18: Received logon
+20250917-11:29:30: Session FIX.4.4:CLIENT4->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250917-11:29:30: Created session: FIX.4.4:CLIENT4->BROKER1
+20250917-11:29:30: Configured socket addresses for session: [/192.168.0.37:9877]
+20250917-11:29:30: MINA session created: local=/192.168.0.42:51794, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250917-11:29:31: Initiated logon request
+20250917-11:29:31: Received logon
+20250917-11:59:29: Session FIX.4.4:CLIENT4->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250917-11:59:29: Created session: FIX.4.4:CLIENT4->BROKER1
+20250917-11:59:29: Configured socket addresses for session: [/192.168.0.37:9877]
+20250917-11:59:29: MINA session created: local=/192.168.0.42:52023, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250917-11:59:30: Initiated logon request
+20250917-11:59:30: Received logon
+20250917-12:00:47: Session FIX.4.4:CLIENT4->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250917-12:00:47: Created session: FIX.4.4:CLIENT4->BROKER1
+20250917-12:00:48: Configured socket addresses for session: [/192.168.0.37:9877]
+20250917-12:00:48: MINA session created: local=/192.168.0.42:52037, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250917-12:00:49: Initiated logon request
+20250917-12:00:49: Received logon
+20250917-12:02:38: Session FIX.4.4:CLIENT4->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250917-12:02:38: Created session: FIX.4.4:CLIENT4->BROKER1
+20250917-12:02:38: Configured socket addresses for session: [/192.168.0.37:9877]
+20250917-12:02:38: MINA session created: local=/192.168.0.42:52066, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250917-12:02:40: Initiated logon request
+20250917-12:02:40: Received logon
+20250917-12:03:34: Received logout request
+20250917-12:03:34: Sent logout response
+20250917-12:03:34: Disconnecting: Received logout request
+20250917-12:03:36: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250917-12:03:45: Session FIX.4.4:CLIENT4->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250917-12:03:45: Created session: FIX.4.4:CLIENT4->BROKER1
+20250917-12:03:46: Configured socket addresses for session: [/192.168.0.37:9877]
+20250917-12:03:46: MINA session created: local=/192.168.0.42:52078, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250917-12:03:47: Initiated logon request
+20250917-12:03:47: Received logon
+20250917-12:28:14: Session FIX.4.4:CLIENT4->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250917-12:28:14: Created session: FIX.4.4:CLIENT4->BROKER1
+20250917-12:28:15: Configured socket addresses for session: [/192.168.0.37:9877]
+20250917-12:28:15: MINA session created: local=/192.168.0.42:52251, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250917-12:30:42: Session FIX.4.4:CLIENT4->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250917-12:30:42: Created session: FIX.4.4:CLIENT4->BROKER1
+20250917-12:30:42: Configured socket addresses for session: [/192.168.0.37:9877]
+20250917-12:30:42: MINA session created: local=/192.168.0.42:52274, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250917-12:34:41: Session FIX.4.4:CLIENT4->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250917-12:34:41: Created session: FIX.4.4:CLIENT4->BROKER1
+20250917-12:34:41: Configured socket addresses for session: [/192.168.0.37:9877]
+20250917-12:34:41: MINA session created: local=/192.168.0.42:52316, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250917-12:34:43: Initiated logon request
+20250917-12:34:43: Received logon
+20250917-12:35:01: Received logout request
+20250917-12:35:01: Sent logout response
+20250917-12:35:01: Disconnecting: Received logout request
+20250917-12:35:04: Pending connection not established after 2001 ms.
+20250917-12:35:05: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250917-12:35:08: MINA session created: local=/192.168.0.42:52321, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250917-12:35:08: Initiated logon request
+20250917-12:35:08: Received logon
+20250917-12:35:23: Reject sent for message 311: Conditionally Required Field Missing: tag=38
+20250918-08:40:24: Session FIX.4.4:CLIENT4->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250918-08:40:24: Session state is not current; resetting FIX.4.4:CLIENT4->BROKER1
+20250918-08:40:24: Created session: FIX.4.4:CLIENT4->BROKER1
+20250918-08:40:25: Configured socket addresses for session: [/192.168.0.37:9877]
+20250918-08:40:27: Pending connection not established after 2027 ms.
+20250918-08:40:30: Pending connection not established after 5029 ms.
+20250918-08:40:33: Pending connection not established after 8031 ms.
+20250918-08:40:38: Pending connection not established after 13033 ms.
+20250918-08:40:41: Pending connection not established after 16035 ms.
+20250918-08:40:46: Pending connection not established after 21037 ms.
+20250918-08:40:47: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20250918-08:40:50: Pending connection not established after 2002 ms.
+20250918-08:40:55: Pending connection not established after 7004 ms.
+20250918-08:41:00: Pending connection not established after 12006 ms.
+20250918-08:41:05: Pending connection not established after 17007 ms.
+20250918-08:41:09: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20250918-08:41:12: Pending connection not established after 2002 ms.
+20250918-08:41:15: Pending connection not established after 5003 ms.
+20250918-08:41:17: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:41:20: Pending connection not established after 2001 ms.
+20250918-08:41:21: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:41:25: Pending connection not established after 2001 ms.
+20250918-08:41:26: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:41:30: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:41:35: Pending connection not established after 2002 ms.
+20250918-08:41:36: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:41:40: Pending connection not established after 2001 ms.
+20250918-08:41:41: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:41:46: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:41:51: Pending connection not established after 2001 ms.
+20250918-08:41:52: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:41:56: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:42:01: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:42:06: Pending connection not established after 2010 ms.
+20250918-08:42:07: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:42:11: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:42:16: Pending connection not established after 2003 ms.
+20250918-08:42:17: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:42:21: Pending connection not established after 2002 ms.
+20250918-08:42:22: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:42:26: Pending connection not established after 2003 ms.
+20250918-08:42:27: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:42:31: Pending connection not established after 2001 ms.
+20250918-08:42:32: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:42:36: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:42:41: Pending connection not established after 2002 ms.
+20250918-08:42:42: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:42:46: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:42:51: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:42:56: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:43:01: Pending connection not established after 2001 ms.
+20250918-08:43:02: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:43:06: Pending connection not established after 2004 ms.
+20250918-08:43:07: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:43:11: Pending connection not established after 2001 ms.
+20250918-08:43:12: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:43:16: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:43:22: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:43:27: Pending connection not established after 2002 ms.
+20250918-08:43:28: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:43:32: Pending connection not established after 2001 ms.
+20250918-08:43:33: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:43:37: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:43:42: Pending connection not established after 2001 ms.
+20250918-08:43:43: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:43:47: Pending connection not established after 2001 ms.
+20250918-08:43:48: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:43:52: Pending connection not established after 2001 ms.
+20250918-08:43:53: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:43:57: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:44:02: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:44:07: Pending connection not established after 2001 ms.
+20250918-08:44:08: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:44:12: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:44:17: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:44:22: Pending connection not established after 2001 ms.
+20250918-08:44:23: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:44:27: Pending connection not established after 2001 ms.
+20250918-08:44:28: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:44:32: Pending connection not established after 2002 ms.
+20250918-08:44:33: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:44:38: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:44:43: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:44:49: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:44:54: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:44:59: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:45:04: Pending connection not established after 2001 ms.
+20250918-08:45:05: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:45:10: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:45:15: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:45:20: Pending connection not established after 2002 ms.
+20250918-08:45:21: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:45:25: Pending connection not established after 2001 ms.
+20250918-08:45:26: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:45:30: Pending connection not established after 2001 ms.
+20250918-08:45:31: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:45:35: Pending connection not established after 2001 ms.
+20250918-08:45:36: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:45:40: Pending connection not established after 2001 ms.
+20250918-08:45:41: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:45:45: Pending connection not established after 2004 ms.
+20250918-08:45:46: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:45:50: Pending connection not established after 2001 ms.
+20250918-08:45:51: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:45:55: Pending connection not established after 2001 ms.
+20250918-08:45:56: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:46:00: Pending connection not established after 2001 ms.
+20250918-08:46:01: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:46:05: Pending connection not established after 2001 ms.
+20250918-08:46:06: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:46:10: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:46:15: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:46:20: Pending connection not established after 2002 ms.
+20250918-08:46:21: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:46:25: Pending connection not established after 2001 ms.
+20250918-08:46:26: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:46:30: Pending connection not established after 2001 ms.
+20250918-08:46:31: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:46:35: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:46:40: Pending connection not established after 2002 ms.
+20250918-08:46:41: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:46:45: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:46:50: Pending connection not established after 2002 ms.
+20250918-08:46:51: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:46:56: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:47:01: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:47:08: Pending connection not established after 4002 ms.
+20250918-08:47:11: Pending connection not established after 7005 ms.
+20250918-08:47:13: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:47:16: Pending connection not established after 2003 ms.
+20250918-08:47:17: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:47:21: Pending connection not established after 2001 ms.
+20250918-08:47:22: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:47:26: Pending connection not established after 2002 ms.
+20250918-08:47:27: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:47:31: Pending connection not established after 2002 ms.
+20250918-08:47:32: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:47:36: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:47:41: Pending connection not established after 2002 ms.
+20250918-08:47:42: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:47:47: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:47:52: Pending connection not established after 2002 ms.
+20250918-08:47:53: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:47:57: Pending connection not established after 2025 ms.
+20250918-08:47:58: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:48:02: Pending connection not established after 2001 ms.
+20250918-08:48:03: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:48:07: Pending connection not established after 2002 ms.
+20250918-08:48:08: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:48:12: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:48:17: Pending connection not established after 2002 ms.
+20250918-08:48:18: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:48:22: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:48:27: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:48:32: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:48:37: Pending connection not established after 2002 ms.
+20250918-08:48:38: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:48:42: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:48:47: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:48:52: Pending connection not established after 2001 ms.
+20250918-08:48:53: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:48:57: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:49:02: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:49:08: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:49:13: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:49:18: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:49:23: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:49:28: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:49:33: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:49:38: Pending connection not established after 2001 ms.
+20250918-08:49:39: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:49:43: Pending connection not established after 2001 ms.
+20250918-08:49:44: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:49:48: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:49:53: Pending connection not established after 2002 ms.
+20250918-08:49:54: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:49:58: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:50:03: Pending connection not established after 2002 ms.
+20250918-08:50:04: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:50:08: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:50:13: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:50:18: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:50:23: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:50:28: Pending connection not established after 2002 ms.
+20250918-08:50:29: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:50:33: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:50:39: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:50:44: Pending connection not established after 2002 ms.
+20250918-08:50:45: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:50:49: Pending connection not established after 2002 ms.
+20250918-08:50:50: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:50:54: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:50:59: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:51:06: Pending connection not established after 4001 ms.
+20250918-08:51:11: Pending connection not established after 9003 ms.
+20250918-08:51:15: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:51:18: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:51:23: Pending connection not established after 2001 ms.
+20250918-08:51:24: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:51:28: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:51:31: MINA session created: local=/192.168.0.42:50743, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250918-08:51:32: Initiated logon request
+20250918-08:51:32: Received logon
+20250918-08:52:03: Disconnecting: Socket exception (/192.168.0.37:9877): java.net.SocketException: Connection reset
+20250918-08:52:03: MINA session created: local=/192.168.0.42:50746, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250918-08:52:04: Initiated logon request
+20250918-08:52:04: Received logon
+20250918-08:52:04: Received ResendRequest FROM: 2 TO: infinity
+20250918-08:52:04: Sent SequenceReset TO: 4
+20250918-08:53:06: Disconnecting: Socket exception (/192.168.0.37:9877): java.net.SocketException: Connection reset
+20250918-08:53:06: MINA session created: local=/192.168.0.42:50752, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250918-08:53:07: Initiated logon request
+20250918-08:53:07: Received logon
+20250918-08:53:07: Received ResendRequest FROM: 5 TO: infinity
+20250918-08:53:07: Sent SequenceReset TO: 7
+20250918-08:53:21: Received logout request
+20250918-08:53:21: Sent logout response
+20250918-08:53:21: Disconnecting: Received logout request
+20250918-08:53:24: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:53:27: MINA session created: local=/192.168.0.42:50755, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250918-08:53:27: Initiated logon request
+20250918-08:53:27: Received logon
+20250918-08:54:08: Session FIX.4.4:CLIENT4->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250918-08:54:08: Created session: FIX.4.4:CLIENT4->BROKER1
+20250918-08:54:09: Configured socket addresses for session: [/192.168.0.37:9877]
+20250918-08:54:09: MINA session created: local=/192.168.0.42:50765, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250918-08:54:10: Initiated logon request
+20250918-08:54:10: Disconnecting: Encountered END_OF_STREAM
+20250918-08:54:14: MINA session created: local=/192.168.0.42:50767, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250918-08:54:15: Initiated logon request
+20250918-08:54:15: Received logon
+20250918-08:54:15: Received ResendRequest FROM: 9 TO: infinity
+20250918-08:54:15: Sent SequenceReset TO: 11
+20250918-08:54:48: Reject sent for message 12: Conditionally Required Field Missing: tag=38
+20250918-08:55:51: Reject sent for message 15: Conditionally Required Field Missing: tag=38
+20250918-08:55:51: Received logout request
+20250918-08:55:51: Sent logout response
+20250918-08:55:51: Disconnecting: Received logout request
+20250918-08:55:53: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-08:55:56: MINA session created: local=/192.168.0.42:50779, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250918-08:55:57: Initiated logon request
+20250918-08:55:57: Received logon
+20250918-08:58:03: Session FIX.4.4:CLIENT4->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250918-08:58:03: Created session: FIX.4.4:CLIENT4->BROKER1
+20250918-08:58:04: Configured socket addresses for session: [/192.168.0.37:9877]
+20250918-08:58:04: MINA session created: local=/192.168.0.42:50807, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250918-08:58:05: Initiated logon request
+20250918-08:58:05: Received logon
+20250918-08:58:37: Reject sent for message 23: Conditionally Required Field Missing: tag=38
+20250918-09:01:37: Session FIX.4.4:CLIENT4->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250918-09:01:37: Created session: FIX.4.4:CLIENT4->BROKER1
+20250918-09:01:37: Configured socket addresses for session: [/192.168.0.37:9877]
+20250918-09:01:37: MINA session created: local=/192.168.0.42:50835, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250918-09:01:38: Initiated logon request
+20250918-09:01:38: Received logon
+20250918-09:01:38: MsgSeqNum too high, expecting 29 but received 30: 8=FIX.4.49=7035=A34=3049=BROKER152=20250918-09:01:38.74256=CLIENT498=0108=3010=037
+20250918-09:01:38: Enqueued at pos 30: 8=FIX.4.49=7035=A34=3049=BROKER152=20250918-09:01:38.74256=CLIENT498=0108=3010=037
+20250918-09:01:38: Sent ResendRequest FROM: 29 TO: infinity
+20250918-09:01:39: ResendRequest for messages FROM 29 TO 29 has been satisfied.
+20250918-09:01:39: Reject sent for message 29: Conditionally Required Field Missing: tag=38
+20250918-09:01:39: Processing queued message: 30
+20250918-09:01:53: Reject sent for message 31: Conditionally Required Field Missing: tag=38
+20250918-09:02:00: Reject sent for message 32: Conditionally Required Field Missing: tag=38
+20250918-09:02:03: Reject sent for message 33: Conditionally Required Field Missing: tag=38
+20250918-09:02:04: Reject sent for message 34: Conditionally Required Field Missing: tag=38
+20250918-09:02:04: Reject sent for message 35: Conditionally Required Field Missing: tag=38
+20250918-09:02:04: Reject sent for message 36: Conditionally Required Field Missing: tag=38
+20250918-09:02:05: Reject sent for message 37: Conditionally Required Field Missing: tag=38
+20250918-09:02:05: Reject sent for message 38: Conditionally Required Field Missing: tag=38
+20250918-09:05:24: Session FIX.4.4:CLIENT4->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250918-09:05:24: Created session: FIX.4.4:CLIENT4->BROKER1
+20250918-09:05:24: Configured socket addresses for session: [/192.168.0.37:9877]
+20250918-09:05:24: MINA session created: local=/192.168.0.42:50877, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250918-09:05:25: Initiated logon request
+20250918-09:05:25: Received logon
+20250918-09:21:44: Session FIX.4.4:CLIENT4->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250918-09:21:44: Created session: FIX.4.4:CLIENT4->BROKER1
+20250918-09:21:44: Configured socket addresses for session: [/192.168.0.37:9877]
+20250918-09:21:44: MINA session created: local=/192.168.0.42:51068, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250918-09:21:46: Initiated logon request
+20250918-09:21:46: Received logon
+20250918-09:24:16: Session FIX.4.4:CLIENT4->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250918-09:24:16: Created session: FIX.4.4:CLIENT4->BROKER1
+20250918-09:24:17: Configured socket addresses for session: [/192.168.0.37:9877]
+20250918-09:24:17: MINA session created: local=/192.168.0.42:51089, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250918-09:24:18: Initiated logon request
+20250918-09:24:18: Received logon
+20250918-09:47:41: Session FIX.4.4:CLIENT4->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250918-09:47:41: Created session: FIX.4.4:CLIENT4->BROKER1
+20250918-09:47:41: Configured socket addresses for session: [/192.168.0.37:9877]
+20250918-09:47:41: MINA session created: local=/192.168.0.42:51372, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250918-09:47:42: Initiated logon request
+20250918-09:47:42: Received logon
+20250918-09:49:28: Received logout request
+20250918-09:49:28: Sent logout response
+20250918-09:49:28: Disconnecting: Received logout request
+20250918-09:49:30: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-09:49:35: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-09:49:40: Pending connection not established after 2002 ms.
+20250918-09:49:41: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-09:49:43: MINA session created: local=/192.168.0.42:51386, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250918-09:49:44: Initiated logon request
+20250918-09:49:44: Received logon
+20250918-09:52:46: Session FIX.4.4:CLIENT4->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250918-09:52:46: Created session: FIX.4.4:CLIENT4->BROKER1
+20250918-09:52:46: Configured socket addresses for session: [/192.168.0.37:9877]
+20250918-09:52:46: MINA session created: local=/192.168.0.42:51413, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250918-09:52:47: Initiated logon request
+20250918-09:52:48: Received logon
+20250918-09:57:35: Received logout request
+20250918-09:57:35: Sent logout response
+20250918-09:57:35: Disconnecting: Received logout request
+20250918-09:57:38: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-09:57:42: MINA session created: local=/192.168.0.42:51454, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250918-09:57:42: Initiated logon request
+20250918-09:57:42: Received logon
+20250918-09:58:05: Received logout request
+20250918-09:58:05: Sent logout response
+20250918-09:58:05: Disconnecting: Received logout request
+20250918-09:58:08: Pending connection not established after 2002 ms.
+20250918-09:58:09: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-09:58:12: MINA session created: local=/192.168.0.42:51461, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250918-09:58:12: Initiated logon request
+20250918-09:58:12: Received logon

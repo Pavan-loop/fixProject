@@ -50,7 +50,7 @@
 }
 
 /* Align specific numeric columns */
-.table-cell.price, .table-cell.quantity {
+.table-cell.price, .table-cell.quantity, .table-cell.remaining, .table-cell.filled , .table-cell.canceled, .table-cell.original{
     -fx-alignment: CENTER-RIGHT;
 }
 

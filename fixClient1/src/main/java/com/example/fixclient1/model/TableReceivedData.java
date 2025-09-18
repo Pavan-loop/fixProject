@@ -1,123 +1,88 @@
 package com.example.fixclient1.model;
 
-import javafx.beans.property.SimpleDoubleProperty;
-import javafx.beans.property.SimpleIntegerProperty;
-import javafx.beans.property.SimpleStringProperty;
+import javafx.beans.property.*;
+import quickfix.SessionID;
 
 public class TableReceivedData {
-    private SimpleStringProperty clientOrdId;
-    private SimpleStringProperty symbol;
-    private SimpleStringProperty side;
-    private SimpleStringProperty execType;
-    private SimpleDoubleProperty price;
-    private SimpleIntegerProperty quantity;
-    private SimpleIntegerProperty remainingQuantity;
+    private final SimpleStringProperty clientOrdId;
+    private final SimpleStringProperty symbol;
+    private final SimpleStringProperty side;
+    private final SimpleStringProperty execType;
+    private final SimpleDoubleProperty price;
+    private final SimpleIntegerProperty originalQuantity;
+    private final SimpleIntegerProperty filledQuantity;
+    private final SimpleIntegerProperty remainingQuantity;
+    private final SimpleIntegerProperty canceledQuantity;
+    private SessionID sessionID;
 
     public TableReceivedData(String clientOrdId, String symbol, String side,
-                             String execType, Double price, Integer quantity, Integer remainingQuantity) {
+                             String execType, double price, int originalQuantity, int filledQuantity,
+                             int remainingQuantity, int canceledQuantity, SessionID sessionID) {
         this.clientOrdId = new SimpleStringProperty(clientOrdId);
         this.symbol = new SimpleStringProperty(symbol);
         this.side = new SimpleStringProperty(side);
         this.execType = new SimpleStringProperty(execType);
         this.price = new SimpleDoubleProperty(price);
-        this.quantity = new SimpleIntegerProperty(quantity);
+        this.originalQuantity = new SimpleIntegerProperty(originalQuantity);
+        this.filledQuantity = new SimpleIntegerProperty(filledQuantity);
         this.remainingQuantity = new SimpleIntegerProperty(remainingQuantity);
+        this.canceledQuantity = new SimpleIntegerProperty(canceledQuantity);
+        this.sessionID = sessionID;
     }
 
-    public String getClientOrdId() {
-        return clientOrdId.get();
-    }
+    // TableView bindings
+    public String getClientOrdId() { return clientOrdId.get(); }
+    public SimpleStringProperty clientOrdIdProperty() { return clientOrdId; }
+    public void setClientOrdId(String clientOrdId) { this.clientOrdId.set(clientOrdId); }
 
-    public SimpleStringProperty clientOrdIdProperty() {
-        return clientOrdId;
-    }
+    public String getSymbol() { return symbol.get(); }
+    public SimpleStringProperty symbolProperty() { return symbol; }
+    public void setSymbol(String symbol) { this.symbol.set(symbol); }
 
-    public void setClientOrdId(String clientOrdId) {
-        this.clientOrdId.set(clientOrdId);
-    }
+    public String getSide() { return side.get(); }
+    public SimpleStringProperty sideProperty() { return side; }
+    public void setSide(String side) { this.side.set(side); }
 
-    public String getSymbol() {
-        return symbol.get();
-    }
+    public String getExecType() { return execType.get(); }
+    public SimpleStringProperty execTypeProperty() { return execType; }
+    public void setExecType(String execType) { this.execType.set(execType); }
 
-    public SimpleStringProperty symbolProperty() {
-        return symbol;
-    }
+    public double getPrice() { return price.get(); }
+    public SimpleDoubleProperty priceProperty() { return price; }
+    public void setPrice(double price) { this.price.set(price); }
 
-    public void setSymbol(String symbol) {
-        this.symbol.set(symbol);
-    }
+    public int getOriginalQuantity() { return originalQuantity.get(); }
+    public SimpleIntegerProperty originalQuantityProperty() { return originalQuantity; }
+    public void setOriginalQuantity(int originalQuantity) { this.originalQuantity.set(originalQuantity); }
 
-    public String getSide() {
-        return side.get();
-    }
+    public int getFilledQuantity() { return filledQuantity.get(); }
+    public SimpleIntegerProperty filledQuantityProperty() { return filledQuantity; }
+    public void setFilledQuantity(int filledQuantity) { this.filledQuantity.set(filledQuantity); }
 
-    public SimpleStringProperty sideProperty() {
-        return side;
-    }
+    public int getRemainingQuantity() { return remainingQuantity.get(); }
+    public SimpleIntegerProperty remainingQuantityProperty() { return remainingQuantity; }
+    public void setRemainingQuantity(int remainingQuantity) { this.remainingQuantity.set(remainingQuantity); }
 
-    public void setSide(String side) {
-        this.side.set(side);
-    }
+    public int getCanceledQuantity() { return canceledQuantity.get(); }
+    public SimpleIntegerProperty canceledQuantityProperty() { return canceledQuantity; }
+    public void setCanceledQuantity(int canceledQuantity) { this.canceledQuantity.set(canceledQuantity); }
 
-    public String getExecType() {
-        return execType.get();
-    }
-
-    public SimpleStringProperty execTypeProperty() {
-        return execType;
-    }
-
-    public void setExecType(String execType) {
-        this.execType.set(execType);
-    }
-
-    public double getPrice() {
-        return price.get();
-    }
-
-    public SimpleDoubleProperty priceProperty() {
-        return price;
-    }
-
-    public void setPrice(double price) {
-        this.price.set(price);
-    }
-
-    public int getQuantity() {
-        return quantity.get();
-    }
-
-    public SimpleIntegerProperty quantityProperty() {
-        return quantity;
-    }
-
-    public void setQuantity(int quantity) {
-        this.quantity.set(quantity);
-    }
-
-    public int getRemainingQuantity() {
-        return remainingQuantity.get();
-    }
-
-    public SimpleIntegerProperty remainingQuantityProperty() {
-        return remainingQuantity;
-    }
-
-    public void setRemainingQuantity(int remainingQuantity) {
-        this.remainingQuantity.set(remainingQuantity);
-    }
+    public SessionID getSessionID() { return sessionID; }
+    public void setSessionID(SessionID sessionID) { this.sessionID = sessionID; }
 
     @Override
     public String toString() {
         return "TableReceivedData{" +
-                "clientOrdId=" + clientOrdId +
-                ", symbol=" + symbol +
-                ", side=" + side +
-                ", execType=" + execType +
-                ", price=" + price +
-                ", quantity=" + quantity +
-                ", remainingQuantity=" + remainingQuantity +
+                "clientOrdId=" + clientOrdId.get() +
+                ", symbol=" + symbol.get() +
+                ", side=" + side.get() +
+                ", execType=" + execType.get() +
+                ", price=" + price.get() +
+                ", originalQuantity=" + originalQuantity.get() +
+                ", filledQuantity=" + filledQuantity.get() +
+                ", remainingQuantity=" + remainingQuantity.get() +
+                ", canceledQuantity=" + canceledQuantity.get() +
+                ", sessionID=" + sessionID +
                 '}';
     }
 }

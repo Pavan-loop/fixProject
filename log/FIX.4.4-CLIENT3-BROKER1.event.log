@@ -1,0 +1,53 @@
+20250917-09:19:43: Session FIX.4.4:CLIENT3->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250917-09:19:43: Created session: FIX.4.4:CLIENT3->BROKER1
+20250917-09:19:43: Configured socket addresses for session: [/192.168.0.37:9877]
+20250917-09:19:43: MINA session created: local=/192.168.0.42:50179, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250917-09:19:44: Initiated logon request
+20250917-09:19:44: Received logout request: MsgSeqNum too low, expecting 19 but received 1
+20250917-09:19:44: Sent logout response
+20250917-09:19:44: Disconnecting: Received logout request: MsgSeqNum too low, expecting 19 but received 1
+20250917-09:19:48: MINA session created: local=/192.168.0.42:50183, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250917-09:19:49: Initiated logon request
+20250917-09:19:49: Received logout request: MsgSeqNum too low, expecting 19 but received 3
+20250917-09:19:49: Sent logout response
+20250917-09:19:49: Disconnecting: Received logout request: MsgSeqNum too low, expecting 19 but received 3
+20250917-09:19:53: MINA session created: local=/192.168.0.42:50184, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250917-09:19:54: Initiated logon request
+20250917-09:19:54: Received logout request: MsgSeqNum too low, expecting 19 but received 5
+20250917-09:19:54: Sent logout response
+20250917-09:19:54: Disconnecting: Received logout request: MsgSeqNum too low, expecting 19 but received 5
+20250917-09:19:58: MINA session created: local=/192.168.0.42:50185, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250917-09:19:59: Initiated logon request
+20250917-09:19:59: Disconnecting: Encountered END_OF_STREAM
+20250917-09:20:03: MINA session created: local=/192.168.0.42:50187, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250917-09:20:04: Initiated logon request
+20250917-09:20:04: Disconnecting: Encountered END_OF_STREAM
+20250917-09:20:08: MINA session created: local=/192.168.0.42:50188, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250917-09:20:09: Initiated logon request
+20250917-09:20:09: Disconnecting: Encountered END_OF_STREAM
+20250917-09:20:14: MINA session created: local=/192.168.0.42:50189, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250917-09:20:14: Initiated logon request
+20250917-09:20:14: Disconnecting: Encountered END_OF_STREAM
+20250917-09:20:19: MINA session created: local=/192.168.0.42:50190, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250917-09:20:19: Initiated logon request
+20250917-09:20:19: Disconnecting: Encountered END_OF_STREAM
+20250917-09:20:24: MINA session created: local=/192.168.0.42:50191, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250917-09:20:24: Initiated logon request
+20250917-09:20:24: Received logout request: MsgSeqNum too low, expecting 21 but received 12
+20250917-09:20:24: Sent logout response
+20250917-09:20:24: Disconnecting: Received logout request: MsgSeqNum too low, expecting 21 but received 12
+20250917-09:20:29: MINA session created: local=/192.168.0.42:50192, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250917-09:20:29: Initiated logon request
+20250917-09:20:29: Received logout request: MsgSeqNum too low, expecting 21 but received 14
+20250917-09:20:29: Sent logout response
+20250917-09:20:29: Disconnecting: Received logout request: MsgSeqNum too low, expecting 21 but received 14
+20250917-09:20:34: MINA session created: local=/192.168.0.42:50193, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250917-09:20:34: Initiated logon request
+20250917-09:20:34: Received logout request: MsgSeqNum too low, expecting 21 but received 17
+20250917-09:20:34: Sent logout response
+20250917-09:20:34: Disconnecting: Received logout request: MsgSeqNum too low, expecting 21 but received 17
+20250917-09:20:39: MINA session created: local=/192.168.0.42:50194, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250917-09:20:39: Initiated logon request
+20250917-09:20:39: Received logout request: MsgSeqNum too low, expecting 21 but received 19
+20250917-09:20:39: Sent logout response
+20250917-09:20:39: Disconnecting: Received logout request: MsgSeqNum too low, expecting 21 but received 19
