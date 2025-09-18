@@ -32,6 +32,7 @@ public class HelloController {
 
     @FXML private TableView<TableReceivedData> tableReceivedData;
     @FXML private TableColumn<TableReceivedData, String> reClient;
+    @FXML private TableColumn<TableReceivedData, String> reExecId;
     @FXML private TableColumn<TableReceivedData, String> reSymbol;
     @FXML private TableColumn<TableReceivedData, String> reSide;
     @FXML private TableColumn<TableReceivedData, String> reStatus;
@@ -68,7 +69,7 @@ public class HelloController {
 
         TableUtils.addRow(symbol, side, orderType, orderPrice, orderQuantity);
 
-        ReceiveDataUtils.addRow(reClient, reSymbol, reSide, reStatus,
+        ReceiveDataUtils.addRow(reClient, reExecId, reSymbol, reSide, reStatus,
                 rePrice, reFilledQuantity, reRemainingQuantity, reCanceledQuantity, reOriginalQuantity);
 
         reStatus.setCellFactory(column -> new TableCell<>() {
@@ -179,6 +180,7 @@ public class HelloController {
 
                 TableReceivedData row = new TableReceivedData(
                         data.getClOrdId(),
+                        data.getExecId(),
                         data.getSymbol(),
                         data.getSide(),
                         "Canceled",
@@ -234,6 +236,7 @@ public class HelloController {
 
                     TableReceivedData row = new TableReceivedData(
                             data.getClOrdId(),
+                            data.getExecId(),
                             data.getSymbol(),
                             data.getSide(),
                             data.getExecType(),

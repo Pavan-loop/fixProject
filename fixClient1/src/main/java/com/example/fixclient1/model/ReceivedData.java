@@ -4,6 +4,7 @@ import quickfix.SessionID;
 
 public class ReceivedData {
     private String clOrdId;
+    private String execId;
     private String symbol;
     private String side;
     private String execType;
@@ -14,10 +15,11 @@ public class ReceivedData {
     private Integer canceledQuantity;
     private SessionID sessionID;
 
-    public ReceivedData(String clOrdId, String symbol, String side, String execType,
+    public ReceivedData(String clOrdId, String execId, String symbol, String side, String execType,
                         Double price, Integer originalQuantity, Integer filledQuantity,
                         Integer remainingQuantity, Integer canceledQuantity, SessionID sessionID) {
         this.clOrdId = clOrdId;
+        this.execId = execId;
         this.symbol = symbol;
         this.side = side;
         this.execType = execType;
@@ -39,6 +41,10 @@ public class ReceivedData {
     // Getters and setters
     public String getClOrdId() { return clOrdId; }
     public void setClOrdId(String clOrdId) { this.clOrdId = clOrdId; }
+
+    public String getExecId() {return execId;}
+
+    public void setExecId(String execId) {this.execId = execId;}
 
     public String getSymbol() { return symbol; }
     public void setSymbol(String symbol) { this.symbol = symbol; }

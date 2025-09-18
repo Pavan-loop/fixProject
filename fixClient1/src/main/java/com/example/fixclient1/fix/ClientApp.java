@@ -55,7 +55,6 @@ public class ClientApp extends MessageCracker implements Application {
         int remaining = report.isSetLeavesQty() ? (int) report.getLeavesQty().getValue() : Math.max(0, origQty - filled);
         int canceled = Math.max(0, origQty - filled - remaining);
 
-
         if ("2".equals(ordStatus)) {
             remaining = 0;
             canceled = 0;
@@ -81,8 +80,11 @@ public class ClientApp extends MessageCracker implements Application {
         double price = report.isSetPrice() ? report.getPrice().getValue()
                 : report.isSetAvgPx() ? report.getAvgPx().getValue() : 0.0;
 
+        String execId = report.isSetExecID() ? report.getExecID().getValue() : "N/A";
+
         ReceivedData data = new ReceivedData();
         data.setClOrdId(clOrdId);
+        data.setExecId(execId);
         data.setSymbol(report.isSetSymbol() ? report.getSymbol().getValue() : "");
         data.setSide(side);
         data.setExecType(statusMap.getOrDefault(ordStatus, ordStatus));

@@ -44,6 +44,7 @@
                            AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="115.0">
                     <columns>
                         <TableColumn fx:id="reClient" text="Client Id" />
+                        <TableColumn fx:id="reExecId" text="Exec Id" />
                         <TableColumn fx:id="reSymbol" text="Symbol" />
                         <TableColumn fx:id="reSide" text="Side" />
                         <TableColumn fx:id="reStatus" text="Status" />

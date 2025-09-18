@@ -1,15 +1,13 @@
 package com.example.fixclient1.utils;
 
 import com.example.fixclient1.model.TableReceivedData;
-import javafx.beans.property.SimpleDoubleProperty;
-import javafx.beans.property.SimpleIntegerProperty;
-import javafx.beans.property.SimpleStringProperty;
 import javafx.scene.control.TableColumn;
 
 public class ReceiveDataUtils {
 
     public static void addRow(
             TableColumn<TableReceivedData, String> client,
+            TableColumn<TableReceivedData, String> execId,
             TableColumn<TableReceivedData, String> symbol,
             TableColumn<TableReceivedData, String> side,
             TableColumn<TableReceivedData, String> execType,
@@ -20,6 +18,7 @@ public class ReceiveDataUtils {
             TableColumn<TableReceivedData, Integer> originalQuantity
     ) {
         client.setCellValueFactory(cellData -> cellData.getValue().clientOrdIdProperty());
+        execId.setCellValueFactory(cellData -> cellData.getValue().execIdProperty());
         symbol.setCellValueFactory(cellData -> cellData.getValue().symbolProperty());
         side.setCellValueFactory(cellData -> cellData.getValue().sideProperty());
         execType.setCellValueFactory(cellData -> cellData.getValue().execTypeProperty());

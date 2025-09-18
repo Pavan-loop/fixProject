@@ -722,3 +722,121 @@
 20250918-09:58:12: MINA session created: local=/192.168.0.42:51461, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
 20250918-09:58:12: Initiated logon request
 20250918-09:58:12: Received logon
+20250918-10:08:45: Session FIX.4.4:CLIENT4->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250918-10:08:45: Created session: FIX.4.4:CLIENT4->BROKER1
+20250918-10:08:46: Configured socket addresses for session: [/192.168.0.37:9877]
+20250918-10:08:46: MINA session created: local=/192.168.0.42:51539, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250918-10:08:47: Initiated logon request
+20250918-10:08:47: Received logon
+20250918-10:10:51: Received logout request
+20250918-10:10:51: Sent logout response
+20250918-10:10:51: Disconnecting: Received logout request
+20250918-10:10:53: Pending connection not established after 2031 ms.
+20250918-10:10:54: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-10:10:58: Pending connection not established after 2001 ms.
+20250918-10:11:01: Pending connection not established after 5002 ms.
+20250918-10:11:01: MINA session created: local=/192.168.0.42:51567, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250918-10:11:02: Initiated logon request
+20250918-10:11:02: Received logon
+20250918-10:13:56: Rejecting invalid message: quickfix.FieldException: Invalid tag number, field=9001: 8=FIX.4.49=32235=834=17949=BROKER152=20250918-10:13:55.99856=CLIENT46=011=123175819043568714=017=exec51153879959270037=ORD175819043599239=A54=155=AXISBANK58=[34m[PENDING][0m No stock available, added to pending orders150=A151=4009001=PENDING NEW9002=09003=09004=4009005=09007=09010=2025-09-18T15:43:55.99882330010=240
+20250918-10:13:56: Reject sent for message 179: Invalid tag number, field=9001
+20250918-10:14:18: Sent test request TEST
+20250918-10:14:31: Rejecting invalid message: quickfix.FieldException: Invalid tag number, field=9001: 8=FIX.4.49=30535=834=18149=BROKER152=20250918-10:14:31.27756=CLIENT46=9433.511=123175819047126514=10017=exec51157407871760037=ORD175819047127539=254=155=BAJAJ-AUTO58=[32m[FILLED][0m Order fully filled150=2151=09001=FILLED9002=9433.59003=1009004=09005=09007=1009010=2025-09-18T15:44:31.27703290010=209
+20250918-10:14:31: Reject sent for message 181: Invalid tag number, field=9001
+20250918-10:16:32: Rejecting invalid message: quickfix.FieldException: Invalid tag number, field=9001: 8=FIX.4.49=29735=834=18649=BROKER152=20250918-10:16:32.30656=CLIENT46=3529.611=123175819059260714=10017=exec51169510900350037=ORD175819059230639=254=155=LT58=[32m[FILLED][0m Order fully filled150=2151=09001=FILLED9002=3529.69003=1009004=09005=09007=1009010=2025-09-18T15:46:32.30658760010=189
+20250918-10:16:32: Reject sent for message 186: Invalid tag number, field=9001
+20250918-10:23:04: Rejecting invalid message: quickfix.FieldException: Invalid tag number, field=9001: 8=FIX.4.49=29935=834=20049=BROKER152=20250918-10:23:03.95356=CLIENT46=1432.911=123175819098415614=40017=exec51208675550050037=ORD175819098395239=254=155=INFY58=[32m[FILLED][0m Order fully filled150=2151=09001=FILLED9002=1432.99003=4009004=09005=09007=1009010=2025-09-18T15:53:03.95359920010=092
+20250918-10:23:04: Reject sent for message 200: Invalid tag number, field=9001
+20250918-10:23:45: Rejecting invalid message: quickfix.FieldException: Invalid tag number, field=9001: 8=FIX.4.49=32435=834=20249=BROKER152=20250918-10:23:44.76756=CLIENT46=011=123175819102512614=017=exec51212756938670037=ORD175819102476639=A54=155=APOLLOHOSP58=[34m[PENDING][0m No stock available, added to pending orders150=A151=6009001=PENDING NEW9002=09003=09004=6009005=09007=09010=2025-09-18T15:53:44.76721170010=103
+20250918-10:23:45: Reject sent for message 202: Invalid tag number, field=9001
+20250918-10:24:37: Rejecting invalid message: quickfix.FieldException: Invalid tag number, field=9001: 8=FIX.4.49=30035=834=20449=BROKER152=20250918-10:24:37.17956=CLIENT46=011=123175819043568714=017=exec51217999065020037=ORD175819107717939=854=155=AXISBANK58=[91m[REJECTED][0m Rejected: Executor Stopped150=8151=4009001=REJECTED9002=09003=09004=4009005=09007=09010=2025-09-18T15:54:37.17945410=177
+20250918-10:24:37: Reject sent for message 204: Invalid tag number, field=9001
+20250918-10:24:37: Rejecting invalid message: quickfix.FieldException: Invalid tag number, field=9001: 8=FIX.4.49=30235=834=20549=BROKER152=20250918-10:24:37.17956=CLIENT46=011=123175819102512614=017=exec51217999188760037=ORD175819107717939=854=155=APOLLOHOSP58=[91m[REJECTED][0m Rejected: Executor Stopped150=8151=6009001=REJECTED9002=09003=09004=6009005=09007=09010=2025-09-18T15:54:37.17945410=105
+20250918-10:24:37: Reject sent for message 205: Invalid tag number, field=9001
+20250918-10:24:37: Received logout request
+20250918-10:24:37: Sent logout response
+20250918-10:24:37: Disconnecting: Received logout request
+20250918-10:24:48: Session FIX.4.4:CLIENT4->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250918-10:24:48: Created session: FIX.4.4:CLIENT4->BROKER1
+20250918-10:24:48: Configured socket addresses for session: [/192.168.0.37:9877]
+20250918-10:24:48: MINA session created: local=/192.168.0.42:51672, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250918-10:24:49: Initiated logon request
+20250918-10:24:50: Received logon
+20250918-10:26:53: Received logout request
+20250918-10:26:53: Sent logout response
+20250918-10:26:53: Disconnecting: Received logout request
+20250918-10:26:56: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-10:26:59: MINA session created: local=/192.168.0.42:51687, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250918-10:26:59: Initiated logon request
+20250918-10:26:59: Received logon
+20250918-10:27:18: Rejecting invalid message: quickfix.FieldException: Invalid tag number, field=9001: 8=FIX.4.49=28735=834=21449=BROKER152=20250918-10:27:18.40056=CLIENT46=2310.911=123175819123808914=10017=exec51234120134830037=ORD175819123839539=254=155=ADANIENT58=[32m[FILLED][0m Order fully filled150=2151=09001=FILLED9002=2310.99003=1009004=09010=2025-09-18T15:57:18.40031210010=088
+20250918-10:27:18: Reject sent for message 214: Invalid tag number, field=9001
+20250918-10:27:45: Sent test request TEST
+20250918-10:28:08: Received logout request
+20250918-10:28:08: Sent logout response
+20250918-10:28:08: Disconnecting: Received logout request
+20250918-10:28:11: Pending connection not established after 2002 ms.
+20250918-10:28:12: java.net.ConnectException during connection to /192.168.0.37:9877: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-10:28:15: MINA session created: local=/192.168.0.42:51704, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9877
+20250918-10:28:15: Initiated logon request
+20250918-10:28:15: Received logon
+20250918-10:28:31: Rejecting invalid message: quickfix.FieldException: Invalid tag number, field=9001: 8=FIX.4.49=22435=834=21849=BROKER152=20250918-10:28:30.64056=CLIENT46=387.0511=123175819131027014=1017=exec51241344172790037=ORD175819131063439=254=155=COALINDIA58=[32m[FILLED][0m Order fully filled150=2151=09001=FILLED10=102
+20250918-10:28:31: Reject sent for message 218: Invalid tag number, field=9001
+20250918-10:29:00: Sent test request TEST
+20250918-10:32:56: Session FIX.4.4:CLIENT4->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250918-10:32:56: Created session: FIX.4.4:CLIENT4->BROKER1
+20250918-10:32:56: Configured socket addresses for session: [/192.168.0.37:9898]
+20250918-10:32:56: MINA session created: local=/192.168.0.42:51725, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9898
+20250918-10:32:57: Initiated logon request
+20250918-10:33:08: Disconnecting: Timed out waiting for logon response
+20250918-10:33:08: MINA session created: local=/192.168.0.42:51728, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9898
+20250918-10:33:09: Initiated logon request
+20250918-10:33:20: Disconnecting: Timed out waiting for logon response
+20250918-10:33:21: MINA session created: local=/192.168.0.42:51730, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9898
+20250918-10:33:21: Initiated logon request
+20250918-10:33:34: Session FIX.4.4:CLIENT4->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250918-10:33:34: Created session: FIX.4.4:CLIENT4->BROKER1
+20250918-10:33:34: Configured socket addresses for session: [/192.168.0.37:9898]
+20250918-10:33:34: MINA session created: local=/192.168.0.42:51734, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9898
+20250918-10:33:35: Initiated logon request
+20250918-10:33:46: Disconnecting: Timed out waiting for logon response
+20250918-10:33:47: MINA session created: local=/192.168.0.42:51737, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9898
+20250918-10:33:47: Initiated logon request
+20250918-10:33:57: Disconnecting: Timed out waiting for logon response
+20250918-10:33:58: MINA session created: local=/192.168.0.42:51738, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9898
+20250918-10:33:58: Initiated logon request
+20250918-10:34:03: Disconnecting: Encountered END_OF_STREAM
+20250918-10:34:06: Pending connection not established after 2003 ms.
+20250918-10:34:07: java.net.ConnectException during connection to /192.168.0.37:9898: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250918-10:34:13: Session FIX.4.4:CLIENT4->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250918-10:34:13: Created session: FIX.4.4:CLIENT4->BROKER1
+20250918-10:34:14: Configured socket addresses for session: [/192.168.0.37:9898]
+20250918-10:34:14: MINA session created: local=/192.168.0.42:51744, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9898
+20250918-10:34:15: Initiated logon request
+20250918-10:34:15: Received logon
+20250918-10:34:15: MsgSeqNum too high, expecting 224 but received 246: 8=FIX.4.49=7135=A34=24649=BROKER152=20250918-10:34:15.23256=CLIENT498=0108=3010=082
+20250918-10:34:15: Enqueued at pos 246: 8=FIX.4.49=7135=A34=24649=BROKER152=20250918-10:34:15.23256=CLIENT498=0108=3010=082
+20250918-10:34:15: Sent ResendRequest FROM: 224 TO: infinity
+20250918-10:34:15: Enqueued at pos 247: 8=FIX.4.49=7035=234=24749=BROKER152=20250918-10:34:15.23756=CLIENT47=24316=010=018
+20250918-10:34:15: Received ResendRequest FROM: 243 TO: infinity
+20250918-10:34:15: Sent SequenceReset TO: 245
+20250918-10:34:15: Resending message: 245
+20250918-10:34:15: Sent SequenceReset TO: 252
+20250918-10:34:15: Received SequenceReset FROM: 224 TO: 248
+20250918-10:34:16: ResendRequest for messages FROM 224 TO 245 has been satisfied.
+20250918-10:34:42: Session FIX.4.4:CLIENT4->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250918-10:34:42: Created session: FIX.4.4:CLIENT4->BROKER1
+20250918-10:34:42: Configured socket addresses for session: [/192.168.0.37:9898]
+20250918-10:34:42: MINA session created: local=/192.168.0.42:51750, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9898
+20250918-10:34:43: Initiated logon request
+20250918-10:34:43: Received logon
+20250918-10:34:43: MsgSeqNum too high, expecting 249 but received 250: 8=FIX.4.49=7135=A34=25049=BROKER152=20250918-10:34:43.18856=CLIENT498=0108=3010=088
+20250918-10:34:43: Enqueued at pos 250: 8=FIX.4.49=7135=A34=25049=BROKER152=20250918-10:34:43.18856=CLIENT498=0108=3010=088
+20250918-10:34:43: Sent ResendRequest FROM: 249 TO: infinity
+20250918-10:34:43: ResendRequest for messages FROM 249 TO 249 has been satisfied.
+20250918-10:34:43: Processing queued message: 250
+20250918-10:35:04: Received logout request
+20250918-10:35:04: Sent logout response
+20250918-10:35:04: Disconnecting: Received logout request
+20250918-10:35:04: MINA session created: local=/192.168.0.42:51753, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9898
+20250918-10:35:04: Disconnecting: Encountered END_OF_STREAM

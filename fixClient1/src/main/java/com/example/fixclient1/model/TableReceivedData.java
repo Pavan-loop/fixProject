@@ -5,6 +5,7 @@ import quickfix.SessionID;
 
 public class TableReceivedData {
     private final SimpleStringProperty clientOrdId;
+    private final SimpleStringProperty execId;
     private final SimpleStringProperty symbol;
     private final SimpleStringProperty side;
     private final SimpleStringProperty execType;
@@ -15,10 +16,11 @@ public class TableReceivedData {
     private final SimpleIntegerProperty canceledQuantity;
     private SessionID sessionID;
 
-    public TableReceivedData(String clientOrdId, String symbol, String side,
+    public TableReceivedData(String clientOrdId, String execId, String symbol, String side,
                              String execType, double price, int originalQuantity, int filledQuantity,
                              int remainingQuantity, int canceledQuantity, SessionID sessionID) {
         this.clientOrdId = new SimpleStringProperty(clientOrdId);
+        this.execId = new SimpleStringProperty(execId);
         this.symbol = new SimpleStringProperty(symbol);
         this.side = new SimpleStringProperty(side);
         this.execType = new SimpleStringProperty(execType);
@@ -34,6 +36,10 @@ public class TableReceivedData {
     public String getClientOrdId() { return clientOrdId.get(); }
     public SimpleStringProperty clientOrdIdProperty() { return clientOrdId; }
     public void setClientOrdId(String clientOrdId) { this.clientOrdId.set(clientOrdId); }
+
+    public String getExecId() { return execId.get(); }
+    public SimpleStringProperty execIdProperty() { return execId; }
+    public void setExecId(String execId) { this.execId.set(execId); }
 
     public String getSymbol() { return symbol.get(); }
     public SimpleStringProperty symbolProperty() { return symbol; }

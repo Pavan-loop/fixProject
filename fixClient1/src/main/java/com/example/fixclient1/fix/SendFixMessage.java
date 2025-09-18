@@ -39,6 +39,7 @@ public class SendFixMessage {
         // Initialize ReceivedData for tracking quantities
         ReceivedData data = new ReceivedData();
         data.setClOrdId(clOrdId);
+        data.setExecId(data.getExecId());
         data.setSymbol(tableOrder.getSymbol());
         data.setSide(tableOrder.getSide());
         data.setExecType("New");
