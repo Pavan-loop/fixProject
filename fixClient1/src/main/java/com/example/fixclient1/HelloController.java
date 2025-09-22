@@ -85,9 +85,9 @@ public class HelloController {
                         case "A":
                             setText("Pending");
                             setStyle("-fx-background-color: burlywood; -fx-text-fill: black;"); break;
-                        case "Fill": setStyle("-fx-background-color: lightgreen; -fx-text-fill: black;"); break;
-                        case "Rejected": setStyle("-fx-background-color: lightcoral; -fx-text-fill: black;"); break;
-                        case "Partial Fill": setStyle("-fx-background-color: khaki; -fx-text-fill: black;"); break;
+                        case "Fill": setStyle("-fx-background-color: #6ef16e; -fx-text-fill: black;"); break;
+                        case "Rejected": setStyle("-fx-background-color: #fb0000; -fx-text-fill: black;"); break;
+                        case "Partial Fill": setStyle("-fx-background-color: #ffe800; -fx-text-fill: black;"); break;
                         case "Canceled": setStyle("-fx-background-color: gray; -fx-text-fill: black;"); break;
                         case "New": setStyle("-fx-background-color: lightblue; -fx-text-fill: black;"); break;
                         default: setStyle(""); break;

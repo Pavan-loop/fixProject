@@ -36,7 +36,7 @@ public class SendFixMessage {
 
         Session.sendToTarget(newOrder, initiator.getSessions().get(0));
 
-        // Initialize ReceivedData for tracking quantities
+
         ReceivedData data = new ReceivedData();
         data.setClOrdId(clOrdId);
         data.setExecId(data.getExecId());

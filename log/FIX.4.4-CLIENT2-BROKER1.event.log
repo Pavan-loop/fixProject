@@ -402,3 +402,40 @@
 20250918-11:32:27: Initiated logon request
 20250918-11:32:27: Received logon
 20250918-11:38:17: Disconnecting: Socket exception (/192.168.0.37:9888): java.net.SocketException: Connection reset
+20250919-08:40:53: Session FIX.4.4:CLIENT2->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250919-08:40:53: Session state is not current; resetting FIX.4.4:CLIENT2->BROKER1
+20250919-08:40:53: Created session: FIX.4.4:CLIENT2->BROKER1
+20250919-08:40:54: Configured socket addresses for session: [/192.168.0.37:9888]
+20250919-08:40:54: MINA session created: local=/192.168.0.42:52722, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20250919-08:40:55: Initiated logon request
+20250919-08:40:55: Received logon
+20250919-09:23:41: Session FIX.4.4:CLIENT2->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250919-09:23:41: Created session: FIX.4.4:CLIENT2->BROKER1
+20250919-09:23:41: Configured socket addresses for session: [/192.168.0.37:9888]
+20250919-09:23:41: MINA session created: local=/192.168.0.42:53111, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20250919-09:23:42: Initiated logon request
+20250919-09:23:42: Received logon
+20250919-09:24:14: Session FIX.4.4:CLIENT2->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250919-09:24:14: Created session: FIX.4.4:CLIENT2->BROKER1
+20250919-09:24:14: Configured socket addresses for session: [/192.168.0.37:9888]
+20250919-09:24:14: MINA session created: local=/192.168.0.42:53117, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20250919-09:24:15: Initiated logon request
+20250919-09:24:15: Received logon
+20250919-09:24:15: MsgSeqNum too high, expecting 90 but received 91: 8=FIX.4.49=7035=A34=9149=BROKER152=20250919-09:24:14.99956=CLIENT298=0108=3010=056
+20250919-09:24:15: Enqueued at pos 91: 8=FIX.4.49=7035=A34=9149=BROKER152=20250919-09:24:14.99956=CLIENT298=0108=3010=056
+20250919-09:24:15: Sent ResendRequest FROM: 90 TO: infinity
+20250919-09:24:15: ResendRequest for messages FROM 90 TO 90 has been satisfied.
+20250919-09:24:15: Processing queued message: 91
+20250919-09:24:38: Session FIX.4.4:CLIENT2->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250919-09:24:38: Created session: FIX.4.4:CLIENT2->BROKER1
+20250919-09:24:38: Configured socket addresses for session: [/192.168.0.37:9888]
+20250919-09:24:38: MINA session created: local=/192.168.0.42:53122, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20250919-09:24:39: Initiated logon request
+20250919-09:24:39: Received logon
+20250922-09:07:15: Session FIX.4.4:CLIENT2->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250922-09:07:15: Session state is not current; resetting FIX.4.4:CLIENT2->BROKER1
+20250922-09:07:15: Created session: FIX.4.4:CLIENT2->BROKER1
+20250922-09:07:16: Configured socket addresses for session: [/192.168.0.37:9888]
+20250922-09:07:16: MINA session created: local=/192.168.0.42:54535, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20250922-09:07:17: Initiated logon request
+20250922-09:07:17: Received logon
