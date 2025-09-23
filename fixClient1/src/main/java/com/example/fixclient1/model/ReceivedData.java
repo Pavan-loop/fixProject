@@ -4,6 +4,7 @@ import quickfix.SessionID;
 
 public class ReceivedData {
     private String clOrdId;
+    private String origClOrdId;   // ✅ NEW field for cancel/amend cases
     private String execId;
     private String symbol;
     private String side;
@@ -48,9 +49,11 @@ public class ReceivedData {
     public String getClOrdId() { return clOrdId; }
     public void setClOrdId(String clOrdId) { this.clOrdId = clOrdId; }
 
-    public String getExecId() {return execId;}
+    public String getOrigClOrdId() { return origClOrdId; }     // ✅ Getter
+    public void setOrigClOrdId(String origClOrdId) { this.origClOrdId = origClOrdId; } // ✅ Setter
 
-    public void setExecId(String execId) {this.execId = execId;}
+    public String getExecId() { return execId; }
+    public void setExecId(String execId) { this.execId = execId; }
 
     public String getSymbol() { return symbol; }
     public void setSymbol(String symbol) { this.symbol = symbol; }
@@ -101,11 +104,11 @@ public class ReceivedData {
     public String getExecutionProgressPercent() { return executionProgressPercent; }
     public void setExecutionProgressPercent(String executionProgressPercent) { this.executionProgressPercent = executionProgressPercent; }
 
-
     @Override
     public String toString() {
         return "ReceivedData{" +
                 "clOrdId='" + clOrdId + '\'' +
+                ", origClOrdId='" + origClOrdId + '\'' +   // ✅ Added toString
                 ", symbol='" + symbol + '\'' +
                 ", side='" + side + '\'' +
                 ", execType='" + execType + '\'' +

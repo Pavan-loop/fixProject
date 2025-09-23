@@ -56,14 +56,18 @@ public class ClientApp extends MessageCracker implements Application {
             case Side.SELL_SHORT -> "SELL_SHORT";
             default -> "UNKNOWN";
         };
+
         String clOrdId = report.getClOrdID().getValue();
+        String origClOrdId = report.isSetField(OrigClOrdID.FIELD)
+                ? report.getString(OrigClOrdID.FIELD)
+                : null;
+
         double price = report.isSetPrice() ? report.getPrice().getValue()
                 : report.isSetAvgPx() ? report.getAvgPx().getValue() : 0.0;
         int origQty = report.isSetOrderQty() ? (int) report.getOrderQty().getValue() : 0;
         int filled = report.isSetCumQty() ? (int) report.getCumQty().getValue() : 0;
         int remaining = report.isSetLeavesQty() ? (int) report.getLeavesQty().getValue() : Math.max(0, origQty - filled);
         String execId = report.isSetExecID() ? report.getExecID().getValue() : "N/A";
-
 
         Map<String, String> statusMap = new HashMap<>();
         statusMap.put("0", "New");
@@ -76,7 +80,6 @@ public class ClientApp extends MessageCracker implements Application {
 
         String execStatus = statusMap.getOrDefault(ordStatus, "Unknown");
 
-
         String customStatus = report.isSetField(9001) ? report.getString(9001) : "N/A";
         double marketRefPrice = report.isSetField(9002) ? report.getDouble(9002) : 0.0;
         int orderRemainingQty = report.isSetField(9003) ? report.getInt(9003) : 0;
@@ -87,6 +90,7 @@ public class ClientApp extends MessageCracker implements Application {
 
         ReceivedData data = new ReceivedData();
         data.setClOrdId(clOrdId);
+        data.setOrigClOrdId(origClOrdId);
         data.setExecId(execId);
         data.setSide(side);
         data.setExecType(execStatus);
@@ -101,9 +105,11 @@ public class ClientApp extends MessageCracker implements Application {
         data.setInventoryAfterTrade(inventoryAfterTrade);
         data.setOrderExecutionNote(orderExecutionNote);
         data.setExecutionProgressPercent(execProgressPercent);
+        data.setSessionID(sessionID);
 
         Platform.runLater(() -> controller.addValue(data));
     }
+
 
 
     public Initiator start() {

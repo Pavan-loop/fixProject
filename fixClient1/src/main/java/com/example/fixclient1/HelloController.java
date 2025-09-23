@@ -171,35 +171,43 @@ public class HelloController {
             boolean isCancel = "Canceled".equalsIgnoreCase(data.getExecType());
 
             if (isCancel) {
-                Optional<TableReceivedData> existingRowOpt = receivedOrderData.stream()
-                        .filter(r -> r.getClientOrdId().equals(data.getClOrdId()))
-                        .reduce((first, second) -> second);
 
-                int orig, filled;
+                String matchId = (data.getOrigClOrdId() != null && !data.getOrigClOrdId().isEmpty())
+                        ? data.getOrigClOrdId()
+                        : data.getClOrdId();
+
+                Optional<TableReceivedData> origRowOpt = receivedOrderData.stream()
+                        .filter(r -> r.getClientOrdId().equals(matchId))
+                        .findFirst();
+
+                int origQty, filled;
                 double px;
+                String symbol;
 
-                if (existingRowOpt.isPresent()) {
-                    TableReceivedData last = existingRowOpt.get();
-                    orig = last.getOriginalQuantity();
-                    filled = last.getFilledQuantity();
-                    px = last.getPrice();
+                if (origRowOpt.isPresent()) {
+                    TableReceivedData orig = origRowOpt.get();
+                    origQty = orig.getOriginalQuantity();
+                    filled = orig.getFilledQuantity();
+                    px = orig.getPrice();
+                    symbol = orig.getSymbol();
                 } else {
-                    orig = data.getOriginalQuantity() != null ? data.getOriginalQuantity() : 0;
-                    filled = data.getFilledQuantity() != null ? data.getFilledQuantity() : 0;
-                    px = data.getPrice() != null ? data.getPrice() : 0.0;
+                    origQty = (data.getOriginalQuantity() != null) ? data.getOriginalQuantity() : 0;
+                    filled = (data.getFilledQuantity() != null) ? data.getFilledQuantity() : 0;
+                    px = (data.getPrice() != null) ? data.getPrice() : 0.0;
+                    symbol = (data.getSymbol() != null) ? data.getSymbol() : "";
                 }
 
                 int remaining = 0;
-                int canceled = Math.max(0, orig - filled);
+                int canceled = Math.max(0, origQty - filled);
 
                 TableReceivedData row = new TableReceivedData(
-                        data.getClOrdId(),
+                        matchId,
                         data.getExecId(),
-                        data.getSymbol(),
+                        symbol,
                         data.getSide(),
                         "Canceled",
                         px,
-                        orig,
+                        origQty,
                         filled,
                         remaining,
                         canceled,
@@ -207,7 +215,7 @@ public class HelloController {
                 );
 
                 receivedOrderData.add(row);
-                cancelOrder.getItems().remove(data.getClOrdId());
+                cancelOrder.getItems().remove(matchId);
 
             } else {
                 Optional<TableReceivedData> existingRowOpt = receivedOrderData.stream()
@@ -216,7 +224,6 @@ public class HelloController {
 
                 if (existingRowOpt.isPresent()) {
                     TableReceivedData row = existingRowOpt.get();
-
 
                     if (data.getExecId() != null && !data.getExecId().isBlank()) {
                         row.setExecId(data.getExecId());
@@ -230,11 +237,7 @@ public class HelloController {
                     if (data.getPrice() != null && data.getPrice() > 0.0) row.setPrice(data.getPrice());
 
                     if (data.getFilledQuantity() != null) {
-                        if (data.getFilledQuantity() == 0 && "Canceled".equalsIgnoreCase(data.getExecType()) && row.getFilledQuantity() > 0) {
-
-                        } else {
-                            row.setFilledQuantity(data.getFilledQuantity());
-                        }
+                        row.setFilledQuantity(data.getFilledQuantity());
                     }
 
                     if (data.getRemainingQuantity() != null) {
@@ -247,6 +250,7 @@ public class HelloController {
 
                     receivedOrderData.remove(row);
                     receivedOrderData.add(row);
+
                 } else {
                     int orig = (data.getOriginalQuantity() != null) ? data.getOriginalQuantity() : 0;
                     int filled = (data.getFilledQuantity() != null) ? data.getFilledQuantity() : 0;
@@ -278,6 +282,7 @@ public class HelloController {
             }
         });
     }
+
 
     public void onCancel() {
         String clOrdId = cancelOrder.getValue();
