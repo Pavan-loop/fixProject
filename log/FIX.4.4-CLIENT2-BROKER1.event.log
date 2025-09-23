@@ -439,3 +439,584 @@
 20250922-09:07:16: MINA session created: local=/192.168.0.42:54535, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
 20250922-09:07:17: Initiated logon request
 20250922-09:07:17: Received logon
+20250922-09:12:35: Session FIX.4.4:CLIENT2->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250922-09:12:35: Created session: FIX.4.4:CLIENT2->BROKER1
+20250922-09:12:35: Configured socket addresses for session: [/192.168.0.37:9888]
+20250922-09:12:35: MINA session created: local=/192.168.0.42:54657, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20250922-09:12:36: Initiated logon request
+20250922-09:12:36: Received logon
+20250922-09:21:34: Session FIX.4.4:CLIENT2->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250922-09:21:34: Created session: FIX.4.4:CLIENT2->BROKER1
+20250922-09:21:34: Configured socket addresses for session: [/192.168.0.37:9888]
+20250922-09:21:35: MINA session created: local=/192.168.0.42:54833, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20250922-09:21:36: Initiated logon request
+20250922-09:21:36: Received logon
+20250922-09:26:05: Session FIX.4.4:CLIENT2->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250922-09:26:05: Created session: FIX.4.4:CLIENT2->BROKER1
+20250922-09:26:05: Configured socket addresses for session: [/192.168.0.37:9888]
+20250922-09:26:05: MINA session created: local=/192.168.0.42:54881, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20250922-09:26:07: Initiated logon request
+20250922-09:26:07: Received logon
+20250922-09:37:29: Received logout request
+20250922-09:37:29: Sent logout response
+20250922-09:37:29: Disconnecting: Received logout request
+20250922-09:37:31: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250922-09:37:36: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250922-09:37:40: MINA session created: local=/192.168.0.42:55036, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20250922-09:37:40: Initiated logon request
+20250922-09:37:40: Received logon
+20250922-09:39:04: Received logout request
+20250922-09:39:04: Sent logout response
+20250922-09:39:04: Disconnecting: Received logout request
+20250922-09:39:06: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250922-09:39:09: MINA session created: local=/192.168.0.42:55043, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20250922-09:39:09: Initiated logon request
+20250922-09:39:09: Received logon
+20250922-09:47:52: Received logout request
+20250922-09:47:52: Sent logout response
+20250922-09:47:52: Disconnecting: Received logout request
+20250922-09:47:55: Pending connection not established after 2001 ms.
+20250922-09:47:56: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250922-09:48:00: Pending connection not established after 2003 ms.
+20250922-09:48:01: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250922-09:48:05: Pending connection not established after 2001 ms.
+20250922-09:48:06: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250922-09:48:10: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250922-09:48:15: Pending connection not established after 2002 ms.
+20250922-09:48:16: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250922-09:48:20: Pending connection not established after 2003 ms.
+20250922-09:48:21: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250922-10:06:12: Session FIX.4.4:CLIENT2->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250922-10:06:12: Created session: FIX.4.4:CLIENT2->BROKER1
+20250922-10:06:12: Configured socket addresses for session: [/192.168.0.37:9888]
+20250922-10:06:12: MINA session created: local=/192.168.0.42:55286, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20250922-10:06:13: Initiated logon request
+20250922-10:06:13: Received logon
+20250922-10:06:37: Session FIX.4.4:CLIENT2->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250922-10:06:37: Created session: FIX.4.4:CLIENT2->BROKER1
+20250922-10:06:38: Configured socket addresses for session: [/192.168.0.37:9888]
+20250922-10:06:38: MINA session created: local=/192.168.0.42:55297, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20250922-10:06:39: Initiated logon request
+20250922-10:06:39: Received logon
+20250922-10:07:10: Received logout request
+20250922-10:07:10: Sent logout response
+20250922-10:07:10: Disconnecting: Received logout request
+20250922-10:07:13: Pending connection not established after 2002 ms.
+20250922-10:07:14: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250922-10:07:18: MINA session created: local=/192.168.0.42:55301, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20250922-10:07:18: Initiated logon request
+20250922-10:07:18: Received logon
+20250922-10:07:23: Rejecting invalid message: quickfix.FieldException: Tag not defined for this message type, field=9001: 8=FIX.4.49=28535=834=9649=BROKER152=20250922-10:07:26.34256=CLIENT26=371.911=123175853564298714=10017=exec85676075312450037=ORD175853564632939=254=155=BEL58=[32m[FILLED][0m Order fully filled150=2151=09001=Order PARTIAL9002=371.99003=09004=4009005=Order fully filled9007=100%10=189
+20250922-10:07:23: Reject sent for message 96: Tag not defined for this message type, field=9001
+20250922-10:09:31: Received logout request
+20250922-10:09:31: Sent logout response
+20250922-10:09:31: Disconnecting: Received logout request
+20250922-10:09:36: Pending connection not established after 4001 ms.
+20250922-10:09:41: Pending connection not established after 9004 ms.
+20250922-10:09:42: MINA session created: local=/192.168.0.42:55313, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20250922-10:09:43: Initiated logon request
+20250922-10:09:43: Received logon
+20250922-10:10:55: Session FIX.4.4:CLIENT2->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250922-10:10:55: Created session: FIX.4.4:CLIENT2->BROKER1
+20250922-10:10:55: Configured socket addresses for session: [/192.168.0.37:9888]
+20250922-10:10:55: MINA session created: local=/192.168.0.42:55335, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20250922-10:10:56: Initiated logon request
+20250922-10:10:57: Received logon
+20250922-10:11:18: Rejecting invalid message: quickfix.FieldException: Invalid tag number, field=9001: 8=FIX.4.49=28635=834=10549=BROKER152=20250922-10:11:20.88056=CLIENT26=371.911=123175853587807214=10017=exec85699529177330037=ORD175853588086839=254=155=BEL58=[32m[FILLED][0m Order fully filled150=2151=09001=Order PARTIAL9002=371.99003=09004=3009005=Order fully filled9007=100%10=243
+20250922-10:11:18: Reject sent for message 105: Invalid tag number, field=9001
+20250922-10:11:42: Sent test request TEST
+20250922-10:11:43: Received logout request
+20250922-10:11:43: Sent logout response
+20250922-10:11:43: Disconnecting: Received logout request
+20250922-10:11:46: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250922-10:11:49: MINA session created: local=/192.168.0.42:55341, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20250922-10:11:49: Initiated logon request
+20250922-10:11:49: Received logon
+20250922-10:12:17: Session FIX.4.4:CLIENT2->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250922-10:12:17: Created session: FIX.4.4:CLIENT2->BROKER1
+20250922-10:12:18: Configured socket addresses for session: [/192.168.0.37:9888]
+20250922-10:12:18: MINA session created: local=/192.168.0.42:55346, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20250922-10:12:19: Initiated logon request
+20250922-10:12:19: Received logon
+20250922-10:12:48: Received logout request
+20250922-10:12:48: Sent logout response
+20250922-10:12:48: Disconnecting: Received logout request
+20250922-10:12:51: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250922-10:12:54: MINA session created: local=/192.168.0.42:55353, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20250922-10:12:54: Initiated logon request
+20250922-10:12:54: Received logon
+20250922-10:13:09: Session FIX.4.4:CLIENT2->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250922-10:13:09: Created session: FIX.4.4:CLIENT2->BROKER1
+20250922-10:13:09: Configured socket addresses for session: [/192.168.0.37:9888]
+20250922-10:13:09: MINA session created: local=/192.168.0.42:55359, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20250922-10:13:10: Initiated logon request
+20250922-10:13:10: Received logon
+20250922-10:13:25: Rejecting invalid message: quickfix.FieldException: Tag not defined for this message type, field=9001: 8=FIX.4.49=28635=834=11349=BROKER152=20250922-10:13:27.69556=CLIENT26=371.911=123175853600492614=10017=exec85712211009140037=ORD175853600769039=254=155=BEL58=[32m[FILLED][0m Order fully filled150=2151=09001=Order PARTIAL9002=371.99003=09004=2009005=Order fully filled9007=100%10=196
+20250922-10:13:25: Reject sent for message 113: Tag not defined for this message type, field=9001
+20250922-10:21:13: Session FIX.4.4:CLIENT2->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250922-10:21:13: Created session: FIX.4.4:CLIENT2->BROKER1
+20250922-10:21:13: Configured socket addresses for session: [/192.168.0.37:9888]
+20250922-10:21:13: MINA session created: local=/192.168.0.42:55428, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20250922-10:21:14: Initiated logon request
+20250922-10:21:14: Received logon
+20250922-10:24:50: Session FIX.4.4:CLIENT2->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250922-10:24:50: Created session: FIX.4.4:CLIENT2->BROKER1
+20250922-10:24:50: Configured socket addresses for session: [/192.168.0.37:9888]
+20250922-10:24:50: MINA session created: local=/192.168.0.42:55447, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20250922-10:24:51: Initiated logon request
+20250922-10:24:51: Received logon
+20250922-10:24:51: MsgSeqNum too high, expecting 137 but received 138: 8=FIX.4.49=7135=A34=13849=BROKER152=20250922-10:24:54.61756=CLIENT298=0108=3010=084
+20250922-10:24:51: Enqueued at pos 138: 8=FIX.4.49=7135=A34=13849=BROKER152=20250922-10:24:54.61756=CLIENT298=0108=3010=084
+20250922-10:24:51: Sent ResendRequest FROM: 137 TO: infinity
+20250922-10:24:52: Rejecting invalid message: quickfix.FieldException: Tag not defined for this message type, field=9001: 8=FIX.4.49=36935=834=13743=Y49=BROKER152=20250922-10:24:54.65156=CLIENT2122=20250922-10:24:47.5336=011=123175853649000214=017=exec85780194721640037=ORD175853668751739=454=155=ASIANPAINT58=[90m[CANCELED][0m Order canceled because client disconnected150=4151=1009001=Order PARTIAL9002=2530.89003=1009004=09005=Order canceled because client disconnected9007=0%10=180
+20250922-10:24:52: Reject sent for message 137: Tag not defined for this message type, field=9001
+20250922-10:24:52: Processing queued message: 138
+20250922-10:25:22: ResendRequest for messages FROM 137 TO 137 has been satisfied.
+20250922-10:25:31: Session FIX.4.4:CLIENT2->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250922-10:25:31: Created session: FIX.4.4:CLIENT2->BROKER1
+20250922-10:25:32: Configured socket addresses for session: [/192.168.0.37:9888]
+20250922-10:25:32: MINA session created: local=/192.168.0.42:55454, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20250922-10:25:33: Initiated logon request
+20250922-10:25:33: Received logon
+20250922-10:29:23: Session FIX.4.4:CLIENT2->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250922-10:29:23: Created session: FIX.4.4:CLIENT2->BROKER1
+20250922-10:29:24: Configured socket addresses for session: [/192.168.0.37:9888]
+20250922-10:29:24: MINA session created: local=/192.168.0.42:55476, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20250922-10:29:25: Initiated logon request
+20250922-10:29:25: Received logon
+20250922-10:29:46: Rejecting invalid message: quickfix.FieldException: Tag not defined for this message type, field=9001: 8=FIX.4.49=29435=834=14949=BROKER152=20250922-10:29:48.90156=CLIENT26=1187.711=123175853698614614=10017=exec85810331854950037=ORD175853698889539=254=155=NESTLEIND58=[32m[FILLED][0m Order fully filled150=2151=09001=Order PARTIAL9002=1187.79003=09004=3009005=Order fully filled9007=100%10=065
+20250922-10:29:46: Reject sent for message 149: Tag not defined for this message type, field=9001
+20250922-10:30:11: Sent test request TEST
+20250922-10:31:32: Session FIX.4.4:CLIENT2->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250922-10:31:32: Created session: FIX.4.4:CLIENT2->BROKER1
+20250922-10:31:33: Configured socket addresses for session: [/192.168.0.37:9888]
+20250922-10:31:33: MINA session created: local=/192.168.0.42:55514, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20250922-10:31:34: Initiated logon request
+20250922-10:31:34: Received logon
+20250922-10:37:52: Session FIX.4.4:CLIENT2->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250922-10:37:52: Created session: FIX.4.4:CLIENT2->BROKER1
+20250922-10:37:53: Configured socket addresses for session: [/192.168.0.37:9888]
+20250922-10:37:53: MINA session created: local=/192.168.0.42:55566, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20250922-10:37:54: Initiated logon request
+20250922-10:37:54: Received logon
+20250922-10:44:37: Session FIX.4.4:CLIENT2->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250922-10:44:37: Created session: FIX.4.4:CLIENT2->BROKER1
+20250922-10:44:38: Configured socket addresses for session: [/192.168.0.37:9888]
+20250922-10:44:38: MINA session created: local=/192.168.0.42:55643, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20250922-10:44:38: Disconnecting: Encountered END_OF_STREAM
+20250922-10:44:43: MINA session created: local=/192.168.0.42:55645, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20250922-10:44:44: Initiated logon request
+20250922-10:44:44: Received logon
+20250922-10:46:22: Session FIX.4.4:CLIENT2->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250922-10:46:22: Created session: FIX.4.4:CLIENT2->BROKER1
+20250922-10:46:23: Configured socket addresses for session: [/192.168.0.37:9888]
+20250922-10:46:23: MINA session created: local=/192.168.0.42:55652, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20250922-10:46:24: Initiated logon request
+20250922-10:46:24: Received logon
+20250922-10:49:14: Session FIX.4.4:CLIENT2->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250922-10:49:14: Created session: FIX.4.4:CLIENT2->BROKER1
+20250922-10:49:14: Configured socket addresses for session: [/192.168.0.37:9888]
+20250922-10:49:14: MINA session created: local=/192.168.0.42:55683, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20250922-10:49:15: Initiated logon request
+20250922-10:49:15: Received logon
+20250922-10:53:15: Session FIX.4.4:CLIENT2->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250922-10:53:15: Created session: FIX.4.4:CLIENT2->BROKER1
+20250922-10:53:15: Configured socket addresses for session: [/192.168.0.37:9888]
+20250922-10:53:15: MINA session created: local=/192.168.0.42:55741, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20250922-10:53:16: Initiated logon request
+20250922-10:53:16: Received logon
+20250922-10:53:16: MsgSeqNum too high, expecting 200 but received 201: 8=FIX.4.49=7135=A34=20149=BROKER152=20250922-10:53:19.58156=CLIENT298=0108=3010=078
+20250922-10:53:16: Enqueued at pos 201: 8=FIX.4.49=7135=A34=20149=BROKER152=20250922-10:53:19.58156=CLIENT298=0108=3010=078
+20250922-10:53:16: Sent ResendRequest FROM: 200 TO: infinity
+20250922-10:53:17: ResendRequest for messages FROM 200 TO 200 has been satisfied.
+20250922-10:53:17: Processing queued message: 201
+20250922-11:02:34: Session FIX.4.4:CLIENT2->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250922-11:02:34: Created session: FIX.4.4:CLIENT2->BROKER1
+20250922-11:02:34: Configured socket addresses for session: [/192.168.0.37:9888]
+20250922-11:02:34: MINA session created: local=/192.168.0.42:55892, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20250922-11:02:35: Initiated logon request
+20250922-11:02:35: Received logon
+20250922-11:08:12: Session FIX.4.4:CLIENT2->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250922-11:08:12: Created session: FIX.4.4:CLIENT2->BROKER1
+20250922-11:08:13: Configured socket addresses for session: [/192.168.0.37:9888]
+20250922-11:08:13: MINA session created: local=/192.168.0.42:55985, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20250922-11:08:14: Initiated logon request
+20250922-11:08:14: Received logon
+20250922-11:15:13: Session FIX.4.4:CLIENT2->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250922-11:15:13: Created session: FIX.4.4:CLIENT2->BROKER1
+20250922-11:15:14: Configured socket addresses for session: [/192.168.0.37:9888]
+20250922-11:15:14: MINA session created: local=/192.168.0.42:56104, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20250922-11:15:15: Initiated logon request
+20250922-11:15:15: Received logon
+20250922-11:21:04: Session FIX.4.4:CLIENT2->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250922-11:21:04: Created session: FIX.4.4:CLIENT2->BROKER1
+20250922-11:21:04: Configured socket addresses for session: [/192.168.0.37:9888]
+20250922-11:21:04: MINA session created: local=/192.168.0.42:56160, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20250922-11:21:05: Initiated logon request
+20250922-11:21:05: Received logon
+20250922-11:28:28: Session FIX.4.4:CLIENT2->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250922-11:28:28: Created session: FIX.4.4:CLIENT2->BROKER1
+20250922-11:28:28: Configured socket addresses for session: [/192.168.0.37:9888]
+20250922-11:28:28: MINA session created: local=/192.168.0.42:56281, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20250922-11:28:29: Initiated logon request
+20250922-11:28:29: Received logon
+20250922-11:30:39: Received logout request
+20250922-11:30:39: Sent logout response
+20250922-11:30:39: Disconnecting: Received logout request
+20250922-11:30:41: Pending connection not established after 2002 ms.
+20250922-11:30:42: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250922-11:30:46: Pending connection not established after 2001 ms.
+20250922-11:30:47: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250922-11:30:49: MINA session created: local=/192.168.0.42:56302, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20250922-11:30:50: Initiated logon request
+20250922-11:30:50: Received logon
+20250922-11:31:54: Session FIX.4.4:CLIENT2->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250922-11:31:54: Created session: FIX.4.4:CLIENT2->BROKER1
+20250922-11:31:55: Configured socket addresses for session: [/192.168.0.37:9888]
+20250922-11:31:55: MINA session created: local=/192.168.0.42:56320, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20250922-11:31:56: Initiated logon request
+20250922-11:31:56: Received logon
+20250922-11:33:28: Session FIX.4.4:CLIENT2->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250922-11:33:28: Created session: FIX.4.4:CLIENT2->BROKER1
+20250922-11:33:28: Configured socket addresses for session: [/192.168.0.37:9888]
+20250922-11:33:30: Pending connection not established after 2006 ms.
+20250922-11:33:35: Pending connection not established after 7008 ms.
+20250922-11:33:40: Pending connection not established after 12011 ms.
+20250922-11:33:45: Pending connection not established after 17014 ms.
+20250922-11:33:48: Pending connection not established after 20016 ms.
+20250922-11:33:49: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20250922-11:33:54: Pending connection not established after 4002 ms.
+20250922-11:33:59: Pending connection not established after 9004 ms.
+20250922-11:34:04: Pending connection not established after 14006 ms.
+20250922-11:34:05: MINA session created: local=/192.168.0.42:56342, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20250922-11:34:06: Initiated logon request
+20250922-11:34:06: Received logon
+20250922-11:34:06: Received ResendRequest FROM: 288 TO: infinity
+20250922-11:34:06: Sent SequenceReset TO: 289
+20250922-11:34:06: Resending message: 289
+20250922-11:34:06: Sent SequenceReset TO: 291
+20250922-11:35:22: Sent test request TEST
+20250922-11:35:27: Disconnecting: Socket exception (/192.168.0.37:9888): java.net.SocketException: Connection reset
+20250922-11:35:31: Pending connection not established after 4001 ms.
+20250922-11:35:36: Pending connection not established after 9003 ms.
+20250922-11:35:39: Pending connection not established after 12004 ms.
+20250922-11:35:44: Pending connection not established after 17007 ms.
+20250922-11:35:48: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20250922-11:35:53: Pending connection not established after 4002 ms.
+20250922-11:35:58: Pending connection not established after 9003 ms.
+20250922-11:36:01: Pending connection not established after 12006 ms.
+20250922-11:36:04: Pending connection not established after 15007 ms.
+20250922-11:36:09: Pending connection not established after 20009 ms.
+20250922-11:36:10: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20250922-11:36:13: Pending connection not established after 2001 ms.
+20250922-11:36:18: Pending connection not established after 7002 ms.
+20250922-11:36:21: Pending connection not established after 10005 ms.
+20250922-11:36:26: Pending connection not established after 15007 ms.
+20250922-11:36:29: Pending connection not established after 18008 ms.
+20250922-11:36:32: Pending connection not established after 21010 ms.
+20250922-11:36:33: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20250922-11:36:38: Pending connection not established after 4013 ms.
+20250922-11:36:41: Pending connection not established after 7090 ms.
+20250922-11:36:46: Pending connection not established after 12095 ms.
+20250922-11:36:51: Pending connection not established after 17098 ms.
+20250922-11:36:54: Pending connection not established after 20099 ms.
+20250922-11:36:55: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20250922-11:37:00: Pending connection not established after 4004 ms.
+20250922-11:37:03: Pending connection not established after 7006 ms.
+20250922-11:37:06: Pending connection not established after 10008 ms.
+20250922-11:37:09: Pending connection not established after 13011 ms.
+20250922-11:37:12: Pending connection not established after 16013 ms.
+20250922-11:37:15: Pending connection not established after 19014 ms.
+20250922-11:37:17: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20250922-11:37:22: Pending connection not established after 4001 ms.
+20250922-11:37:27: Pending connection not established after 9005 ms.
+20250922-11:37:32: Pending connection not established after 14007 ms.
+20250922-11:37:37: Pending connection not established after 19009 ms.
+20250922-11:37:39: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20250922-11:37:42: Pending connection not established after 2002 ms.
+20250922-11:37:45: Pending connection not established after 5003 ms.
+20250922-11:37:48: Pending connection not established after 8005 ms.
+20250922-11:37:53: Pending connection not established after 13007 ms.
+20250922-11:37:58: Pending connection not established after 18017 ms.
+20250922-11:38:01: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20250922-11:38:06: Pending connection not established after 4003 ms.
+20250922-11:38:09: Pending connection not established after 7005 ms.
+20250922-11:38:14: Pending connection not established after 12007 ms.
+20250922-11:38:17: Pending connection not established after 15059 ms.
+20250922-11:38:33: Session FIX.4.4:CLIENT2->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250922-11:38:33: Created session: FIX.4.4:CLIENT2->BROKER1
+20250922-11:38:33: Configured socket addresses for session: [/192.168.0.37:9888]
+20250922-11:38:37: Pending connection not established after 4004 ms.
+20250922-11:38:40: MINA session created: local=/192.168.0.42:56382, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20250922-11:38:40: Initiated logon request
+20250922-11:38:40: Received logon
+20250922-11:38:40: Received ResendRequest FROM: 292 TO: infinity
+20250922-11:38:40: Sent SequenceReset TO: 295
+20250922-11:39:29: Session FIX.4.4:CLIENT2->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250922-11:39:29: Created session: FIX.4.4:CLIENT2->BROKER1
+20250922-11:39:29: Configured socket addresses for session: [/192.168.0.37:9888]
+20250922-11:39:29: MINA session created: local=/192.168.0.42:56393, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20250922-11:39:31: Initiated logon request
+20250922-11:39:31: Received logon
+20250922-11:40:30: Sent test request TEST
+20250922-11:40:34: Disconnecting: Socket exception (/192.168.0.37:9888): java.net.SocketException: Connection reset
+20250922-11:40:37: Pending connection not established after 2002 ms.
+20250922-11:40:40: Pending connection not established after 5004 ms.
+20250922-11:40:43: Pending connection not established after 8006 ms.
+20250922-11:40:48: Pending connection not established after 13008 ms.
+20250922-11:40:51: Pending connection not established after 16011 ms.
+20250922-11:40:54: Pending connection not established after 19013 ms.
+20250922-11:40:56: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20250922-11:40:59: Pending connection not established after 2006 ms.
+20250922-11:41:04: Pending connection not established after 7008 ms.
+20250922-11:41:09: Pending connection not established after 12010 ms.
+20250922-11:41:12: Pending connection not established after 15012 ms.
+20250922-11:41:17: Pending connection not established after 20013 ms.
+20250922-11:41:18: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20250922-11:41:23: Pending connection not established after 4001 ms.
+20250922-11:41:26: Pending connection not established after 7003 ms.
+20250922-11:41:29: Pending connection not established after 10681 ms.
+20250922-11:41:32: Pending connection not established after 13685 ms.
+20250922-11:41:37: Pending connection not established after 18686 ms.
+20250922-11:41:38: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20250922-11:41:43: Pending connection not established after 4001 ms.
+20250922-11:41:48: Pending connection not established after 9002 ms.
+20250922-11:41:53: Pending connection not established after 14004 ms.
+20250922-11:41:56: Pending connection not established after 17006 ms.
+20250922-11:42:01: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20250922-11:42:04: Pending connection not established after 2001 ms.
+20250922-11:42:07: Pending connection not established after 5003 ms.
+20250922-11:42:12: Pending connection not established after 10006 ms.
+20250922-11:42:15: Pending connection not established after 13008 ms.
+20250922-11:42:20: Pending connection not established after 18010 ms.
+20250922-11:42:23: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20250922-11:42:28: Pending connection not established after 4000 ms.
+20250922-11:42:33: Pending connection not established after 9002 ms.
+20250922-11:42:36: Pending connection not established after 12004 ms.
+20250922-11:42:41: Pending connection not established after 17006 ms.
+20250922-11:42:44: Pending connection not established after 20008 ms.
+20250922-11:42:45: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20250922-11:42:48: Pending connection not established after 2001 ms.
+20250922-11:42:53: Pending connection not established after 7004 ms.
+20250922-11:42:56: Pending connection not established after 10005 ms.
+20250922-11:42:59: Pending connection not established after 13007 ms.
+20250922-11:43:04: Pending connection not established after 18010 ms.
+20250922-11:43:07: Pending connection not established after 21012 ms.
+20250922-11:43:08: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20250922-11:43:13: Pending connection not established after 4001 ms.
+20250922-11:43:16: Pending connection not established after 7002 ms.
+20250922-11:43:19: Pending connection not established after 10004 ms.
+20250922-11:43:22: Pending connection not established after 13006 ms.
+20250922-11:43:27: Pending connection not established after 18007 ms.
+20250922-11:43:30: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20250922-11:43:35: Pending connection not established after 4000 ms.
+20250922-11:43:40: Pending connection not established after 9001 ms.
+20250922-11:43:45: Pending connection not established after 14003 ms.
+20250922-11:43:50: Pending connection not established after 19005 ms.
+20250922-11:43:52: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20250922-11:43:57: Pending connection not established after 4001 ms.
+20250922-11:44:00: Pending connection not established after 7003 ms.
+20250922-11:44:03: Pending connection not established after 10006 ms.
+20250922-11:44:08: Pending connection not established after 15007 ms.
+20250922-11:44:13: Pending connection not established after 20009 ms.
+20250922-11:44:14: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20250922-11:44:19: Pending connection not established after 4001 ms.
+20250922-11:44:22: Pending connection not established after 7005 ms.
+20250922-11:44:27: Pending connection not established after 12006 ms.
+20250922-11:44:32: Pending connection not established after 17010 ms.
+20250922-11:44:35: Pending connection not established after 20012 ms.
+20250922-11:44:36: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20250922-11:44:39: Pending connection not established after 2002 ms.
+20250922-11:44:44: Pending connection not established after 7003 ms.
+20250922-11:44:47: Pending connection not established after 10005 ms.
+20250922-11:44:50: Pending connection not established after 13007 ms.
+20250922-11:44:53: Pending connection not established after 16008 ms.
+20250922-11:44:56: Pending connection not established after 19011 ms.
+20250922-11:44:58: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20250922-11:45:01: Pending connection not established after 2001 ms.
+20250922-11:45:06: Pending connection not established after 7003 ms.
+20250922-11:45:11: Pending connection not established after 12006 ms.
+20250922-11:45:14: Pending connection not established after 15007 ms.
+20250922-11:45:19: Pending connection not established after 20009 ms.
+20250922-11:45:20: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20250922-11:45:23: Pending connection not established after 2024 ms.
+20250922-11:45:26: Pending connection not established after 5035 ms.
+20250922-11:45:29: Pending connection not established after 8047 ms.
+20250922-11:45:32: Pending connection not established after 11065 ms.
+20250922-11:45:35: Pending connection not established after 14080 ms.
+20250922-11:45:38: Pending connection not established after 17087 ms.
+20250922-11:45:41: Pending connection not established after 20107 ms.
+20250922-11:45:42: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20250922-11:45:45: Pending connection not established after 2012 ms.
+20250922-11:45:48: Pending connection not established after 5022 ms.
+20250922-11:45:51: Pending connection not established after 8030 ms.
+20250922-11:45:54: Pending connection not established after 11047 ms.
+20250922-11:45:57: Pending connection not established after 14059 ms.
+20250922-11:46:00: Pending connection not established after 17086 ms.
+20250922-11:46:03: Pending connection not established after 20093 ms.
+20250922-11:46:04: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20250922-11:46:09: Pending connection not established after 4002 ms.
+20250922-11:46:12: Pending connection not established after 7006 ms.
+20250922-11:46:15: Pending connection not established after 10009 ms.
+20250922-11:46:20: Pending connection not established after 15012 ms.
+20250922-11:46:25: Pending connection not established after 20015 ms.
+20250922-11:46:26: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20250922-11:46:29: Pending connection not established after 2002 ms.
+20250922-11:46:32: Pending connection not established after 5004 ms.
+20250922-11:46:35: Pending connection not established after 8016 ms.
+20250922-11:46:38: Pending connection not established after 11024 ms.
+20250922-11:46:41: Pending connection not established after 14034 ms.
+20250922-11:46:44: Pending connection not established after 17041 ms.
+20250922-11:46:47: Pending connection not established after 20055 ms.
+20250922-11:46:49: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20250922-11:46:52: Pending connection not established after 2005 ms.
+20250922-11:46:57: Pending connection not established after 7011 ms.
+20250922-11:47:02: Pending connection not established after 12028 ms.
+20250922-11:47:05: Pending connection not established after 15039 ms.
+20250922-11:47:08: Pending connection not established after 18044 ms.
+20250922-11:47:11: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20250922-11:47:16: Pending connection not established after 4003 ms.
+20250922-11:47:21: Pending connection not established after 9005 ms.
+20250922-11:47:24: Pending connection not established after 12008 ms.
+20250922-11:47:27: Pending connection not established after 15011 ms.
+20250922-11:47:30: Pending connection not established after 18013 ms.
+20250922-11:47:34: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20250922-11:47:37: Pending connection not established after 2014 ms.
+20250922-11:47:40: Pending connection not established after 5047 ms.
+20250922-11:47:43: Pending connection not established after 8073 ms.
+20250922-11:47:46: Pending connection not established after 11121 ms.
+20250922-11:47:49: Pending connection not established after 14167 ms.
+20250922-11:47:52: Pending connection not established after 17212 ms.
+20250922-11:47:55: Pending connection not established after 20253 ms.
+20250922-11:47:56: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20250922-11:47:59: Pending connection not established after 2028 ms.
+20250922-11:48:02: Pending connection not established after 5056 ms.
+20250922-11:48:05: Pending connection not established after 8088 ms.
+20250922-11:48:08: Pending connection not established after 11090 ms.
+20250922-11:48:11: Pending connection not established after 14119 ms.
+20250922-11:48:14: Pending connection not established after 17134 ms.
+20250922-11:48:17: Pending connection not established after 20167 ms.
+20250922-11:48:18: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20250922-11:48:21: Pending connection not established after 2001 ms.
+20250922-11:48:24: Pending connection not established after 5003 ms.
+20250922-11:48:27: Pending connection not established after 8005 ms.
+20250922-11:48:30: Pending connection not established after 11013 ms.
+20250922-11:48:33: Pending connection not established after 14014 ms.
+20250922-11:48:38: Pending connection not established after 19023 ms.
+20250922-11:48:41: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20250922-11:48:44: Pending connection not established after 2006 ms.
+20250922-11:48:47: Pending connection not established after 5023 ms.
+20250922-11:48:50: Pending connection not established after 8029 ms.
+20250922-11:48:53: Pending connection not established after 11062 ms.
+20250922-11:48:56: Pending connection not established after 14111 ms.
+20250922-11:48:59: Pending connection not established after 17127 ms.
+20250922-11:49:02: Pending connection not established after 20139 ms.
+20250922-11:49:03: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20250922-11:49:06: Pending connection not established after 2007 ms.
+20250922-11:49:09: Pending connection not established after 5028 ms.
+20250922-11:49:12: Pending connection not established after 8059 ms.
+20250922-11:49:15: Pending connection not established after 11088 ms.
+20250922-11:49:18: Pending connection not established after 14125 ms.
+20250922-11:49:21: Pending connection not established after 17136 ms.
+20250922-11:49:24: Pending connection not established after 20160 ms.
+20250922-11:49:25: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20250922-11:49:28: Pending connection not established after 2015 ms.
+20250922-11:49:31: Pending connection not established after 5019 ms.
+20250922-11:49:34: Pending connection not established after 8033 ms.
+20250922-11:49:37: Pending connection not established after 11072 ms.
+20250922-11:49:40: Pending connection not established after 14097 ms.
+20250922-11:49:43: Pending connection not established after 17115 ms.
+20250922-11:49:46: Pending connection not established after 20149 ms.
+20250922-11:49:48: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20250922-11:49:51: Pending connection not established after 2009 ms.
+20250922-11:49:54: Pending connection not established after 5038 ms.
+20250922-11:49:57: Pending connection not established after 8042 ms.
+20250922-11:50:00: Pending connection not established after 11045 ms.
+20250922-11:50:03: Pending connection not established after 14078 ms.
+20250922-11:50:06: Pending connection not established after 17109 ms.
+20250922-11:50:09: Pending connection not established after 20137 ms.
+20250922-11:50:10: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20250922-11:50:13: Pending connection not established after 2008 ms.
+20250922-11:50:16: Pending connection not established after 5040 ms.
+20250922-11:50:20: Pending connection not established after 9021 ms.
+20250922-11:50:23: Pending connection not established after 12067 ms.
+20250922-11:50:26: Pending connection not established after 15106 ms.
+20250922-11:50:29: Pending connection not established after 18150 ms.
+20250922-11:50:32: Pending connection not established after 21169 ms.
+20250922-11:50:33: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20250922-11:50:36: Pending connection not established after 2050 ms.
+20250922-11:50:39: Pending connection not established after 5104 ms.
+20250922-11:50:42: Pending connection not established after 8153 ms.
+20250922-11:50:46: Pending connection not established after 11185 ms.
+20250922-11:50:49: Pending connection not established after 14226 ms.
+20250922-11:50:52: Pending connection not established after 17239 ms.
+20250922-11:50:55: Pending connection not established after 20283 ms.
+20250922-11:50:56: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20250922-11:50:59: Pending connection not established after 2024 ms.
+20250922-11:51:02: Pending connection not established after 5056 ms.
+20250922-11:51:05: Pending connection not established after 8078 ms.
+20250922-11:51:08: Pending connection not established after 11104 ms.
+20250922-11:51:11: Pending connection not established after 14125 ms.
+20250922-11:51:14: Pending connection not established after 17136 ms.
+20250922-11:51:17: Pending connection not established after 20151 ms.
+20250922-11:51:18: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20250922-11:51:19: MINA session created: local=/192.168.0.42:56550, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20250922-11:51:37: Initiated logon request
+20250922-11:51:37: Disconnecting: Timed out waiting for logon response
+20250922-11:51:38: MINA session created: local=/192.168.0.42:56553, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20250922-11:51:38: Initiated logon request
+20250922-11:51:38: Received logon
+20250922-11:51:38: MsgSeqNum too high, expecting 294 but received 296: 8=FIX.4.49=7135=A34=29649=BROKER152=20250922-11:51:42.37656=CLIENT298=0108=3010=089
+20250922-11:51:38: Enqueued at pos 296: 8=FIX.4.49=7135=A34=29649=BROKER152=20250922-11:51:42.37656=CLIENT298=0108=3010=089
+20250922-11:51:38: Sent ResendRequest FROM: 294 TO: infinity
+20250922-11:51:38: Enqueued at pos 297: 8=FIX.4.49=7035=234=29749=BROKER152=20250922-11:51:42.37756=CLIENT27=29916=010=032
+20250922-11:51:38: Received ResendRequest FROM: 299 TO: infinity
+20250922-11:51:38: Sent SequenceReset TO: 304
+20250922-11:51:38: Received SequenceReset FROM: 294 TO: 298
+20250923-09:15:02: Session FIX.4.4:CLIENT2->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250923-09:15:02: Session state is not current; resetting FIX.4.4:CLIENT2->BROKER1
+20250923-09:15:02: Created session: FIX.4.4:CLIENT2->BROKER1
+20250923-09:15:02: Configured socket addresses for session: [/192.168.0.37:9888]
+20250923-09:15:02: MINA session created: local=/192.168.0.42:57536, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20250923-09:15:03: Initiated logon request
+20250923-09:15:03: Received logon
+20250923-09:16:27: Received logout request
+20250923-09:16:27: Sent logout response
+20250923-09:16:27: Disconnecting: Received logout request
+20250923-09:16:29: Pending connection not established after 2003 ms.
+20250923-09:16:30: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250923-09:16:34: Pending connection not established after 2002 ms.
+20250923-09:16:35: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250923-09:16:39: MINA session created: local=/192.168.0.42:57559, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20250923-09:16:39: Initiated logon request
+20250923-09:16:39: Received logon
+20250923-09:18:04: Received logout request
+20250923-09:18:04: Sent logout response
+20250923-09:18:04: Disconnecting: Received logout request
+20250923-09:18:07: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250923-09:18:12: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250923-09:18:15: MINA session created: local=/192.168.0.42:57566, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20250923-09:18:15: Initiated logon request
+20250923-09:18:15: Received logon
+20250923-09:18:31: Received logout request
+20250923-09:18:31: Sent logout response
+20250923-09:18:31: Disconnecting: Received logout request
+20250923-09:18:34: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250923-09:18:39: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250923-09:18:44: Pending connection not established after 2002 ms.
+20250923-09:18:45: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250923-09:18:47: MINA session created: local=/192.168.0.42:57571, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20250923-09:18:47: Initiated logon request
+20250923-09:18:47: Received logon
+20250923-09:21:39: Session FIX.4.4:CLIENT2->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250923-09:21:39: Created session: FIX.4.4:CLIENT2->BROKER1
+20250923-09:21:39: Configured socket addresses for session: [/192.168.0.37:9888]
+20250923-09:21:39: MINA session created: local=/192.168.0.42:57606, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20250923-09:21:40: Initiated logon request
+20250923-09:21:40: Received logon
+20250923-09:26:40: Session FIX.4.4:CLIENT2->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250923-09:26:40: Created session: FIX.4.4:CLIENT2->BROKER1
+20250923-09:26:40: Configured socket addresses for session: [/192.168.0.37:9888]
+20250923-09:26:40: MINA session created: local=/192.168.0.42:57657, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20250923-09:26:41: Initiated logon request
+20250923-09:26:42: Received logon

@@ -14,6 +14,12 @@ public class ReceivedData {
     private Integer remainingQuantity;
     private Integer canceledQuantity;
     private SessionID sessionID;
+    private String customStatus;
+    private double marketReferencePrice;
+    private int orderRemainingQuantity;
+    private int inventoryAfterTrade;
+    private String orderExecutionNote;
+    private String executionProgressPercent;
 
     public ReceivedData(String clOrdId, String execId, String symbol, String side, String execType,
                         Double price, Integer originalQuantity, Integer filledQuantity,
@@ -77,6 +83,25 @@ public class ReceivedData {
     public SessionID getSessionID() { return sessionID; }
     public void setSessionID(SessionID sessionID) { this.sessionID = sessionID; }
 
+    public String getCustomStatus() { return customStatus; }
+    public void setCustomStatus(String customStatus) { this.customStatus = customStatus; }
+
+    public double getMarketReferencePrice() { return marketReferencePrice; }
+    public void setMarketReferencePrice(double marketReferencePrice) { this.marketReferencePrice = marketReferencePrice; }
+
+    public int getOrderRemainingQuantity() { return orderRemainingQuantity; }
+    public void setOrderRemainingQuantity(int orderRemainingQuantity) { this.orderRemainingQuantity = orderRemainingQuantity; }
+
+    public int getInventoryAfterTrade() { return inventoryAfterTrade; }
+    public void setInventoryAfterTrade(int inventoryAfterTrade) { this.inventoryAfterTrade = inventoryAfterTrade; }
+
+    public String getOrderExecutionNote() { return orderExecutionNote; }
+    public void setOrderExecutionNote(String orderExecutionNote) { this.orderExecutionNote = orderExecutionNote; }
+
+    public String getExecutionProgressPercent() { return executionProgressPercent; }
+    public void setExecutionProgressPercent(String executionProgressPercent) { this.executionProgressPercent = executionProgressPercent; }
+
+
     @Override
     public String toString() {
         return "ReceivedData{" +
@@ -90,6 +115,12 @@ public class ReceivedData {
                 ", remainingQuantity=" + remainingQuantity +
                 ", canceledQuantity=" + canceledQuantity +
                 ", sessionID=" + sessionID +
+                ", customStatus='" + customStatus + '\'' +
+                ", marketReferencePrice=" + marketReferencePrice +
+                ", orderRemainingQuantity=" + orderRemainingQuantity +
+                ", inventoryAfterTrade=" + inventoryAfterTrade +
+                ", orderExecutionNote='" + orderExecutionNote + '\'' +
+                ", executionProgressPercent='" + executionProgressPercent + '\'' +
                 '}';
     }
 }

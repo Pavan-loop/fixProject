@@ -68,7 +68,6 @@ public class HelloController {
         tableOrder.setEditable(true);
 
         TableUtils.addRow(symbol, side, orderType, orderPrice, orderQuantity);
-
         ReceiveDataUtils.addRow(reClient, reExecId, reSymbol, reSide, reStatus,
                 rePrice, reFilledQuantity, reRemainingQuantity, reCanceledQuantity, reOriginalQuantity);
 
@@ -84,13 +83,27 @@ public class HelloController {
                     switch (status) {
                         case "A":
                             setText("Pending");
-                            setStyle("-fx-background-color: burlywood; -fx-text-fill: black;"); break;
-                        case "Fill": setStyle("-fx-background-color: #6ef16e; -fx-text-fill: black;"); break;
-                        case "Rejected": setStyle("-fx-background-color: #fb0000; -fx-text-fill: black;"); break;
-                        case "Partial Fill": setStyle("-fx-background-color: #ffe800; -fx-text-fill: black;"); break;
-                        case "Canceled": setStyle("-fx-background-color: gray; -fx-text-fill: black;"); break;
-                        case "New": setStyle("-fx-background-color: lightblue; -fx-text-fill: black;"); break;
-                        default: setStyle(""); break;
+                            setStyle("-fx-background-color: burlywood; -fx-text-fill: black;");
+                            break;
+                        case "Filled":
+                            System.out.println("Status is Filled");
+                            setStyle("-fx-background-color: #6ef16e; -fx-text-fill: black;");
+                            break;
+                        case "Rejected":
+                            setStyle("-fx-background-color: #fb0000; -fx-text-fill: black;");
+                            break;
+                        case "Partial Fill":
+                            setStyle("-fx-background-color: #ffe800; -fx-text-fill: black;");
+                            break;
+                        case "Canceled":
+                            setStyle("-fx-background-color: gray; -fx-text-fill: black;");
+                            break;
+                        case "New":
+                            setStyle("-fx-background-color: lightblue; -fx-text-fill: black;");
+                            break;
+                        default:
+                            setStyle("");
+                            break;
                     }
                 }
             }
@@ -132,7 +145,10 @@ public class HelloController {
         if (order.getOrderPrice() <= 0) { TableUtils.highlightCell(order, orderPrice, tableOrder); valid = false; }
         if (order.getOrderQuantity() <= 0) { TableUtils.highlightCell(order, orderQuantity, tableOrder); valid = false; }
 
-        if (!valid) { showAlert("Invalid Order", "Please fill all required fields."); return; }
+        if (!valid) {
+            showAlert("Invalid Order", "Please fill all required fields.");
+            return;
+        }
 
         System.out.println("Sending order: " + order);
 
@@ -155,12 +171,11 @@ public class HelloController {
             boolean isCancel = "Canceled".equalsIgnoreCase(data.getExecType());
 
             if (isCancel) {
-
                 Optional<TableReceivedData> existingRowOpt = receivedOrderData.stream()
                         .filter(r -> r.getClientOrdId().equals(data.getClOrdId()))
                         .reduce((first, second) -> second);
 
-                int orig, filled, price;
+                int orig, filled;
                 double px;
 
                 if (existingRowOpt.isPresent()) {
@@ -169,7 +184,6 @@ public class HelloController {
                     filled = last.getFilledQuantity();
                     px = last.getPrice();
                 } else {
-
                     orig = data.getOriginalQuantity() != null ? data.getOriginalQuantity() : 0;
                     filled = data.getFilledQuantity() != null ? data.getFilledQuantity() : 0;
                     px = data.getPrice() != null ? data.getPrice() : 0.0;
@@ -193,17 +207,20 @@ public class HelloController {
                 );
 
                 receivedOrderData.add(row);
-
-
                 cancelOrder.getItems().remove(data.getClOrdId());
-            }
-            else {
+
+            } else {
                 Optional<TableReceivedData> existingRowOpt = receivedOrderData.stream()
                         .filter(r -> r.getClientOrdId().equals(data.getClOrdId()))
                         .findFirst();
 
                 if (existingRowOpt.isPresent()) {
                     TableReceivedData row = existingRowOpt.get();
+
+
+                    if (data.getExecId() != null && !data.getExecId().isBlank()) {
+                        row.setExecId(data.getExecId());
+                    }
 
                     if (data.getOriginalQuantity() != null && data.getOriginalQuantity() > 0 && row.getOriginalQuantity() == 0) {
                         row.setOriginalQuantity(data.getOriginalQuantity());
@@ -214,6 +231,7 @@ public class HelloController {
 
                     if (data.getFilledQuantity() != null) {
                         if (data.getFilledQuantity() == 0 && "Canceled".equalsIgnoreCase(data.getExecType()) && row.getFilledQuantity() > 0) {
+
                         } else {
                             row.setFilledQuantity(data.getFilledQuantity());
                         }
@@ -223,7 +241,8 @@ public class HelloController {
                         row.setRemainingQuantity(data.getRemainingQuantity());
                     }
 
-                    int calcCanceled = Math.max(0, row.getOriginalQuantity() - row.getFilledQuantity() - row.getRemainingQuantity());
+                    int calcCanceled = Math.max(0,
+                            row.getOriginalQuantity() - row.getFilledQuantity() - row.getRemainingQuantity());
                     row.setCanceledQuantity(calcCanceled);
 
                     receivedOrderData.remove(row);
@@ -260,19 +279,26 @@ public class HelloController {
         });
     }
 
-
-
     public void onCancel() {
         String clOrdId = cancelOrder.getValue();
-        if (clOrdId == null || clOrdId.isEmpty()) { showAlert("Cancel Error", "Please select a valid order to cancel."); return; }
+        if (clOrdId == null || clOrdId.isEmpty()) {
+            showAlert("Cancel Error", "Please select a valid order to cancel.");
+            return;
+        }
 
         Optional<ReceivedData> find = uData.stream().filter(f -> f.getClOrdId().equals(clOrdId)).findFirst();
-        if (find.isEmpty()) { showAlert("Cancel Error", "Order with ClOrdId not found."); return; }
+        if (find.isEmpty()) {
+            showAlert("Cancel Error", "Order with ClOrdId not found.");
+            return;
+        }
 
         ReceivedData data = find.get();
         System.out.println("Cancelling Order => ClOrdId: " + data.getClOrdId() + ", Symbol: " + data.getSymbol());
-        try { SendFixMessage.cancelOrder(initiator, data); }
-        catch (SessionNotFound e) { showAlert("FIX Session Error", "Could not cancel order due to session error."); }
+        try {
+            SendFixMessage.cancelOrder(initiator, data);
+        } catch (SessionNotFound e) {
+            showAlert("FIX Session Error", "Could not cancel order due to session error.");
+        }
     }
 
     private void showAlert(String title, String content) {

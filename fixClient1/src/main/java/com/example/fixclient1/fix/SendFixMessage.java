@@ -39,10 +39,9 @@ public class SendFixMessage {
 
         ReceivedData data = new ReceivedData();
         data.setClOrdId(clOrdId);
-        data.setExecId(data.getExecId());
         data.setSymbol(tableOrder.getSymbol());
         data.setSide(tableOrder.getSide());
-        data.setExecType("New");
+        data.setExecType("Pending");
         data.setPrice(tableOrder.getOrderPrice());
         data.setOriginalQuantity(tableOrder.getOrderQuantity());
         data.setFilledQuantity(0);
@@ -52,6 +51,7 @@ public class SendFixMessage {
 
         return data;
     }
+
 
     /**
      * Send a cancel request for an existing order.
