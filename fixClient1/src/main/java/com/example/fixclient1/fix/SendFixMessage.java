@@ -8,15 +8,13 @@ import quickfix.SessionNotFound;
 import quickfix.field.*;
 import quickfix.fix44.NewOrderSingle;
 import quickfix.fix44.OrderCancelRequest;
+import quickfix.fix44.OrderCancelReplaceRequest;
 
 import java.time.LocalDateTime;
 
 public class SendFixMessage {
 
-    /**
-     * Send a new order to the broker and return a ReceivedData object
-     * initialized with correct quantities.
-     */
+    // Existing send method
     public static ReceivedData send(Initiator initiator, TableOrder tableOrder) throws SessionNotFound {
         char side = tableOrder.getSide().equalsIgnoreCase("BUY") ? Side.BUY : Side.SELL;
         char orderType = tableOrder.getOrderType().equalsIgnoreCase("LIMIT") ? OrdType.LIMIT : OrdType.MARKET;
@@ -36,7 +34,6 @@ public class SendFixMessage {
 
         Session.sendToTarget(newOrder, initiator.getSessions().get(0));
 
-
         ReceivedData data = new ReceivedData();
         data.setClOrdId(clOrdId);
         data.setSymbol(tableOrder.getSymbol());
@@ -52,10 +49,7 @@ public class SendFixMessage {
         return data;
     }
 
-
-    /**
-     * Send a cancel request for an existing order.
-     */
+    // Existing cancel method
     public static void cancelOrder(Initiator initiator, ReceivedData receivedData) throws SessionNotFound {
         String cancelClOrdId = "CL" + System.currentTimeMillis();
 
@@ -69,5 +63,29 @@ public class SendFixMessage {
         cancelRequest.set(new Symbol(receivedData.getSymbol()));
 
         Session.sendToTarget(cancelRequest, receivedData.getSessionID());
+    }
+
+    // ------------------- New Modify / Replace Method -------------------
+    public static void replaceOrder(Initiator initiator, String origClOrdId, String newClOrdId,
+                                    String symbol, double newPrice, int newQty, char side) throws SessionNotFound {
+
+        OrderCancelReplaceRequest replaceRequest = new OrderCancelReplaceRequest();
+
+        // Required fields
+        replaceRequest.set(new OrigClOrdID(origClOrdId));
+        replaceRequest.set(new ClOrdID(newClOrdId));
+        replaceRequest.set(new Side(side));
+        replaceRequest.set(new Symbol(symbol));
+        replaceRequest.set(new TransactTime(LocalDateTime.now()));
+        replaceRequest.set(new OrdType(OrdType.LIMIT)); // Assuming limit order modification
+
+        // Fields to modify
+        replaceRequest.set(new Price(newPrice));
+        replaceRequest.set(new OrderQty(newQty));
+
+        // Optional: TimeInForce
+        replaceRequest.set(new TimeInForce(TimeInForce.DAY));
+
+        Session.sendToTarget(replaceRequest, initiator.getSessions().get(0));
     }
 }

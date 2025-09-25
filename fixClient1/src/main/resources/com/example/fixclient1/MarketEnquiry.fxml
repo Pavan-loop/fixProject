@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<?import javafx.scene.text.Text?>
+<AnchorPane xmlns="http://javafx.com/javafx/23.0.1"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.fixclient1.MarketEnquiryController"
+            prefWidth="600" prefHeight="400">
+    <children>
+        <Text layoutX="14" layoutY="24" text="Market Enquiry"/>
+        <ComboBox fx:id="symbolDropdown" layoutX="120" layoutY="10" prefWidth="200"/>
+        <Button text="Request" layoutX="330" layoutY="10" onAction="#onRequestMarketData"/>
+        <TableView fx:id="tableMarketData" layoutX="10" layoutY="50"
+                   AnchorPane.topAnchor="50" AnchorPane.leftAnchor="0"
+                   AnchorPane.rightAnchor="0" AnchorPane.bottomAnchor="0">
+            <columns>
+                <TableColumn fx:id="mdSymbol" text="Symbol"/>
+                <TableColumn fx:id="mdPrice" text="Price"/>
+                <TableColumn fx:id="mdQty" text="Quantity"/>
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>
+

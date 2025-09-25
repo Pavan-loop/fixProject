@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TabPane xmlns="http://javafx.com/javafx/23.0.1"
+         xmlns:fx="http://javafx.com/fxml/1"
+         prefWidth="800" prefHeight="600"
+         stylesheets="@../../../style.css"
+         styleClass="root">
+
+    <tabs>
+        <!-- Order Book Tab -->
+        <Tab text="Order Book">
+            <AnchorPane>
+                <fx:include source="hello-view.fxml"
+                            fx:id="orderBookTab"
+                            AnchorPane.topAnchor="0.0"
+                            AnchorPane.bottomAnchor="0.0"
+                            AnchorPane.leftAnchor="0.0"
+                            AnchorPane.rightAnchor="0.0"/>
+            </AnchorPane>
+        </Tab>
+
+        <!-- Market Enquiry Tab -->
+        <Tab text="Market Enquiry">
+            <AnchorPane>
+                <fx:include source="MarketEnquiry.fxml"
+                            fx:id="marketEnquiryTab"
+                            AnchorPane.topAnchor="0.0"
+                            AnchorPane.bottomAnchor="0.0"
+                            AnchorPane.leftAnchor="0.0"
+                            AnchorPane.rightAnchor="0.0"/>
+            </AnchorPane>
+        </Tab>
+    </tabs>
+</TabPane>

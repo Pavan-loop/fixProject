@@ -11,11 +11,17 @@ import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.geometry.Insets;
+import javafx.scene.Parent;
 import javafx.scene.control.*;
+import javafx.scene.layout.GridPane;
+import javafx.util.Pair;
 import quickfix.ConfigError;
 import quickfix.Initiator;
 import quickfix.SessionNotFound;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -44,6 +50,8 @@ public class HelloController {
 
     @FXML private ComboBox<String> cancelOrder;
 
+    @FXML private MarketEnquiryController marketEnquiryTab;
+
     private final List<ReceivedData> uData = new ArrayList<>();
     private final ObservableList<TableOrder> orderData = FXCollections.observableArrayList();
     private final ObservableList<TableReceivedData> receivedOrderData = FXCollections.observableArrayList();
@@ -58,10 +66,12 @@ public class HelloController {
                     this
             );
             initiator = clientApp.start();
+            if (marketEnquiryTab != null) {
+                marketEnquiryTab.setClientApp(clientApp);
+            }
         } catch (ConfigError e) {
             e.printStackTrace();
         }
-
         tableOrder.setItems(orderData);
         tableOrder.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY);
         tableReceivedData.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY);
@@ -81,35 +91,19 @@ public class HelloController {
                 } else {
                     setText(status);
                     switch (status) {
-                        case "A":
-                            setText("Pending");
-                            setStyle("-fx-background-color: burlywood; -fx-text-fill: black;");
-                            break;
-                        case "Filled":
-                            System.out.println("Status is Filled");
-                            setStyle("-fx-background-color: #6ef16e; -fx-text-fill: black;");
-                            break;
-                        case "Rejected":
-                            setStyle("-fx-background-color: #fb0000; -fx-text-fill: black;");
-                            break;
-                        case "Partial Fill":
-                            setStyle("-fx-background-color: #ffe800; -fx-text-fill: black;");
-                            break;
-                        case "Canceled":
-                            setStyle("-fx-background-color: gray; -fx-text-fill: black;");
-                            break;
-                        case "New":
-                            setStyle("-fx-background-color: lightblue; -fx-text-fill: black;");
-                            break;
-                        default:
-                            setStyle("");
-                            break;
+                        case "Pending" -> setStyle("-fx-background-color: burlywood; -fx-text-fill: black;");
+                        case "Filled" -> setStyle("-fx-background-color: #6ef16e; -fx-text-fill: black;");
+                        case "Rejected" -> setStyle("-fx-background-color: #fb0000; -fx-text-fill: black;");
+                        case "Partial Fill" -> setStyle("-fx-background-color: #ffe800; -fx-text-fill: black;");
+                        case "Canceled" -> setStyle("-fx-background-color: gray; -fx-text-fill: black;");
+                        case "New" -> setStyle("-fx-background-color: lightblue; -fx-text-fill: black;");
+                        default -> setStyle("");
                     }
                 }
             }
         });
 
-        orderData.add(new TableOrder("", "", "", 0.0, 0));
+        orderData.add(new TableOrder("", "", "", "", 0.0, 0));
         addSendButtonToTable();
         TableUtils.tableMovement(tableOrder);
     }
@@ -157,13 +151,10 @@ public class HelloController {
         addValue(data);
 
         if (orderData.indexOf(order) == orderData.size() - 1) {
-            orderData.add(new TableOrder("", "", "", 0.0, 0));
+            orderData.add(new TableOrder("", "", "", "", 0.0, 0));
         }
     }
 
-    /**
-     * Add or update received execution report in the table
-     */
     public void addValue(ReceivedData data) {
         Platform.runLater(() -> {
             tableReceivedData.setItems(receivedOrderData);
@@ -171,7 +162,6 @@ public class HelloController {
             boolean isCancel = "Canceled".equalsIgnoreCase(data.getExecType());
 
             if (isCancel) {
-
                 String matchId = (data.getOrigClOrdId() != null && !data.getOrigClOrdId().isEmpty())
                         ? data.getOrigClOrdId()
                         : data.getClOrdId();
@@ -283,7 +273,6 @@ public class HelloController {
         });
     }
 
-
     public void onCancel() {
         String clOrdId = cancelOrder.getValue();
         if (clOrdId == null || clOrdId.isEmpty()) {
@@ -304,6 +293,71 @@ public class HelloController {
         } catch (SessionNotFound e) {
             showAlert("FIX Session Error", "Could not cancel order due to session error.");
         }
+    }
+
+    @FXML
+    private void onModify() {
+        String clOrdId = cancelOrder.getValue();
+        if (clOrdId == null || clOrdId.isEmpty()) {
+            showAlert("Modify Error", "Please select a valid order to modify.");
+            return;
+        }
+
+        Optional<ReceivedData> find = uData.stream().filter(f -> f.getClOrdId().equals(clOrdId)).findFirst();
+        if (find.isEmpty()) {
+            showAlert("Modify Error", "Order with ClOrdId not found.");
+            return;
+        }
+
+        ReceivedData data = find.get();
+
+        Dialog<Pair<String, String>> dialog = new Dialog<>();
+        dialog.setTitle("Modify Order");
+        dialog.setHeaderText("Modify Order: " + data.getClOrdId());
+
+        ButtonType modifyButtonType = new ButtonType("Modify", ButtonBar.ButtonData.OK_DONE);
+        dialog.getDialogPane().getButtonTypes().addAll(modifyButtonType, ButtonType.CANCEL);
+
+        TextField priceField = new TextField(String.valueOf(data.getPrice()));
+        TextField qtyField = new TextField(String.valueOf(data.getOriginalQuantity()));
+
+        GridPane grid = new GridPane();
+        grid.setHgap(10);
+        grid.setVgap(10);
+        grid.setPadding(new Insets(20, 150, 10, 10));
+        grid.add(new Label("New Price:"), 0, 0);
+        grid.add(priceField, 1, 0);
+        grid.add(new Label("New Quantity:"), 0, 1);
+        grid.add(qtyField, 1, 1);
+
+        dialog.getDialogPane().setContent(grid);
+
+        dialog.setResultConverter(dialogButton -> {
+            if (dialogButton == modifyButtonType) {
+                return new Pair<>(priceField.getText(), qtyField.getText());
+            }
+            return null;
+        });
+
+        dialog.showAndWait().ifPresent(result -> {
+            try {
+                double newPrice = Double.parseDouble(result.getKey());
+                int newQty = Integer.parseInt(result.getValue());
+                String newClOrdId = data.getClOrdId() + "_mod" + System.currentTimeMillis();
+
+                SendFixMessage.replaceOrder(
+                        initiator,
+                        data.getClOrdId(),
+                        newClOrdId,
+                        data.getSymbol(),
+                        newPrice,
+                        newQty,
+                        data.getSide().equalsIgnoreCase("BUY") ? '1' : '2'
+                );
+            } catch (Exception e) {
+                showAlert("Modify Error", "Invalid input: " + e.getMessage());
+            }
+        });
     }
 
     private void showAlert(String title, String content) {

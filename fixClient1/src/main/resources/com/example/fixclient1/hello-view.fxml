@@ -59,6 +59,7 @@
                 <Label layoutX="14.0" layoutY="6.0" text="Cancel Request" />
                 <ComboBox fx:id="cancelOrder" layoutX="14.0" layoutY="23.0" prefWidth="150.0" />
                 <Button onAction="#onCancel" layoutX="175.0" layoutY="24.0" text="Cancel" />
+                <Button onAction="#onModify" layoutX="250.0" layoutY="24.0" text="Modify" />
             </children>
         </AnchorPane>
     </children>

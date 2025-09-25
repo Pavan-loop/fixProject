@@ -5,13 +5,15 @@ import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
 
 public class TableOrder {
+    private SimpleStringProperty clOrdId;      // ✅ New
     private SimpleStringProperty symbol;
     private SimpleStringProperty side;
     private SimpleStringProperty orderType;
     private SimpleDoubleProperty orderPrice;
     private SimpleIntegerProperty orderQuantity;
 
-    public TableOrder(String symbol, String side, String orderType, Double orderPrice, Integer orderQuantity) {
+    public TableOrder(String clOrdId, String symbol, String side, String orderType, Double orderPrice, Integer orderQuantity) {
+        this.clOrdId = new SimpleStringProperty(clOrdId != null ? clOrdId : "");
         this.symbol = new SimpleStringProperty(symbol);
         this.side = new SimpleStringProperty(side);
         this.orderType = new SimpleStringProperty(orderType);
@@ -19,74 +21,39 @@ public class TableOrder {
         this.orderQuantity = new SimpleIntegerProperty(orderQuantity);
     }
 
-    public String getSymbol() {
-        return symbol.get();
-    }
+    public String getClOrdId() { return clOrdId.get(); }
+    public SimpleStringProperty clOrdIdProperty() { return clOrdId; }
+    public void setClOrdId(String clOrdId) { this.clOrdId.set(clOrdId); }
 
-    public SimpleStringProperty symbolProperty() {
-        return symbol;
-    }
+    public String getSymbol() { return symbol.get(); }
+    public SimpleStringProperty symbolProperty() { return symbol; }
+    public void setSymbol(String symbol) { this.symbol.set(symbol); }
 
-    public void setSymbol(String symbol) {
-        this.symbol.set(symbol);
-    }
+    public String getSide() { return side.get(); }
+    public SimpleStringProperty sideProperty() { return side; }
+    public void setSide(String side) { this.side.set(side); }
 
-    public String getSide() {
-        return side.get();
-    }
+    public String getOrderType() { return orderType.get(); }
+    public SimpleStringProperty orderTypeProperty() { return orderType; }
+    public void setOrderType(String orderType) { this.orderType.set(orderType); }
 
-    public SimpleStringProperty sideProperty() {
-        return side;
-    }
+    public double getOrderPrice() { return orderPrice.get(); }
+    public SimpleDoubleProperty orderPriceProperty() { return orderPrice; }
+    public void setOrderPrice(double orderPrice) { this.orderPrice.set(orderPrice); }
 
-    public void setSide(String side) {
-        this.side.set(side);
-    }
-
-    public String getOrderType() {
-        return orderType.get();
-    }
-
-    public SimpleStringProperty orderTypeProperty() {
-        return orderType;
-    }
-
-    public void setOrderType(String orderType) {
-        this.orderType.set(orderType);
-    }
-
-    public double getOrderPrice() {
-        return orderPrice.get();
-    }
-
-    public SimpleDoubleProperty orderPriceProperty() {
-        return orderPrice;
-    }
-
-    public void setOrderPrice(double orderPrice) {
-        this.orderPrice.set(orderPrice);
-    }
-
-    public int getOrderQuantity() {
-        return orderQuantity.get();
-    }
-
-    public SimpleIntegerProperty orderQuantityProperty() {
-        return orderQuantity;
-    }
-
-    public void setOrderQuantity(int orderQuantity) {
-        this.orderQuantity.set(orderQuantity);
-    }
+    public int getOrderQuantity() { return orderQuantity.get(); }
+    public SimpleIntegerProperty orderQuantityProperty() { return orderQuantity; }
+    public void setOrderQuantity(int orderQuantity) { this.orderQuantity.set(orderQuantity); }
 
     @Override
     public String toString() {
         return "TableOrder{" +
-                "symbol=" + symbol +
-                ", side=" + side +
-                ", orderType=" + orderType +
-                ", orderPrice=" + orderPrice +
-                ", orderQuantity=" + orderQuantity +
+                "clOrdId=" + clOrdId.get() +
+                ", symbol=" + symbol.get() +
+                ", side=" + side.get() +
+                ", orderType=" + orderType.get() +
+                ", orderPrice=" + orderPrice.get() +
+                ", orderQuantity=" + orderQuantity.get() +
                 '}';
     }
 }
