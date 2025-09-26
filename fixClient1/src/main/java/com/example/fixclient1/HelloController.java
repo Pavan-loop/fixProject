@@ -50,8 +50,6 @@ public class HelloController {
 
     @FXML private ComboBox<String> cancelOrder;
 
-    @FXML private MarketEnquiryController marketEnquiryTab;
-
     private final List<ReceivedData> uData = new ArrayList<>();
     private final ObservableList<TableOrder> orderData = FXCollections.observableArrayList();
     private final ObservableList<TableReceivedData> receivedOrderData = FXCollections.observableArrayList();
@@ -65,10 +63,17 @@ public class HelloController {
                     "C:\\Users\\nichiuser\\Downloads\\fixProject\\fixClient1\\src\\main\\java\\com\\example\\fixclient1\\fix\\initiator.cfg",
                     this
             );
+            Platform.runLater(() -> {
+                        MarketEnquiryController marketEnquiryController = MarketEnquiryController.getInstance();
+                        if (marketEnquiryController != null) {
+                            marketEnquiryController.setClientApp(clientApp);
+                            clientApp.setMarketEnquiryController(marketEnquiryController);
+                        } else {
+                            System.out.println("MarketEnquiryController instance is null");
+                        }
+                        ;
+                    });
             initiator = clientApp.start();
-            if (marketEnquiryTab != null) {
-                marketEnquiryTab.setClientApp(clientApp);
-            }
         } catch (ConfigError e) {
             e.printStackTrace();
         }
@@ -325,9 +330,9 @@ public class HelloController {
         grid.setHgap(10);
         grid.setVgap(10);
         grid.setPadding(new Insets(20, 150, 10, 10));
-        grid.add(new Label("New Price:"), 0, 0);
+        grid.add(new Label("Amend Price:"), 0, 0);
         grid.add(priceField, 1, 0);
-        grid.add(new Label("New Quantity:"), 0, 1);
+        grid.add(new Label("Amend Quantity:"), 0, 1);
         grid.add(qtyField, 1, 1);
 
         dialog.getDialogPane().setContent(grid);

@@ -19,6 +19,11 @@
                 <TableColumn fx:id="mdSymbol" text="Symbol"/>
                 <TableColumn fx:id="mdPrice" text="Price"/>
                 <TableColumn fx:id="mdQty" text="Quantity"/>
+                <TableColumn fx:id="mdDma5" text="DMA5"/>
+                <TableColumn fx:id="mdDma8" text="DMA8"/>
+                <TableColumn fx:id="mdDma13" text="DMA13"/>
+                <TableColumn fx:id="mdDma50" text="DMA50"/>
+                <TableColumn fx:id="mdDma200" text="DMA200"/>
             </columns>
         </TableView>
     </children>

@@ -20,7 +20,6 @@ public class ClientApp extends MessageCracker implements Application {
     private final Initiator initiator;
     private SessionID activeSessionID;
 
-    // NEW: reference to the market enquiry controller
     private MarketEnquiryController marketEnquiryController;
 
     public ClientApp(String configFile, HelloController controller) throws ConfigError {
@@ -34,7 +33,7 @@ public class ClientApp extends MessageCracker implements Application {
         initiator = new SocketInitiator(this, storeFactory, settings, logFactory, messageFactory);
     }
 
-    // setter for MarketEnquiryController so HelloController or app wiring can register it
+
     public void setMarketEnquiryController(MarketEnquiryController controller) {
         this.marketEnquiryController = controller;
     }
@@ -56,7 +55,7 @@ public class ClientApp extends MessageCracker implements Application {
 
     @Handler
     public void onMessage(ExecutionReport report, SessionID sessionID) throws FieldNotFound {
-        // --- Existing ExecutionReport handling (unchanged) ---
+
         char sideChar = report.getSide().getValue();
         String side = switch (sideChar) {
             case Side.BUY -> "BUY";
@@ -132,10 +131,10 @@ public class ClientApp extends MessageCracker implements Application {
         Platform.runLater(() -> controller.addValue(data));
     }
 
-    // Handler for full refresh snapshot messages
+
     @Handler
     public void onMessage(MarketDataSnapshotFullRefresh msg, SessionID sessionID) throws FieldNotFound {
-        // Symbol can be present at message level
+
         String symbol = msg.isSetField(Symbol.FIELD) ? msg.getString(Symbol.FIELD) : null;
 
         int noMDEntries = msg.isSetField(NoMDEntries.FIELD) ? msg.getInt(NoMDEntries.FIELD) : 0;
@@ -146,33 +145,37 @@ public class ClientApp extends MessageCracker implements Application {
             double price = g.isSetField(MDEntryPx.FIELD) ? g.getDouble(MDEntryPx.FIELD) : 0.0;
             int size = 0;
             if (g.isSetField(MDEntrySize.FIELD)) {
-                // MDEntrySize is a double in FIX, cast to int if appropriate
+
                 size = (int) g.getDouble(MDEntrySize.FIELD);
             }
 
-            // Symbol can also be present inside group (depends on provider)
+
             if (symbol == null && g.isSetField(Symbol.FIELD)) {
                 symbol = g.getString(Symbol.FIELD);
             }
 
-            // Only process when symbol is present
+
             if (symbol != null && !symbol.isBlank()) {
                 final String sym = symbol;
                 final double px = price;
                 final int qty = size;
+                final double dma5 = g.isSetField(9010) ? g.getDouble(9010) : 0.0;
+                final double dma8 = g.isSetField(9011) ? g.getDouble(9011) : 0.0;
+                final double dma13 = g.isSetField(9012) ? g.getDouble(9012) : 0.0;
+                final double dma50 = g.isSetField(9013) ? g.getDouble(9013) : 0.0;
+                final double dma200 = g.isSetField(9014) ? g.getDouble(9014) : 0.0;
 
                 if (marketEnquiryController != null) {
-                    // update on FX thread via controller method
-                    marketEnquiryController.updateMarketData(sym, px, qty);
+                    marketEnquiryController.updateMarketData(sym, px, qty, dma5, dma8, dma13, dma50, dma200);
                 }
             }
         }
     }
 
-    // Handler for incremental refresh messages (some providers use this)
+
     @Handler
     public void onMessage(MarketDataIncrementalRefresh msg, SessionID sessionID) throws FieldNotFound {
-        // The incremental refresh has repeating groups, similar parse
+
         int noMDEntries = msg.isSetField(NoMDEntries.FIELD) ? msg.getInt(NoMDEntries.FIELD) : 0;
         for (int i = 1; i <= noMDEntries; i++) {
             Group g = msg.getGroup(i, NoMDEntries.FIELD);
@@ -195,9 +198,14 @@ public class ClientApp extends MessageCracker implements Application {
                 final String sym = symbol;
                 final double px = price;
                 final int qty = size;
+                final double dma5 = g.isSetField(9010) ? g.getDouble(9010) : 0.0;
+                final double dma8 = g.isSetField(9011) ? g.getDouble(9011) : 0.0;
+                final double dma13 = g.isSetField(9012) ? g.getDouble(9012) : 0.0;
+                final double dma50 = g.isSetField(9013) ? g.getDouble(9013) : 0.0;
+                final double dma200 = g.isSetField(9014) ? g.getDouble(9014) : 0.0;
 
                 if (marketEnquiryController != null) {
-                    marketEnquiryController.updateMarketData(sym, px, qty);
+                    marketEnquiryController.updateMarketData(sym, px, qty, dma5, dma8, dma13, dma50, dma200);
                 }
             }
         }

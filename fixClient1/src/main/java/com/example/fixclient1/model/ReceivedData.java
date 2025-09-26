@@ -4,7 +4,7 @@ import quickfix.SessionID;
 
 public class ReceivedData {
     private String clOrdId;
-    private String origClOrdId;   // ✅ NEW field for cancel/amend cases
+    private String origClOrdId;
     private String execId;
     private String symbol;
     private String side;

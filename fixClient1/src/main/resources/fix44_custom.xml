@@ -809,6 +809,12 @@
                 <field name="Text" required="N"/>
                 <field name="EncodedTextLen" required="N"/>
                 <field name="EncodedText" required="N"/>
+
+                <field name="DMA5" required="N"/>
+                <field name="DMA8" required="N"/>
+                <field name="DMA13" required="N"/>
+                <field name="DMA50" required="N"/>
+                <field name="DMA200" required="N"/>
             </group>
             <field name="ApplQueueDepth" required="N"/>
             <field name="ApplQueueResolution" required="N"/>
@@ -6825,6 +6831,13 @@
         <field number="9004" name="InventoryAfterTrade" type="QTY"/>
         <field number="9005" name="OrderExecutionNote" type="STRING"/>
         <field number="9007" name="ExecutionProgressPercent" type="STRING"/>
+
+        <field number="9010" name="DMA5" type="Price"/>
+        <field number="9011" name="DMA8" type="Price"/>
+        <field number="9012" name="DMA13" type="Price"/>
+        <field number="9013" name="DMA50" type="Price"/>
+        <field number="9014" name="DMA200" type="Price"/>
+
     </fields>
 
 

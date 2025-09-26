@@ -13,9 +13,7 @@
         <!-- Order Book Tab -->
         <Tab text="Order Book">
             <AnchorPane>
-                <fx:include source="hello-view.fxml"
-                            fx:id="orderBookTab"
-                            AnchorPane.topAnchor="0.0"
+                <fx:include source="hello-view.fxml" AnchorPane.topAnchor="0.0"
                             AnchorPane.bottomAnchor="0.0"
                             AnchorPane.leftAnchor="0.0"
                             AnchorPane.rightAnchor="0.0"/>
@@ -25,9 +23,7 @@
         <!-- Market Enquiry Tab -->
         <Tab text="Market Enquiry">
             <AnchorPane>
-                <fx:include source="MarketEnquiry.fxml"
-                            fx:id="marketEnquiryTab"
-                            AnchorPane.topAnchor="0.0"
+                <fx:include source="MarketEnquiry.fxml" AnchorPane.topAnchor="0.0"
                             AnchorPane.bottomAnchor="0.0"
                             AnchorPane.leftAnchor="0.0"
                             AnchorPane.rightAnchor="0.0"/>
