@@ -8,13 +8,14 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
+import org.controlsfx.control.CheckComboBox;
 
 import java.io.IOException;
 import java.util.List;
 
 public class MarketEnquiryController {
 
-    @FXML private ComboBox<String> symbolDropdown;
+    @FXML private CheckComboBox<String> symbolDropdown;
     @FXML private TableView<MarketDataRow> tableMarketData;
     @FXML private TableColumn<MarketDataRow, String> mdSymbol;
     @FXML private TableColumn<MarketDataRow, Double> mdPrice;
@@ -24,6 +25,7 @@ public class MarketEnquiryController {
     @FXML private TableColumn<MarketDataRow, Double> mdDma13;
     @FXML private TableColumn<MarketDataRow, Double> mdDma50;
     @FXML private TableColumn<MarketDataRow, Double> mdDma200;
+
 
 
     private ClientApp clientApp;
@@ -53,12 +55,11 @@ public class MarketEnquiryController {
         mdDma50.setCellValueFactory(cell -> cell.getValue().dma50Property().asObject());
         mdDma200.setCellValueFactory(cell -> cell.getValue().dma200Property().asObject());
 
-
         Curd curd = new Curd();
         List<String> symbols = curd.getSymbol();
 
         symbolList.addAll(symbols);
-        symbolDropdown.setItems(symbolList);
+        symbolDropdown.getItems().addAll(symbolList);
     }
 
     public void setClientApp(ClientApp clientApp) {
@@ -70,26 +71,29 @@ public class MarketEnquiryController {
 
     @FXML
     private void onRequestMarketData() {
-        String symbol = symbolDropdown.getValue();
-        if (symbol == null || symbol.isBlank()) {
+        List<String> selectedSymbols = symbolDropdown.getCheckModel().getCheckedItems();
+
+        if (selectedSymbols == null || selectedSymbols.isEmpty()) {
             showAlert();
             return;
         }
 
-        marketDataList.clear();
-        MarketDataRow row = new MarketDataRow(symbol, 0.0, 0, 0.0, 0.0, 0.0, 0.0, 0.0);
-        marketDataList.add(row);
-
-        try{
-        if (clientApp != null) {
-            clientApp.sendMarketDataRequest(new String[]{symbol});
-        } else {
-            System.err.println("ClientApp not set in MarketEnquiryController.");
+        // Add placeholder rows for selected symbols
+        for (String symbol : selectedSymbols) {
+            marketDataList.add(new MarketDataRow(symbol, 0.0, 0, 0.0, 0.0, 0.0, 0.0, 0.0));
         }
-        } catch (Exception e){
+
+        try {
+            if (clientApp != null) {
+                clientApp.sendMarketDataRequest(selectedSymbols.toArray(new String[0]));
+            } else {
+                System.err.println("ClientApp not set in MarketEnquiryController.");
+            }
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
+
 
     public void updateMarketData(String symbol, double price, int quantity , double dma5, double dma8, double dma13, double dma50, double dma200) {
         Platform.runLater(() -> {

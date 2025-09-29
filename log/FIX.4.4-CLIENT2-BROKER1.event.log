@@ -2052,3 +2052,41 @@
 20250926-09:03:06: MINA session created: local=/192.168.0.42:53293, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
 20250926-09:03:07: Initiated logon request
 20250926-09:03:07: Received logon
+20250926-09:03:46: Session FIX.4.4:CLIENT2->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250926-09:03:46: Created session: FIX.4.4:CLIENT2->BROKER1
+20250926-09:03:46: Configured socket addresses for session: [/192.168.0.37:9888]
+20250926-09:03:46: MINA session created: local=/192.168.0.42:53301, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20250926-09:03:47: Initiated logon request
+20250926-09:03:48: Received logon
+20250926-09:48:57: Session FIX.4.4:CLIENT2->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250926-09:48:57: Created session: FIX.4.4:CLIENT2->BROKER1
+20250926-09:48:57: Configured socket addresses for session: [/192.168.0.37:9888]
+20250926-09:48:57: MINA session created: local=/192.168.0.42:53722, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20250926-09:48:59: Initiated logon request
+20250926-09:48:59: Received logon
+20250926-10:02:43: Session FIX.4.4:CLIENT2->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250926-10:02:43: Created session: FIX.4.4:CLIENT2->BROKER1
+20250926-10:02:43: Configured socket addresses for session: [/192.168.0.37:9888]
+20250926-10:02:43: MINA session created: local=/192.168.0.42:53843, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20250926-10:06:40: Session FIX.4.4:CLIENT2->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250926-10:06:40: Created session: FIX.4.4:CLIENT2->BROKER1
+20250926-10:06:40: Configured socket addresses for session: [/192.168.0.37:9888]
+20250926-10:06:40: MINA session created: local=/192.168.0.42:53890, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20250926-10:06:41: Initiated logon request
+20250926-10:06:41: Received logon
+20250926-10:07:29: Received logout request
+20250926-10:07:29: Sent logout response
+20250926-10:07:29: Disconnecting: Received logout request
+20250926-10:07:37: Session FIX.4.4:CLIENT2->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250926-10:07:37: Created session: FIX.4.4:CLIENT2->BROKER1
+20250926-10:07:37: Configured socket addresses for session: [/192.168.0.37:9888]
+20250926-10:07:38: MINA session created: local=/192.168.0.42:53899, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20250926-10:07:39: Initiated logon request
+20250926-10:07:39: Received logon
+20250929-09:02:46: Session FIX.4.4:CLIENT2->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250929-09:02:46: Session state is not current; resetting FIX.4.4:CLIENT2->BROKER1
+20250929-09:02:46: Created session: FIX.4.4:CLIENT2->BROKER1
+20250929-09:02:46: Configured socket addresses for session: [/192.168.0.37:9888]
+20250929-09:02:46: MINA session created: local=/192.168.0.42:50768, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20250929-09:02:47: Initiated logon request
+20250929-09:02:47: Received logon

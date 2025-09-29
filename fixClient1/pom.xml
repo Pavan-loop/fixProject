@@ -58,6 +58,11 @@
             <version>2.0.12</version>
             <scope>runtime</scope>
         </dependency>
+        <dependency>
+            <groupId>org.controlsfx</groupId>
+            <artifactId>controlsfx</artifactId>
+            <version>11.2.1</version>
+        </dependency>
     </dependencies>
 
     <build>
