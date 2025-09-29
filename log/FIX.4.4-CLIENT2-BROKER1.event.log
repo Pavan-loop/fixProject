@@ -2090,3 +2090,98 @@
 20250929-09:02:46: MINA session created: local=/192.168.0.42:50768, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
 20250929-09:02:47: Initiated logon request
 20250929-09:02:47: Received logon
+20250929-09:03:30: Session FIX.4.4:CLIENT2->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250929-09:03:30: Created session: FIX.4.4:CLIENT2->BROKER1
+20250929-09:03:31: Configured socket addresses for session: [/192.168.0.37:9888]
+20250929-09:03:31: MINA session created: local=/192.168.0.42:50778, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20250929-09:03:32: Initiated logon request
+20250929-09:03:32: Received logon
+20250929-09:50:02: Disconnecting: Socket exception (/192.168.0.37:9888): java.net.SocketException: Connection reset
+20250929-09:50:05: Pending connection not established after 2002 ms.
+20250929-09:50:06: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250929-09:50:10: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250929-09:50:15: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250929-09:50:20: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250929-09:50:25: Pending connection not established after 2047 ms.
+20250929-09:50:26: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250929-09:50:30: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250929-09:50:35: Pending connection not established after 2002 ms.
+20250929-09:50:36: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250929-09:50:40: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250929-09:50:45: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250929-09:50:50: Pending connection not established after 2001 ms.
+20250929-09:50:51: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250929-09:50:55: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250929-09:51:00: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250929-09:51:06: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250929-09:51:11: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250929-09:51:16: Pending connection not established after 2001 ms.
+20250929-09:51:17: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250929-09:51:21: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250929-09:51:26: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250929-09:51:31: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250929-09:51:36: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250929-09:51:41: Pending connection not established after 2002 ms.
+20250929-09:51:42: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250929-09:51:46: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250929-09:51:51: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250929-09:51:56: Pending connection not established after 2002 ms.
+20250929-09:51:57: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250929-09:52:01: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250929-09:52:06: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250929-09:52:11: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250929-09:52:16: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250929-09:52:21: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250929-09:52:26: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250929-09:52:31: Pending connection not established after 2002 ms.
+20250929-09:52:32: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250929-09:52:37: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250929-09:52:42: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250929-09:52:47: Pending connection not established after 2002 ms.
+20250929-09:52:48: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250929-09:52:52: Pending connection not established after 2002 ms.
+20250929-09:52:53: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250929-09:52:57: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250929-09:53:02: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250929-09:53:07: Pending connection not established after 2002 ms.
+20250929-09:53:08: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250929-09:53:12: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250929-09:53:17: Pending connection not established after 2002 ms.
+20250929-09:53:18: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250929-09:53:22: Pending connection not established after 2002 ms.
+20250929-09:53:23: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250929-09:53:27: Pending connection not established after 2001 ms.
+20250929-09:53:28: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250929-09:53:32: Pending connection not established after 2002 ms.
+20250929-09:53:33: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250929-09:53:37: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250929-09:53:42: Pending connection not established after 2002 ms.
+20250929-09:53:43: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250929-09:53:47: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250929-09:53:52: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250929-09:53:57: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250929-09:54:02: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250929-09:54:07: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250929-09:54:12: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250929-09:54:17: Pending connection not established after 2002 ms.
+20250929-09:54:18: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250929-09:54:22: Pending connection not established after 2003 ms.
+20250929-09:54:23: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250929-09:54:27: Pending connection not established after 2002 ms.
+20250929-09:54:28: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250929-09:54:33: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250929-09:54:38: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250929-09:54:43: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250929-09:54:48: Pending connection not established after 2001 ms.
+20250929-09:54:49: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250929-09:54:51: MINA session created: local=/192.168.0.42:51216, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20250929-09:54:51: Initiated logon request
+20250929-09:54:51: Received logon
+20250929-09:56:01: Received logout request
+20250929-09:56:01: Sent logout response
+20250929-09:56:01: Disconnecting: Received logout request
+20250929-09:56:04: Pending connection not established after 2002 ms.
+20250929-09:56:05: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250929-09:56:07: MINA session created: local=/192.168.0.42:51234, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20250929-09:56:08: Initiated logon request
+20250929-09:56:08: Received logon

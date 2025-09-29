@@ -78,10 +78,14 @@ public class MarketEnquiryController {
             return;
         }
 
-        // Add placeholder rows for selected symbols
         for (String symbol : selectedSymbols) {
-            marketDataList.add(new MarketDataRow(symbol, 0.0, 0, 0.0, 0.0, 0.0, 0.0, 0.0));
+            boolean exists = marketDataList.stream()
+                    .anyMatch(row -> row.getSymbol().equals(symbol));
+            if (!exists) {
+                marketDataList.add(new MarketDataRow(symbol, 0.0, 0, 0.0, 0.0, 0.0, 0.0, 0.0));
+            }
         }
+
 
         try {
             if (clientApp != null) {
@@ -97,6 +101,7 @@ public class MarketEnquiryController {
 
     public void updateMarketData(String symbol, double price, int quantity , double dma5, double dma8, double dma13, double dma50, double dma200) {
         Platform.runLater(() -> {
+            boolean updated = false;
             for (MarketDataRow r : marketDataList) {
                 if (r.getSymbol().equals(symbol)) {
                     r.setPrice(price);
@@ -106,11 +111,14 @@ public class MarketEnquiryController {
                     r.setDma13((int) dma13);
                     r.setDma50((int) dma50);
                     r.setDma200((int) dma200);
-                    tableMarketData.refresh();
-                    return;
+                    updated = true;
+                    break;
                 }
             }
-            marketDataList.add(new MarketDataRow(symbol, price, quantity, dma5, dma8, dma13, dma50, dma200));
+            if (!updated) {
+                marketDataList.add(new MarketDataRow(symbol, price, quantity, dma5, dma8, dma13, dma50, dma200));
+            }
+            tableMarketData.refresh();
         });
     }
 

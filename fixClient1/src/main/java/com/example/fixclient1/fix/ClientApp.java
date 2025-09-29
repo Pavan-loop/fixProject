@@ -245,7 +245,7 @@ public class ClientApp extends MessageCracker implements Application {
 
         MarketDataRequest mdReq = new MarketDataRequest();
         mdReq.set(new MDReqID("MD_" + System.currentTimeMillis()));
-        mdReq.set(new SubscriptionRequestType('1')); //
+        mdReq.set(new SubscriptionRequestType('1'));
         mdReq.set(new MarketDepth(1));
         mdReq.set(new MDUpdateType(MDUpdateType.FULL_REFRESH));
 
