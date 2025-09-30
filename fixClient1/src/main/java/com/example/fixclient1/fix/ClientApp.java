@@ -33,14 +33,19 @@ public class ClientApp extends MessageCracker implements Application {
         initiator = new SocketInitiator(this, storeFactory, settings, logFactory, messageFactory);
     }
 
-
     public void setMarketEnquiryController(MarketEnquiryController controller) {
         this.marketEnquiryController = controller;
     }
 
     @Override public void onCreate(SessionID sessionID) { System.out.println("Client Created: " + sessionID); }
-    @Override public void onLogon(SessionID sessionID) { System.out.println("Client logon to broker: " + sessionID); this.activeSessionID = sessionID; }
-    @Override public void onLogout(SessionID sessionID) { System.out.println("Client logout from the broker: " + sessionID); if (activeSessionID != null && activeSessionID.equals(sessionID)) { activeSessionID = null; } }
+    @Override public void onLogon(SessionID sessionID) {
+        System.out.println("Client logon to broker: " + sessionID);
+        this.activeSessionID = sessionID;
+    }
+    @Override public void onLogout(SessionID sessionID) {
+        System.out.println("Client logout from the broker: " + sessionID);
+        if (activeSessionID != null && activeSessionID.equals(sessionID)) { activeSessionID = null; }
+    }
     @Override public void toAdmin(Message message, SessionID sessionID) { System.out.println("Client sending admin message: " + message); }
     @Override public void fromAdmin(Message message, SessionID sessionID) { System.out.println("Client receiving admin message: " + message); }
     @Override public void toApp(Message message, SessionID sessionID) { System.out.println("Message of client to broker: " + message); }
@@ -53,9 +58,10 @@ public class ClientApp extends MessageCracker implements Application {
         }
     }
 
+    // ---------------------------- Execution Report ----------------------------
+
     @Handler
     public void onMessage(ExecutionReport report, SessionID sessionID) throws FieldNotFound {
-
         char sideChar = report.getSide().getValue();
         String side = switch (sideChar) {
             case Side.BUY -> "BUY";
@@ -101,6 +107,7 @@ public class ClientApp extends MessageCracker implements Application {
             }
         }
 
+        // custom fields
         String customStatus = report.isSetField(9001) ? report.getString(9001) : "N/A";
         double marketRefPrice = report.isSetField(9002) ? report.getDouble(9002) : 0.0;
         int orderRemainingQty = report.isSetField(9003) ? report.getInt(9003) : 0;
@@ -131,11 +138,16 @@ public class ClientApp extends MessageCracker implements Application {
         Platform.runLater(() -> controller.addValue(data));
     }
 
+    // ---------------------------- Market Data Snapshot ----------------------------
 
     @Handler
     public void onMessage(MarketDataSnapshotFullRefresh msg, SessionID sessionID) throws FieldNotFound {
-
         String symbol = msg.isSetField(Symbol.FIELD) ? msg.getString(Symbol.FIELD) : null;
+
+        double open = 0.0, high = 0.0, low = 0.0;
+        double dma5 = 0.0, dma8 = 0.0, dma13 = 0.0, dma50 = 0.0, dma200 = 0.0;
+        double lastTradePx = 0.0;
+        int lastTradeQty = 0;
 
         int noMDEntries = msg.isSetField(NoMDEntries.FIELD) ? msg.getInt(NoMDEntries.FIELD) : 0;
         for (int i = 1; i <= noMDEntries; i++) {
@@ -143,38 +155,41 @@ public class ClientApp extends MessageCracker implements Application {
 
             char mdEntryType = g.isSetField(MDEntryType.FIELD) ? g.getChar(MDEntryType.FIELD) : '\0';
             double price = g.isSetField(MDEntryPx.FIELD) ? g.getDouble(MDEntryPx.FIELD) : 0.0;
-            int size = 0;
-            if (g.isSetField(MDEntrySize.FIELD)) {
-
-                size = (int) g.getDouble(MDEntrySize.FIELD);
-            }
-
+            int size = g.isSetField(MDEntrySize.FIELD) ? (int) g.getDouble(MDEntrySize.FIELD) : 0;
 
             if (symbol == null && g.isSetField(Symbol.FIELD)) {
                 symbol = g.getString(Symbol.FIELD);
             }
 
-
-            if (symbol != null && !symbol.isBlank()) {
-                final String sym = symbol;
-                final double px = price;
-                final int qty = size;
-                final double dma5 = g.isSetField(9010) ? g.getDouble(9010) : 0.0;
-                final double dma8 = g.isSetField(9011) ? g.getDouble(9011) : 0.0;
-                final double dma13 = g.isSetField(9012) ? g.getDouble(9012) : 0.0;
-                final double dma50 = g.isSetField(9013) ? g.getDouble(9013) : 0.0;
-                final double dma200 = g.isSetField(9014) ? g.getDouble(9014) : 0.0;
-
-                if (marketEnquiryController != null) {
-                    marketEnquiryController.updateMarketData(sym, px, qty, dma5, dma8, dma13, dma50, dma200);
-                }
+            switch (mdEntryType) {
+                case '4': open = price; break; // Open
+                case '7': high = price; break; // High
+                case '8': low = price; break;  // Low
+                case MDEntryType.TRADE: lastTradePx = price; lastTradeQty = size; break;
             }
+
+            if (g.isSetField(9010)) dma5 = g.getDouble(9010);
+            if (g.isSetField(9011)) dma8 = g.getDouble(9011);
+            if (g.isSetField(9012)) dma13 = g.getDouble(9012);
+            if (g.isSetField(9013)) dma50 = g.getDouble(9013);
+            if (g.isSetField(9014)) dma200 = g.getDouble(9014);
+        }
+
+        if (symbol != null && !symbol.isBlank() && marketEnquiryController != null) {
+            marketEnquiryController.updateMarketData(symbol, lastTradePx, lastTradeQty,
+                    dma5, dma8, dma13, dma50, dma200, open, high, low);
         }
     }
 
+    // ---------------------------- Market Data Incremental ----------------------------
 
     @Handler
     public void onMessage(MarketDataIncrementalRefresh msg, SessionID sessionID) throws FieldNotFound {
+        String symbol = null;
+        double open = 0.0, high = 0.0, low = 0.0;
+        double dma5 = 0.0, dma8 = 0.0, dma13 = 0.0, dma50 = 0.0, dma200 = 0.0;
+        double lastTradePx = 0.0;
+        int lastTradeQty = 0;
 
         int noMDEntries = msg.isSetField(NoMDEntries.FIELD) ? msg.getInt(NoMDEntries.FIELD) : 0;
         for (int i = 1; i <= noMDEntries; i++) {
@@ -182,34 +197,34 @@ public class ClientApp extends MessageCracker implements Application {
 
             char mdEntryType = g.isSetField(MDEntryType.FIELD) ? g.getChar(MDEntryType.FIELD) : '\0';
             double price = g.isSetField(MDEntryPx.FIELD) ? g.getDouble(MDEntryPx.FIELD) : 0.0;
-            int size = 0;
-            if (g.isSetField(MDEntrySize.FIELD)) {
-                size = (int) g.getDouble(MDEntrySize.FIELD);
+            int size = g.isSetField(MDEntrySize.FIELD) ? (int) g.getDouble(MDEntrySize.FIELD) : 0;
+
+            if (symbol == null) {
+                if (g.isSetField(Symbol.FIELD)) symbol = g.getString(Symbol.FIELD);
+                else if (msg.isSetField(Symbol.FIELD)) symbol = msg.getString(Symbol.FIELD);
             }
 
-            String symbol = null;
-            if (g.isSetField(Symbol.FIELD)) {
-                symbol = g.getString(Symbol.FIELD);
-            } else if (msg.isSetField(Symbol.FIELD)) {
-                symbol = msg.getString(Symbol.FIELD);
+            switch (mdEntryType) {
+                case '4': open = price; break; // Open
+                case '7': high = price; break; // High
+                case '8': low = price; break;  // Low
+                case MDEntryType.TRADE: lastTradePx = price; lastTradeQty = size; break;
             }
 
-            if (symbol != null && !symbol.isBlank()) {
-                final String sym = symbol;
-                final double px = price;
-                final int qty = size;
-                final double dma5 = g.isSetField(9010) ? g.getDouble(9010) : 0.0;
-                final double dma8 = g.isSetField(9011) ? g.getDouble(9011) : 0.0;
-                final double dma13 = g.isSetField(9012) ? g.getDouble(9012) : 0.0;
-                final double dma50 = g.isSetField(9013) ? g.getDouble(9013) : 0.0;
-                final double dma200 = g.isSetField(9014) ? g.getDouble(9014) : 0.0;
+            if (g.isSetField(9010)) dma5 = g.getDouble(9010);
+            if (g.isSetField(9011)) dma8 = g.getDouble(9011);
+            if (g.isSetField(9012)) dma13 = g.getDouble(9012);
+            if (g.isSetField(9013)) dma50 = g.getDouble(9013);
+            if (g.isSetField(9014)) dma200 = g.getDouble(9014);
+        }
 
-                if (marketEnquiryController != null) {
-                    marketEnquiryController.updateMarketData(sym, px, qty, dma5, dma8, dma13, dma50, dma200);
-                }
-            }
+        if (symbol != null && !symbol.isBlank() && marketEnquiryController != null) {
+            marketEnquiryController.updateMarketData(symbol, lastTradePx, lastTradeQty,
+                    dma5, dma8, dma13, dma50, dma200, open, high, low);
         }
     }
+
+    // ---------------------------- Order Replace ----------------------------
 
     public void sendOrderReplace(String origClOrdID, String newClOrdID, String symbol,
                                  double newPrice, int newQuantity, char side) {
@@ -237,6 +252,8 @@ public class ClientApp extends MessageCracker implements Application {
         }
     }
 
+    // ---------------------------- Market Data Request ----------------------------
+
     public void sendMarketDataRequest(String[] symbols) {
         if (activeSessionID == null) {
             System.err.println("No active session. Cannot send MarketDataRequest.");
@@ -249,9 +266,19 @@ public class ClientApp extends MessageCracker implements Application {
         mdReq.set(new MarketDepth(1));
         mdReq.set(new MDUpdateType(MDUpdateType.FULL_REFRESH));
 
-        MarketDataRequest.NoMDEntryTypes entryType = new MarketDataRequest.NoMDEntryTypes();
-        entryType.set(new MDEntryType(MDEntryType.TRADE));
-        mdReq.addGroup(entryType);
+        // Request Trade, Open, High, Low
+        char[] mdTypes = new char[] {
+                MDEntryType.TRADE, // 2
+                '4',               // Open
+                '7',               // High
+                '8'                // Low
+        };
+
+        for (char type : mdTypes) {
+            MarketDataRequest.NoMDEntryTypes entryType = new MarketDataRequest.NoMDEntryTypes();
+            entryType.set(new MDEntryType(type));
+            mdReq.addGroup(entryType);
+        }
 
         for (String symbol : symbols) {
             MarketDataRequest.NoRelatedSym group = new MarketDataRequest.NoRelatedSym();
@@ -266,6 +293,8 @@ public class ClientApp extends MessageCracker implements Application {
             e.printStackTrace();
         }
     }
+
+    // ---------------------------- Lifecycle ----------------------------
 
     public Initiator start() {
         try {

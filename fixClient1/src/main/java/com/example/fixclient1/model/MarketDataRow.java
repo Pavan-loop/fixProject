@@ -12,10 +12,13 @@ public class MarketDataRow {
     private final DoubleProperty dma13;
     private final DoubleProperty dma50;
     private final DoubleProperty dma200;
+    private final DoubleProperty open;
+    private final DoubleProperty high;
+    private final DoubleProperty low;
 
     public MarketDataRow(String symbol, double price, int quantity,
                          double dma5, double dma8, double dma13,
-                         double dma50, double dma200)  {
+                         double dma50, double dma200, double open, double high, double low) {
         this.symbol = new SimpleStringProperty(symbol);
         this.price = new SimpleDoubleProperty(price);
         this.quantity = new SimpleIntegerProperty(quantity);
@@ -24,6 +27,9 @@ public class MarketDataRow {
         this.dma13 = new SimpleDoubleProperty(dma13);
         this.dma50 = new SimpleDoubleProperty(dma50);
         this.dma200 = new SimpleDoubleProperty(dma200);
+        this.open = new SimpleDoubleProperty(open);
+        this.high = new SimpleDoubleProperty(high);
+        this.low = new SimpleDoubleProperty(low);
     }
 
 
@@ -59,6 +65,18 @@ public class MarketDataRow {
     public void setDma200(int dma200) { this.dma200.set(dma200); }
     public DoubleProperty dma200Property() { return dma200;}
 
+    public double getOpen() { return open.get(); }
+    public void setOpen(double open) { this.open.set(open); }
+    public DoubleProperty openProperty() { return open; }
+
+    public double getHigh() { return high.get(); }
+    public void setHigh(double high) { this.high.set(high); }
+    public DoubleProperty highProperty() { return high; }
+
+    public double getLow() { return low.get(); }
+    public void setLow(double low) { this.low.set(low); }
+    public DoubleProperty lowProperty() { return low; }
+
     @Override
     public String toString() {
         return "MarketDataRow{" +
@@ -70,6 +88,9 @@ public class MarketDataRow {
                 ", dma13=" + dma13 +
                 ", dma50=" + dma50 +
                 ", dma200=" + dma200 +
+                ", open=" + open +
+                ", high=" + high +
+                ", low=" + low +
                 '}';
     }
 }

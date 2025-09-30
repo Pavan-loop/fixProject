@@ -25,6 +25,9 @@
                 <TableColumn fx:id="mdDma13" text="DMA13"/>
                 <TableColumn fx:id="mdDma50" text="DMA50"/>
                 <TableColumn fx:id="mdDma200" text="DMA200"/>
+                <TableColumn fx:id="mdOpen" text="Open"/>
+                <TableColumn fx:id="mdHigh" text="High"/>
+                <TableColumn fx:id="mdLow" text="Low"/>
             </columns>
         </TableView>
     </children>

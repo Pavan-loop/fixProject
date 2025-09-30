@@ -25,6 +25,9 @@ public class MarketEnquiryController {
     @FXML private TableColumn<MarketDataRow, Double> mdDma13;
     @FXML private TableColumn<MarketDataRow, Double> mdDma50;
     @FXML private TableColumn<MarketDataRow, Double> mdDma200;
+    @FXML private TableColumn<MarketDataRow, Double> mdOpen;
+    @FXML private TableColumn<MarketDataRow, Double> mdHigh;
+    @FXML private TableColumn<MarketDataRow, Double> mdLow;
 
 
 
@@ -54,6 +57,9 @@ public class MarketEnquiryController {
         mdDma13.setCellValueFactory(cell -> cell.getValue().dma13Property().asObject());
         mdDma50.setCellValueFactory(cell -> cell.getValue().dma50Property().asObject());
         mdDma200.setCellValueFactory(cell -> cell.getValue().dma200Property().asObject());
+        mdOpen.setCellValueFactory(cell -> cell.getValue().openProperty().asObject());
+        mdHigh.setCellValueFactory(cell -> cell.getValue().highProperty().asObject());
+        mdLow.setCellValueFactory(cell -> cell.getValue().lowProperty().asObject());
 
         Curd curd = new Curd();
         List<String> symbols = curd.getSymbol();
@@ -82,7 +88,7 @@ public class MarketEnquiryController {
             boolean exists = marketDataList.stream()
                     .anyMatch(row -> row.getSymbol().equals(symbol));
             if (!exists) {
-                marketDataList.add(new MarketDataRow(symbol, 0.0, 0, 0.0, 0.0, 0.0, 0.0, 0.0));
+                marketDataList.add(new MarketDataRow(symbol, 0.0, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0));
             }
         }
 
@@ -99,7 +105,7 @@ public class MarketEnquiryController {
     }
 
 
-    public void updateMarketData(String symbol, double price, int quantity , double dma5, double dma8, double dma13, double dma50, double dma200) {
+    public void updateMarketData(String symbol, double price, int quantity , double dma5, double dma8, double dma13, double dma50, double dma200, double open, double high, double low) {
         Platform.runLater(() -> {
             boolean updated = false;
             for (MarketDataRow r : marketDataList) {
@@ -111,12 +117,15 @@ public class MarketEnquiryController {
                     r.setDma13((int) dma13);
                     r.setDma50((int) dma50);
                     r.setDma200((int) dma200);
+                    r.setOpen(open);
+                    r.setHigh(high);
+                    r.setLow(low);
                     updated = true;
                     break;
                 }
             }
             if (!updated) {
-                marketDataList.add(new MarketDataRow(symbol, price, quantity, dma5, dma8, dma13, dma50, dma200));
+                marketDataList.add(new MarketDataRow(symbol, price, quantity, dma5, dma8, dma13, dma50, dma200, open, high, low));
             }
             tableMarketData.refresh();
         });
