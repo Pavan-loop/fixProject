@@ -2823,3 +2823,1682 @@
 20250930-09:07:33: MINA session created: local=/192.168.0.42:54052, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
 20250930-09:07:34: Initiated logon request
 20250930-09:07:34: Received logon
+20250930-09:14:27: Session FIX.4.4:CLIENT2->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20250930-09:14:27: Created session: FIX.4.4:CLIENT2->BROKER1
+20250930-09:14:27: Configured socket addresses for session: [/192.168.0.37:9888]
+20250930-09:14:27: MINA session created: local=/192.168.0.42:54111, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20250930-09:14:28: Initiated logon request
+20250930-09:14:28: Received logon
+20250930-09:41:22: Disconnecting: Socket exception (/192.168.0.37:9888): java.net.SocketException: Connection reset
+20250930-09:41:25: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:41:30: Pending connection not established after 2002 ms.
+20250930-09:41:31: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:41:35: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:41:40: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:41:45: Pending connection not established after 2002 ms.
+20250930-09:41:46: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:41:50: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:41:55: Pending connection not established after 2001 ms.
+20250930-09:41:56: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:42:00: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:42:05: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:42:10: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:42:15: Pending connection not established after 2004 ms.
+20250930-09:42:16: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:42:20: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:42:25: Pending connection not established after 2002 ms.
+20250930-09:42:26: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:42:30: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:42:35: Pending connection not established after 2002 ms.
+20250930-09:42:36: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:42:40: Pending connection not established after 2002 ms.
+20250930-09:42:41: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:42:45: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:42:50: Pending connection not established after 2001 ms.
+20250930-09:42:51: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:42:55: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:43:00: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:43:05: Pending connection not established after 2003 ms.
+20250930-09:43:06: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:43:11: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:43:16: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:43:21: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:43:26: Pending connection not established after 2001 ms.
+20250930-09:43:27: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:43:31: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:43:36: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:43:41: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:43:46: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:43:51: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:43:56: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:44:01: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:44:06: Pending connection not established after 2002 ms.
+20250930-09:44:07: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:44:11: Pending connection not established after 2001 ms.
+20250930-09:44:12: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:44:16: Pending connection not established after 2004 ms.
+20250930-09:44:17: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:44:21: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:44:26: Pending connection not established after 2001 ms.
+20250930-09:44:27: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:44:31: Pending connection not established after 2002 ms.
+20250930-09:44:32: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:44:36: Pending connection not established after 2002 ms.
+20250930-09:44:37: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:44:41: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:44:46: Pending connection not established after 2001 ms.
+20250930-09:44:47: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:44:51: Pending connection not established after 2002 ms.
+20250930-09:44:52: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:44:57: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:45:02: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:45:07: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:45:12: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:45:17: Pending connection not established after 2001 ms.
+20250930-09:45:18: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:45:22: Pending connection not established after 2002 ms.
+20250930-09:45:23: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:45:27: Pending connection not established after 2002 ms.
+20250930-09:45:28: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:45:32: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:45:37: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:45:42: Pending connection not established after 2002 ms.
+20250930-09:45:43: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:45:47: Pending connection not established after 2002 ms.
+20250930-09:45:48: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:45:52: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:45:57: Pending connection not established after 2002 ms.
+20250930-09:45:58: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:46:02: Pending connection not established after 2002 ms.
+20250930-09:46:03: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:46:07: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:46:12: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:46:17: Pending connection not established after 2001 ms.
+20250930-09:46:18: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:46:22: Pending connection not established after 2002 ms.
+20250930-09:46:23: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:46:27: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:46:32: Pending connection not established after 2001 ms.
+20250930-09:46:33: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:46:37: Pending connection not established after 2001 ms.
+20250930-09:46:38: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:46:42: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:46:47: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:46:52: Pending connection not established after 2001 ms.
+20250930-09:46:53: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:46:57: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:47:02: Pending connection not established after 2001 ms.
+20250930-09:47:03: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:47:07: Pending connection not established after 2001 ms.
+20250930-09:47:08: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:47:12: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:47:17: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:47:22: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:47:27: Pending connection not established after 2001 ms.
+20250930-09:47:28: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:47:32: Pending connection not established after 2001 ms.
+20250930-09:47:33: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:47:38: Pending connection not established after 2003 ms.
+20250930-09:47:39: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:47:43: Pending connection not established after 2013 ms.
+20250930-09:47:44: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:47:48: Pending connection not established after 2003 ms.
+20250930-09:47:49: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:47:53: Pending connection not established after 2001 ms.
+20250930-09:47:54: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:47:58: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:48:03: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:48:08: Pending connection not established after 2001 ms.
+20250930-09:48:09: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:48:13: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:48:18: Pending connection not established after 2003 ms.
+20250930-09:48:19: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:48:23: Pending connection not established after 2001 ms.
+20250930-09:48:24: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:48:28: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:48:33: Pending connection not established after 2002 ms.
+20250930-09:48:34: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:48:38: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:48:43: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:48:48: Pending connection not established after 2001 ms.
+20250930-09:48:49: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:48:53: Pending connection not established after 2002 ms.
+20250930-09:48:54: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:48:58: Pending connection not established after 2002 ms.
+20250930-09:48:59: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:49:03: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:49:08: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:49:13: Pending connection not established after 2002 ms.
+20250930-09:49:14: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:49:18: Pending connection not established after 2003 ms.
+20250930-09:49:19: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:49:23: Pending connection not established after 2001 ms.
+20250930-09:49:24: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:49:28: Pending connection not established after 2001 ms.
+20250930-09:49:29: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:49:33: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:49:38: Pending connection not established after 2028 ms.
+20250930-09:49:39: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:49:43: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:49:48: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:49:53: Pending connection not established after 2001 ms.
+20250930-09:49:54: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:49:59: Pending connection not established after 2004 ms.
+20250930-09:50:00: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:50:04: Pending connection not established after 2001 ms.
+20250930-09:50:05: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:50:09: Pending connection not established after 2002 ms.
+20250930-09:50:10: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:50:14: Pending connection not established after 2001 ms.
+20250930-09:50:15: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:50:19: Pending connection not established after 2001 ms.
+20250930-09:50:20: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:50:24: Pending connection not established after 2026 ms.
+20250930-09:50:25: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:50:29: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:50:34: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20250930-09:50:39: Pending connection not established after 2002 ms.
+20250930-09:50:40: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20251006-08:43:07: Session FIX.4.4:CLIENT2->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20251006-08:43:07: Session state is not current; resetting FIX.4.4:CLIENT2->BROKER1
+20251006-08:43:07: Created session: FIX.4.4:CLIENT2->BROKER1
+20251006-08:43:09: Configured socket addresses for session: [/192.168.0.37:9888]
+20251006-08:43:11: Pending connection not established after 2037 ms.
+20251006-08:43:12: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20251006-08:43:16: Pending connection not established after 2001 ms.
+20251006-08:43:17: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20251006-08:43:21: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20251006-08:43:27: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20251006-08:43:30: MINA session created: local=/192.168.0.42:57097, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251006-08:43:31: Initiated logon request
+20251006-08:43:31: Received logon
+20251006-09:41:16: Sent test request TEST
+20251006-09:41:35: Disconnecting: Socket exception (/192.168.0.37:9888): java.net.SocketException: Connection reset
+20251006-09:41:40: Pending connection not established after 4002 ms.
+20251006-09:41:43: Pending connection not established after 7004 ms.
+20251006-09:41:46: Pending connection not established after 10006 ms.
+20251006-09:41:51: Pending connection not established after 15009 ms.
+20251006-09:41:56: Pending connection not established after 20011 ms.
+20251006-09:41:57: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-09:42:02: Pending connection not established after 4001 ms.
+20251006-09:42:07: Pending connection not established after 9003 ms.
+20251006-09:42:10: Pending connection not established after 12005 ms.
+20251006-09:42:15: Pending connection not established after 17006 ms.
+20251006-09:42:19: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-09:42:24: Pending connection not established after 4001 ms.
+20251006-09:42:29: Pending connection not established after 9004 ms.
+20251006-09:42:32: Pending connection not established after 12006 ms.
+20251006-09:42:37: Pending connection not established after 17007 ms.
+20251006-09:42:41: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-09:42:46: Pending connection not established after 4000 ms.
+20251006-09:42:51: Pending connection not established after 9002 ms.
+20251006-09:42:54: Pending connection not established after 12004 ms.
+20251006-09:42:59: Pending connection not established after 17005 ms.
+20251006-09:43:03: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-09:43:08: Pending connection not established after 4002 ms.
+20251006-09:43:13: Pending connection not established after 9004 ms.
+20251006-09:43:16: Pending connection not established after 12006 ms.
+20251006-09:43:19: Pending connection not established after 15007 ms.
+20251006-09:43:24: Pending connection not established after 20008 ms.
+20251006-09:43:25: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-09:43:28: Pending connection not established after 2002 ms.
+20251006-09:43:31: Pending connection not established after 5003 ms.
+20251006-09:43:36: Pending connection not established after 10004 ms.
+20251006-09:43:41: Pending connection not established after 15006 ms.
+20251006-09:43:46: Pending connection not established after 20008 ms.
+20251006-09:43:47: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-09:43:50: Pending connection not established after 2002 ms.
+20251006-09:43:55: Pending connection not established after 7004 ms.
+20251006-09:44:00: Pending connection not established after 12006 ms.
+20251006-09:44:03: Pending connection not established after 15009 ms.
+20251006-09:44:06: Pending connection not established after 18011 ms.
+20251006-09:44:09: Pending connection not established after 21013 ms.
+20251006-09:44:10: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-09:44:15: Pending connection not established after 4000 ms.
+20251006-09:44:20: Pending connection not established after 9001 ms.
+20251006-09:44:25: Pending connection not established after 14004 ms.
+20251006-09:44:30: Pending connection not established after 19004 ms.
+20251006-09:44:32: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-09:44:37: Pending connection not established after 4001 ms.
+20251006-09:44:40: Pending connection not established after 7003 ms.
+20251006-09:44:43: Pending connection not established after 10005 ms.
+20251006-09:44:48: Pending connection not established after 15006 ms.
+20251006-09:44:51: Pending connection not established after 18008 ms.
+20251006-09:44:54: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-09:44:59: Pending connection not established after 4002 ms.
+20251006-09:45:04: Pending connection not established after 9003 ms.
+20251006-09:45:09: Pending connection not established after 14005 ms.
+20251006-09:45:12: Pending connection not established after 17008 ms.
+20251006-09:45:16: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-09:45:21: Pending connection not established after 4001 ms.
+20251006-09:45:26: Pending connection not established after 9004 ms.
+20251006-09:45:29: Pending connection not established after 12006 ms.
+20251006-09:45:34: Pending connection not established after 17007 ms.
+20251006-09:45:37: Pending connection not established after 20008 ms.
+20251006-09:45:38: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-09:45:43: Pending connection not established after 4002 ms.
+20251006-09:45:48: Pending connection not established after 9003 ms.
+20251006-09:45:53: Pending connection not established after 14005 ms.
+20251006-09:45:58: Pending connection not established after 19006 ms.
+20251006-09:46:00: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-09:46:03: Pending connection not established after 2001 ms.
+20251006-09:46:08: Pending connection not established after 7002 ms.
+20251006-09:46:13: Pending connection not established after 12004 ms.
+20251006-09:46:18: Pending connection not established after 17006 ms.
+20251006-09:46:21: Pending connection not established after 20008 ms.
+20251006-09:46:22: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-09:46:25: Pending connection not established after 2001 ms.
+20251006-09:46:30: Pending connection not established after 7002 ms.
+20251006-09:46:35: Pending connection not established after 12032 ms.
+20251006-09:46:38: Pending connection not established after 15045 ms.
+20251006-09:46:41: Pending connection not established after 18047 ms.
+20251006-09:46:44: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-09:46:49: Pending connection not established after 4001 ms.
+20251006-09:46:52: Pending connection not established after 7003 ms.
+20251006-09:46:55: Pending connection not established after 10004 ms.
+20251006-09:47:00: Pending connection not established after 15005 ms.
+20251006-09:47:05: Pending connection not established after 20006 ms.
+20251006-09:47:06: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-09:47:11: Pending connection not established after 4002 ms.
+20251006-09:47:16: Pending connection not established after 9004 ms.
+20251006-09:47:19: Pending connection not established after 12005 ms.
+20251006-09:47:22: Pending connection not established after 15007 ms.
+20251006-09:47:25: Pending connection not established after 18009 ms.
+20251006-09:47:28: Pending connection not established after 21011 ms.
+20251006-09:47:29: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-09:47:32: Pending connection not established after 2002 ms.
+20251006-09:47:37: Pending connection not established after 7004 ms.
+20251006-09:47:40: Pending connection not established after 10006 ms.
+20251006-09:47:43: Pending connection not established after 13008 ms.
+20251006-09:47:48: Pending connection not established after 18010 ms.
+20251006-09:47:51: Pending connection not established after 21011 ms.
+20251006-09:47:52: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-09:47:57: Pending connection not established after 4001 ms.
+20251006-09:48:02: Pending connection not established after 9002 ms.
+20251006-09:48:07: Pending connection not established after 14005 ms.
+20251006-09:48:12: Pending connection not established after 19006 ms.
+20251006-09:48:14: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-09:48:19: Pending connection not established after 4001 ms.
+20251006-09:48:22: Pending connection not established after 7003 ms.
+20251006-09:48:27: Pending connection not established after 12005 ms.
+20251006-09:48:30: Pending connection not established after 15007 ms.
+20251006-09:48:33: Pending connection not established after 18009 ms.
+20251006-09:48:37: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-09:48:42: Pending connection not established after 4002 ms.
+20251006-09:48:47: Pending connection not established after 9003 ms.
+20251006-09:48:52: Pending connection not established after 14005 ms.
+20251006-09:48:57: Pending connection not established after 19007 ms.
+20251006-09:48:59: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-09:49:02: Pending connection not established after 2001 ms.
+20251006-09:49:05: Pending connection not established after 5003 ms.
+20251006-09:49:08: Pending connection not established after 8005 ms.
+20251006-09:49:13: Pending connection not established after 13008 ms.
+20251006-09:49:18: Pending connection not established after 18009 ms.
+20251006-09:49:21: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-09:49:24: Pending connection not established after 2002 ms.
+20251006-09:49:29: Pending connection not established after 7003 ms.
+20251006-09:49:34: Pending connection not established after 12005 ms.
+20251006-09:49:39: Pending connection not established after 17006 ms.
+20251006-09:49:43: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-09:49:48: Pending connection not established after 4002 ms.
+20251006-09:49:53: Pending connection not established after 9005 ms.
+20251006-09:49:58: Pending connection not established after 14007 ms.
+20251006-09:50:03: Pending connection not established after 19008 ms.
+20251006-09:50:05: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-09:50:10: Pending connection not established after 4000 ms.
+20251006-09:50:15: Pending connection not established after 9003 ms.
+20251006-09:50:20: Pending connection not established after 14006 ms.
+20251006-09:50:23: Pending connection not established after 17009 ms.
+20251006-09:50:27: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-09:50:30: Pending connection not established after 2002 ms.
+20251006-09:50:35: Pending connection not established after 7004 ms.
+20251006-09:50:38: Pending connection not established after 10007 ms.
+20251006-09:50:43: Pending connection not established after 15008 ms.
+20251006-09:50:48: Pending connection not established after 20009 ms.
+20251006-09:50:49: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-09:50:52: Pending connection not established after 2002 ms.
+20251006-09:50:55: Pending connection not established after 5004 ms.
+20251006-09:51:00: Pending connection not established after 10006 ms.
+20251006-09:51:05: Pending connection not established after 15007 ms.
+20251006-09:51:10: Pending connection not established after 20009 ms.
+20251006-09:51:11: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-09:51:14: Pending connection not established after 2002 ms.
+20251006-09:51:19: Pending connection not established after 7004 ms.
+20251006-09:51:24: Pending connection not established after 12005 ms.
+20251006-09:51:27: Pending connection not established after 15008 ms.
+20251006-09:51:30: Pending connection not established after 18010 ms.
+20251006-09:51:33: Pending connection not established after 21012 ms.
+20251006-09:51:34: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-09:51:39: Pending connection not established after 4000 ms.
+20251006-09:51:44: Pending connection not established after 9002 ms.
+20251006-09:51:49: Pending connection not established after 14004 ms.
+20251006-09:51:54: Pending connection not established after 19006 ms.
+20251006-09:51:56: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-09:51:59: Pending connection not established after 2002 ms.
+20251006-09:52:04: Pending connection not established after 7004 ms.
+20251006-09:52:09: Pending connection not established after 12007 ms.
+20251006-09:52:14: Pending connection not established after 17010 ms.
+20251006-09:52:18: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-09:52:23: Pending connection not established after 4000 ms.
+20251006-09:52:28: Pending connection not established after 9001 ms.
+20251006-09:52:31: Pending connection not established after 12003 ms.
+20251006-09:52:36: Pending connection not established after 17004 ms.
+20251006-09:52:39: Pending connection not established after 20006 ms.
+20251006-09:52:40: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-09:52:45: Pending connection not established after 4001 ms.
+20251006-09:52:50: Pending connection not established after 9021 ms.
+20251006-09:52:53: Pending connection not established after 12023 ms.
+20251006-09:52:58: Pending connection not established after 17025 ms.
+20251006-09:53:02: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-09:53:07: Pending connection not established after 4002 ms.
+20251006-09:53:12: Pending connection not established after 9004 ms.
+20251006-09:53:15: Pending connection not established after 12007 ms.
+20251006-09:53:18: Pending connection not established after 15008 ms.
+20251006-09:53:23: Pending connection not established after 20009 ms.
+20251006-09:53:24: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-09:53:27: Pending connection not established after 2003 ms.
+20251006-09:53:30: Pending connection not established after 5005 ms.
+20251006-09:53:33: Pending connection not established after 8007 ms.
+20251006-09:53:38: Pending connection not established after 13011 ms.
+20251006-09:53:41: Pending connection not established after 16014 ms.
+20251006-09:53:46: Pending connection not established after 21016 ms.
+20251006-09:53:47: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-09:53:52: Pending connection not established after 4004 ms.
+20251006-09:53:55: Pending connection not established after 7012 ms.
+20251006-09:53:58: Pending connection not established after 10014 ms.
+20251006-09:54:03: Pending connection not established after 15016 ms.
+20251006-09:54:08: Pending connection not established after 20018 ms.
+20251006-09:54:09: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-09:54:12: Pending connection not established after 2002 ms.
+20251006-09:54:15: Pending connection not established after 5004 ms.
+20251006-09:54:20: Pending connection not established after 10006 ms.
+20251006-09:54:25: Pending connection not established after 15008 ms.
+20251006-09:54:28: Pending connection not established after 18010 ms.
+20251006-09:54:31: Pending connection not established after 21034 ms.
+20251006-09:54:32: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-09:54:35: Pending connection not established after 2001 ms.
+20251006-09:54:40: Pending connection not established after 7002 ms.
+20251006-09:54:43: Pending connection not established after 10004 ms.
+20251006-09:54:46: Pending connection not established after 13010 ms.
+20251006-09:54:51: Pending connection not established after 18012 ms.
+20251006-09:54:54: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-09:54:59: Pending connection not established after 4001 ms.
+20251006-09:55:04: Pending connection not established after 9003 ms.
+20251006-09:55:09: Pending connection not established after 14005 ms.
+20251006-09:55:14: Pending connection not established after 19010 ms.
+20251006-09:55:16: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-09:55:21: Pending connection not established after 4002 ms.
+20251006-09:55:24: Pending connection not established after 7004 ms.
+20251006-09:55:27: Pending connection not established after 10007 ms.
+20251006-09:55:32: Pending connection not established after 15008 ms.
+20251006-09:55:37: Pending connection not established after 20009 ms.
+20251006-09:55:38: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-09:55:43: Pending connection not established after 4001 ms.
+20251006-09:55:46: Pending connection not established after 7093 ms.
+20251006-09:55:51: Pending connection not established after 12094 ms.
+20251006-09:55:54: Pending connection not established after 15096 ms.
+20251006-09:55:57: Pending connection not established after 18097 ms.
+20251006-09:56:00: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-09:56:03: Pending connection not established after 2002 ms.
+20251006-09:56:08: Pending connection not established after 7002 ms.
+20251006-09:56:13: Pending connection not established after 12003 ms.
+20251006-09:56:16: Pending connection not established after 15008 ms.
+20251006-09:56:21: Pending connection not established after 20010 ms.
+20251006-09:56:22: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-09:56:25: Pending connection not established after 2002 ms.
+20251006-09:56:28: Pending connection not established after 5004 ms.
+20251006-09:56:31: Pending connection not established after 8005 ms.
+20251006-09:56:34: Pending connection not established after 11008 ms.
+20251006-09:56:39: Pending connection not established after 16009 ms.
+20251006-09:56:42: Pending connection not established after 19012 ms.
+20251006-09:56:44: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-09:56:49: Pending connection not established after 4001 ms.
+20251006-09:56:54: Pending connection not established after 9004 ms.
+20251006-09:56:59: Pending connection not established after 14005 ms.
+20251006-09:57:04: Pending connection not established after 19007 ms.
+20251006-09:57:06: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-09:57:11: Pending connection not established after 4002 ms.
+20251006-09:57:16: Pending connection not established after 9003 ms.
+20251006-09:57:21: Pending connection not established after 14004 ms.
+20251006-09:57:26: Pending connection not established after 19005 ms.
+20251006-09:57:29: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-09:57:32: Pending connection not established after 2002 ms.
+20251006-09:57:35: Pending connection not established after 5004 ms.
+20251006-09:57:40: Pending connection not established after 10005 ms.
+20251006-09:57:43: Pending connection not established after 13007 ms.
+20251006-09:57:48: Pending connection not established after 18008 ms.
+20251006-09:57:51: Pending connection not established after 21010 ms.
+20251006-09:57:52: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-09:57:57: Pending connection not established after 4002 ms.
+20251006-09:58:02: Pending connection not established after 9004 ms.
+20251006-09:58:07: Pending connection not established after 14005 ms.
+20251006-09:58:12: Pending connection not established after 19007 ms.
+20251006-09:58:14: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-09:58:19: Pending connection not established after 4001 ms.
+20251006-09:58:24: Pending connection not established after 9004 ms.
+20251006-09:58:27: Pending connection not established after 12005 ms.
+20251006-09:58:30: Pending connection not established after 15008 ms.
+20251006-09:58:33: Pending connection not established after 18010 ms.
+20251006-09:58:36: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-09:58:41: Pending connection not established after 4002 ms.
+20251006-09:58:46: Pending connection not established after 9003 ms.
+20251006-09:58:49: Pending connection not established after 12006 ms.
+20251006-09:58:54: Pending connection not established after 17009 ms.
+20251006-09:58:58: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-09:59:03: Pending connection not established after 4002 ms.
+20251006-09:59:08: Pending connection not established after 9003 ms.
+20251006-09:59:11: Pending connection not established after 12005 ms.
+20251006-09:59:16: Pending connection not established after 17007 ms.
+20251006-09:59:20: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-09:59:23: Pending connection not established after 2002 ms.
+20251006-09:59:26: Pending connection not established after 5004 ms.
+20251006-09:59:31: Pending connection not established after 10006 ms.
+20251006-09:59:36: Pending connection not established after 15008 ms.
+20251006-09:59:39: Pending connection not established after 18010 ms.
+20251006-09:59:42: Pending connection not established after 21011 ms.
+20251006-09:59:43: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-09:59:46: Pending connection not established after 2002 ms.
+20251006-09:59:51: Pending connection not established after 7004 ms.
+20251006-09:59:56: Pending connection not established after 12006 ms.
+20251006-09:59:59: Pending connection not established after 15009 ms.
+20251006-10:00:02: Pending connection not established after 18011 ms.
+20251006-10:00:05: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-10:00:10: Pending connection not established after 4000 ms.
+20251006-10:00:15: Pending connection not established after 9002 ms.
+20251006-10:00:20: Pending connection not established after 14004 ms.
+20251006-10:00:25: Pending connection not established after 19006 ms.
+20251006-10:00:27: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-10:00:32: Pending connection not established after 4001 ms.
+20251006-10:00:37: Pending connection not established after 9003 ms.
+20251006-10:00:40: Pending connection not established after 12005 ms.
+20251006-10:00:43: Pending connection not established after 15006 ms.
+20251006-10:00:46: Pending connection not established after 18008 ms.
+20251006-10:00:49: Pending connection not established after 21009 ms.
+20251006-10:00:50: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-10:00:53: Pending connection not established after 2001 ms.
+20251006-10:00:58: Pending connection not established after 7002 ms.
+20251006-10:01:03: Pending connection not established after 12003 ms.
+20251006-10:01:08: Pending connection not established after 17004 ms.
+20251006-10:01:12: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-10:01:15: Pending connection not established after 2002 ms.
+20251006-10:01:18: Pending connection not established after 5003 ms.
+20251006-10:01:23: Pending connection not established after 10005 ms.
+20251006-10:01:26: Pending connection not established after 13007 ms.
+20251006-10:01:31: Pending connection not established after 18008 ms.
+20251006-10:01:34: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-10:01:39: Pending connection not established after 4002 ms.
+20251006-10:01:42: Pending connection not established after 7004 ms.
+20251006-10:01:47: Pending connection not established after 12006 ms.
+20251006-10:01:52: Pending connection not established after 17015 ms.
+20251006-10:01:56: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-10:02:01: Pending connection not established after 4001 ms.
+20251006-10:02:06: Pending connection not established after 9002 ms.
+20251006-10:02:11: Pending connection not established after 14003 ms.
+20251006-10:02:14: Pending connection not established after 17005 ms.
+20251006-10:02:18: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-10:02:21: Pending connection not established after 2002 ms.
+20251006-10:02:26: Pending connection not established after 7004 ms.
+20251006-10:02:31: Pending connection not established after 12006 ms.
+20251006-10:02:34: Pending connection not established after 15008 ms.
+20251006-10:02:39: Pending connection not established after 20009 ms.
+20251006-10:02:40: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-10:02:45: Pending connection not established after 4001 ms.
+20251006-10:02:50: Pending connection not established after 9003 ms.
+20251006-10:02:53: Pending connection not established after 12005 ms.
+20251006-10:02:56: Pending connection not established after 15008 ms.
+20251006-10:03:01: Pending connection not established after 20009 ms.
+20251006-10:03:02: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-10:03:07: Pending connection not established after 4001 ms.
+20251006-10:03:12: Pending connection not established after 9002 ms.
+20251006-10:03:17: Pending connection not established after 14004 ms.
+20251006-10:03:22: Pending connection not established after 19006 ms.
+20251006-10:03:24: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-10:03:29: Pending connection not established after 4001 ms.
+20251006-10:03:34: Pending connection not established after 9005 ms.
+20251006-10:03:37: Pending connection not established after 12007 ms.
+20251006-10:03:42: Pending connection not established after 17014 ms.
+20251006-10:03:46: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-10:03:49: Pending connection not established after 2001 ms.
+20251006-10:03:52: Pending connection not established after 5003 ms.
+20251006-10:03:55: Pending connection not established after 8005 ms.
+20251006-10:04:00: Pending connection not established after 13008 ms.
+20251006-10:04:05: Pending connection not established after 18010 ms.
+20251006-10:04:08: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-10:04:11: Pending connection not established after 2002 ms.
+20251006-10:04:14: Pending connection not established after 5004 ms.
+20251006-10:04:17: Pending connection not established after 8016 ms.
+20251006-10:04:20: Pending connection not established after 11025 ms.
+20251006-10:04:25: Pending connection not established after 16027 ms.
+20251006-10:04:28: Pending connection not established after 19052 ms.
+20251006-10:04:30: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-10:04:33: Pending connection not established after 2010 ms.
+20251006-10:04:38: Pending connection not established after 7012 ms.
+20251006-10:04:41: Pending connection not established after 10013 ms.
+20251006-10:04:46: Pending connection not established after 15014 ms.
+20251006-10:04:49: Pending connection not established after 18082 ms.
+20251006-10:04:52: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-10:04:57: Pending connection not established after 4002 ms.
+20251006-10:05:00: Pending connection not established after 7004 ms.
+20251006-10:05:05: Pending connection not established after 12006 ms.
+20251006-10:05:10: Pending connection not established after 17007 ms.
+20251006-10:05:14: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-10:05:19: Pending connection not established after 4002 ms.
+20251006-10:05:22: Pending connection not established after 7004 ms.
+20251006-10:05:25: Pending connection not established after 10020 ms.
+20251006-10:05:30: Pending connection not established after 15023 ms.
+20251006-10:05:35: Pending connection not established after 20024 ms.
+20251006-10:05:37: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-10:05:42: Pending connection not established after 4001 ms.
+20251006-10:05:47: Pending connection not established after 9004 ms.
+20251006-10:05:52: Pending connection not established after 14007 ms.
+20251006-10:05:57: Pending connection not established after 19009 ms.
+20251006-10:05:59: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-10:06:04: Pending connection not established after 4001 ms.
+20251006-10:06:07: Pending connection not established after 7002 ms.
+20251006-10:06:12: Pending connection not established after 12004 ms.
+20251006-10:06:17: Pending connection not established after 17006 ms.
+20251006-10:06:20: Pending connection not established after 20008 ms.
+20251006-10:06:21: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-10:06:26: Pending connection not established after 4000 ms.
+20251006-10:06:29: Pending connection not established after 7003 ms.
+20251006-10:06:32: Pending connection not established after 10004 ms.
+20251006-10:06:35: Pending connection not established after 13005 ms.
+20251006-10:06:40: Pending connection not established after 18007 ms.
+20251006-10:06:43: Pending connection not established after 21010 ms.
+20251006-10:06:44: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-10:06:47: Pending connection not established after 2001 ms.
+20251006-10:06:52: Pending connection not established after 7003 ms.
+20251006-10:06:57: Pending connection not established after 12005 ms.
+20251006-10:07:00: Pending connection not established after 15007 ms.
+20251006-10:07:03: Pending connection not established after 18009 ms.
+20251006-10:07:06: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-10:07:09: Pending connection not established after 2002 ms.
+20251006-10:07:12: Pending connection not established after 5003 ms.
+20251006-10:07:17: Pending connection not established after 10005 ms.
+20251006-10:07:20: Pending connection not established after 13008 ms.
+20251006-10:07:25: Pending connection not established after 18011 ms.
+20251006-10:07:28: Pending connection not established after 21013 ms.
+20251006-10:07:29: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-10:07:32: Pending connection not established after 2001 ms.
+20251006-10:07:35: Pending connection not established after 5006 ms.
+20251006-10:07:40: Pending connection not established after 10016 ms.
+20251006-10:07:45: Pending connection not established after 15019 ms.
+20251006-10:07:48: Pending connection not established after 18022 ms.
+20251006-10:07:51: Pending connection not established after 21025 ms.
+20251006-10:07:52: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-10:07:55: Pending connection not established after 2001 ms.
+20251006-10:07:58: Pending connection not established after 5003 ms.
+20251006-10:08:03: Pending connection not established after 10004 ms.
+20251006-10:08:06: Pending connection not established after 13005 ms.
+20251006-10:08:09: Pending connection not established after 16006 ms.
+20251006-10:08:12: Pending connection not established after 19008 ms.
+20251006-10:08:14: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-10:08:17: Pending connection not established after 2001 ms.
+20251006-10:08:20: Pending connection not established after 5002 ms.
+20251006-10:08:23: Pending connection not established after 8003 ms.
+20251006-10:08:26: Pending connection not established after 11005 ms.
+20251006-10:08:29: Pending connection not established after 14007 ms.
+20251006-10:08:32: Pending connection not established after 17009 ms.
+20251006-10:08:35: Pending connection not established after 20010 ms.
+20251006-10:08:36: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-10:08:41: Pending connection not established after 4002 ms.
+20251006-10:08:46: Pending connection not established after 9005 ms.
+20251006-10:08:49: Pending connection not established after 12009 ms.
+20251006-10:08:54: Pending connection not established after 17010 ms.
+20251006-10:08:57: Pending connection not established after 20012 ms.
+20251006-10:08:58: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-10:09:03: Pending connection not established after 4003 ms.
+20251006-10:09:06: Pending connection not established after 7005 ms.
+20251006-10:09:11: Pending connection not established after 12013 ms.
+20251006-10:09:16: Pending connection not established after 17015 ms.
+20251006-10:09:20: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-10:09:25: Pending connection not established after 4001 ms.
+20251006-10:09:30: Pending connection not established after 9002 ms.
+20251006-10:09:33: Pending connection not established after 12008 ms.
+20251006-10:09:36: Pending connection not established after 15011 ms.
+20251006-10:09:39: Pending connection not established after 18013 ms.
+20251006-10:09:42: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-10:09:45: Pending connection not established after 2001 ms.
+20251006-10:09:48: Pending connection not established after 5003 ms.
+20251006-10:09:51: Pending connection not established after 8030 ms.
+20251006-10:09:54: Pending connection not established after 11032 ms.
+20251006-10:09:59: Pending connection not established after 16034 ms.
+20251006-10:10:04: Pending connection not established after 21034 ms.
+20251006-10:10:05: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-10:10:10: Pending connection not established after 4000 ms.
+20251006-10:10:13: Pending connection not established after 7003 ms.
+20251006-10:10:16: Pending connection not established after 10004 ms.
+20251006-10:10:21: Pending connection not established after 15006 ms.
+20251006-10:10:21: MINA session created: local=/192.168.0.42:58107, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251006-10:10:21: Initiated logon request
+20251006-10:10:21: Received logon
+20251006-10:10:21: Received ResendRequest FROM: 117 TO: infinity
+20251006-10:10:21: Sent SequenceReset TO: 118
+20251006-10:10:21: Resending message: 118
+20251006-10:10:21: Sent SequenceReset TO: 120
+20251006-10:45:45: Sent test request TEST
+20251006-10:45:47: Disconnecting: Socket exception (/192.168.0.37:9888): java.net.SocketException: Connection reset
+20251006-10:45:50: Pending connection not established after 2007 ms.
+20251006-10:45:53: Pending connection not established after 5010 ms.
+20251006-10:45:58: Pending connection not established after 10010 ms.
+20251006-10:46:01: Pending connection not established after 13014 ms.
+20251006-10:46:04: Pending connection not established after 16016 ms.
+20251006-10:46:07: Pending connection not established after 19017 ms.
+20251006-10:46:09: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-10:46:12: Pending connection not established after 2011 ms.
+20251006-10:46:15: Pending connection not established after 5013 ms.
+20251006-10:46:18: Pending connection not established after 8020 ms.
+20251006-10:46:23: Pending connection not established after 13024 ms.
+20251006-10:46:28: Pending connection not established after 18028 ms.
+20251006-10:46:31: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-10:46:34: Pending connection not established after 2014 ms.
+20251006-10:46:37: Pending connection not established after 5016 ms.
+20251006-10:46:40: Pending connection not established after 8025 ms.
+20251006-10:46:43: Pending connection not established after 11028 ms.
+20251006-10:46:48: Pending connection not established after 16044 ms.
+20251006-10:46:51: Pending connection not established after 19049 ms.
+20251006-10:46:53: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-10:46:56: Pending connection not established after 2001 ms.
+20251006-10:46:59: Pending connection not established after 5003 ms.
+20251006-10:47:02: Pending connection not established after 8019 ms.
+20251006-10:47:07: Pending connection not established after 13029 ms.
+20251006-10:47:10: Pending connection not established after 16031 ms.
+20251006-10:47:15: Pending connection not established after 21039 ms.
+20251006-10:47:16: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-10:47:19: Pending connection not established after 2001 ms.
+20251006-10:47:22: Pending connection not established after 5004 ms.
+20251006-10:47:27: Pending connection not established after 10014 ms.
+20251006-10:47:30: Pending connection not established after 13019 ms.
+20251006-10:47:33: Pending connection not established after 16020 ms.
+20251006-10:47:38: Pending connection not established after 21025 ms.
+20251006-10:47:39: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-10:47:44: Pending connection not established after 4006 ms.
+20251006-10:47:47: Pending connection not established after 7010 ms.
+20251006-10:47:50: Pending connection not established after 10012 ms.
+20251006-10:47:55: Pending connection not established after 15017 ms.
+20251006-10:47:58: Pending connection not established after 18020 ms.
+20251006-10:48:01: Pending connection not established after 21022 ms.
+20251006-10:48:02: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-10:48:05: Pending connection not established after 2002 ms.
+20251006-10:48:10: Pending connection not established after 7004 ms.
+20251006-10:48:13: Pending connection not established after 10011 ms.
+20251006-10:48:18: Pending connection not established after 15012 ms.
+20251006-10:48:21: Pending connection not established after 18013 ms.
+20251006-10:48:24: Pending connection not established after 21019 ms.
+20251006-10:48:25: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-10:48:28: Pending connection not established after 2001 ms.
+20251006-10:48:31: Pending connection not established after 5008 ms.
+20251006-10:48:36: Pending connection not established after 10017 ms.
+20251006-10:48:39: Pending connection not established after 13020 ms.
+20251006-10:48:42: Pending connection not established after 16022 ms.
+20251006-10:48:45: Pending connection not established after 19029 ms.
+20251006-10:48:47: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-10:48:50: Pending connection not established after 2001 ms.
+20251006-10:48:55: Pending connection not established after 7009 ms.
+20251006-10:49:00: Pending connection not established after 12012 ms.
+20251006-10:49:03: Pending connection not established after 15032 ms.
+20251006-10:49:06: Pending connection not established after 18035 ms.
+20251006-10:49:09: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-10:49:12: Pending connection not established after 2001 ms.
+20251006-10:49:15: Pending connection not established after 5008 ms.
+20251006-10:49:20: Pending connection not established after 10010 ms.
+20251006-10:49:23: Pending connection not established after 13017 ms.
+20251006-10:49:26: Pending connection not established after 16019 ms.
+20251006-10:49:31: Pending connection not established after 21027 ms.
+20251006-10:49:32: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-10:49:37: Pending connection not established after 4001 ms.
+20251006-10:49:40: Pending connection not established after 7008 ms.
+20251006-10:49:43: Pending connection not established after 10009 ms.
+20251006-10:49:48: Pending connection not established after 15017 ms.
+20251006-10:49:53: Pending connection not established after 20019 ms.
+20251006-10:49:54: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-10:49:57: Pending connection not established after 2001 ms.
+20251006-10:50:02: Pending connection not established after 7009 ms.
+20251006-10:50:07: Pending connection not established after 12011 ms.
+20251006-10:50:10: Pending connection not established after 15020 ms.
+20251006-10:50:13: Pending connection not established after 18023 ms.
+20251006-10:50:16: Pending connection not established after 21030 ms.
+20251006-10:50:17: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-10:50:22: Pending connection not established after 4000 ms.
+20251006-10:50:25: Pending connection not established after 7006 ms.
+20251006-10:50:28: Pending connection not established after 10009 ms.
+20251006-10:50:31: Pending connection not established after 13018 ms.
+20251006-10:50:36: Pending connection not established after 18020 ms.
+20251006-10:50:39: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-10:50:42: Pending connection not established after 2001 ms.
+20251006-10:50:47: Pending connection not established after 7003 ms.
+20251006-10:50:50: Pending connection not established after 10004 ms.
+20251006-10:50:55: Pending connection not established after 15006 ms.
+20251006-10:50:58: Pending connection not established after 18008 ms.
+20251006-10:51:01: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-10:51:06: Pending connection not established after 4008 ms.
+20251006-10:51:09: Pending connection not established after 7010 ms.
+20251006-10:51:14: Pending connection not established after 12012 ms.
+20251006-10:51:19: Pending connection not established after 17018 ms.
+20251006-10:51:23: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-10:51:28: Pending connection not established after 4000 ms.
+20251006-10:51:33: Pending connection not established after 9002 ms.
+20251006-10:51:38: Pending connection not established after 14003 ms.
+20251006-10:51:41: Pending connection not established after 17008 ms.
+20251006-10:51:44: Pending connection not established after 20009 ms.
+20251006-10:51:45: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-10:51:50: Pending connection not established after 4001 ms.
+20251006-10:51:53: Pending connection not established after 7003 ms.
+20251006-10:51:58: Pending connection not established after 12005 ms.
+20251006-10:52:03: Pending connection not established after 17007 ms.
+20251006-10:52:06: Pending connection not established after 20040 ms.
+20251006-10:52:07: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-10:52:10: Pending connection not established after 2003 ms.
+20251006-10:52:15: Pending connection not established after 7008 ms.
+20251006-10:52:20: Pending connection not established after 12011 ms.
+20251006-10:52:23: Pending connection not established after 15013 ms.
+20251006-10:52:28: Pending connection not established after 20015 ms.
+20251006-10:52:29: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-10:52:34: Pending connection not established after 4001 ms.
+20251006-10:52:37: Pending connection not established after 7025 ms.
+20251006-10:52:42: Pending connection not established after 12027 ms.
+20251006-10:52:45: Pending connection not established after 15029 ms.
+20251006-10:52:48: Pending connection not established after 18031 ms.
+20251006-10:52:51: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-10:52:55: Pending connection not established after 2015 ms.
+20251006-10:52:58: Pending connection not established after 5036 ms.
+20251006-10:53:03: Pending connection not established after 10040 ms.
+20251006-10:53:08: Pending connection not established after 15069 ms.
+20251006-10:53:11: Pending connection not established after 18092 ms.
+20251006-10:53:14: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-10:53:19: Pending connection not established after 4001 ms.
+20251006-10:53:24: Pending connection not established after 9003 ms.
+20251006-10:53:29: Pending connection not established after 14007 ms.
+20251006-10:53:32: Pending connection not established after 17011 ms.
+20251006-10:53:36: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-10:53:39: Pending connection not established after 2022 ms.
+20251006-10:53:44: Pending connection not established after 7024 ms.
+20251006-10:53:47: Pending connection not established after 10028 ms.
+20251006-10:53:50: Pending connection not established after 13030 ms.
+20251006-10:53:53: Pending connection not established after 16032 ms.
+20251006-10:53:56: Pending connection not established after 19082 ms.
+20251006-10:53:58: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-10:54:03: Pending connection not established after 4000 ms.
+20251006-10:54:06: Pending connection not established after 7002 ms.
+20251006-10:54:11: Pending connection not established after 12004 ms.
+20251006-10:54:14: Pending connection not established after 15006 ms.
+20251006-10:54:17: Pending connection not established after 18008 ms.
+20251006-10:54:20: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-10:54:23: Pending connection not established after 2003 ms.
+20251006-10:54:26: Pending connection not established after 5005 ms.
+20251006-10:54:31: Pending connection not established after 10006 ms.
+20251006-10:54:36: Pending connection not established after 15008 ms.
+20251006-10:54:41: Pending connection not established after 20008 ms.
+20251006-10:54:42: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-10:54:45: Pending connection not established after 2001 ms.
+20251006-10:54:50: Pending connection not established after 7003 ms.
+20251006-10:54:53: Pending connection not established after 10004 ms.
+20251006-10:54:56: Pending connection not established after 13005 ms.
+20251006-10:55:01: Pending connection not established after 18008 ms.
+20251006-10:55:04: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-10:55:09: Pending connection not established after 4002 ms.
+20251006-10:55:12: Pending connection not established after 7006 ms.
+20251006-10:55:17: Pending connection not established after 12009 ms.
+20251006-10:55:20: Pending connection not established after 15011 ms.
+20251006-10:55:23: Pending connection not established after 18014 ms.
+20251006-10:55:26: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-10:55:31: Pending connection not established after 4001 ms.
+20251006-10:55:34: Pending connection not established after 7003 ms.
+20251006-10:55:39: Pending connection not established after 12004 ms.
+20251006-10:55:44: Pending connection not established after 17006 ms.
+20251006-10:55:48: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-10:55:53: Pending connection not established after 4001 ms.
+20251006-10:55:56: Pending connection not established after 7004 ms.
+20251006-10:55:59: Pending connection not established after 10008 ms.
+20251006-10:56:04: Pending connection not established after 15010 ms.
+20251006-10:56:09: Pending connection not established after 20012 ms.
+20251006-10:56:10: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-10:56:15: Pending connection not established after 4000 ms.
+20251006-10:56:18: Pending connection not established after 7001 ms.
+20251006-10:56:21: Pending connection not established after 10003 ms.
+20251006-10:56:24: Pending connection not established after 13006 ms.
+20251006-10:56:29: Pending connection not established after 18007 ms.
+20251006-10:56:32: Pending connection not established after 21009 ms.
+20251006-10:56:33: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-10:56:36: Pending connection not established after 2001 ms.
+20251006-10:56:41: Pending connection not established after 7002 ms.
+20251006-10:56:44: Pending connection not established after 10004 ms.
+20251006-10:56:47: Pending connection not established after 13006 ms.
+20251006-10:56:52: Pending connection not established after 18007 ms.
+20251006-10:56:55: Pending connection not established after 21009 ms.
+20251006-10:56:56: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-10:56:59: Pending connection not established after 2001 ms.
+20251006-10:57:02: Pending connection not established after 5003 ms.
+20251006-10:57:05: Pending connection not established after 8011 ms.
+20251006-10:57:09: Pending connection not established after 11066 ms.
+20251006-10:57:12: Pending connection not established after 14069 ms.
+20251006-10:57:17: Pending connection not established after 19070 ms.
+20251006-10:57:18: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-10:57:21: Pending connection not established after 2001 ms.
+20251006-10:57:24: Pending connection not established after 5006 ms.
+20251006-10:57:27: Pending connection not established after 8008 ms.
+20251006-10:57:30: Pending connection not established after 11009 ms.
+20251006-10:57:33: Pending connection not established after 14011 ms.
+20251006-10:57:38: Pending connection not established after 19013 ms.
+20251006-10:57:41: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-10:57:46: Pending connection not established after 4002 ms.
+20251006-10:57:51: Pending connection not established after 9005 ms.
+20251006-10:57:54: Pending connection not established after 12007 ms.
+20251006-10:57:57: Pending connection not established after 15009 ms.
+20251006-10:58:00: Pending connection not established after 18012 ms.
+20251006-10:58:03: Pending connection not established after 21013 ms.
+20251006-10:58:04: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-10:58:09: Pending connection not established after 4000 ms.
+20251006-10:58:12: Pending connection not established after 7002 ms.
+20251006-10:58:15: Pending connection not established after 10003 ms.
+20251006-10:58:20: Pending connection not established after 15005 ms.
+20251006-10:58:23: Pending connection not established after 18007 ms.
+20251006-10:58:26: Pending connection not established after 21009 ms.
+20251006-10:58:27: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-10:58:30: Pending connection not established after 2001 ms.
+20251006-10:58:33: Pending connection not established after 5002 ms.
+20251006-10:58:36: Pending connection not established after 8005 ms.
+20251006-10:58:41: Pending connection not established after 13007 ms.
+20251006-10:58:44: Pending connection not established after 16008 ms.
+20251006-10:58:49: Pending connection not established after 21009 ms.
+20251006-10:58:50: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-10:58:55: Pending connection not established after 4022 ms.
+20251006-10:59:00: Pending connection not established after 9023 ms.
+20251006-10:59:03: Pending connection not established after 12031 ms.
+20251006-10:59:06: Pending connection not established after 15063 ms.
+20251006-10:59:11: Pending connection not established after 20077 ms.
+20251006-10:59:12: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-10:59:17: Pending connection not established after 4016 ms.
+20251006-10:59:20: Pending connection not established after 7018 ms.
+20251006-10:59:23: Pending connection not established after 10022 ms.
+20251006-10:59:26: Pending connection not established after 13027 ms.
+20251006-10:59:31: Pending connection not established after 18028 ms.
+20251006-10:59:34: Pending connection not established after 21030 ms.
+20251006-10:59:35: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-10:59:40: Pending connection not established after 4000 ms.
+20251006-10:59:45: Pending connection not established after 9002 ms.
+20251006-10:59:48: Pending connection not established after 12006 ms.
+20251006-10:59:51: Pending connection not established after 15008 ms.
+20251006-10:59:56: Pending connection not established after 20009 ms.
+20251006-10:59:57: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:00:00: Pending connection not established after 2002 ms.
+20251006-11:00:05: Pending connection not established after 7033 ms.
+20251006-11:00:08: Pending connection not established after 10041 ms.
+20251006-11:00:13: Pending connection not established after 15043 ms.
+20251006-11:00:18: Pending connection not established after 20044 ms.
+20251006-11:00:19: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:00:24: Pending connection not established after 4002 ms.
+20251006-11:00:29: Pending connection not established after 9005 ms.
+20251006-11:00:34: Pending connection not established after 14006 ms.
+20251006-11:00:37: Pending connection not established after 17008 ms.
+20251006-11:00:41: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:00:46: Pending connection not established after 4008 ms.
+20251006-11:00:49: Pending connection not established after 7010 ms.
+20251006-11:00:54: Pending connection not established after 12015 ms.
+20251006-11:00:59: Pending connection not established after 17017 ms.
+20251006-11:01:03: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:01:08: Pending connection not established after 4001 ms.
+20251006-11:01:11: Pending connection not established after 7002 ms.
+20251006-11:01:16: Pending connection not established after 12004 ms.
+20251006-11:01:19: Pending connection not established after 15006 ms.
+20251006-11:01:22: Pending connection not established after 18012 ms.
+20251006-11:01:25: Pending connection not established after 21016 ms.
+20251006-11:01:26: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:01:29: Pending connection not established after 2002 ms.
+20251006-11:01:32: Pending connection not established after 5004 ms.
+20251006-11:01:37: Pending connection not established after 10006 ms.
+20251006-11:01:40: Pending connection not established after 13009 ms.
+20251006-11:01:45: Pending connection not established after 18011 ms.
+20251006-11:01:48: Pending connection not established after 21013 ms.
+20251006-11:01:49: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:01:52: Pending connection not established after 2011 ms.
+20251006-11:01:55: Pending connection not established after 5014 ms.
+20251006-11:01:58: Pending connection not established after 8017 ms.
+20251006-11:02:03: Pending connection not established after 13020 ms.
+20251006-11:02:06: Pending connection not established after 16022 ms.
+20251006-11:02:11: Pending connection not established after 21024 ms.
+20251006-11:02:12: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:02:17: Pending connection not established after 4001 ms.
+20251006-11:02:22: Pending connection not established after 9003 ms.
+20251006-11:02:27: Pending connection not established after 14004 ms.
+20251006-11:02:32: Pending connection not established after 19005 ms.
+20251006-11:02:34: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:02:39: Pending connection not established after 4003 ms.
+20251006-11:02:44: Pending connection not established after 9006 ms.
+20251006-11:02:49: Pending connection not established after 14007 ms.
+20251006-11:02:52: Pending connection not established after 17009 ms.
+20251006-11:02:55: Pending connection not established after 20010 ms.
+20251006-11:02:56: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:03:01: Pending connection not established after 4001 ms.
+20251006-11:03:04: Pending connection not established after 7007 ms.
+20251006-11:03:09: Pending connection not established after 12009 ms.
+20251006-11:03:12: Pending connection not established after 15011 ms.
+20251006-11:03:15: Pending connection not established after 18012 ms.
+20251006-11:03:18: Pending connection not established after 21014 ms.
+20251006-11:03:19: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:03:24: Pending connection not established after 4001 ms.
+20251006-11:03:29: Pending connection not established after 9003 ms.
+20251006-11:03:32: Pending connection not established after 12005 ms.
+20251006-11:03:37: Pending connection not established after 17008 ms.
+20251006-11:03:40: Pending connection not established after 20016 ms.
+20251006-11:03:41: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:03:46: Pending connection not established after 4000 ms.
+20251006-11:03:51: Pending connection not established after 9002 ms.
+20251006-11:03:54: Pending connection not established after 12003 ms.
+20251006-11:03:57: Pending connection not established after 15005 ms.
+20251006-11:04:00: Pending connection not established after 18007 ms.
+20251006-11:04:03: Pending connection not established after 21009 ms.
+20251006-11:04:04: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:04:07: Pending connection not established after 2002 ms.
+20251006-11:04:12: Pending connection not established after 7005 ms.
+20251006-11:04:15: Pending connection not established after 10008 ms.
+20251006-11:04:20: Pending connection not established after 15034 ms.
+20251006-11:04:25: Pending connection not established after 20037 ms.
+20251006-11:04:26: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:04:31: Pending connection not established after 4001 ms.
+20251006-11:04:34: Pending connection not established after 7002 ms.
+20251006-11:04:39: Pending connection not established after 12003 ms.
+20251006-11:04:42: Pending connection not established after 15004 ms.
+20251006-11:04:45: Pending connection not established after 18012 ms.
+20251006-11:04:48: Pending connection not established after 21014 ms.
+20251006-11:04:49: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:04:54: Pending connection not established after 4001 ms.
+20251006-11:04:59: Pending connection not established after 9003 ms.
+20251006-11:05:04: Pending connection not established after 14005 ms.
+20251006-11:05:09: Pending connection not established after 19009 ms.
+20251006-11:05:11: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:05:16: Pending connection not established after 4002 ms.
+20251006-11:05:19: Pending connection not established after 7003 ms.
+20251006-11:05:24: Pending connection not established after 12006 ms.
+20251006-11:05:29: Pending connection not established after 17007 ms.
+20251006-11:05:32: Pending connection not established after 20009 ms.
+20251006-11:05:33: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:05:36: Pending connection not established after 2025 ms.
+20251006-11:05:39: Pending connection not established after 5039 ms.
+20251006-11:05:44: Pending connection not established after 10042 ms.
+20251006-11:05:47: Pending connection not established after 13044 ms.
+20251006-11:05:50: Pending connection not established after 16054 ms.
+20251006-11:05:55: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:06:00: Pending connection not established after 4003 ms.
+20251006-11:06:05: Pending connection not established after 9007 ms.
+20251006-11:06:10: Pending connection not established after 14007 ms.
+20251006-11:06:15: Pending connection not established after 19008 ms.
+20251006-11:06:17: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:06:22: Pending connection not established after 4003 ms.
+20251006-11:06:25: Pending connection not established after 7004 ms.
+20251006-11:06:28: Pending connection not established after 10006 ms.
+20251006-11:06:33: Pending connection not established after 15008 ms.
+20251006-11:06:38: Pending connection not established after 20009 ms.
+20251006-11:06:39: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:06:42: Pending connection not established after 2002 ms.
+20251006-11:06:45: Pending connection not established after 5004 ms.
+20251006-11:06:50: Pending connection not established after 10006 ms.
+20251006-11:06:53: Pending connection not established after 13007 ms.
+20251006-11:06:58: Pending connection not established after 18007 ms.
+20251006-11:07:01: Pending connection not established after 21009 ms.
+20251006-11:07:02: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:07:07: Pending connection not established after 4001 ms.
+20251006-11:07:10: Pending connection not established after 7004 ms.
+20251006-11:07:15: Pending connection not established after 12025 ms.
+20251006-11:07:18: Pending connection not established after 15028 ms.
+20251006-11:07:21: Pending connection not established after 18029 ms.
+20251006-11:07:24: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:07:27: Pending connection not established after 2002 ms.
+20251006-11:07:32: Pending connection not established after 7013 ms.
+20251006-11:07:37: Pending connection not established after 12014 ms.
+20251006-11:07:40: Pending connection not established after 15017 ms.
+20251006-11:07:45: Pending connection not established after 20023 ms.
+20251006-11:07:46: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:07:51: Pending connection not established after 4001 ms.
+20251006-11:07:54: Pending connection not established after 7003 ms.
+20251006-11:07:57: Pending connection not established after 10005 ms.
+20251006-11:08:00: Pending connection not established after 13006 ms.
+20251006-11:08:03: Pending connection not established after 16009 ms.
+20251006-11:08:08: Pending connection not established after 21010 ms.
+20251006-11:08:09: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:08:12: Pending connection not established after 2001 ms.
+20251006-11:08:17: Pending connection not established after 7001 ms.
+20251006-11:08:22: Pending connection not established after 12007 ms.
+20251006-11:08:25: Pending connection not established after 15009 ms.
+20251006-11:08:30: Pending connection not established after 20010 ms.
+20251006-11:08:31: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:08:36: Pending connection not established after 4002 ms.
+20251006-11:08:39: Pending connection not established after 7004 ms.
+20251006-11:08:44: Pending connection not established after 12007 ms.
+20251006-11:08:49: Pending connection not established after 17009 ms.
+20251006-11:08:52: Pending connection not established after 20011 ms.
+20251006-11:08:54: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:08:57: Pending connection not established after 2001 ms.
+20251006-11:09:00: Pending connection not established after 5010 ms.
+20251006-11:09:03: Pending connection not established after 8012 ms.
+20251006-11:09:08: Pending connection not established after 13014 ms.
+20251006-11:09:13: Pending connection not established after 18016 ms.
+20251006-11:09:16: Pending connection not established after 21025 ms.
+20251006-11:09:17: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:09:20: Pending connection not established after 2002 ms.
+20251006-11:09:23: Pending connection not established after 5006 ms.
+20251006-11:09:28: Pending connection not established after 10007 ms.
+20251006-11:09:31: Pending connection not established after 13010 ms.
+20251006-11:09:34: Pending connection not established after 16028 ms.
+20251006-11:09:37: Pending connection not established after 19048 ms.
+20251006-11:09:39: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:09:42: Pending connection not established after 2001 ms.
+20251006-11:09:45: Pending connection not established after 5006 ms.
+20251006-11:09:50: Pending connection not established after 10008 ms.
+20251006-11:09:53: Pending connection not established after 13009 ms.
+20251006-11:09:58: Pending connection not established after 18009 ms.
+20251006-11:10:01: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:10:04: Pending connection not established after 2002 ms.
+20251006-11:10:07: Pending connection not established after 5004 ms.
+20251006-11:10:12: Pending connection not established after 10006 ms.
+20251006-11:10:17: Pending connection not established after 15009 ms.
+20251006-11:10:20: Pending connection not established after 18026 ms.
+20251006-11:10:23: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:10:26: Pending connection not established after 2002 ms.
+20251006-11:10:31: Pending connection not established after 7004 ms.
+20251006-11:10:34: Pending connection not established after 10006 ms.
+20251006-11:10:39: Pending connection not established after 15007 ms.
+20251006-11:10:44: Pending connection not established after 20010 ms.
+20251006-11:10:45: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:10:50: Pending connection not established after 4001 ms.
+20251006-11:10:53: Pending connection not established after 7002 ms.
+20251006-11:10:58: Pending connection not established after 12004 ms.
+20251006-11:11:01: Pending connection not established after 15005 ms.
+20251006-11:11:06: Pending connection not established after 20007 ms.
+20251006-11:11:07: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:11:12: Pending connection not established after 4001 ms.
+20251006-11:11:15: Pending connection not established after 7004 ms.
+20251006-11:11:18: Pending connection not established after 10005 ms.
+20251006-11:11:21: Pending connection not established after 13007 ms.
+20251006-11:11:24: Pending connection not established after 16009 ms.
+20251006-11:11:29: Pending connection not established after 21011 ms.
+20251006-11:11:30: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:11:35: Pending connection not established after 4001 ms.
+20251006-11:11:38: Pending connection not established after 7014 ms.
+20251006-11:11:41: Pending connection not established after 10016 ms.
+20251006-11:11:46: Pending connection not established after 15018 ms.
+20251006-11:11:51: Pending connection not established after 20019 ms.
+20251006-11:11:52: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:11:55: Pending connection not established after 2012 ms.
+20251006-11:12:00: Pending connection not established after 7015 ms.
+20251006-11:12:05: Pending connection not established after 12017 ms.
+20251006-11:12:10: Pending connection not established after 17019 ms.
+20251006-11:12:14: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:12:17: Pending connection not established after 2001 ms.
+20251006-11:12:22: Pending connection not established after 7002 ms.
+20251006-11:12:27: Pending connection not established after 12004 ms.
+20251006-11:12:32: Pending connection not established after 17004 ms.
+20251006-11:12:36: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:12:41: Pending connection not established after 4002 ms.
+20251006-11:12:44: Pending connection not established after 7003 ms.
+20251006-11:12:49: Pending connection not established after 12003 ms.
+20251006-11:12:54: Pending connection not established after 17006 ms.
+20251006-11:12:57: Pending connection not established after 20008 ms.
+20251006-11:12:58: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:13:01: Pending connection not established after 2002 ms.
+20251006-11:13:06: Pending connection not established after 7005 ms.
+20251006-11:13:09: Pending connection not established after 10007 ms.
+20251006-11:13:14: Pending connection not established after 15008 ms.
+20251006-11:13:17: Pending connection not established after 18010 ms.
+20251006-11:13:20: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:13:23: Pending connection not established after 2001 ms.
+20251006-11:13:28: Pending connection not established after 7002 ms.
+20251006-11:13:31: Pending connection not established after 10004 ms.
+20251006-11:13:34: Pending connection not established after 13005 ms.
+20251006-11:13:37: Pending connection not established after 16006 ms.
+20251006-11:13:40: Pending connection not established after 19021 ms.
+20251006-11:13:42: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:13:47: Pending connection not established after 4000 ms.
+20251006-11:13:50: Pending connection not established after 7002 ms.
+20251006-11:13:53: Pending connection not established after 10004 ms.
+20251006-11:13:58: Pending connection not established after 15005 ms.
+20251006-11:14:03: Pending connection not established after 20006 ms.
+20251006-11:14:04: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:14:07: Pending connection not established after 2001 ms.
+20251006-11:14:10: Pending connection not established after 5004 ms.
+20251006-11:14:15: Pending connection not established after 10005 ms.
+20251006-11:14:20: Pending connection not established after 15008 ms.
+20251006-11:14:23: Pending connection not established after 18011 ms.
+20251006-11:14:26: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:14:29: Pending connection not established after 2001 ms.
+20251006-11:14:34: Pending connection not established after 7004 ms.
+20251006-11:14:39: Pending connection not established after 12007 ms.
+20251006-11:14:42: Pending connection not established after 15009 ms.
+20251006-11:14:45: Pending connection not established after 18011 ms.
+20251006-11:14:48: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:14:53: Pending connection not established after 4001 ms.
+20251006-11:14:56: Pending connection not established after 7003 ms.
+20251006-11:15:01: Pending connection not established after 12005 ms.
+20251006-11:15:06: Pending connection not established after 17006 ms.
+20251006-11:15:10: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:15:13: Pending connection not established after 2002 ms.
+20251006-11:15:16: Pending connection not established after 5004 ms.
+20251006-11:15:21: Pending connection not established after 10005 ms.
+20251006-11:15:26: Pending connection not established after 15006 ms.
+20251006-11:15:31: Pending connection not established after 20009 ms.
+20251006-11:15:32: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:15:35: Pending connection not established after 2002 ms.
+20251006-11:15:38: Pending connection not established after 5004 ms.
+20251006-11:15:43: Pending connection not established after 10005 ms.
+20251006-11:15:48: Pending connection not established after 15008 ms.
+20251006-11:15:51: Pending connection not established after 18011 ms.
+20251006-11:15:54: Pending connection not established after 21014 ms.
+20251006-11:15:55: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:16:00: Pending connection not established after 4002 ms.
+20251006-11:16:05: Pending connection not established after 9004 ms.
+20251006-11:16:10: Pending connection not established after 14006 ms.
+20251006-11:16:13: Pending connection not established after 17008 ms.
+20251006-11:16:16: Pending connection not established after 20009 ms.
+20251006-11:16:17: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:16:22: Pending connection not established after 4002 ms.
+20251006-11:16:25: Pending connection not established after 7006 ms.
+20251006-11:16:30: Pending connection not established after 12007 ms.
+20251006-11:16:35: Pending connection not established after 17008 ms.
+20251006-11:16:38: Pending connection not established after 20010 ms.
+20251006-11:16:39: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:16:44: Pending connection not established after 4002 ms.
+20251006-11:16:47: Pending connection not established after 7005 ms.
+20251006-11:16:50: Pending connection not established after 10008 ms.
+20251006-11:16:53: Pending connection not established after 13022 ms.
+20251006-11:16:56: Pending connection not established after 16024 ms.
+20251006-11:17:01: Pending connection not established after 21026 ms.
+20251006-11:17:02: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:17:07: Pending connection not established after 4000 ms.
+20251006-11:17:10: Pending connection not established after 7002 ms.
+20251006-11:17:13: Pending connection not established after 10004 ms.
+20251006-11:17:16: Pending connection not established after 13005 ms.
+20251006-11:17:21: Pending connection not established after 18006 ms.
+20251006-11:17:24: Pending connection not established after 21009 ms.
+20251006-11:17:25: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:17:29: Pending connection not established after 2085 ms.
+20251006-11:17:34: Pending connection not established after 7088 ms.
+20251006-11:17:39: Pending connection not established after 12096 ms.
+20251006-11:17:44: Pending connection not established after 17097 ms.
+20251006-11:17:47: Pending connection not established after 20099 ms.
+20251006-11:17:48: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:17:53: Pending connection not established after 4002 ms.
+20251006-11:17:56: Pending connection not established after 7004 ms.
+20251006-11:17:59: Pending connection not established after 10005 ms.
+20251006-11:18:04: Pending connection not established after 15008 ms.
+20251006-11:18:07: Pending connection not established after 18024 ms.
+20251006-11:18:10: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:18:15: Pending connection not established after 4001 ms.
+20251006-11:18:20: Pending connection not established after 9007 ms.
+20251006-11:18:25: Pending connection not established after 14011 ms.
+20251006-11:18:30: Pending connection not established after 19013 ms.
+20251006-11:18:32: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:18:37: Pending connection not established after 4000 ms.
+20251006-11:18:42: Pending connection not established after 9001 ms.
+20251006-11:18:45: Pending connection not established after 12003 ms.
+20251006-11:18:48: Pending connection not established after 15004 ms.
+20251006-11:18:53: Pending connection not established after 20006 ms.
+20251006-11:18:54: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:18:57: Pending connection not established after 2002 ms.
+20251006-11:19:00: Pending connection not established after 5005 ms.
+20251006-11:19:03: Pending connection not established after 8006 ms.
+20251006-11:19:06: Pending connection not established after 11009 ms.
+20251006-11:19:11: Pending connection not established after 16010 ms.
+20251006-11:19:16: Pending connection not established after 21012 ms.
+20251006-11:19:17: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:19:20: Pending connection not established after 2002 ms.
+20251006-11:19:25: Pending connection not established after 7004 ms.
+20251006-11:19:28: Pending connection not established after 10006 ms.
+20251006-11:19:31: Pending connection not established after 13010 ms.
+20251006-11:19:36: Pending connection not established after 18011 ms.
+20251006-11:19:39: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:19:44: Pending connection not established after 4002 ms.
+20251006-11:19:49: Pending connection not established after 9004 ms.
+20251006-11:19:54: Pending connection not established after 14007 ms.
+20251006-11:19:59: Pending connection not established after 19009 ms.
+20251006-11:20:01: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:20:06: Pending connection not established after 4002 ms.
+20251006-11:20:11: Pending connection not established after 9004 ms.
+20251006-11:20:16: Pending connection not established after 14005 ms.
+20251006-11:20:19: Pending connection not established after 17007 ms.
+20251006-11:20:23: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:20:26: Pending connection not established after 2001 ms.
+20251006-11:20:31: Pending connection not established after 7018 ms.
+20251006-11:20:36: Pending connection not established after 12021 ms.
+20251006-11:20:41: Pending connection not established after 17021 ms.
+20251006-11:20:45: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:20:50: Pending connection not established after 4002 ms.
+20251006-11:20:55: Pending connection not established after 9004 ms.
+20251006-11:20:58: Pending connection not established after 12006 ms.
+20251006-11:21:03: Pending connection not established after 17008 ms.
+20251006-11:21:07: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:21:10: Pending connection not established after 2002 ms.
+20251006-11:21:15: Pending connection not established after 7004 ms.
+20251006-11:21:20: Pending connection not established after 12005 ms.
+20251006-11:21:25: Pending connection not established after 17008 ms.
+20251006-11:21:28: Pending connection not established after 20010 ms.
+20251006-11:21:29: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:21:34: Pending connection not established after 4001 ms.
+20251006-11:21:39: Pending connection not established after 9004 ms.
+20251006-11:21:44: Pending connection not established after 14006 ms.
+20251006-11:21:47: Pending connection not established after 17008 ms.
+20251006-11:21:50: Pending connection not established after 20011 ms.
+20251006-11:21:51: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:21:54: Pending connection not established after 2006 ms.
+20251006-11:21:59: Pending connection not established after 7008 ms.
+20251006-11:22:04: Pending connection not established after 12009 ms.
+20251006-11:22:09: Pending connection not established after 17011 ms.
+20251006-11:22:12: Pending connection not established after 20013 ms.
+20251006-11:22:13: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:22:18: Pending connection not established after 4008 ms.
+20251006-11:22:23: Pending connection not established after 9010 ms.
+20251006-11:22:28: Pending connection not established after 14013 ms.
+20251006-11:22:33: Pending connection not established after 19015 ms.
+20251006-11:22:35: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:22:40: Pending connection not established after 4002 ms.
+20251006-11:22:45: Pending connection not established after 9003 ms.
+20251006-11:22:48: Pending connection not established after 12005 ms.
+20251006-11:22:53: Pending connection not established after 17006 ms.
+20251006-11:22:57: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:23:02: Pending connection not established after 4002 ms.
+20251006-11:23:05: Pending connection not established after 7004 ms.
+20251006-11:23:08: Pending connection not established after 10010 ms.
+20251006-11:23:13: Pending connection not established after 15012 ms.
+20251006-11:23:18: Pending connection not established after 20017 ms.
+20251006-11:23:19: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:23:22: Pending connection not established after 2002 ms.
+20251006-11:23:27: Pending connection not established after 7004 ms.
+20251006-11:23:32: Pending connection not established after 12008 ms.
+20251006-11:23:37: Pending connection not established after 17010 ms.
+20251006-11:23:40: Pending connection not established after 20022 ms.
+20251006-11:23:41: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:23:44: Pending connection not established after 2001 ms.
+20251006-11:23:47: Pending connection not established after 5002 ms.
+20251006-11:23:50: Pending connection not established after 8005 ms.
+20251006-11:23:55: Pending connection not established after 13010 ms.
+20251006-11:24:00: Pending connection not established after 18012 ms.
+20251006-11:24:03: Pending connection not established after 21014 ms.
+20251006-11:24:04: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:24:09: Pending connection not established after 4003 ms.
+20251006-11:24:12: Pending connection not established after 7006 ms.
+20251006-11:24:17: Pending connection not established after 12009 ms.
+20251006-11:24:20: Pending connection not established after 15011 ms.
+20251006-11:24:25: Pending connection not established after 20014 ms.
+20251006-11:24:26: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:24:31: Pending connection not established after 4000 ms.
+20251006-11:24:36: Pending connection not established after 9004 ms.
+20251006-11:24:39: Pending connection not established after 12007 ms.
+20251006-11:24:42: Pending connection not established after 15009 ms.
+20251006-11:24:47: Pending connection not established after 20011 ms.
+20251006-11:24:48: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:24:51: Pending connection not established after 2005 ms.
+20251006-11:24:56: Pending connection not established after 7006 ms.
+20251006-11:25:01: Pending connection not established after 12008 ms.
+20251006-11:25:06: Pending connection not established after 17015 ms.
+20251006-11:25:09: Pending connection not established after 20017 ms.
+20251006-11:25:10: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:25:13: Pending connection not established after 2002 ms.
+20251006-11:25:18: Pending connection not established after 7003 ms.
+20251006-11:25:23: Pending connection not established after 12004 ms.
+20251006-11:25:26: Pending connection not established after 15006 ms.
+20251006-11:25:29: Pending connection not established after 18008 ms.
+20251006-11:25:32: Pending connection not established after 21009 ms.
+20251006-11:25:33: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:25:36: Pending connection not established after 2001 ms.
+20251006-11:25:41: Pending connection not established after 7003 ms.
+20251006-11:25:46: Pending connection not established after 12004 ms.
+20251006-11:25:51: Pending connection not established after 17006 ms.
+20251006-11:25:55: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:26:00: Pending connection not established after 4001 ms.
+20251006-11:26:05: Pending connection not established after 9002 ms.
+20251006-11:26:08: Pending connection not established after 12004 ms.
+20251006-11:26:11: Pending connection not established after 15005 ms.
+20251006-11:26:16: Pending connection not established after 20007 ms.
+20251006-11:26:17: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:26:20: Pending connection not established after 2001 ms.
+20251006-11:26:25: Pending connection not established after 7003 ms.
+20251006-11:26:28: Pending connection not established after 10005 ms.
+20251006-11:26:31: Pending connection not established after 13007 ms.
+20251006-11:26:36: Pending connection not established after 18009 ms.
+20251006-11:26:39: Pending connection not established after 21011 ms.
+20251006-11:26:40: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:26:45: Pending connection not established after 4001 ms.
+20251006-11:26:48: Pending connection not established after 7003 ms.
+20251006-11:26:53: Pending connection not established after 12004 ms.
+20251006-11:26:56: Pending connection not established after 15006 ms.
+20251006-11:27:01: Pending connection not established after 20008 ms.
+20251006-11:27:02: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:27:05: Pending connection not established after 2003 ms.
+20251006-11:27:10: Pending connection not established after 7005 ms.
+20251006-11:27:15: Pending connection not established after 12007 ms.
+20251006-11:27:20: Pending connection not established after 17010 ms.
+20251006-11:27:23: Pending connection not established after 20040 ms.
+20251006-11:27:25: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:27:30: Pending connection not established after 4000 ms.
+20251006-11:27:33: Pending connection not established after 7004 ms.
+20251006-11:27:38: Pending connection not established after 12006 ms.
+20251006-11:27:43: Pending connection not established after 17008 ms.
+20251006-11:27:47: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:27:52: Pending connection not established after 4046 ms.
+20251006-11:27:57: Pending connection not established after 9125 ms.
+20251006-11:28:00: Pending connection not established after 12127 ms.
+20251006-11:28:05: Pending connection not established after 17129 ms.
+20251006-11:28:08: Pending connection not established after 20131 ms.
+20251006-11:28:09: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:28:14: Pending connection not established after 4001 ms.
+20251006-11:28:17: Pending connection not established after 7018 ms.
+20251006-11:28:22: Pending connection not established after 12020 ms.
+20251006-11:28:25: Pending connection not established after 15022 ms.
+20251006-11:28:28: Pending connection not established after 18023 ms.
+20251006-11:28:31: Pending connection not established after 21024 ms.
+20251006-11:28:32: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:28:37: Pending connection not established after 4001 ms.
+20251006-11:28:40: Pending connection not established after 7002 ms.
+20251006-11:28:45: Pending connection not established after 12005 ms.
+20251006-11:28:48: Pending connection not established after 15008 ms.
+20251006-11:28:51: Pending connection not established after 18010 ms.
+20251006-11:28:54: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:28:57: Pending connection not established after 2002 ms.
+20251006-11:29:02: Pending connection not established after 7004 ms.
+20251006-11:29:05: Pending connection not established after 10006 ms.
+20251006-11:29:08: Pending connection not established after 13007 ms.
+20251006-11:29:11: Pending connection not established after 16009 ms.
+20251006-11:29:16: Pending connection not established after 21011 ms.
+20251006-11:29:17: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:29:20: Pending connection not established after 2001 ms.
+20251006-11:29:23: Pending connection not established after 5003 ms.
+20251006-11:29:28: Pending connection not established after 10005 ms.
+20251006-11:29:31: Pending connection not established after 13008 ms.
+20251006-11:29:34: Pending connection not established after 16012 ms.
+20251006-11:29:39: Pending connection not established after 21013 ms.
+20251006-11:29:40: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:29:45: Pending connection not established after 4001 ms.
+20251006-11:29:48: Pending connection not established after 7002 ms.
+20251006-11:29:53: Pending connection not established after 12004 ms.
+20251006-11:29:58: Pending connection not established after 17007 ms.
+20251006-11:30:02: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:30:05: Pending connection not established after 2001 ms.
+20251006-11:30:10: Pending connection not established after 7003 ms.
+20251006-11:30:15: Pending connection not established after 12005 ms.
+20251006-11:30:20: Pending connection not established after 17007 ms.
+20251006-11:30:24: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:30:29: Pending connection not established after 4005 ms.
+20251006-11:30:34: Pending connection not established after 9007 ms.
+20251006-11:30:39: Pending connection not established after 14010 ms.
+20251006-11:30:42: Pending connection not established after 17011 ms.
+20251006-11:30:46: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection timed out: no further information (Next retry in 5000 milliseconds)
+20251006-11:30:49: Pending connection not established after 2001 ms.
+20251006-11:30:52: Pending connection not established after 5021 ms.
+20251007-09:27:46: Session FIX.4.4:CLIENT2->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20251007-09:27:46: Session state is not current; resetting FIX.4.4:CLIENT2->BROKER1
+20251007-09:27:46: Created session: FIX.4.4:CLIENT2->BROKER1
+20251007-09:27:47: Configured socket addresses for session: [/192.168.0.37:9888]
+20251007-09:27:47: MINA session created: local=/192.168.0.42:61568, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-09:27:48: Initiated logon request
+20251007-09:27:48: Disconnecting: Encountered END_OF_STREAM
+20251007-09:27:52: MINA session created: local=/192.168.0.42:61571, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-09:27:53: Initiated logon request
+20251007-09:27:53: Disconnecting: Encountered END_OF_STREAM
+20251007-09:27:57: MINA session created: local=/192.168.0.42:61572, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-09:27:58: Initiated logon request
+20251007-09:27:58: Disconnecting: Encountered END_OF_STREAM
+20251007-09:28:02: MINA session created: local=/192.168.0.42:61573, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-09:28:03: Initiated logon request
+20251007-09:28:03: Disconnecting: Encountered END_OF_STREAM
+20251007-09:28:07: MINA session created: local=/192.168.0.42:61574, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-09:28:08: Initiated logon request
+20251007-09:28:08: Disconnecting: Encountered END_OF_STREAM
+20251007-09:28:12: MINA session created: local=/192.168.0.42:61575, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-09:28:13: Initiated logon request
+20251007-09:28:13: Disconnecting: Encountered END_OF_STREAM
+20251007-09:28:17: MINA session created: local=/192.168.0.42:61576, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-09:28:18: Initiated logon request
+20251007-09:28:18: Disconnecting: Encountered END_OF_STREAM
+20251007-09:28:22: MINA session created: local=/192.168.0.42:61578, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-09:28:23: Initiated logon request
+20251007-09:28:23: Disconnecting: Encountered END_OF_STREAM
+20251007-09:28:27: MINA session created: local=/192.168.0.42:61580, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-09:28:28: Initiated logon request
+20251007-09:28:28: Disconnecting: Encountered END_OF_STREAM
+20251007-09:28:32: MINA session created: local=/192.168.0.42:61583, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-09:28:33: Initiated logon request
+20251007-09:28:33: Disconnecting: Encountered END_OF_STREAM
+20251007-09:28:37: MINA session created: local=/192.168.0.42:61584, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-09:28:38: Initiated logon request
+20251007-09:28:38: Received logon
+20251007-09:28:38: MsgSeqNum too high, expecting 1 but received 6: 8=FIX.4.49=6935=A34=649=BROKER152=20251007-09:28:39.48256=CLIENT298=0108=3010=255
+20251007-09:28:38: Enqueued at pos 6: 8=FIX.4.49=6935=A34=649=BROKER152=20251007-09:28:39.48256=CLIENT298=0108=3010=255
+20251007-09:28:38: Sent ResendRequest FROM: 1 TO: infinity
+20251007-09:28:38: Enqueued at pos 7: 8=FIX.4.49=6635=234=749=BROKER152=20251007-09:28:39.49756=CLIENT27=416=010=089
+20251007-09:28:38: Received ResendRequest FROM: 4 TO: infinity
+20251007-09:28:38: Sent SequenceReset TO: 13
+20251007-09:28:38: Received SequenceReset FROM: 1 TO: 3
+20251007-09:28:38: ResendRequest for messages FROM 1 TO 5 has been satisfied.
+20251007-09:28:38: Processing queued message: 6
+20251007-09:28:38: Processing queued message: 7
+20251007-10:00:57: Received logout request
+20251007-10:00:57: Sent logout response
+20251007-10:00:57: Disconnecting: Received logout request
+20251007-10:11:18: Session FIX.4.4:CLIENT2->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20251007-10:11:18: Created session: FIX.4.4:CLIENT2->BROKER1
+20251007-10:11:18: Configured socket addresses for session: [/192.168.0.37:9888]
+20251007-10:11:18: MINA session created: local=/192.168.0.42:62190, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:11:19: Initiated logon request
+20251007-10:11:19: Disconnecting: Encountered END_OF_STREAM
+20251007-10:11:23: MINA session created: local=/192.168.0.42:62191, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:11:24: Initiated logon request
+20251007-10:11:24: Disconnecting: Encountered END_OF_STREAM
+20251007-10:11:28: MINA session created: local=/192.168.0.42:62192, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:11:29: Initiated logon request
+20251007-10:11:29: Disconnecting: Encountered END_OF_STREAM
+20251007-10:11:33: MINA session created: local=/192.168.0.42:62193, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:11:34: Initiated logon request
+20251007-10:11:34: Disconnecting: Encountered END_OF_STREAM
+20251007-10:11:38: MINA session created: local=/192.168.0.42:62194, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:11:39: Initiated logon request
+20251007-10:11:39: Disconnecting: Encountered END_OF_STREAM
+20251007-10:11:43: MINA session created: local=/192.168.0.42:62196, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:11:44: Initiated logon request
+20251007-10:11:44: Disconnecting: Encountered END_OF_STREAM
+20251007-10:11:48: MINA session created: local=/192.168.0.42:62199, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:11:49: Initiated logon request
+20251007-10:11:49: Disconnecting: Encountered END_OF_STREAM
+20251007-10:11:53: MINA session created: local=/192.168.0.42:62201, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:11:54: Initiated logon request
+20251007-10:11:54: Disconnecting: Encountered END_OF_STREAM
+20251007-10:11:58: MINA session created: local=/192.168.0.42:62204, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:11:59: Initiated logon request
+20251007-10:11:59: Disconnecting: Encountered END_OF_STREAM
+20251007-10:12:03: MINA session created: local=/192.168.0.42:62207, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:12:04: Initiated logon request
+20251007-10:12:04: Disconnecting: Encountered END_OF_STREAM
+20251007-10:12:08: MINA session created: local=/192.168.0.42:62208, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:12:09: Initiated logon request
+20251007-10:12:09: Disconnecting: Encountered END_OF_STREAM
+20251007-10:12:13: MINA session created: local=/192.168.0.42:62211, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:12:14: Initiated logon request
+20251007-10:12:14: Disconnecting: Encountered END_OF_STREAM
+20251007-10:12:18: MINA session created: local=/192.168.0.42:62214, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:12:19: Initiated logon request
+20251007-10:12:19: Disconnecting: Encountered END_OF_STREAM
+20251007-10:12:23: MINA session created: local=/192.168.0.42:62215, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:12:24: Initiated logon request
+20251007-10:12:24: Disconnecting: Encountered END_OF_STREAM
+20251007-10:12:28: MINA session created: local=/192.168.0.42:62217, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:12:29: Initiated logon request
+20251007-10:12:29: Disconnecting: Encountered END_OF_STREAM
+20251007-10:12:33: MINA session created: local=/192.168.0.42:62218, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:12:34: Initiated logon request
+20251007-10:12:34: Disconnecting: Encountered END_OF_STREAM
+20251007-10:12:38: MINA session created: local=/192.168.0.42:62219, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:12:39: Initiated logon request
+20251007-10:12:39: Disconnecting: Encountered END_OF_STREAM
+20251007-10:12:43: MINA session created: local=/192.168.0.42:62224, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:12:44: Initiated logon request
+20251007-10:12:44: Disconnecting: Encountered END_OF_STREAM
+20251007-10:12:48: MINA session created: local=/192.168.0.42:62225, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:12:49: Initiated logon request
+20251007-10:12:49: Disconnecting: Encountered END_OF_STREAM
+20251007-10:12:54: MINA session created: local=/192.168.0.42:62227, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:12:54: Initiated logon request
+20251007-10:12:54: Disconnecting: Encountered END_OF_STREAM
+20251007-10:12:59: MINA session created: local=/192.168.0.42:62228, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:12:59: Initiated logon request
+20251007-10:12:59: Disconnecting: Encountered END_OF_STREAM
+20251007-10:13:04: MINA session created: local=/192.168.0.42:62233, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:13:04: Initiated logon request
+20251007-10:13:04: Disconnecting: Encountered END_OF_STREAM
+20251007-10:13:09: MINA session created: local=/192.168.0.42:62235, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:13:10: Initiated logon request
+20251007-10:13:10: Disconnecting: Encountered END_OF_STREAM
+20251007-10:13:14: MINA session created: local=/192.168.0.42:62236, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:13:15: Initiated logon request
+20251007-10:13:15: Disconnecting: Encountered END_OF_STREAM
+20251007-10:13:19: MINA session created: local=/192.168.0.42:62237, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:13:20: Initiated logon request
+20251007-10:13:20: Disconnecting: Encountered END_OF_STREAM
+20251007-10:13:24: MINA session created: local=/192.168.0.42:62238, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:13:25: Initiated logon request
+20251007-10:13:25: Disconnecting: Encountered END_OF_STREAM
+20251007-10:13:29: MINA session created: local=/192.168.0.42:62239, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:13:30: Initiated logon request
+20251007-10:13:30: Disconnecting: Encountered END_OF_STREAM
+20251007-10:13:34: MINA session created: local=/192.168.0.42:62240, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:13:35: Initiated logon request
+20251007-10:13:35: Disconnecting: Encountered END_OF_STREAM
+20251007-10:13:39: MINA session created: local=/192.168.0.42:62241, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:13:40: Initiated logon request
+20251007-10:13:40: Disconnecting: Encountered END_OF_STREAM
+20251007-10:13:44: MINA session created: local=/192.168.0.42:62242, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:13:45: Initiated logon request
+20251007-10:13:45: Disconnecting: Encountered END_OF_STREAM
+20251007-10:13:49: MINA session created: local=/192.168.0.42:62244, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:13:50: Initiated logon request
+20251007-10:13:50: Disconnecting: Encountered END_OF_STREAM
+20251007-10:13:54: MINA session created: local=/192.168.0.42:62245, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:13:55: Initiated logon request
+20251007-10:13:55: Disconnecting: Encountered END_OF_STREAM
+20251007-10:13:59: MINA session created: local=/192.168.0.42:62247, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:14:00: Initiated logon request
+20251007-10:14:00: Disconnecting: Encountered END_OF_STREAM
+20251007-10:14:04: MINA session created: local=/192.168.0.42:62252, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:14:05: Initiated logon request
+20251007-10:14:05: Disconnecting: Encountered END_OF_STREAM
+20251007-10:14:09: MINA session created: local=/192.168.0.42:62253, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:14:10: Initiated logon request
+20251007-10:14:10: Disconnecting: Encountered END_OF_STREAM
+20251007-10:14:14: MINA session created: local=/192.168.0.42:62254, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:14:15: Initiated logon request
+20251007-10:14:15: Disconnecting: Encountered END_OF_STREAM
+20251007-10:14:19: MINA session created: local=/192.168.0.42:62255, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:14:20: Initiated logon request
+20251007-10:14:20: Disconnecting: Encountered END_OF_STREAM
+20251007-10:14:24: MINA session created: local=/192.168.0.42:62259, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:14:25: Initiated logon request
+20251007-10:14:25: Disconnecting: Encountered END_OF_STREAM
+20251007-10:14:29: MINA session created: local=/192.168.0.42:62261, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:14:30: Initiated logon request
+20251007-10:14:30: Disconnecting: Encountered END_OF_STREAM
+20251007-10:14:34: MINA session created: local=/192.168.0.42:62262, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:14:35: Initiated logon request
+20251007-10:14:35: Disconnecting: Encountered END_OF_STREAM
+20251007-10:14:39: MINA session created: local=/192.168.0.42:62265, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:14:40: Initiated logon request
+20251007-10:14:40: Disconnecting: Encountered END_OF_STREAM
+20251007-10:14:44: MINA session created: local=/192.168.0.42:62266, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:14:45: Initiated logon request
+20251007-10:14:45: Disconnecting: Encountered END_OF_STREAM
+20251007-10:14:50: MINA session created: local=/192.168.0.42:62267, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:14:50: Initiated logon request
+20251007-10:14:50: Disconnecting: Encountered END_OF_STREAM
+20251007-10:14:55: MINA session created: local=/192.168.0.42:62269, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:14:56: Initiated logon request
+20251007-10:14:56: Disconnecting: Encountered END_OF_STREAM
+20251007-10:15:00: MINA session created: local=/192.168.0.42:62271, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:15:01: Initiated logon request
+20251007-10:15:01: Disconnecting: Encountered END_OF_STREAM
+20251007-10:15:05: MINA session created: local=/192.168.0.42:62272, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:15:06: Initiated logon request
+20251007-10:15:06: Disconnecting: Encountered END_OF_STREAM
+20251007-10:15:10: MINA session created: local=/192.168.0.42:62275, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:15:11: Initiated logon request
+20251007-10:15:11: Disconnecting: Encountered END_OF_STREAM
+20251007-10:15:15: MINA session created: local=/192.168.0.42:62278, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:15:16: Initiated logon request
+20251007-10:15:16: Disconnecting: Encountered END_OF_STREAM
+20251007-10:15:20: MINA session created: local=/192.168.0.42:62279, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:15:21: Initiated logon request
+20251007-10:15:21: Disconnecting: Encountered END_OF_STREAM
+20251007-10:15:25: MINA session created: local=/192.168.0.42:62282, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:15:26: Initiated logon request
+20251007-10:15:26: Disconnecting: Encountered END_OF_STREAM
+20251007-10:15:30: MINA session created: local=/192.168.0.42:62283, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:15:31: Initiated logon request
+20251007-10:15:31: Disconnecting: Encountered END_OF_STREAM
+20251007-10:15:35: MINA session created: local=/192.168.0.42:62286, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:15:36: Initiated logon request
+20251007-10:15:36: Disconnecting: Encountered END_OF_STREAM
+20251007-10:15:40: MINA session created: local=/192.168.0.42:62287, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:15:41: Initiated logon request
+20251007-10:15:41: Disconnecting: Encountered END_OF_STREAM
+20251007-10:15:45: MINA session created: local=/192.168.0.42:62291, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:15:46: Initiated logon request
+20251007-10:15:46: Disconnecting: Encountered END_OF_STREAM
+20251007-10:15:50: MINA session created: local=/192.168.0.42:62293, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:15:51: Initiated logon request
+20251007-10:15:51: Disconnecting: Encountered END_OF_STREAM
+20251007-10:15:55: MINA session created: local=/192.168.0.42:62294, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:15:56: Initiated logon request
+20251007-10:15:56: Disconnecting: Encountered END_OF_STREAM
+20251007-10:16:00: MINA session created: local=/192.168.0.42:62296, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:16:01: Initiated logon request
+20251007-10:16:01: Disconnecting: Encountered END_OF_STREAM
+20251007-10:16:05: MINA session created: local=/192.168.0.42:62297, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:16:06: Initiated logon request
+20251007-10:16:06: Disconnecting: Encountered END_OF_STREAM
+20251007-10:29:32: Session FIX.4.4:CLIENT2->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20251007-10:29:32: Created session: FIX.4.4:CLIENT2->BROKER1
+20251007-10:29:32: Configured socket addresses for session: [/192.168.0.37:9888]
+20251007-10:29:32: MINA session created: local=/192.168.0.42:62481, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:29:33: Initiated logon request
+20251007-10:29:34: Disconnecting: Encountered END_OF_STREAM
+20251007-10:29:38: MINA session created: local=/192.168.0.42:62484, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:29:38: Initiated logon request
+20251007-10:29:38: Disconnecting: Encountered END_OF_STREAM
+20251007-10:29:43: MINA session created: local=/192.168.0.42:62485, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:29:43: Initiated logon request
+20251007-10:29:43: Disconnecting: Encountered END_OF_STREAM
+20251007-10:29:48: MINA session created: local=/192.168.0.42:62487, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:29:48: Initiated logon request
+20251007-10:29:48: Disconnecting: Encountered END_OF_STREAM
+20251007-10:29:53: MINA session created: local=/192.168.0.42:62490, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:39:06: Session FIX.4.4:CLIENT2->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20251007-10:39:06: Created session: FIX.4.4:CLIENT2->BROKER1
+20251007-10:39:06: Configured socket addresses for session: [/192.168.0.37:9888]
+20251007-10:39:06: MINA session created: local=/192.168.0.42:62963, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:39:07: Initiated logon request
+20251007-10:39:07: Disconnecting: Encountered END_OF_STREAM
+20251007-10:39:11: MINA session created: local=/192.168.0.42:62964, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:39:12: Initiated logon request
+20251007-10:39:12: Disconnecting: Encountered END_OF_STREAM
+20251007-10:39:16: MINA session created: local=/192.168.0.42:62965, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:39:17: Initiated logon request
+20251007-10:39:17: Disconnecting: Encountered END_OF_STREAM
+20251007-10:39:21: MINA session created: local=/192.168.0.42:62966, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:39:22: Initiated logon request
+20251007-10:39:22: Disconnecting: Encountered END_OF_STREAM
+20251007-10:39:26: MINA session created: local=/192.168.0.42:62967, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:39:27: Initiated logon request
+20251007-10:39:27: Disconnecting: Encountered END_OF_STREAM
+20251007-10:39:31: MINA session created: local=/192.168.0.42:62968, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:39:32: Initiated logon request
+20251007-10:39:32: Disconnecting: Encountered END_OF_STREAM
+20251007-10:39:36: MINA session created: local=/192.168.0.42:62969, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:39:37: Initiated logon request
+20251007-10:39:37: Disconnecting: Encountered END_OF_STREAM
+20251007-10:39:41: MINA session created: local=/192.168.0.42:62971, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:39:42: Initiated logon request
+20251007-10:39:42: Disconnecting: Encountered END_OF_STREAM
+20251007-10:39:46: MINA session created: local=/192.168.0.42:62972, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:39:47: Initiated logon request
+20251007-10:39:47: Disconnecting: Encountered END_OF_STREAM
+20251007-10:39:51: MINA session created: local=/192.168.0.42:62973, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:39:52: Initiated logon request
+20251007-10:39:52: Disconnecting: Encountered END_OF_STREAM
+20251007-10:39:56: MINA session created: local=/192.168.0.42:62976, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:39:57: Initiated logon request
+20251007-10:39:57: Disconnecting: Encountered END_OF_STREAM

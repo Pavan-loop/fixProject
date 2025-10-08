@@ -1,0 +1,207 @@
+20251007-11:30:46: Session FIX.4.4:CLIENT5->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20251007-11:30:46: Created session: FIX.4.4:CLIENT5->BROKER1
+20251007-11:30:46: Configured socket addresses for session: [/192.168.0.37:9888]
+20251007-11:30:46: MINA session created: local=/192.168.0.42:50450, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-11:30:47: Initiated logon request
+20251007-11:30:47: Logon contains ResetSeqNumFlag=Y, resetting sequence numbers to 1
+20251007-11:30:47: Received logon
+20251007-11:32:05: Initiated logout request
+20251007-11:32:05: Received logout response
+20251007-11:32:05: Disconnecting: Received logout response
+20251007-11:32:38: Session FIX.4.4:CLIENT5->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20251007-11:32:38: Created session: FIX.4.4:CLIENT5->BROKER1
+20251007-11:32:38: Configured socket addresses for session: [/192.168.0.37:9888]
+20251007-11:32:38: MINA session created: local=/192.168.0.42:50472, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-11:32:39: Initiated logon request
+20251007-11:32:39: Logon contains ResetSeqNumFlag=Y, resetting sequence numbers to 1
+20251007-11:32:39: Received logon
+20251007-11:35:44: Received logout request
+20251007-11:35:44: Sent logout response
+20251007-11:35:44: Disconnecting: Received logout request
+20251007-11:35:46: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20251007-11:35:51: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20251007-11:35:57: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20251007-11:36:00: MINA session created: local=/192.168.0.42:50485, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-11:36:00: Initiated logon request
+20251007-11:36:00: Logon contains ResetSeqNumFlag=Y, resetting sequence numbers to 1
+20251007-11:36:00: Received logon
+20251007-11:36:11: Session FIX.4.4:CLIENT5->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20251007-11:36:11: Created session: FIX.4.4:CLIENT5->BROKER1
+20251007-11:36:11: Configured socket addresses for session: [/192.168.0.37:9888]
+20251007-11:36:11: MINA session created: local=/192.168.0.42:50491, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-11:36:12: Initiated logon request
+20251007-11:36:12: Logon contains ResetSeqNumFlag=Y, resetting sequence numbers to 1
+20251007-11:36:12: Received logon
+20251007-11:36:39: Initiated logout request
+20251007-11:36:39: Received logout response
+20251007-11:36:39: Disconnecting: Received logout response
+20251008-08:38:53: Session FIX.4.4:CLIENT5->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20251008-08:38:53: Session state is not current; resetting FIX.4.4:CLIENT5->BROKER1
+20251008-08:38:53: Created session: FIX.4.4:CLIENT5->BROKER1
+20251008-08:38:53: Configured socket addresses for session: [/192.168.0.37:9888]
+20251008-08:38:53: MINA session created: local=/192.168.0.42:49992, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251008-08:38:54: Initiated logon request
+20251008-08:39:04: Logon contains ResetSeqNumFlag=Y, resetting sequence numbers to 1
+20251008-08:39:04: Received logon
+20251008-08:57:17: Session FIX.4.4:CLIENT5->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20251008-08:57:17: Created session: FIX.4.4:CLIENT5->BROKER1
+20251008-08:57:18: Configured socket addresses for session: [/192.168.0.37:9888]
+20251008-08:57:18: MINA session created: local=/192.168.0.42:50691, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251008-08:57:19: Initiated logon request
+20251008-08:57:19: Logon contains ResetSeqNumFlag=Y, resetting sequence numbers to 1
+20251008-08:57:19: Received logon
+20251008-09:00:31: Session FIX.4.4:CLIENT5->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20251008-09:00:31: Created session: FIX.4.4:CLIENT5->BROKER1
+20251008-09:00:31: Configured socket addresses for session: [/192.168.0.37:9888]
+20251008-09:00:31: MINA session created: local=/192.168.0.42:50732, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251008-09:00:33: Initiated logon request
+20251008-09:00:33: Logon contains ResetSeqNumFlag=Y, resetting sequence numbers to 1
+20251008-09:00:33: Received logon
+20251008-09:01:09: Initiated logout request
+20251008-09:01:09: Received logout response
+20251008-09:01:09: Disconnecting: Received logout response
+20251008-09:01:14: Session FIX.4.4:CLIENT5->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20251008-09:01:14: Created session: FIX.4.4:CLIENT5->BROKER1
+20251008-09:01:14: Configured socket addresses for session: [/192.168.0.37:9888]
+20251008-09:01:14: MINA session created: local=/192.168.0.42:50738, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251008-09:01:15: Initiated logon request
+20251008-09:01:15: Logon contains ResetSeqNumFlag=Y, resetting sequence numbers to 1
+20251008-09:01:15: Received logon
+20251008-09:03:16: Session FIX.4.4:CLIENT5->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20251008-09:03:16: Created session: FIX.4.4:CLIENT5->BROKER1
+20251008-09:03:16: Configured socket addresses for session: [/192.168.0.37:9888]
+20251008-09:03:16: MINA session created: local=/192.168.0.42:50768, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251008-09:03:17: Initiated logon request
+20251008-09:03:17: Logon contains ResetSeqNumFlag=Y, resetting sequence numbers to 1
+20251008-09:03:17: Received logon
+20251008-09:13:09: Session FIX.4.4:CLIENT5->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20251008-09:13:09: Created session: FIX.4.4:CLIENT5->BROKER1
+20251008-09:13:09: Configured socket addresses for session: [/192.168.0.37:9888]
+20251008-09:13:09: MINA session created: local=/192.168.0.42:50902, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251008-09:13:10: Initiated logon request
+20251008-09:13:10: Logon contains ResetSeqNumFlag=Y, resetting sequence numbers to 1
+20251008-09:13:10: Received logon
+20251008-09:16:15: Session FIX.4.4:CLIENT5->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20251008-09:16:15: Created session: FIX.4.4:CLIENT5->BROKER1
+20251008-09:16:16: Configured socket addresses for session: [/192.168.0.37:9888]
+20251008-09:16:16: MINA session created: local=/192.168.0.42:50936, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251008-09:16:17: Initiated logon request
+20251008-09:16:17: Logon contains ResetSeqNumFlag=Y, resetting sequence numbers to 1
+20251008-09:16:17: Received logon
+20251008-09:23:23: Session FIX.4.4:CLIENT5->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20251008-09:23:23: Created session: FIX.4.4:CLIENT5->BROKER1
+20251008-09:23:23: Configured socket addresses for session: [/192.168.0.37:9888]
+20251008-09:23:23: MINA session created: local=/192.168.0.42:51029, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251008-09:23:24: Initiated logon request
+20251008-09:23:24: Logon contains ResetSeqNumFlag=Y, resetting sequence numbers to 1
+20251008-09:23:24: Received logon
+20251008-09:23:32: Initiated logout request
+20251008-09:23:32: Received logout response
+20251008-09:23:32: Disconnecting: Received logout response
+20251008-09:24:58: Session FIX.4.4:CLIENT5->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20251008-09:24:58: Created session: FIX.4.4:CLIENT5->BROKER1
+20251008-09:24:58: Configured socket addresses for session: [/192.168.0.37:9888]
+20251008-09:24:58: MINA session created: local=/192.168.0.42:51038, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251008-09:24:59: Initiated logon request
+20251008-09:24:59: Logon contains ResetSeqNumFlag=Y, resetting sequence numbers to 1
+20251008-09:24:59: Received logon
+20251008-09:25:42: Initiated logout request
+20251008-09:25:42: Received logout response
+20251008-09:25:42: Disconnecting: Received logout response
+20251008-09:36:28: Session FIX.4.4:CLIENT5->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20251008-09:36:28: Created session: FIX.4.4:CLIENT5->BROKER1
+20251008-09:36:28: Configured socket addresses for session: [/192.168.0.37:9888]
+20251008-09:36:28: MINA session created: local=/192.168.0.42:51301, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251008-09:36:29: Initiated logon request
+20251008-09:36:29: Logon contains ResetSeqNumFlag=Y, resetting sequence numbers to 1
+20251008-09:36:29: Received logon
+20251008-09:36:44: Initiated logout request
+20251008-09:36:44: Received logout response
+20251008-09:36:44: Disconnecting: Received logout response
+20251008-10:09:55: Session FIX.4.4:CLIENT5->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20251008-10:09:55: Created session: FIX.4.4:CLIENT5->BROKER1
+20251008-10:09:55: Configured socket addresses for session: [/192.168.0.37:9888]
+20251008-10:09:56: MINA session created: local=/192.168.0.42:51615, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251008-10:09:57: Initiated logon request
+20251008-10:09:57: Logon contains ResetSeqNumFlag=Y, resetting sequence numbers to 1
+20251008-10:09:57: Received logon
+20251008-10:10:15: Initiated logout request
+20251008-10:10:15: Received logout response
+20251008-10:10:15: Disconnecting: Received logout response
+20251008-10:22:28: Session FIX.4.4:CLIENT5->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20251008-10:22:28: Created session: FIX.4.4:CLIENT5->BROKER1
+20251008-10:22:28: Configured socket addresses for session: [/192.168.0.37:9888]
+20251008-10:22:28: MINA session created: local=/192.168.0.42:51741, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251008-10:22:29: Initiated logon request
+20251008-10:22:29: Logon contains ResetSeqNumFlag=Y, resetting sequence numbers to 1
+20251008-10:22:29: Received logon
+20251008-10:32:55: Session FIX.4.4:CLIENT5->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20251008-10:32:55: Created session: FIX.4.4:CLIENT5->BROKER1
+20251008-10:32:55: Configured socket addresses for session: [/192.168.0.37:9888]
+20251008-10:32:55: MINA session created: local=/192.168.0.42:51824, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251008-10:32:57: Initiated logon request
+20251008-10:32:57: Logon contains ResetSeqNumFlag=Y, resetting sequence numbers to 1
+20251008-10:32:57: Received logon
+20251008-10:33:20: Initiated logout request
+20251008-10:33:20: Received logout response
+20251008-10:33:20: Disconnecting: Received logout response
+20251008-10:35:21: Session FIX.4.4:CLIENT5->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20251008-10:35:21: Created session: FIX.4.4:CLIENT5->BROKER1
+20251008-10:35:22: Configured socket addresses for session: [/192.168.0.37:9888]
+20251008-10:35:22: MINA session created: local=/192.168.0.42:51843, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251008-10:35:23: Initiated logon request
+20251008-10:35:23: Logon contains ResetSeqNumFlag=Y, resetting sequence numbers to 1
+20251008-10:35:23: Received logon
+20251008-10:35:27: Initiated logout request
+20251008-10:35:27: Received logout response
+20251008-10:35:27: Disconnecting: Received logout response
+20251008-10:39:40: Session FIX.4.4:CLIENT5->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20251008-10:39:40: Created session: FIX.4.4:CLIENT5->BROKER1
+20251008-10:39:40: Configured socket addresses for session: [/192.168.0.37:9888]
+20251008-10:39:40: MINA session created: local=/192.168.0.42:51904, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251008-10:39:41: Initiated logon request
+20251008-10:39:41: Logon contains ResetSeqNumFlag=Y, resetting sequence numbers to 1
+20251008-10:39:41: Received logon
+20251008-10:40:03: Initiated logout request
+20251008-10:40:03: Received logout response
+20251008-10:40:03: Disconnecting: Received logout response
+20251008-10:44:55: Session FIX.4.4:CLIENT5->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20251008-10:44:55: Created session: FIX.4.4:CLIENT5->BROKER1
+20251008-10:44:55: Configured socket addresses for session: [/192.168.0.37:9888]
+20251008-10:44:55: MINA session created: local=/192.168.0.42:51979, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251008-10:44:56: Initiated logon request
+20251008-10:44:56: Logon contains ResetSeqNumFlag=Y, resetting sequence numbers to 1
+20251008-10:44:56: Received logon
+20251008-10:45:11: Initiated logout request
+20251008-10:45:11: Received logout response
+20251008-10:45:11: Disconnecting: Received logout response
+20251008-10:59:21: Session FIX.4.4:CLIENT5->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20251008-10:59:21: Created session: FIX.4.4:CLIENT5->BROKER1
+20251008-10:59:21: Configured socket addresses for session: [/192.168.0.37:9888]
+20251008-10:59:21: MINA session created: local=/192.168.0.42:52118, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251008-10:59:22: Initiated logon request
+20251008-10:59:22: Logon contains ResetSeqNumFlag=Y, resetting sequence numbers to 1
+20251008-10:59:22: Received logon
+20251008-10:59:58: Initiated logout request
+20251008-10:59:58: Received logout response
+20251008-10:59:58: Disconnecting: Received logout response
+20251008-11:10:12: Session FIX.4.4:CLIENT5->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20251008-11:10:12: Created session: FIX.4.4:CLIENT5->BROKER1
+20251008-11:10:12: Configured socket addresses for session: [/192.168.0.37:9888]
+20251008-11:10:12: MINA session created: local=/192.168.0.42:52198, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251008-11:10:13: Initiated logon request
+20251008-11:10:13: Logon contains ResetSeqNumFlag=Y, resetting sequence numbers to 1
+20251008-11:10:13: Received logon
+20251008-11:10:28: Initiated logout request
+20251008-11:10:28: Received logout response
+20251008-11:10:28: Disconnecting: Received logout response
+20251008-11:10:54: Session FIX.4.4:CLIENT5->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20251008-11:10:54: Created session: FIX.4.4:CLIENT5->BROKER1
+20251008-11:10:54: Configured socket addresses for session: [/192.168.0.37:9888]
+20251008-11:10:54: MINA session created: local=/192.168.0.42:52202, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251008-11:10:55: Initiated logon request
+20251008-11:10:55: Logon contains ResetSeqNumFlag=Y, resetting sequence numbers to 1
+20251008-11:10:55: Received logon
+20251008-11:11:08: Initiated logout request
+20251008-11:11:08: Received logout response
+20251008-11:11:08: Disconnecting: Received logout response

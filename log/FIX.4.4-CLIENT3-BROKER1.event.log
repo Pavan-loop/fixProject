@@ -51,3 +51,214 @@
 20250917-09:20:39: Received logout request: MsgSeqNum too low, expecting 21 but received 19
 20250917-09:20:39: Sent logout response
 20250917-09:20:39: Disconnecting: Received logout request: MsgSeqNum too low, expecting 21 but received 19
+20251007-10:42:57: Session FIX.4.4:CLIENT3->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20251007-10:42:57: Session state is not current; resetting FIX.4.4:CLIENT3->BROKER1
+20251007-10:42:57: Created session: FIX.4.4:CLIENT3->BROKER1
+20251007-10:42:57: Configured socket addresses for session: [/192.168.0.37:9888]
+20251007-10:42:57: MINA session created: local=/192.168.0.42:63049, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:42:58: Initiated logon request
+20251007-10:42:58: Logon contains ResetSeqNumFlag=Y, resetting sequence numbers to 1
+20251007-10:42:58: Received logon
+20251007-10:42:58: Received logout request: Already logged in from another session
+20251007-10:42:58: Sent logout response
+20251007-10:42:58: Disconnecting: Received logout request: Already logged in from another session
+20251007-10:42:58: quickfix.SessionException Logon state is not valid for message (MsgType=5)
+20251007-10:42:58: Already disconnected: Verifying message failed: quickfix.SessionException: Logon state is not valid for message (MsgType=5)
+20251007-10:43:02: MINA session created: local=/192.168.0.42:63050, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:43:04: Initiated logon request
+20251007-10:43:11: Received logout request: Logon attempt when session is disabled
+20251007-10:43:11: Sent logout response
+20251007-10:43:11: Disconnecting: Received logout request: Logon attempt when session is disabled
+20251007-10:43:13: MINA session created: local=/192.168.0.42:63054, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:43:13: Initiated logon request
+20251007-10:43:13: Received logout request: Logon attempt when session is disabled
+20251007-10:43:13: Sent logout response
+20251007-10:43:13: Disconnecting: Received logout request: Logon attempt when session is disabled
+20251007-10:43:18: MINA session created: local=/192.168.0.42:63055, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:43:18: Initiated logon request
+20251007-10:43:18: Received logout request: Logon attempt when session is disabled
+20251007-10:43:18: Sent logout response
+20251007-10:43:18: Disconnecting: Received logout request: Logon attempt when session is disabled
+20251007-10:43:23: MINA session created: local=/192.168.0.42:63057, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:43:23: Initiated logon request
+20251007-10:43:23: Received logout request: Logon attempt when session is disabled
+20251007-10:43:23: Sent logout response
+20251007-10:43:23: Disconnecting: Received logout request: Logon attempt when session is disabled
+20251007-10:43:28: MINA session created: local=/192.168.0.42:63058, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:43:28: Initiated logon request
+20251007-10:43:28: Received logout request: Logon attempt when session is disabled
+20251007-10:43:28: Sent logout response
+20251007-10:43:28: Disconnecting: Received logout request: Logon attempt when session is disabled
+20251007-10:43:33: MINA session created: local=/192.168.0.42:63061, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:43:33: Initiated logon request
+20251007-10:43:33: Received logout request: Logon attempt when session is disabled
+20251007-10:43:33: Sent logout response
+20251007-10:43:33: Disconnecting: Received logout request: Logon attempt when session is disabled
+20251007-10:43:38: MINA session created: local=/192.168.0.42:63064, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:43:38: Initiated logon request
+20251007-10:43:38: Received logout request: Logon attempt when session is disabled
+20251007-10:43:38: Sent logout response
+20251007-10:43:38: Disconnecting: Received logout request: Logon attempt when session is disabled
+20251007-10:43:43: MINA session created: local=/192.168.0.42:63066, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:43:43: Initiated logon request
+20251007-10:43:43: Received logout request: Logon attempt when session is disabled
+20251007-10:43:43: Sent logout response
+20251007-10:43:43: Disconnecting: Received logout request: Logon attempt when session is disabled
+20251007-10:43:48: MINA session created: local=/192.168.0.42:63068, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:43:49: Initiated logon request
+20251007-10:43:49: Received logout request: Logon attempt when session is disabled
+20251007-10:43:49: Sent logout response
+20251007-10:43:49: Disconnecting: Received logout request: Logon attempt when session is disabled
+20251007-10:43:53: MINA session created: local=/192.168.0.42:63072, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:43:54: Initiated logon request
+20251007-10:43:54: Received logout request: Logon attempt when session is disabled
+20251007-10:43:54: Sent logout response
+20251007-10:43:54: Disconnecting: Received logout request: Logon attempt when session is disabled
+20251007-10:43:58: MINA session created: local=/192.168.0.42:63074, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:43:59: Initiated logon request
+20251007-10:43:59: Received logout request: Logon attempt when session is disabled
+20251007-10:43:59: Sent logout response
+20251007-10:43:59: Disconnecting: Received logout request: Logon attempt when session is disabled
+20251007-10:44:03: MINA session created: local=/192.168.0.42:63075, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:44:04: Initiated logon request
+20251007-10:44:04: Received logout request: Logon attempt when session is disabled
+20251007-10:44:04: Sent logout response
+20251007-10:44:04: Disconnecting: Received logout request: Logon attempt when session is disabled
+20251007-10:44:11: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20251007-10:44:13: MINA session created: local=/192.168.0.42:63087, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:44:14: Initiated logon request
+20251007-10:44:14: Logon contains ResetSeqNumFlag=Y, resetting sequence numbers to 1
+20251007-10:44:14: Received logon
+20251007-10:44:41: Session FIX.4.4:CLIENT3->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20251007-10:44:41: Created session: FIX.4.4:CLIENT3->BROKER1
+20251007-10:44:41: Configured socket addresses for session: [/192.168.0.37:9888]
+20251007-10:44:41: MINA session created: local=/192.168.0.42:63095, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:44:42: Initiated logon request
+20251007-10:44:42: Logon contains ResetSeqNumFlag=Y, resetting sequence numbers to 1
+20251007-10:44:42: Received logon
+20251007-10:46:59: Received logout request
+20251007-10:46:59: Sent logout response
+20251007-10:46:59: Disconnecting: Received logout request
+20251007-10:47:02: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20251007-10:47:05: MINA session created: local=/192.168.0.42:63141, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:47:06: Initiated logon request
+20251007-10:47:06: Logon contains ResetSeqNumFlag=Y, resetting sequence numbers to 1
+20251007-10:47:06: Received logon
+20251007-10:49:12: Session FIX.4.4:CLIENT3->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20251007-10:49:12: Created session: FIX.4.4:CLIENT3->BROKER1
+20251007-10:49:12: Configured socket addresses for session: [/192.168.0.37:9888]
+20251007-10:49:12: MINA session created: local=/192.168.0.42:63186, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:49:13: Initiated logon request
+20251007-10:49:13: Disconnecting: Encountered END_OF_STREAM
+20251007-10:49:17: MINA session created: local=/192.168.0.42:63187, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:49:18: Initiated logon request
+20251007-10:49:18: Disconnecting: Encountered END_OF_STREAM
+20251007-10:49:22: MINA session created: local=/192.168.0.42:63188, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:49:23: Initiated logon request
+20251007-10:49:23: Disconnecting: Encountered END_OF_STREAM
+20251007-10:49:27: MINA session created: local=/192.168.0.42:63190, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:49:28: Initiated logon request
+20251007-10:49:28: Disconnecting: Encountered END_OF_STREAM
+20251007-10:49:32: MINA session created: local=/192.168.0.42:63192, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:49:33: Initiated logon request
+20251007-10:49:33: Disconnecting: Encountered END_OF_STREAM
+20251007-10:49:38: MINA session created: local=/192.168.0.42:63194, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:49:38: Initiated logon request
+20251007-10:49:38: Disconnecting: Encountered END_OF_STREAM
+20251007-10:49:43: MINA session created: local=/192.168.0.42:63195, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:49:43: Initiated logon request
+20251007-10:49:43: Disconnecting: Encountered END_OF_STREAM
+20251007-10:49:48: MINA session created: local=/192.168.0.42:63196, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:49:48: Initiated logon request
+20251007-10:49:48: Disconnecting: Encountered END_OF_STREAM
+20251007-10:49:53: MINA session created: local=/192.168.0.42:63197, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:49:53: Initiated logon request
+20251007-10:49:53: Disconnecting: Encountered END_OF_STREAM
+20251007-10:49:58: MINA session created: local=/192.168.0.42:63198, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:49:58: Initiated logon request
+20251007-10:49:58: Disconnecting: Encountered END_OF_STREAM
+20251007-10:50:03: MINA session created: local=/192.168.0.42:63200, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:50:03: Initiated logon request
+20251007-10:50:03: Disconnecting: Encountered END_OF_STREAM
+20251007-10:50:15: Session FIX.4.4:CLIENT3->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20251007-10:50:15: Created session: FIX.4.4:CLIENT3->BROKER1
+20251007-10:50:15: Configured socket addresses for session: [/192.168.0.37:9888]
+20251007-10:50:15: MINA session created: local=/192.168.0.42:63206, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:50:16: Initiated logon request
+20251007-10:50:16: Disconnecting: Encountered END_OF_STREAM
+20251007-10:50:20: MINA session created: local=/192.168.0.42:63207, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:50:21: Initiated logon request
+20251007-10:50:21: Disconnecting: Encountered END_OF_STREAM
+20251007-10:50:25: MINA session created: local=/192.168.0.42:63208, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:50:26: Initiated logon request
+20251007-10:50:26: Disconnecting: Encountered END_OF_STREAM
+20251007-10:50:30: MINA session created: local=/192.168.0.42:63209, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:50:31: Initiated logon request
+20251007-10:50:31: Disconnecting: Encountered END_OF_STREAM
+20251007-10:50:35: MINA session created: local=/192.168.0.42:63210, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:50:36: Initiated logon request
+20251007-10:50:36: Disconnecting: Encountered END_OF_STREAM
+20251007-10:50:40: MINA session created: local=/192.168.0.42:63211, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:50:41: Initiated logon request
+20251007-10:50:41: Disconnecting: Encountered END_OF_STREAM
+20251007-10:50:45: MINA session created: local=/192.168.0.42:63214, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:50:46: Initiated logon request
+20251007-10:50:46: Disconnecting: Encountered END_OF_STREAM
+20251007-10:50:50: MINA session created: local=/192.168.0.42:63215, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:50:51: Initiated logon request
+20251007-10:50:51: Disconnecting: Encountered END_OF_STREAM
+20251007-10:50:55: MINA session created: local=/192.168.0.42:63216, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:50:56: Initiated logon request
+20251007-10:50:56: Disconnecting: Encountered END_OF_STREAM
+20251007-10:51:00: MINA session created: local=/192.168.0.42:63217, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:51:01: Initiated logon request
+20251007-10:51:01: Disconnecting: Encountered END_OF_STREAM
+20251007-10:51:05: MINA session created: local=/192.168.0.42:63218, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:51:06: Initiated logon request
+20251007-10:51:06: Disconnecting: Encountered END_OF_STREAM
+20251007-10:51:10: MINA session created: local=/192.168.0.42:63221, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-10:51:11: Initiated logon request
+20251007-10:51:11: Disconnecting: Encountered END_OF_STREAM
+20251007-11:03:22: Session FIX.4.4:CLIENT3->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20251007-11:03:22: Created session: FIX.4.4:CLIENT3->BROKER1
+20251007-11:03:22: Configured socket addresses for session: [/192.168.0.37:9888]
+20251007-11:03:22: MINA session created: local=/192.168.0.42:63420, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-11:03:23: Initiated logon request
+20251007-11:03:23: Logon contains ResetSeqNumFlag=Y, resetting sequence numbers to 1
+20251007-11:03:23: Received logon
+20251007-11:22:56: Session FIX.4.4:CLIENT3->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20251007-11:22:56: Created session: FIX.4.4:CLIENT3->BROKER1
+20251007-11:22:56: Configured socket addresses for session: [/192.168.0.37:9888]
+20251007-11:22:56: MINA session created: local=/192.168.0.42:50364, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-11:22:57: Initiated logon request
+20251007-11:22:58: Logon contains ResetSeqNumFlag=Y, resetting sequence numbers to 1
+20251007-11:22:58: Received logon
+20251007-11:27:39: Session FIX.4.4:CLIENT3->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20251007-11:27:39: Created session: FIX.4.4:CLIENT3->BROKER1
+20251007-11:27:39: Configured socket addresses for session: [/192.168.0.37:9888]
+20251007-11:27:39: MINA session created: local=/192.168.0.42:50406, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-11:27:41: Initiated logon request
+20251007-11:27:41: Logon contains ResetSeqNumFlag=Y, resetting sequence numbers to 1
+20251007-11:27:41: Received logon
+20251007-11:28:11: Received logout request
+20251007-11:28:11: Sent logout response
+20251007-11:28:11: Disconnecting: Received logout request
+20251007-11:28:13: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20251007-11:28:18: Pending connection not established after 2001 ms.
+20251007-11:28:19: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)
+20251007-11:28:21: MINA session created: local=/192.168.0.42:50420, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-11:28:21: Initiated logon request
+20251007-11:28:22: Logon contains ResetSeqNumFlag=Y, resetting sequence numbers to 1
+20251007-11:28:22: Received logon
+20251007-11:30:02: Session FIX.4.4:CLIENT3->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20251007-11:30:02: Created session: FIX.4.4:CLIENT3->BROKER1
+20251007-11:30:02: Configured socket addresses for session: [/192.168.0.37:9888]
+20251007-11:30:02: MINA session created: local=/192.168.0.42:50438, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251007-11:30:03: Initiated logon request
+20251007-11:30:03: Logon contains ResetSeqNumFlag=Y, resetting sequence numbers to 1
+20251007-11:30:03: Received logon
+20251007-11:30:32: Received logout request
+20251007-11:30:32: Sent logout response
+20251007-11:30:32: Disconnecting: Received logout request
+20251007-11:30:34: Pending connection not established after 2002 ms.
+20251007-11:30:35: java.net.ConnectException during connection to /192.168.0.37:9888: java.net.ConnectException: Connection refused: no further information (Next retry in 5000 milliseconds)

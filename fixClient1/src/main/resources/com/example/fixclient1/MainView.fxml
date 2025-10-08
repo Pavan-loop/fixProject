@@ -1,33 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?import javafx.scene.control.Tab?>
-<?import javafx.scene.control.TabPane?>
-<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 
-<TabPane xmlns="http://javafx.com/javafx/23.0.1"
-         xmlns:fx="http://javafx.com/fxml/1"
-         prefWidth="800" prefHeight="600"
-         stylesheets="@../../../style.css"
-         styleClass="root">
+<BorderPane xmlns="http://javafx.com/javafx/23.0.1"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.fixclient1.MainController"
+            prefWidth="800" prefHeight="600"
+            stylesheets="@../../../style.css">
 
-    <tabs>
-        <!-- Order Book Tab -->
-        <Tab text="Order Book">
-            <AnchorPane>
-                <fx:include source="hello-view.fxml" AnchorPane.topAnchor="0.0"
-                            AnchorPane.bottomAnchor="0.0"
-                            AnchorPane.leftAnchor="0.0"
-                            AnchorPane.rightAnchor="0.0"/>
-            </AnchorPane>
-        </Tab>
+    <!-- Top bar with Login/Logout -->
+    <top>
+        <AnchorPane prefHeight="40.0" styleClass="header">
+            <children>
+                <Label text="FIX Client"
+                       layoutX="10.0" layoutY="10.0"
+                       style="-fx-font-weight: bold; -fx-text-fill: white;"/>
 
-        <!-- Market Enquiry Tab -->
-        <Tab text="Market Enquiry">
-            <AnchorPane>
-                <fx:include source="MarketEnquiry.fxml" AnchorPane.topAnchor="0.0"
-                            AnchorPane.bottomAnchor="0.0"
-                            AnchorPane.leftAnchor="0.0"
-                            AnchorPane.rightAnchor="0.0"/>
-            </AnchorPane>
-        </Tab>
-    </tabs>
-</TabPane>
+                <Label fx:id="statusLabel"
+                       layoutX="150" layoutY="10"
+                       text="Disconnected ❌"
+                       style="-fx-font-weight: bold;"/>
+
+                <Label fx:id="connectionInfoLabel"
+                       layoutX="300" layoutY="10"
+                       text=""
+                       style="-fx-font-size: 12px; -fx-text-fill: #cccccc;"/>
+
+                <HBox spacing="10" AnchorPane.rightAnchor="10.0" layoutY="6.0">
+                    <Button text="Login" onAction="#onLogin"/>
+                    <Button text="Logout" onAction="#onLogout"/>
+                </HBox>
+            </children>
+        </AnchorPane>
+    </top>
+
+    <!-- Center content: your tabs -->
+    <center>
+        <TabPane fx:id="tabPane">
+            <tabs>
+                <!-- Order Book Tab -->
+                <Tab text="Order Book">
+                    <AnchorPane>
+                        <!-- fx:id added here -->
+                        <fx:include fx:id="helloIncludeRoot" source="hello-view.fxml"
+                                    AnchorPane.topAnchor="0.0"
+                                    AnchorPane.bottomAnchor="0.0"
+                                    AnchorPane.leftAnchor="0.0"
+                                    AnchorPane.rightAnchor="0.0"/>
+                    </AnchorPane>
+                </Tab>
+
+                <!-- Market Enquiry Tab -->
+                <Tab text="Market Enquiry">
+                    <AnchorPane>
+                        <fx:include source="MarketEnquiry.fxml"
+                                    AnchorPane.topAnchor="0.0"
+                                    AnchorPane.bottomAnchor="0.0"
+                                    AnchorPane.leftAnchor="0.0"
+                                    AnchorPane.rightAnchor="0.0"/>
+                    </AnchorPane>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </center>
+</BorderPane>

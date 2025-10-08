@@ -2,180 +2,184 @@
 .root {
     -fx-font-family: "Segoe UI", "Roboto", "Arial";
     -fx-font-size: 13px;
-    -fx-background-color: linear-gradient(to bottom right, #2b1f47, #1a112e);
-    -fx-focus-color: #4c8dff;
-    -fx-faint-focus-color: rgba(76, 141, 255, 0.25);
+    -fx-background-color: linear-gradient(to bottom right, #1e1433, #0d0a1a);
+}
+
+/* -------------------- Header -------------------- */
+.header {
+    -fx-background-color: linear-gradient(to right, #3a2d69, #22183f);
+    -fx-padding: 8 16;
+    -fx-background-radius: 0 0 16 16;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.45), 8, 0, 0, 4);
+}
+
+.fix-client-title {
+    -fx-text-fill: linear-gradient(to right, #ffffff, #c6b3ff);
+    -fx-font-size: 18px;
+    -fx-font-weight: 800;
+}
+
+/* Status label */
+#statusLabel {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ff5e5e;
+}
+#statusLabel.connected {
+    -fx-text-fill: #4dffb8;
+    -fx-effect: dropshadow(gaussian, rgba(77,255,184,0.6), 8,0,0,2);
+}
+#statusLabel.disconnected {
+    -fx-text-fill: #ff5e5e;
+    -fx-effect: dropshadow(gaussian, rgba(255,94,94,0.5), 8,0,0,2);
 }
 
 /* -------------------- Section Titles -------------------- */
 .section-title {
-    -fx-fill: white;
-    -fx-font-size: 16px;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 15px;
     -fx-font-weight: 700;
-    -fx-background-color: linear-gradient(to right, #6a4ca3, #4d2e7a);
-    -fx-background-radius: 10;
+    -fx-background-color: rgba(106, 76, 163, 0.6);
+    -fx-background-radius: 14;
     -fx-padding: 6 14;
-    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.35), 4, 0, 1, 2);
+    -fx-effect: dropshadow(gaussian, rgba(106,76,163,0.5), 10, 0, 0, 3);
 }
 
 /* -------------------- Table -------------------- */
 .table-view {
-    -fx-background-color: #ffffff;
-    -fx-background-radius: 10;
+    -fx-background-color: rgba(255,255,255,0.07);
+    -fx-background-radius: 14;
     -fx-border-color: transparent;
     -fx-padding: 6;
-    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 6,0,0,3);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.35), 10, 0, 0, 6);
 }
 
 .table-view .column-header-background {
-    -fx-background-color: linear-gradient(to bottom, #f8f9fc, #e9ecf3);
-    -fx-border-color: #d0d4da;
-    -fx-border-width: 0 0 1 0;
-    -fx-background-radius: 10 10 0 0;
+    -fx-background-color: linear-gradient(to bottom, rgba(255,255,255,0.08), rgba(255,255,255,0.02));
+    -fx-border-color: transparent;
+    -fx-background-radius: 14 14 0 0;
 }
 
 .table-view .column-header .label {
-    -fx-text-fill: #2c2f38;
-    -fx-font-weight: 600;
-    -fx-font-size: 12px;
-    -fx-padding: 10 12;
+    -fx-text-fill: #dcdcff;
+    -fx-font-weight: 700;
+    -fx-font-size: 13px;
 }
 
 .table-cell {
     -fx-padding: 10 12;
-    -fx-border-color: transparent transparent #edf0f5 transparent;
-    -fx-text-fill: #2e2e2e;
-    -fx-font-size: 12px;
+    -fx-border-color: transparent transparent rgba(255,255,255,0.05) transparent;
+    -fx-text-fill: #e6e6e6;
+    -fx-font-size: 13px;
     -fx-background-insets: 0;
 }
 
 .table-row-cell {
-    -fx-background-color: #ffffff;
-    -fx-transition: background-color 0.2s ease;
+    -fx-background-color: transparent;
 }
-
 .table-row-cell:odd {
-    -fx-background-color: #fafbfc;
+    -fx-background-color: rgba(255,255,255,0.02);
 }
-
 .table-row-cell:hover {
-    -fx-background-color: #f0f6ff;
+    -fx-background-color: rgba(76,141,255,0.15);
 }
-
 .table-row-cell:selected {
-    -fx-background-color: #dce8ff;
-    -fx-text-fill: #000000;
+    -fx-background-color: rgba(76,141,255,0.35);
+    -fx-text-fill: #ffffff;
 }
 
-/* Right align numeric columns */
-.table-cell.price, .table-cell.quantity, .table-cell.remaining,
-.table-cell.filled, .table-cell.canceled, .table-cell.original {
-    -fx-alignment: CENTER-RIGHT;
-}
-
-/* Center align action buttons */
-.table-cell.action {
-    -fx-alignment: CENTER;
-}
-
-/* -------------------- TextField -------------------- */
-.text-field {
-    -fx-background-color: #f9f9fb;
-    -fx-border-color: #cbd2d9;
-    -fx-border-radius: 8;
-    -fx-background-radius: 8;
+/* -------------------- TextField & ComboBox -------------------- */
+.text-field, .combo-box {
+    -fx-background-color: rgba(255,255,255,0.1);
+    -fx-border-color: rgba(200,200,255,0.3);
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
     -fx-padding: 8 10;
-    -fx-text-fill: #2e2e2e;
-    -fx-effect: innershadow(gaussian, rgba(0,0,0,0.05), 2,0,0,1);
-    -fx-font-size: 13px;
+    -fx-text-fill: #ffffff;
+    -fx-prompt-text-fill: #b3b3cc;
 }
-
-.text-field:focused {
+.text-field:focused, .combo-box:focused {
     -fx-border-color: #4c8dff;
-    -fx-background-color: #ffffff;
-    -fx-effect: dropshadow(gaussian, rgba(76,141,255,0.3), 4,0,0,2);
-}
-
-/* -------------------- ComboBox -------------------- */
-.combo-box {
-    -fx-background-color: #f9f9fb;
-    -fx-border-color: #cbd2d9;
-    -fx-border-radius: 8;
-    -fx-background-radius: 8;
-    -fx-padding: 6 10;
-    -fx-text-fill: #2e2e2e;
-    -fx-font-size: 13px;
-}
-
-.combo-box:focused {
-    -fx-border-color: #4c8dff;
-    -fx-background-color: #ffffff;
+    -fx-effect: dropshadow(gaussian, rgba(76,141,255,0.4), 8,0,0,2);
 }
 
 /* -------------------- Buttons -------------------- */
 .button {
-    -fx-background-color: linear-gradient(to bottom, #4c8dff, #357ae8);
-    -fx-background-radius: 8;
-    -fx-border-radius: 8;
-    -fx-text-fill: #ffffff;
-    -fx-font-weight: 600;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-font-weight: 700;
     -fx-font-size: 13px;
     -fx-padding: 8 16;
     -fx-cursor: hand;
-    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 3,0,0,2);
-    -fx-border-color: transparent;
-    -fx-transition: background-color 0.3s ease;
-}
-
-.button:hover {
-    -fx-background-color: linear-gradient(to bottom, #5a9bff, #3f85f5);
-}
-
-.button:pressed {
-    -fx-background-color: linear-gradient(to bottom, #2f6fd4, #2558a8);
-}
-
-/* Cancel button */
-.button.cancel {
-    -fx-background-color: linear-gradient(to bottom, #ff4d4d, #d93636);
     -fx-text-fill: #ffffff;
-    -fx-background-radius: 8;
-    -fx-border-radius: 8;
-    -fx-font-weight: 600;
-    -fx-padding: 8 16;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 4,0,0,2);
+    -fx-transition: all 0.2s ease-in-out;
 }
 
-.button.cancel:hover {
-    -fx-background-color: linear-gradient(to bottom, #ff6666, #e04545);
+/* Primary (blue) */
+.button {
+    -fx-background-color: linear-gradient(to right, #4c8dff, #7a5cff);
+}
+.button:hover {
+    -fx-background-color: linear-gradient(to right, #5fa0ff, #9272ff);
+    -fx-effect: dropshadow(gaussian, rgba(100,150,255,0.6), 12,0,0,3);
+}
+.button:pressed {
+    -fx-background-color: linear-gradient(to right, #2f6fd4, #5a3dd9);
 }
 
-.button.cancel:pressed {
-    -fx-background-color: linear-gradient(to bottom, #cc2e2e, #a62323);
+/* Success (Login) */
+.button.login {
+    -fx-background-color: linear-gradient(to right, #43d17a, #2ca14d);
+}
+.button.login:hover {
+    -fx-background-color: linear-gradient(to right, #54e089, #35b85d);
+    -fx-effect: dropshadow(gaussian, rgba(77,255,184,0.6), 10,0,0,3);
+}
+
+/* Danger (Logout / Cancel) */
+.button.cancel, .button.logout {
+    -fx-background-color: linear-gradient(to right, #ff4d6d, #b91d36);
+}
+.button.cancel:hover, .button.logout:hover {
+    -fx-background-color: linear-gradient(to right, #ff5f7a, #d12b47);
+    -fx-effect: dropshadow(gaussian, rgba(255,94,94,0.6), 10,0,0,3);
 }
 
 /* Ghost button (secondary) */
 .button.ghost {
     -fx-background-color: transparent;
-    -fx-border-color: #c1c7d0;
-    -fx-border-radius: 8;
-    -fx-text-fill: #4c4c4c;
+    -fx-border-color: #8a8f9f;
+    -fx-border-radius: 10;
+    -fx-text-fill: #cccccc;
 }
-
 .button.ghost:hover {
-    -fx-background-color: #f5f6f9;
+    -fx-background-color: rgba(255,255,255,0.1);
+}
+/* -------------------- Global Text Fix -------------------- */
+
+/* Default text (labels, buttons, etc.) */
+.label, .text {
+    -fx-text-fill: #f2f2f2; /* bright white */
 }
 
-/* -------------------- Scrollbars -------------------- */
-.scroll-bar:vertical,
-.scroll-bar:horizontal {
-    -fx-background-color: transparent;
+/* Table content text */
+.table-cell {
+    -fx-text-fill: #eaeaea; /* light gray for readability */
 }
 
-.scroll-bar .thumb {
-    -fx-background-color: #c1c7d0;
-    -fx-background-radius: 8;
+/* Table header text */
+.table-view .column-header .label {
+    -fx-text-fill: #ffffff; /* pure white for headers */
 }
 
-.scroll-bar .thumb:hover {
-    -fx-background-color: #9aa2ac;
+/* ComboBox & TextField text */
+.text-field, .combo-box {
+    -fx-text-fill: #ffffff;
+    -fx-prompt-text-fill: #aaaaaa; /* softer gray for placeholder */
+}
+
+/* Button text */
+.button {
+    -fx-text-fill: #ffffff;
 }
