@@ -8,28 +8,36 @@
 <AnchorPane xmlns="http://javafx.com/javafx/23.0.1"
             xmlns:fx="http://javafx.com/fxml/1"
             fx:controller="com.example.fixclient1.MarketEnquiryController"
-            prefWidth="600" prefHeight="400">
+            prefWidth="600" prefHeight="400"
+            stylesheets="@../../../style.css">
+
     <children>
-        <Text layoutX="14" layoutY="24" text="Market Enquiry"/>
-        <CheckComboBox fx:id="symbolDropdown" layoutX="120" layoutY="10" prefWidth="200"/>
-        <Button text="Request" layoutX="330" layoutY="10" onAction="#onRequestMarketData"/>
-        <TableView fx:id="tableMarketData" layoutX="10" layoutY="50"
-                   AnchorPane.topAnchor="50" AnchorPane.leftAnchor="0"
-                   AnchorPane.rightAnchor="0" AnchorPane.bottomAnchor="0">
-            <columns>
-                <TableColumn fx:id="mdSymbol" text="Symbol"/>
-                <TableColumn fx:id="mdPrice" text="Price"/>
-                <TableColumn fx:id="mdQty" text="Quantity"/>
-                <TableColumn fx:id="mdDma5" text="DMA5"/>
-                <TableColumn fx:id="mdDma8" text="DMA8"/>
-                <TableColumn fx:id="mdDma13" text="DMA13"/>
-                <TableColumn fx:id="mdDma50" text="DMA50"/>
-                <TableColumn fx:id="mdDma200" text="DMA200"/>
-                <TableColumn fx:id="mdOpen" text="Open"/>
-                <TableColumn fx:id="mdHigh" text="High"/>
-                <TableColumn fx:id="mdLow" text="Low"/>
-            </columns>
-        </TableView>
+        <AnchorPane styleClass="card" layoutX="10" layoutY="10"
+                    AnchorPane.leftAnchor="10" AnchorPane.rightAnchor="10" AnchorPane.topAnchor="10" AnchorPane.bottomAnchor="10">
+            <children>
+                <Text text="Market Enquiry" layoutX="10" layoutY="20" styleClass="section-title"/>
+                <CheckComboBox fx:id="symbolDropdown" layoutX="160" layoutY="10" prefWidth="200"/>
+                <Button text="Request" layoutX="380" layoutY="10" onAction="#onRequestMarketData" styleClass="button"/>
+
+                <TableView fx:id="tableMarketData" layoutY="50" AnchorPane.topAnchor="50" AnchorPane.leftAnchor="0"
+                           AnchorPane.rightAnchor="0" AnchorPane.bottomAnchor="0">
+                    <columns>
+                        <TableColumn fx:id="mdSymbol" text="Symbol"/>
+                        <TableColumn fx:id="mdPrice" text="Price"/>
+                        <TableColumn fx:id="mdQty" text="Quantity"/>
+                        <TableColumn fx:id="mdDma5" text="DMA5"/>
+                        <TableColumn fx:id="mdDma8" text="DMA8"/>
+                        <TableColumn fx:id="mdDma13" text="DMA13"/>
+                        <TableColumn fx:id="mdDma50" text="DMA50"/>
+                        <TableColumn fx:id="mdDma200" text="DMA200"/>
+                        <TableColumn fx:id="mdOpen" text="Open"/>
+                        <TableColumn fx:id="mdHigh" text="High"/>
+                        <TableColumn fx:id="mdLow" text="Low"/>
+                    </columns>
+                </TableView>
+            </children>
+        </AnchorPane>
     </children>
 </AnchorPane>
+
 

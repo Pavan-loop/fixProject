@@ -1067,3 +1067,52 @@
 20251008-09:16:03: MINA session created: local=/192.168.0.42:50930, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
 20251008-09:16:04: Initiated logon request
 20251008-09:16:04: Disconnecting: Encountered END_OF_STREAM
+20251009-09:34:22: Session FIX.4.4:CLIENT4->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20251009-09:34:22: Session state is not current; resetting FIX.4.4:CLIENT4->BROKER1
+20251009-09:34:22: Created session: FIX.4.4:CLIENT4->BROKER1
+20251009-09:34:22: Configured socket addresses for session: [/192.168.0.37:9888]
+20251009-09:34:22: MINA session created: local=/192.168.0.42:52568, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251009-09:34:23: Initiated logon request
+20251009-09:34:23: Disconnecting: Encountered END_OF_STREAM
+20251009-09:34:27: MINA session created: local=/192.168.0.42:52569, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251009-09:34:28: Initiated logon request
+20251009-09:34:28: Disconnecting: Encountered END_OF_STREAM
+20251009-09:34:32: MINA session created: local=/192.168.0.42:52570, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251009-09:34:33: Initiated logon request
+20251009-09:34:33: Disconnecting: Encountered END_OF_STREAM
+20251009-09:34:37: MINA session created: local=/192.168.0.42:52571, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251009-09:34:38: Initiated logon request
+20251009-09:34:38: Disconnecting: Encountered END_OF_STREAM
+20251009-09:34:42: MINA session created: local=/192.168.0.42:52573, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251009-09:34:43: Initiated logon request
+20251009-09:34:43: Disconnecting: Encountered END_OF_STREAM
+20251009-09:34:47: MINA session created: local=/192.168.0.42:52575, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251009-09:34:48: Initiated logon request
+20251009-09:34:48: Disconnecting: Encountered END_OF_STREAM
+20251009-09:34:53: MINA session created: local=/192.168.0.42:52579, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251009-09:34:53: Initiated logon request
+20251009-09:34:53: Disconnecting: Encountered END_OF_STREAM
+20251009-09:35:13: Session FIX.4.4:CLIENT4->BROKER1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20251009-09:35:13: Created session: FIX.4.4:CLIENT4->BROKER1
+20251009-09:35:13: Configured socket addresses for session: [/192.168.0.37:9888]
+20251009-09:35:14: MINA session created: local=/192.168.0.42:52587, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251009-09:35:15: Initiated logon request
+20251009-09:35:15: Disconnecting: Encountered END_OF_STREAM
+20251009-09:35:19: MINA session created: local=/192.168.0.42:52589, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251009-09:35:19: Initiated logon request
+20251009-09:35:19: Disconnecting: Encountered END_OF_STREAM
+20251009-09:35:24: MINA session created: local=/192.168.0.42:52592, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251009-09:35:24: Initiated logon request
+20251009-09:35:24: Disconnecting: Encountered END_OF_STREAM
+20251009-09:35:29: MINA session created: local=/192.168.0.42:52594, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251009-09:35:29: Initiated logon request
+20251009-09:35:29: Disconnecting: Encountered END_OF_STREAM
+20251009-09:35:34: MINA session created: local=/192.168.0.42:52595, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251009-09:35:34: Initiated logon request
+20251009-09:35:34: Disconnecting: Encountered END_OF_STREAM
+20251009-09:35:39: MINA session created: local=/192.168.0.42:52600, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251009-09:35:39: Initiated logon request
+20251009-09:35:39: Disconnecting: Encountered END_OF_STREAM
+20251009-09:35:44: MINA session created: local=/192.168.0.42:52601, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/192.168.0.37:9888
+20251009-09:35:44: Initiated logon request
+20251009-09:35:44: Disconnecting: Encountered END_OF_STREAM

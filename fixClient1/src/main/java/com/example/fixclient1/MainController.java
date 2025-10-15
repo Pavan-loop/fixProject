@@ -34,42 +34,38 @@ public class MainController {
                 clientApp.setOnLogon(() ->
                         Platform.runLater(() -> {
                             statusLabel.setText("Connected ✅");
-                            statusLabel.getStyleClass().remove("disconnected");
-                            if (!statusLabel.getStyleClass().contains("connected")) {
-                                statusLabel.getStyleClass().add("connected");
+                            statusLabel.getStyleClass().removeAll("status-disconnected");
+                            if (!statusLabel.getStyleClass().contains("status-connected")) {
+                                statusLabel.getStyleClass().add("status-connected");
                             }
 
-                            String clientId = clientApp.getClientId();   // you’ll add this getter
-                            String brokerId = clientApp.getBrokerId();   // you’ll add this getter
+                            String clientId = clientApp.getClientId();
+                            String brokerId = clientApp.getBrokerId();
                             connectionInfoLabel.setText("Client: " + clientId + " | Broker: " + brokerId);
                         })
                 );
 
-
                 clientApp.setOnLogout(() ->
                         Platform.runLater(() -> {
                             statusLabel.setText("Disconnected ❌");
-                            statusLabel.getStyleClass().remove("connected");
-                            if (!statusLabel.getStyleClass().contains("disconnected")) {
-                                statusLabel.getStyleClass().add("disconnected");
+                            statusLabel.getStyleClass().removeAll("status-connected");
+                            if (!statusLabel.getStyleClass().contains("status-disconnected")) {
+                                statusLabel.getStyleClass().add("status-disconnected");
                             }
 
-                            // 🔹 Clear connection info
                             connectionInfoLabel.setText("");
                         })
                 );
 
-
                 Platform.runLater(() -> {
-                        MarketEnquiryController marketEnquiryController = MarketEnquiryController.getInstance();
-                        if (marketEnquiryController != null) {
-                            marketEnquiryController.setClientApp(clientApp);
-                            clientApp.setMarketEnquiryController(marketEnquiryController);
-                        } else {
-                            System.out.println("MarketEnquiryController instance is null");
-                        }
-                        ;
-                    });
+                    MarketEnquiryController marketEnquiryController = MarketEnquiryController.getInstance();
+                    if (marketEnquiryController != null) {
+                        marketEnquiryController.setClientApp(clientApp);
+                        clientApp.setMarketEnquiryController(marketEnquiryController);
+                    } else {
+                        System.out.println("MarketEnquiryController instance is null");
+                    }
+                });
 
                 initiator = clientApp.start();
                 helloIncludeRootController.setInitiator(initiator);
@@ -86,13 +82,20 @@ public class MainController {
     @FXML
     private void onLogout() {
         if (clientApp != null) {
-            clientApp.logoutAndCancelPendingOrders(); // cancel partially filled orders first
+            clientApp.logoutAndCancelPendingOrders();
             clientApp = null;
+            // Set status label to disconnected (red) style
+            Platform.runLater(() -> {
+                statusLabel.setText("Disconnected ❌");
+                statusLabel.getStyleClass().removeAll("status-connected");
+                if (!statusLabel.getStyleClass().contains("status-disconnected")) {
+                    statusLabel.getStyleClass().add("status-disconnected");
+                }
+                connectionInfoLabel.setText("");
+            });
             showAlert("Logout", "Logout request sent.");
         }
     }
-
-
 
     private void showAlert(String title, String message) {
         Platform.runLater(() -> {

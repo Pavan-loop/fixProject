@@ -1,47 +1,35 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
 <BorderPane xmlns="http://javafx.com/javafx/23.0.1"
             xmlns:fx="http://javafx.com/fxml/1"
             fx:controller="com.example.fixclient1.MainController"
-            prefWidth="800" prefHeight="600"
+            prefWidth="1920" prefHeight="1080" maxWidth="Infinity" maxHeight="Infinity"
             stylesheets="@../../../style.css">
-
-    <!-- Top bar with Login/Logout -->
+    <!-- Header -->
     <top>
-        <AnchorPane prefHeight="40.0" styleClass="header">
+        <AnchorPane prefHeight="58.0" minHeight="34.0" styleClass="header">
             <children>
-                <Label text="FIX Client"
-                       layoutX="10.0" layoutY="10.0"
-                       style="-fx-font-weight: bold; -fx-text-fill: white;"/>
-
-                <Label fx:id="statusLabel"
-                       layoutX="150" layoutY="10"
-                       text="Disconnected ❌"
-                       style="-fx-font-weight: bold;"/>
-
-                <Label fx:id="connectionInfoLabel"
-                       layoutX="300" layoutY="10"
-                       text=""
-                       style="-fx-font-size: 12px; -fx-text-fill: #cccccc;"/>
-
-                <HBox spacing="10" AnchorPane.rightAnchor="10.0" layoutY="6.0">
-                    <Button text="Login" onAction="#onLogin"/>
-                    <Button text="Logout" onAction="#onLogout"/>
+                <Label text="FIX Client" layoutX="24" layoutY="18" styleClass="fix-client-title"/>
+                <Label fx:id="statusLabel" layoutX="220" layoutY="20" text="Disconnected ❌" styleClass="status-disconnected"/>
+                <Label fx:id="connectionInfoLabel" layoutX="420" layoutY="22" style="-fx-font-size: 14px; -fx-text-fill: #cccccc;"/>
+                <HBox spacing="18" AnchorPane.rightAnchor="36" layoutY="14">
+                    <Button text="Login" onAction="#onLogin" styleClass="button login"/>
+                    <Button text="Logout" onAction="#onLogout" styleClass="button logout"/>
                 </HBox>
             </children>
         </AnchorPane>
     </top>
-
-    <!-- Center content: your tabs -->
+    <!-- Tabs -->
     <center>
-        <TabPane fx:id="tabPane">
+        <TabPane fx:id="tabPane" tabMinHeight="40" tabMaxHeight="60" tabMinWidth="250" style="-fx-alignment: center;" >
             <tabs>
-                <!-- Order Book Tab -->
                 <Tab text="Order Book">
-                    <AnchorPane>
-                        <!-- fx:id added here -->
+                    <AnchorPane AnchorPane.leftAnchor="32" AnchorPane.rightAnchor="32" AnchorPane.topAnchor="32" AnchorPane.bottomAnchor="32">
                         <fx:include fx:id="helloIncludeRoot" source="hello-view.fxml"
                                     AnchorPane.topAnchor="0.0"
                                     AnchorPane.bottomAnchor="0.0"
@@ -49,10 +37,8 @@
                                     AnchorPane.rightAnchor="0.0"/>
                     </AnchorPane>
                 </Tab>
-
-                <!-- Market Enquiry Tab -->
                 <Tab text="Market Enquiry">
-                    <AnchorPane>
+                    <AnchorPane AnchorPane.leftAnchor="32" AnchorPane.rightAnchor="32" AnchorPane.topAnchor="32" AnchorPane.bottomAnchor="32">
                         <fx:include source="MarketEnquiry.fxml"
                                     AnchorPane.topAnchor="0.0"
                                     AnchorPane.bottomAnchor="0.0"
@@ -64,3 +50,4 @@
         </TabPane>
     </center>
 </BorderPane>
+

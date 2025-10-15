@@ -177,7 +177,7 @@ public class HelloController {
         }
 
         if (initiator == null || initiator.getSessions().isEmpty() || !initiator.isLoggedOn()) {
-            showAlert("Disconnected", "You are disconnected. Please start the client first.");
+            showAlert("Disconnected", "You are disconnected. Please login to the client first.");
             return;
         }
 
